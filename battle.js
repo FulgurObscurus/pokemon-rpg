@@ -190,45 +190,54 @@ function enemyTurn() {
 function endBattle() {
     enemyPokemon = null;
     inBattle = false;
-    document.getElementById('move-list').style.display = 'none';
-    document.getElementById('actions').style.display = 'grid';
-    document.getElementById('btn-fight').disabled = true;
-    document.getElementById('btn-bag').disabled = true;
-    document.getElementById('btn-switch').disabled = true;
-    document.getElementById('btn-run').disabled = true;
+    document.getElementById("move-list").style.display = "none";
+    document.getElementById("actions").style.display = "grid";
+    document.getElementById("btn-fight").disabled = true;
+    document.getElementById("btn-bag").disabled = true;
+    document.getElementById("btn-switch").disabled = true;
+    document.getElementById("btn-run").disabled = true;
     const p = getCurrentPokemon();
     if (p) {
         p.currentHp = Math.min(p.currentHp + Math.floor(p.maxHp * 0.3), p.maxHp);
-        addMessage(`🌿 Ваш покемон восстановил часть HP.`);
+        addMessage("🌿 Ваш покемон восстановил часть HP.");
     }
     updateHpBars();
-    document.getElementById('btn-fight').textContent = '🌲 Исследовать';
-    document.getElementById('btn-fight').disabled = false;
-    document.getElementById('btn-fight').onclick = () => {
+    document.getElementById("btn-fight").textContent = "🌲 Исследовать";
+    document.getElementById("btn-fight").disabled = false;
+    document.getElementById("btn-fight").onclick = () => {
         if (inBattle) return;
         const wild = generateWildPokemon();
         startBattle(wild);
-        document.getElementById('btn-fight').textContent = '⚔️ Бой';
+        document.getElementById("btn-fight").textContent = "⚔️ Бой";
     };
-    document.getElementById('btn-bag').disabled = false;
-    document.getElementById('btn-switch').disabled = false;
-    document.getElementById('btn-run').disabled = false;
-    document.getElementById('btn-bag').onclick = () => useBag();
-    document.getElementById('btn-switch').onclick = () => switchPokemon();
-    document.getElementById('btn-run').onclick = () => {
+    document.getElementById("btn-bag").disabled = false;
+    document.getElementById("btn-switch").disabled = false;
+    document.getElementById("btn-run").disabled = false;
+    document.getElementById("btn-bag").onclick = () => useBag();
+    document.getElementById("btn-switch").onclick = () => switchPokemon();
+    document.getElementById("btn-run").onclick = () => {
         if (inBattle) {
             if (Math.random() < 0.5) {
-                addMessage(`🏃 Вы сбежали!`);
+                addMessage("🏃 Вы сбежали!");
                 enemyPokemon = null;
                 inBattle = false;
                 showActions();
-                document.getElementById('btn-fight').textContent = '🌲 Исследовать';
+                document.getElementById("btn-fight").textContent = "🌲 Исследовать";
             } else {
-                addMessage(`⚠️ Не удалось сбежать!`);
+                addMessage("⚠️ Не удалось сбежать!");
                 enemyTurn();
             }
         }
     };
+    // Возврат на карту
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    const canvas = window._canvas;
+    const controls = window._controls;
+    if (canvas) canvas.style.display = "block";
+    if (controls) controls.style.display = "grid";
 }
 
 function healParty() {
