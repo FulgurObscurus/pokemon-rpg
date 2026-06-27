@@ -13,4 +13,29 @@ canvas { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:0; di
     min-width:44px; min-height:44px; cursor:pointer;
 }
 #btn-action { grid-column:2; grid-row:4; font-size:14px; padding:4px 12px; background:#f1c40f; color:#1a0f2e; border-color:#f1c40f; }
-#game, #battle-screen, #hp-bars, #actions, #info-panel, #loading, #debug { display:none !important; }
+/* Джойстик прозрачный и компактный */
+#controls {
+    background: rgba(0,0,0,0.15) !important;
+    padding: 4px !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(1px) !important;
+    bottom: 8px !important;
+    max-width: 160px !important;
+}
+#controls button {
+    padding: 4px 8px !important;
+    font-size: 14px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    background: rgba(0,0,0,0.3) !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+}
+#btn-action {
+    font-size: 12px !important;
+    padding: 2px 8px !important;
+    background: rgba(241, 196, 15, 0.8) !important;
+    color: #1a0f2e !important;
+    border-color: #f1c40f !important;
+}

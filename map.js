@@ -2,6 +2,11 @@
 // КАРТА МИРА (финальная)
 // =======================================================================
 const canvas = document.createElement('canvas');
+    // Скрываем боевой интерфейс
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 canvas.style.position = 'fixed';
@@ -150,3 +155,47 @@ document.addEventListener('DOMContentLoaded', function() {
 window._canvas = canvas;
 gameLoop();
 console.log('Карта загружена (финальная)');
+
+// =======================================================================
+// СЛУЧАЙНЫЕ ВСТРЕЧИ ПРИ ХОДЬБЕ
+// =======================================================================
+let steps = 0;
+const ENCOUNTER_CHANCE = 0.10; // 10% шанс на каждый шаг
+
+function checkEncounter() {
+    if (inBattle) return; // не встречать во время боя
+    if (Math.random() < ENCOUNTER_CHANCE) {
+        const wild = generateWildPokemon();
+        if (wild) {
+            logError('⚔️ Встреча с диким ' + wild.name + ' (ур. ' + wild.level + ')');
+            // Скрываем карту и показываем бой
+            canvas.style.display = 'none';
+            document.getElementById('controls').style.display = 'none';
+            document.getElementById('battle-screen').style.display = 'block';
+            document.getElementById('hp-bars').style.display = 'flex';
+            document.getElementById('actions').style.display = 'grid';
+            document.getElementById('info-panel').style.display = 'flex';
+            startBattle(wild);
+            document.getElementById('btn-fight').textContent = '⚔️ Бой';
+        }
+    }
+}
+
+// Модифицируем gameLoop для отслеживания шагов
+const originalGameLoop = gameLoop;
+gameLoop = function() {
+    let moved = false;
+    if (keys.w && player.y > 0) { player.y -= player.speed; moved = true; }
+    if (keys.s && player.y < canvas.height - player.size) { player.y += player.speed; moved = true; }
+    if (keys.a && player.x > 0) { player.x -= player.speed; moved = true; }
+    if (keys.d && player.x < canvas.width - player.size) { player.x += player.speed; moved = true; }
+    if (moved) {
+        steps++;
+        // Проверяем встречу каждые 10 шагов (для снижения частоты)
+        if (steps % 10 === 0) {
+            checkEncounter();
+        }
+    }
+    drawMap();
+    requestAnimationFrame(gameLoop);
+};

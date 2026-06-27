@@ -13,6 +13,15 @@ function generateWildPokemon() {
 }
 
 function startBattle(wildPoke) {
+    document.getElementById("battle-screen").style.display = "block";
+    document.getElementById("hp-bars").style.display = "flex";
+    document.getElementById("actions").style.display = "grid";
+    document.getElementById("info-panel").style.display = "flex";
+    // Принудительно показываем боевой интерфейс
+    document.getElementById("battle-screen").style.display = "block";
+    document.getElementById("hp-bars").style.display = "flex";
+    document.getElementById("actions").style.display = "grid";
+    document.getElementById("info-panel").style.display = "flex";
     enemyPokemon = wildPoke;
     inBattle = true;
     moveSelectionMode = false;
@@ -188,6 +197,12 @@ function enemyTurn() {
 }
 
 function endBattle() {
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    if (window._canvas) window._canvas.style.display = "block";
+    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     enemyPokemon = null;
     inBattle = false;
     document.getElementById("move-list").style.display = "none";
