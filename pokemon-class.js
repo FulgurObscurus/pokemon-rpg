@@ -96,7 +96,7 @@ class Poke {
     }
 
     getStatMultiplier(stat) {
-        const stageMap = { 0:1, 1:1.5, 2:2, 3:2.5, 4:3, 5:3.5, 6:4, -1:2/3, -2:1/2, -3:2/5, -4:1/3, -5:2/7, -6:1/4 };
+        const stageMap = { 0:1, 1:1.5, 2:2, 3:2.5, 4:3, 5:3.5, 6:4, "-1":2/3, "-2":1/2, "-3":2/5, "-4":1/3, "-5":2/7, "-6":1/4 };
         let stage = 0;
         if (stat === 'attack') stage = this.attackBoost;
         else if (stat === 'defense') stage = this.defenseBoost;
