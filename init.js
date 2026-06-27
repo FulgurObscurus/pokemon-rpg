@@ -88,6 +88,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (inBattle) {
             if (Math.random() < 0.5) {
                 addMessage(`🏃 Вы сбежали!`);
+    // Возврат на карту
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    if (window._canvas) window._canvas.style.display = "block";
+    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
                 enemyPokemon = null;
                 inBattle = false;
                 showActions();
@@ -167,6 +174,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 btn.textContent = '⚔️ Бой';
             } catch(err) {
                 debug('❌ Ошибка: ' + err.message);
+            }
+        });
+    }
+});
+
+// Принудительная привязка кнопки "Бой" к показу приёмов
+document.addEventListener('DOMContentLoaded', function() {
+    const btnFight = document.getElementById('btn-fight');
+    if (btnFight) {
+        btnFight.addEventListener('click', function(e) {
+            if (inBattle) {
+                onFight();
             }
         });
     }
