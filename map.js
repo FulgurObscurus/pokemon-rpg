@@ -1,46 +1,69 @@
 // =======================================================================
-// КАРТА МИРА (исправленная)
+// КАРТА МИРА (финальная)
 // =======================================================================
 const canvas = document.createElement('canvas');
-canvas.width = Math.min(window.innerWidth - 20, 600);
-canvas.height = Math.min(window.innerHeight - 200, 300);
-canvas.style.width = '100%';
-canvas.style.height = 'auto';
-canvas.style.border = '4px solid #7b4a9e';
-canvas.style.borderRadius = '12px';
-canvas.style.marginBottom = '10px';
-canvas.style.display = 'block';
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+canvas.style.position = 'fixed';
+canvas.style.top = '0';
+canvas.style.left = '0';
+canvas.style.width = '100vw';
+canvas.style.height = '100vh';
+canvas.style.zIndex = '0';
+document.body.appendChild(canvas);
 
-const gameDiv = document.getElementById('game');
-const battleScreen = document.getElementById('battle-screen');
-gameDiv.insertBefore(canvas, battleScreen);
-battleScreen.style.display = 'none';
+const errorLog = document.getElementById('error-log');
+
+function logError(msg) {
+    if (errorLog) {
+        errorLog.style.display = 'block';
+        errorLog.textContent = msg + '\n' + errorLog.textContent;
+    }
+    console.error(msg);
+}
 
 const ctx = canvas.getContext('2d');
-const player = { x: 100, y: 100, size: 20, speed: 3 };
+const player = { x: window.innerWidth/2, y: window.innerHeight/2, size: 30, speed: 5 };
 const keys = { w: false, a: false, s: false, d: false };
 
 function drawMap() {
     ctx.fillStyle = '#4caf50';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 80; i++) {
         ctx.fillStyle = '#388e3c';
         ctx.beginPath();
-        ctx.arc(30 + i * 40, 40 + Math.sin(i) * 15, 6, 0, Math.PI * 2);
+        ctx.arc(20 + i * 30, 30 + Math.sin(i * 1.5) * 25, 10, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    const trees = [[80,80],[300,120],[520,60],[740,100],[160,600],[480,650],[700,580],[900,200]];
+    for (let [tx, ty] of trees) {
+        ctx.fillStyle = '#5D4037';
+        ctx.fillRect(tx, ty, 20, 30);
+        ctx.fillStyle = '#2E7D32';
+        ctx.beginPath();
+        ctx.arc(tx + 10, ty - 8, 24, 0, Math.PI * 2);
         ctx.fill();
     }
     ctx.fillStyle = '#2196F3';
     ctx.fillRect(player.x, player.y, player.size, player.size);
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(player.x + 8, player.y + 8, 6, 6);
+    ctx.fillRect(player.x + 18, player.y + 8, 6, 6);
 }
 
 function gameLoop() {
-    if (keys.w) player.y = Math.max(0, player.y - player.speed);
-    if (keys.s) player.y = Math.min(canvas.height - player.size, player.y + player.speed);
-    if (keys.a) player.x = Math.max(0, player.x - player.speed);
-    if (keys.d) player.x = Math.min(canvas.width - player.size, player.x + player.speed);
+    if (keys.w && player.y > 0) player.y -= player.speed;
+    if (keys.s && player.y < canvas.height - player.size) player.y += player.speed;
+    if (keys.a && player.x > 0) player.x -= player.speed;
+    if (keys.d && player.x < canvas.width - player.size) player.x += player.speed;
     drawMap();
     requestAnimationFrame(gameLoop);
 }
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
 
 document.addEventListener('keydown', (e) => {
     const k = e.key.toLowerCase();
@@ -57,6 +80,9 @@ document.addEventListener('keyup', (e) => {
     if (k === 'd' || k === 'arrowright') keys.d = false;
 });
 
+// =======================================================================
+// ПРИНУДИТЕЛЬНАЯ ПРИВЯЗКА КНОПОК (с диагностикой)
+// =======================================================================
 document.addEventListener('DOMContentLoaded', function() {
     const btnUp = document.getElementById('btn-up');
     const btnDown = document.getElementById('btn-down');
@@ -89,25 +115,38 @@ document.addEventListener('DOMContentLoaded', function() {
         btnRight.addEventListener('mouseup', () => keys.d = false);
     }
 
+    // Главная кнопка "Исследовать" – принудительная привязка
     if (btnAction) {
         btnAction.addEventListener('click', function() {
-            if (inBattle) return;
-            const wild = generateWildPokemon();
-            if (wild) {
-                canvas.style.display = 'none';
-                document.getElementById('controls').style.display = 'none';
-                battleScreen.style.display = 'block';
-                document.getElementById('hp-bars').style.display = 'flex';
-                document.getElementById('actions').style.display = 'grid';
-                document.getElementById('info-panel').style.display = 'flex';
-                startBattle(wild);
-                document.getElementById('btn-fight').textContent = '⚔️ Бой';
+            logError('🔍 Кнопка "Исследовать" нажата');
+            if (inBattle) {
+                logError('⚠️ Уже в бою');
+                return;
+            }
+            try {
+                const wild = generateWildPokemon();
+                if (wild) {
+                    logError('✅ Дикий покемон: ' + wild.name);
+                    // Скрываем карту и показываем бой
+                    canvas.style.display = 'none';
+                    document.getElementById('controls').style.display = 'none';
+                    document.getElementById('battle-screen').style.display = 'block';
+                    document.getElementById('hp-bars').style.display = 'flex';
+                    document.getElementById('actions').style.display = 'grid';
+                    document.getElementById('info-panel').style.display = 'flex';
+                    startBattle(wild);
+                    document.getElementById('btn-fight').textContent = '⚔️ Бой';
+                } else {
+                    logError('❌ Не удалось создать дикого покемона');
+                }
+            } catch(err) {
+                logError('❌ Ошибка: ' + err.message);
+                // Показываем ошибку в div
             }
         });
     }
 });
 
 window._canvas = canvas;
-window._battleScreen = battleScreen;
 gameLoop();
-console.log('Карта загружена');
+console.log('Карта загружена (финальная)');

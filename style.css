@@ -1,52 +1,16 @@
-* { box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0; }
-body { background-color: #1a0f2e; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 10px; }
-#game { max-width: 800px; width: 100%; background: #2c1a3d; border-radius: 30px; padding: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 2px solid #7b4a9e; }
-#battle-screen { border-radius: 20px; padding: 15px; min-height: 200px; color: #fff; font-size: 16px; line-height: 1.5; white-space: pre-wrap; overflow-y: auto; max-height: 250px; border: 2px solid #7b4a9e; margin-bottom: 12px; transition: background 0.3s; }
-.location-forest { background: linear-gradient(135deg, #2e7d32, #1b5e20); }
-.location-city { background: linear-gradient(135deg, #616161, #424242); }
-.location-cave { background: linear-gradient(135deg, #212121, #000); }
-.location-water { background: linear-gradient(135deg, #1565c0, #0d47a1); }
-.location-default { background: linear-gradient(135deg, #1a0f2e, #2c1a3d); }
-#hp-bars { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-.hp-bar { background: #1a0f2e; padding: 8px 12px; border-radius: 12px; flex: 1; min-width: 150px; color: #fff; font-size: 14px; border: 1px solid #7b4a9e; }
-.hp-bar .hp { background: #4caf50; height: 10px; border-radius: 6px; transition: width 0.3s; margin-top: 4px; }
-.hp-bar .hp.low { background: #f44336; }
-.pokemon-img { width: 80px; height: 80px; image-rendering: pixelated; vertical-align: middle; margin-right: 10px; }
-#actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
-#actions button { padding: 12px; font-size: 16px; border: none; border-radius: 16px; background: #1a0f2e; color: #fff; font-weight: bold; cursor: pointer; transition: 0.2s; box-shadow: 0 3px 0 #7b4a9e; border: 1px solid #7b4a9e; }
-#actions button:hover { transform: scale(0.97); background: #2c1a3d; }
-#actions button:disabled { opacity: 0.5; transform: scale(1); box-shadow: 0 2px 0 #7b4a9e; background: #1a0f2e; cursor: not-allowed; }
-#move-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-top: 10px; }
-#move-list button { padding: 10px; border-radius: 12px; border: 1px solid #7b4a9e; background: #1a0f2e; color: #fff; cursor: pointer; font-size: 14px; }
-#move-list button:hover { background: #2c1a3d; }
-#move-list button:disabled { opacity: 0.4; cursor: not-allowed; }
-#info-panel { display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 12px; color: #fff; font-size: 14px; gap: 5px; align-items: center; }
-#info-panel button { background: none; border: 1px solid #7b4a9e; color: #fff; padding: 4px 8px; border-radius: 12px; cursor: pointer; font-size: 12px; }
-#info-panel button:hover { background: #7b4a9e; color: #fff; }
-#loading { color: #7b4a9e; text-align: center; font-size: 22px; padding: 30px; }
-@media (max-width: 600px) { #game { padding: 10px; border-radius: 20px; } #battle-screen { font-size: 14px; max-height: 200px; padding: 12px; } #actions button { font-size: 14px; padding: 10px; } #move-list button { font-size: 12px; padding: 8px; } .hp-bar { font-size: 12px; } #info-panel { font-size: 12px; } #info-panel button { font-size: 10px; padding: 2px 6px; } .pokemon-img { width: 60px; height: 60px; } }
-@media (max-width: 400px) { #actions { grid-template-columns: 1fr 1fr; gap: 4px; } #actions button { font-size: 12px; padding: 8px; } #battle-screen { font-size: 12px; max-height: 150px; } #move-list { grid-template-columns: 1fr 1fr; } .pokemon-img { width: 50px; height: 50px; } }
-
-/* Скрываем старый текстовый интерфейс, он будет показываться только во время боя */
-#battle-screen, #hp-bars, #actions, #info-panel, #loading {
-    display: none !important;
-}
-/* Скрываем отладку и старый интерфейс */
-#debug, #info-panel, #loading {
-    display: none !important;
-}
+/* Полноэкранная карта */
+body, html { margin:0; padding:0; overflow:hidden; background:#1a0f2e; }
+canvas { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:0; display:block; }
 #controls {
-    margin: 5px auto !important;
-    max-width: 200px !important;
+    position:fixed; bottom:10px; left:50%; transform:translateX(-50%);
+    z-index:10; background:rgba(0,0,0,0.3); padding:8px; border-radius:12px;
+    backdrop-filter:blur(2px); display:grid; grid-template-columns:repeat(3,1fr);
+    gap:4px; justify-items:center; max-width:200px;
 }
-/* Уменьшаем кнопки управления */
 #controls button {
-    padding: 6px 12px !important;
-    font-size: 16px !important;
-    min-width: 40px !important;
-    min-height: 40px !important;
+    padding:6px 12px; font-size:18px; border:2px solid rgba(255,255,255,0.3);
+    border-radius:8px; background:rgba(26,15,46,0.7); color:#fff; touch-action:none;
+    min-width:44px; min-height:44px; cursor:pointer;
 }
-#controls {
-    max-width: 160px !important;
-    margin: 5px auto !important;
-}
+#btn-action { grid-column:2; grid-row:4; font-size:14px; padding:4px 12px; background:#f1c40f; color:#1a0f2e; border-color:#f1c40f; }
+#game, #battle-screen, #hp-bars, #actions, #info-panel, #loading, #debug { display:none !important; }
