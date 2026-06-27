@@ -41,4 +41,6 @@ function updateHpBars() {
 
 function getCurrentPokemon() {
     return myParty[currentPokemonIndex] || null;
+
+function getPokemonImage(id) { return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png"; }
 }

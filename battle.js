@@ -1,3 +1,4 @@
+function getPokemonImage(id) { return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png"; }
 // =======================================================================
 // БОЕВЫЕ ФУНКЦИИ (часть 1)
 // =======================================================================
@@ -264,4 +265,36 @@ function useBag() {
     } else {
         addMessage('❌ У вас нет зелий!');
     }
+}
+
+// =======================================================================
+// ОБНОВЛЕНИЕ ПОЛОСОК HP И ИМЁН С ИЗОБРАЖЕНИЯМИ
+// =======================================================================
+function updateHpBars() {
+    if (!myParty.length) return;
+    const p = getCurrentPokemon();
+    if (p) {
+        const pNameEl = document.getElementById("p-name");
+        pNameEl.innerHTML = `<img class="pokemon-img" src="${getPokemonImage(p.speciesId)}" alt="${p.name}"> ${p.name}`;
+        document.getElementById("p-level").textContent = p.level;
+        const hpPercent = Math.max(0, (p.currentHp / p.maxHp) * 100);
+        document.getElementById("p-hp-bar").style.width = hpPercent + "%";
+        document.getElementById("p-hp-bar").className = "hp" + (hpPercent < 25 ? " low" : "");
+        document.getElementById("p-hp-text").textContent = p.currentHp + "/" + p.maxHp;
+    }
+    if (enemyPokemon) {
+        const eNameEl = document.getElementById("e-name");
+        eNameEl.innerHTML = `<img class="pokemon-img" src="${getPokemonImage(enemyPokemon.speciesId)}" alt="${enemyPokemon.name}"> ${enemyPokemon.name}`;
+        document.getElementById("e-level").textContent = enemyPokemon.level;
+        const hpPercent = Math.max(0, (enemyPokemon.currentHp / enemyPokemon.maxHp) * 100);
+        document.getElementById("e-hp-bar").style.width = hpPercent + "%";
+        document.getElementById("e-hp-bar").className = "hp" + (hpPercent < 25 ? " low" : "");
+        document.getElementById("e-hp-text").textContent = enemyPokemon.currentHp + "/" + enemyPokemon.maxHp;
+    } else {
+        document.getElementById("e-name").innerHTML = "—";
+        document.getElementById("e-hp-bar").style.width = "0%";
+        document.getElementById("e-hp-text").textContent = "0/0";
+    }
+    document.getElementById("party-count").textContent = myParty.length;
+    document.getElementById("money").textContent = money;
 }

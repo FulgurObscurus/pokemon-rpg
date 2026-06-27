@@ -1,53 +1,74 @@
 // =======================================================================
-// ИНИЦИАЛИЗАЦИЯ
+// ИНИЦИАЛИЗАЦИЯ С ДИАГНОСТИКОЙ
 // =======================================================================
-document.addEventListener('DOMContentLoaded', async () => {
-    document.getElementById('loading').textContent = '⏳ Шаг 0: Инициализация...';
+function debug(msg) {
+    const el = document.getElementById('debug');
+    if (el) {
+        el.textContent += msg + '\n';
+        el.scrollTop = el.scrollHeight;
+    }
+    console.log(msg);
+}
 
-    // 1. Загружаем данные покемонов
-    loadAllPokemon();
-    document.getElementById('loading').textContent = '⏳ Шаг 1: Данные загружены';
+document.addEventListener('DOMContentLoaded', function() {
+    debug('⏳ Инициализация...');
 
-    // 2. Загружаем сохранение
-    const loaded = loadGame();
-    document.getElementById('loading').textContent = loaded ? '⏳ Шаг 2: Сохранение найдено' : '⏳ Шаг 2: Сохранения нет, создаём нового';
-
-    if (!loaded) {
-        // Шаг 2.1: пытаемся создать стартового покемона
-        document.getElementById('loading').textContent = '⏳ Шаг 2.1: Создаём стартового покемона (Пикачу)...';
-        try {
-            const starter = new Poke(25, 5);
-            document.getElementById('loading').textContent = '⏳ Шаг 2.2: Покемон создан, добавляем в команду...';
-            myParty.push(starter);
-            currentPokemonIndex = 0;
-            gameState.money = 300;
-            gameState.items = { potion: 5, pokeball: 3 };
-            document.getElementById('loading').textContent = '⏳ Шаг 2.3: Сохраняем игру...';
-            saveGame();
-            document.getElementById('loading').textContent = '⏳ Шаг 3: Стартовый покемон создан и игра сохранена';
-        } catch(e) {
-            document.getElementById('loading').textContent = `❌ Ошибка на шаге 2.1-2.3: ${e.message}`;
-            console.error(e);
-            return;
-        }
+    // 1. Проверяем, определён ли ALL_POKEMON_DATA (из pokedex.js)
+    if (typeof ALL_POKEMON_DATA !== 'undefined') {
+        debug('✅ ALL_POKEMON_DATA определён. Количество: ' + Object.keys(ALL_POKEMON_DATA).length);
     } else {
-        document.getElementById('loading').textContent = '⏳ Шаг 3: Сохранение загружено';
+        debug('❌ ALL_POKEMON_DATA не определён! pokedex.js не загружен.');
     }
 
-    // 3. Проверяем, что есть покемоны
-    if (!myParty || myParty.length === 0) {
-        document.getElementById('loading').textContent = '❌ Ошибка: нет покемонов!';
+    // 2. Загружаем данные (если ALL_POKEMON_DATA есть, они скопируются в allPokemonData)
+    try {
+        loadAllPokemon();
+        debug('✅ Функция loadAllPokemon() выполнена');
+    } catch(e) {
+        debug('❌ Ошибка в loadAllPokemon(): ' + e.message);
+    }
+
+    // 3. Проверяем, что данные скопировались
+    if (typeof allPokemonData !== 'undefined' && Object.keys(allPokemonData).length > 0) {
+        debug('✅ allPokemonData загружено: ' + Object.keys(allPokemonData).length + ' покемонов');
+    } else {
+        debug('❌ allPokemonData пусто или не определено!');
+    }
+
+    // 4. Проверяем класс Poke
+    if (typeof Poke !== 'undefined') {
+        debug('✅ Класс Poke определён');
+    } else {
+        debug('❌ Класс Poke не определён! Проверьте pokemon-class.js');
         return;
     }
 
-    // 4. Показываем интерфейс
-    document.getElementById('loading').textContent = '⏳ Шаг 4: Показываем интерфейс...';
+    // 5. Создаём стартового покемона, если его нет
+    if (!myParty || myParty.length === 0) {
+        try {
+            const starter = new Poke(25, 5);
+            myParty = [starter];
+            currentPokemonIndex = 0;
+            gameState.money = 300;
+            gameState.items = { potion: 5, pokeball: 3 };
+            saveGame();
+            debug('✅ Создан стартовый покемон: ' + starter.name);
+        } catch(e) {
+            debug('❌ Ошибка создания покемона: ' + e.message);
+            return;
+        }
+    } else {
+        debug('✅ Покемон уже есть: ' + myParty[0].name);
+    }
+
+    // 6. Показываем интерфейс
     document.getElementById('loading').style.display = 'none';
     document.getElementById('battle-screen').style.display = 'block';
     document.getElementById('hp-bars').style.display = 'flex';
     document.getElementById('actions').style.display = 'grid';
     document.getElementById('info-panel').style.display = 'flex';
 
+    // 7. Обновляем отображение
     updateHpBars();
     updateInfoPanel();
     addMessage(`🌟 Добро пожаловать! Ваш покемон - ${getCurrentPokemon().name}!`);
@@ -124,5 +145,29 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('btn-switch').disabled = true;
     document.getElementById('btn-run').disabled = true;
 
+    debug('✅ Инициализация завершена');
     document.getElementById('loading').textContent = '✅ Игра полностью готова!';
+});
+
+// Прямая привязка обработчика клика с диагностикой
+document.addEventListener('DOMContentLoaded', function() {
+    const btn = document.getElementById('btn-fight');
+    debug('🔘 Элемент btn-fight найден? ' + (btn !== null));
+    if (btn) {
+        btn.addEventListener('click', function(e) {
+            debug('🖱️ Клик по Исследовать (через addEventListener)');
+            if (inBattle) {
+                debug('⚠️ Уже в бою');
+                return;
+            }
+            try {
+                const wild = generateWildPokemon();
+                debug('✅ Дикий покемон создан: ' + wild.name);
+                startBattle(wild);
+                btn.textContent = '⚔️ Бой';
+            } catch(err) {
+                debug('❌ Ошибка: ' + err.message);
+            }
+        });
+    }
 });
