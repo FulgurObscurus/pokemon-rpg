@@ -4,7 +4,7 @@
 const ALL_POKEMON_DATA = {
   "1": {
     "name": {
-      "ru": "Bulbasaur"
+      "ru": "Бульбазавр"
     },
     "types": [
       "grass",
@@ -24,7 +24,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33,7 +33,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -64,7 +64,7 @@ const ALL_POKEMON_DATA = {
   },
   "2": {
     "name": {
-      "ru": "Ivysaur"
+      "ru": "Ивизавр"
     },
     "types": [
       "grass",
@@ -84,7 +84,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -93,7 +93,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -124,7 +124,7 @@ const ALL_POKEMON_DATA = {
   },
   "3": {
     "name": {
-      "ru": "Venusaur"
+      "ru": "Венузавр"
     },
     "types": [
       "grass",
@@ -144,7 +144,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -153,7 +153,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -184,7 +184,7 @@ const ALL_POKEMON_DATA = {
   },
   "4": {
     "name": {
-      "ru": "Charmander"
+      "ru": "Чармандер"
     },
     "types": [
       "fire"
@@ -203,7 +203,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -212,7 +212,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -221,7 +221,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -230,7 +230,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -243,7 +243,7 @@ const ALL_POKEMON_DATA = {
   },
   "5": {
     "name": {
-      "ru": "Charmeleon"
+      "ru": "Чармелеон"
     },
     "types": [
       "fire"
@@ -262,7 +262,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -271,7 +271,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -280,7 +280,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -289,7 +289,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -302,7 +302,7 @@ const ALL_POKEMON_DATA = {
   },
   "6": {
     "name": {
-      "ru": "Charizard"
+      "ru": "Чаризард"
     },
     "types": [
       "fire",
@@ -322,7 +322,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -340,7 +340,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -349,7 +349,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -362,7 +362,7 @@ const ALL_POKEMON_DATA = {
   },
   "7": {
     "name": {
-      "ru": "Squirtle"
+      "ru": "Сквиртл"
     },
     "types": [
       "water"
@@ -390,7 +390,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -399,7 +399,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -408,7 +408,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -421,7 +421,7 @@ const ALL_POKEMON_DATA = {
   },
   "8": {
     "name": {
-      "ru": "Wartortle"
+      "ru": "Вартортл"
     },
     "types": [
       "water"
@@ -449,7 +449,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -458,7 +458,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -467,7 +467,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -480,7 +480,7 @@ const ALL_POKEMON_DATA = {
   },
   "9": {
     "name": {
-      "ru": "Blastoise"
+      "ru": "Бластойз"
     },
     "types": [
       "water"
@@ -508,7 +508,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -517,7 +517,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -526,7 +526,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -539,7 +539,7 @@ const ALL_POKEMON_DATA = {
   },
   "10": {
     "name": {
-      "ru": "Caterpie"
+      "ru": "Катерпи"
     },
     "types": [
       "bug"
@@ -558,7 +558,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -589,7 +589,7 @@ const ALL_POKEMON_DATA = {
   },
   "11": {
     "name": {
-      "ru": "Metapod"
+      "ru": "Метапод"
     },
     "types": [
       "bug"
@@ -620,7 +620,7 @@ const ALL_POKEMON_DATA = {
   },
   "12": {
     "name": {
-      "ru": "Butterfree"
+      "ru": "Баттерфри"
     },
     "types": [
       "bug",
@@ -658,7 +658,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -680,7 +680,7 @@ const ALL_POKEMON_DATA = {
   },
   "13": {
     "name": {
-      "ru": "Weedle"
+      "ru": "Видл"
     },
     "types": [
       "bug",
@@ -731,7 +731,7 @@ const ALL_POKEMON_DATA = {
   },
   "14": {
     "name": {
-      "ru": "Kakuna"
+      "ru": "Какуна"
     },
     "types": [
       "bug",
@@ -763,7 +763,7 @@ const ALL_POKEMON_DATA = {
   },
   "15": {
     "name": {
-      "ru": "Beedrill"
+      "ru": "Бидрилл"
     },
     "types": [
       "bug",
@@ -823,7 +823,7 @@ const ALL_POKEMON_DATA = {
   },
   "16": {
     "name": {
-      "ru": "Pidgey"
+      "ru": "Пиджи"
     },
     "types": [
       "normal",
@@ -884,7 +884,7 @@ const ALL_POKEMON_DATA = {
   },
   "17": {
     "name": {
-      "ru": "Pidgeotto"
+      "ru": "Пиджеотто"
     },
     "types": [
       "normal",
@@ -945,7 +945,7 @@ const ALL_POKEMON_DATA = {
   },
   "18": {
     "name": {
-      "ru": "Pidgeot"
+      "ru": "Пиджит"
     },
     "types": [
       "normal",
@@ -1006,7 +1006,7 @@ const ALL_POKEMON_DATA = {
   },
   "19": {
     "name": {
-      "ru": "Rattata"
+      "ru": "Раттата"
     },
     "types": [
       "normal"
@@ -1026,7 +1026,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1053,7 +1053,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1066,7 +1066,7 @@ const ALL_POKEMON_DATA = {
   },
   "20": {
     "name": {
-      "ru": "Raticate"
+      "ru": "Рэтикейт"
     },
     "types": [
       "normal"
@@ -1095,7 +1095,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1126,7 +1126,7 @@ const ALL_POKEMON_DATA = {
   },
   "21": {
     "name": {
-      "ru": "Spearow"
+      "ru": "Спироу"
     },
     "types": [
       "normal",
@@ -1173,7 +1173,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1186,7 +1186,7 @@ const ALL_POKEMON_DATA = {
   },
   "22": {
     "name": {
-      "ru": "Fearow"
+      "ru": "Фироу"
     },
     "types": [
       "normal",
@@ -1233,7 +1233,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1246,7 +1246,7 @@ const ALL_POKEMON_DATA = {
   },
   "23": {
     "name": {
-      "ru": "Ekans"
+      "ru": "Эканс"
     },
     "types": [
       "poison"
@@ -1266,7 +1266,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1293,7 +1293,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1306,7 +1306,7 @@ const ALL_POKEMON_DATA = {
   },
   "24": {
     "name": {
-      "ru": "Arbok"
+      "ru": "Эрбок"
     },
     "types": [
       "poison"
@@ -1326,7 +1326,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1353,7 +1353,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1366,7 +1366,7 @@ const ALL_POKEMON_DATA = {
   },
   "25": {
     "name": {
-      "ru": "Pikachu"
+      "ru": "Пикачу"
     },
     "types": [
       "electric"
@@ -1385,7 +1385,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1394,7 +1394,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1403,7 +1403,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1412,7 +1412,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1425,7 +1425,7 @@ const ALL_POKEMON_DATA = {
   },
   "26": {
     "name": {
-      "ru": "Raichu"
+      "ru": "Райчу"
     },
     "types": [
       "electric"
@@ -1453,7 +1453,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1462,7 +1462,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1471,7 +1471,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1484,7 +1484,7 @@ const ALL_POKEMON_DATA = {
   },
   "27": {
     "name": {
-      "ru": "Sandshrew"
+      "ru": "Сэндшру"
     },
     "types": [
       "ground"
@@ -1503,7 +1503,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1543,7 +1543,7 @@ const ALL_POKEMON_DATA = {
   },
   "28": {
     "name": {
-      "ru": "Sandslash"
+      "ru": "Сэндслэш"
     },
     "types": [
       "ground"
@@ -1562,7 +1562,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1602,7 +1602,7 @@ const ALL_POKEMON_DATA = {
   },
   "29": {
     "name": {
-      "ru": "Nidoran-f"
+      "ru": "Нидоран♀"
     },
     "types": [
       "poison"
@@ -1622,7 +1622,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1631,7 +1631,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1640,7 +1640,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1649,7 +1649,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1662,7 +1662,7 @@ const ALL_POKEMON_DATA = {
   },
   "30": {
     "name": {
-      "ru": "Nidorina"
+      "ru": "Нидорина"
     },
     "types": [
       "poison"
@@ -1682,7 +1682,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1691,7 +1691,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1700,7 +1700,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1709,7 +1709,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1722,7 +1722,7 @@ const ALL_POKEMON_DATA = {
   },
   "31": {
     "name": {
-      "ru": "Nidoqueen"
+      "ru": "Нидоквин"
     },
     "types": [
       "poison",
@@ -1743,7 +1743,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1752,7 +1752,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1761,7 +1761,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1783,7 +1783,7 @@ const ALL_POKEMON_DATA = {
   },
   "32": {
     "name": {
-      "ru": "Nidoran-m"
+      "ru": "Нидоран♂"
     },
     "types": [
       "poison"
@@ -1803,7 +1803,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1843,7 +1843,7 @@ const ALL_POKEMON_DATA = {
   },
   "33": {
     "name": {
-      "ru": "Nidorino"
+      "ru": "Нидорино"
     },
     "types": [
       "poison"
@@ -1863,7 +1863,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1903,7 +1903,7 @@ const ALL_POKEMON_DATA = {
   },
   "34": {
     "name": {
-      "ru": "Nidoking"
+      "ru": "Нидокинг"
     },
     "types": [
       "poison",
@@ -1924,7 +1924,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1951,7 +1951,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -1964,7 +1964,7 @@ const ALL_POKEMON_DATA = {
   },
   "35": {
     "name": {
-      "ru": "Clefairy"
+      "ru": "Клефейри"
     },
     "types": [
       "fairy"
@@ -2002,7 +2002,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2024,7 +2024,7 @@ const ALL_POKEMON_DATA = {
   },
   "36": {
     "name": {
-      "ru": "Clefable"
+      "ru": "Клефейбл"
     },
     "types": [
       "fairy"
@@ -2062,7 +2062,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2084,7 +2084,7 @@ const ALL_POKEMON_DATA = {
   },
   "37": {
     "name": {
-      "ru": "Vulpix"
+      "ru": "Вульпикс"
     },
     "types": [
       "fire"
@@ -2103,7 +2103,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2112,7 +2112,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2143,7 +2143,7 @@ const ALL_POKEMON_DATA = {
   },
   "38": {
     "name": {
-      "ru": "Ninetales"
+      "ru": "Найнтейлс"
     },
     "types": [
       "fire"
@@ -2162,7 +2162,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2171,7 +2171,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2202,7 +2202,7 @@ const ALL_POKEMON_DATA = {
   },
   "39": {
     "name": {
-      "ru": "Jigglypuff"
+      "ru": "Джигглипуф"
     },
     "types": [
       "normal",
@@ -2263,7 +2263,7 @@ const ALL_POKEMON_DATA = {
   },
   "40": {
     "name": {
-      "ru": "Wigglytuff"
+      "ru": "Вигглитаф"
     },
     "types": [
       "normal",
@@ -2324,7 +2324,7 @@ const ALL_POKEMON_DATA = {
   },
   "41": {
     "name": {
-      "ru": "Zubat"
+      "ru": "Зубат"
     },
     "types": [
       "poison",
@@ -2362,7 +2362,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2384,7 +2384,7 @@ const ALL_POKEMON_DATA = {
   },
   "42": {
     "name": {
-      "ru": "Golbat"
+      "ru": "Голбат"
     },
     "types": [
       "poison",
@@ -2431,7 +2431,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2444,7 +2444,7 @@ const ALL_POKEMON_DATA = {
   },
   "43": {
     "name": {
-      "ru": "Oddish"
+      "ru": "Оддиш"
     },
     "types": [
       "grass",
@@ -2504,7 +2504,7 @@ const ALL_POKEMON_DATA = {
   },
   "44": {
     "name": {
-      "ru": "Gloom"
+      "ru": "Глум"
     },
     "types": [
       "grass",
@@ -2564,7 +2564,7 @@ const ALL_POKEMON_DATA = {
   },
   "45": {
     "name": {
-      "ru": "Vileplume"
+      "ru": "Вайлплум"
     },
     "types": [
       "grass",
@@ -2624,7 +2624,7 @@ const ALL_POKEMON_DATA = {
   },
   "46": {
     "name": {
-      "ru": "Paras"
+      "ru": "Парас"
     },
     "types": [
       "bug",
@@ -2645,7 +2645,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2685,7 +2685,7 @@ const ALL_POKEMON_DATA = {
   },
   "47": {
     "name": {
-      "ru": "Parasect"
+      "ru": "Парасект"
     },
     "types": [
       "bug",
@@ -2706,7 +2706,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2746,7 +2746,7 @@ const ALL_POKEMON_DATA = {
   },
   "48": {
     "name": {
-      "ru": "Venonat"
+      "ru": "Венонат"
     },
     "types": [
       "bug",
@@ -2767,7 +2767,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2807,7 +2807,7 @@ const ALL_POKEMON_DATA = {
   },
   "49": {
     "name": {
-      "ru": "Venomoth"
+      "ru": "Веномот"
     },
     "types": [
       "bug",
@@ -2846,7 +2846,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2868,7 +2868,7 @@ const ALL_POKEMON_DATA = {
   },
   "50": {
     "name": {
-      "ru": "Diglett"
+      "ru": "Диглетт"
     },
     "types": [
       "ground"
@@ -2888,7 +2888,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2906,7 +2906,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2915,7 +2915,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2928,7 +2928,7 @@ const ALL_POKEMON_DATA = {
   },
   "51": {
     "name": {
-      "ru": "Dugtrio"
+      "ru": "Дагтрио"
     },
     "types": [
       "ground"
@@ -2948,7 +2948,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2966,7 +2966,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2975,7 +2975,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -2988,7 +2988,7 @@ const ALL_POKEMON_DATA = {
   },
   "52": {
     "name": {
-      "ru": "Meowth"
+      "ru": "Мяут"
     },
     "types": [
       "normal"
@@ -3017,7 +3017,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3026,7 +3026,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3035,7 +3035,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3048,7 +3048,7 @@ const ALL_POKEMON_DATA = {
   },
   "53": {
     "name": {
-      "ru": "Persian"
+      "ru": "Персиан"
     },
     "types": [
       "normal"
@@ -3077,7 +3077,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3086,7 +3086,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3095,7 +3095,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3108,7 +3108,7 @@ const ALL_POKEMON_DATA = {
   },
   "54": {
     "name": {
-      "ru": "Psyduck"
+      "ru": "Псидак"
     },
     "types": [
       "water"
@@ -3128,7 +3128,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3137,7 +3137,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3155,7 +3155,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3168,7 +3168,7 @@ const ALL_POKEMON_DATA = {
   },
   "55": {
     "name": {
-      "ru": "Golduck"
+      "ru": "Голдак"
     },
     "types": [
       "water"
@@ -3188,7 +3188,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3197,7 +3197,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3215,7 +3215,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3228,7 +3228,7 @@ const ALL_POKEMON_DATA = {
   },
   "56": {
     "name": {
-      "ru": "Mankey"
+      "ru": "Манки"
     },
     "types": [
       "fighting"
@@ -3257,7 +3257,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3275,7 +3275,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3288,7 +3288,7 @@ const ALL_POKEMON_DATA = {
   },
   "57": {
     "name": {
-      "ru": "Primeape"
+      "ru": "Праймейп"
     },
     "types": [
       "fighting"
@@ -3317,7 +3317,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3335,7 +3335,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3348,7 +3348,7 @@ const ALL_POKEMON_DATA = {
   },
   "58": {
     "name": {
-      "ru": "Growlithe"
+      "ru": "Гроулит"
     },
     "types": [
       "fire"
@@ -3377,7 +3377,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3386,7 +3386,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3408,7 +3408,7 @@ const ALL_POKEMON_DATA = {
   },
   "59": {
     "name": {
-      "ru": "Arcanine"
+      "ru": "Арканайн"
     },
     "types": [
       "fire"
@@ -3446,7 +3446,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3455,7 +3455,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3468,7 +3468,7 @@ const ALL_POKEMON_DATA = {
   },
   "60": {
     "name": {
-      "ru": "Poliwag"
+      "ru": "Поливаг"
     },
     "types": [
       "water"
@@ -3528,7 +3528,7 @@ const ALL_POKEMON_DATA = {
   },
   "61": {
     "name": {
-      "ru": "Poliwhirl"
+      "ru": "Поливирл"
     },
     "types": [
       "water"
@@ -3588,7 +3588,7 @@ const ALL_POKEMON_DATA = {
   },
   "62": {
     "name": {
-      "ru": "Poliwrath"
+      "ru": "Поливрэт"
     },
     "types": [
       "water",
@@ -3649,7 +3649,7 @@ const ALL_POKEMON_DATA = {
   },
   "63": {
     "name": {
-      "ru": "Abra"
+      "ru": "Абра"
     },
     "types": [
       "psychic"
@@ -3682,7 +3682,7 @@ const ALL_POKEMON_DATA = {
   },
   "64": {
     "name": {
-      "ru": "Kadabra"
+      "ru": "Кадабра"
     },
     "types": [
       "psychic"
@@ -3729,7 +3729,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3742,7 +3742,7 @@ const ALL_POKEMON_DATA = {
   },
   "65": {
     "name": {
-      "ru": "Alakazam"
+      "ru": "Алаказам"
     },
     "types": [
       "psychic"
@@ -3789,7 +3789,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3802,7 +3802,7 @@ const ALL_POKEMON_DATA = {
   },
   "66": {
     "name": {
-      "ru": "Machop"
+      "ru": "Мачоп"
     },
     "types": [
       "fighting"
@@ -3831,7 +3831,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3849,7 +3849,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3862,7 +3862,7 @@ const ALL_POKEMON_DATA = {
   },
   "67": {
     "name": {
-      "ru": "Machoke"
+      "ru": "Мачок"
     },
     "types": [
       "fighting"
@@ -3891,7 +3891,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3909,7 +3909,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3922,7 +3922,7 @@ const ALL_POKEMON_DATA = {
   },
   "68": {
     "name": {
-      "ru": "Machamp"
+      "ru": "Мачемп"
     },
     "types": [
       "fighting"
@@ -3951,7 +3951,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3969,7 +3969,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -3982,7 +3982,7 @@ const ALL_POKEMON_DATA = {
   },
   "69": {
     "name": {
-      "ru": "Bellsprout"
+      "ru": "Беллспраут"
     },
     "types": [
       "grass",
@@ -4002,7 +4002,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4011,7 +4011,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4042,7 +4042,7 @@ const ALL_POKEMON_DATA = {
   },
   "70": {
     "name": {
-      "ru": "Weepinbell"
+      "ru": "Випинбелл"
     },
     "types": [
       "grass",
@@ -4062,7 +4062,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4071,7 +4071,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4102,7 +4102,7 @@ const ALL_POKEMON_DATA = {
   },
   "71": {
     "name": {
-      "ru": "Victreebel"
+      "ru": "Виктрибел"
     },
     "types": [
       "grass",
@@ -4131,7 +4131,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4140,7 +4140,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4162,7 +4162,7 @@ const ALL_POKEMON_DATA = {
   },
   "72": {
     "name": {
-      "ru": "Tentacool"
+      "ru": "Тентакул"
     },
     "types": [
       "water",
@@ -4223,7 +4223,7 @@ const ALL_POKEMON_DATA = {
   },
   "73": {
     "name": {
-      "ru": "Tentacruel"
+      "ru": "Тентакруэль"
     },
     "types": [
       "water",
@@ -4284,7 +4284,7 @@ const ALL_POKEMON_DATA = {
   },
   "74": {
     "name": {
-      "ru": "Geodude"
+      "ru": "Джеодуд"
     },
     "types": [
       "rock",
@@ -4314,7 +4314,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4345,7 +4345,7 @@ const ALL_POKEMON_DATA = {
   },
   "75": {
     "name": {
-      "ru": "Graveler"
+      "ru": "Гравелер"
     },
     "types": [
       "rock",
@@ -4375,7 +4375,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4406,7 +4406,7 @@ const ALL_POKEMON_DATA = {
   },
   "76": {
     "name": {
-      "ru": "Golem"
+      "ru": "Голем"
     },
     "types": [
       "rock",
@@ -4445,7 +4445,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4467,7 +4467,7 @@ const ALL_POKEMON_DATA = {
   },
   "77": {
     "name": {
-      "ru": "Ponyta"
+      "ru": "Понита"
     },
     "types": [
       "fire"
@@ -4496,7 +4496,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4505,7 +4505,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4527,7 +4527,7 @@ const ALL_POKEMON_DATA = {
   },
   "78": {
     "name": {
-      "ru": "Rapidash"
+      "ru": "Рапидаш"
     },
     "types": [
       "fire"
@@ -4556,7 +4556,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4587,7 +4587,7 @@ const ALL_POKEMON_DATA = {
   },
   "79": {
     "name": {
-      "ru": "Slowpoke"
+      "ru": "Слоупок"
     },
     "types": [
       "water",
@@ -4617,7 +4617,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4626,7 +4626,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4648,7 +4648,7 @@ const ALL_POKEMON_DATA = {
   },
   "80": {
     "name": {
-      "ru": "Slowbro"
+      "ru": "Слоубро"
     },
     "types": [
       "water",
@@ -4687,7 +4687,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4696,7 +4696,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4709,7 +4709,7 @@ const ALL_POKEMON_DATA = {
   },
   "81": {
     "name": {
-      "ru": "Magnemite"
+      "ru": "Магнемайт"
     },
     "types": [
       "electric",
@@ -4730,7 +4730,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4757,7 +4757,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4770,7 +4770,7 @@ const ALL_POKEMON_DATA = {
   },
   "82": {
     "name": {
-      "ru": "Magneton"
+      "ru": "Магнетон"
     },
     "types": [
       "electric",
@@ -4791,7 +4791,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4818,7 +4818,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4831,7 +4831,7 @@ const ALL_POKEMON_DATA = {
   },
   "83": {
     "name": {
-      "ru": "Farfetchd"
+      "ru": "Фарфетчд"
     },
     "types": [
       "normal",
@@ -4861,7 +4861,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "cut",
+        "name": "Разрез",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -4892,7 +4892,7 @@ const ALL_POKEMON_DATA = {
   },
   "84": {
     "name": {
-      "ru": "Doduo"
+      "ru": "Додуо"
     },
     "types": [
       "normal",
@@ -4953,7 +4953,7 @@ const ALL_POKEMON_DATA = {
   },
   "85": {
     "name": {
-      "ru": "Dodrio"
+      "ru": "Додрио"
     },
     "types": [
       "normal",
@@ -5014,7 +5014,7 @@ const ALL_POKEMON_DATA = {
   },
   "86": {
     "name": {
-      "ru": "Seel"
+      "ru": "Сил"
     },
     "types": [
       "water"
@@ -5061,7 +5061,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5074,7 +5074,7 @@ const ALL_POKEMON_DATA = {
   },
   "87": {
     "name": {
-      "ru": "Dewgong"
+      "ru": "Дьюгонг"
     },
     "types": [
       "water",
@@ -5135,7 +5135,7 @@ const ALL_POKEMON_DATA = {
   },
   "88": {
     "name": {
-      "ru": "Grimer"
+      "ru": "Граймер"
     },
     "types": [
       "poison"
@@ -5195,7 +5195,7 @@ const ALL_POKEMON_DATA = {
   },
   "89": {
     "name": {
-      "ru": "Muk"
+      "ru": "Мак"
     },
     "types": [
       "poison"
@@ -5255,7 +5255,7 @@ const ALL_POKEMON_DATA = {
   },
   "90": {
     "name": {
-      "ru": "Shellder"
+      "ru": "Шеллдер"
     },
     "types": [
       "water"
@@ -5275,7 +5275,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5284,7 +5284,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5302,7 +5302,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5315,7 +5315,7 @@ const ALL_POKEMON_DATA = {
   },
   "91": {
     "name": {
-      "ru": "Cloyster"
+      "ru": "Клойстер"
     },
     "types": [
       "water",
@@ -5336,7 +5336,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5354,7 +5354,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5376,7 +5376,7 @@ const ALL_POKEMON_DATA = {
   },
   "92": {
     "name": {
-      "ru": "Gastly"
+      "ru": "Гастли"
     },
     "types": [
       "ghost",
@@ -5435,7 +5435,7 @@ const ALL_POKEMON_DATA = {
   },
   "93": {
     "name": {
-      "ru": "Haunter"
+      "ru": "Хонтер"
     },
     "types": [
       "ghost",
@@ -5494,7 +5494,7 @@ const ALL_POKEMON_DATA = {
   },
   "94": {
     "name": {
-      "ru": "Gengar"
+      "ru": "Генгар"
     },
     "types": [
       "ghost",
@@ -5553,7 +5553,7 @@ const ALL_POKEMON_DATA = {
   },
   "95": {
     "name": {
-      "ru": "Onix"
+      "ru": "Оникс"
     },
     "types": [
       "rock",
@@ -5583,7 +5583,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5592,7 +5592,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5614,7 +5614,7 @@ const ALL_POKEMON_DATA = {
   },
   "96": {
     "name": {
-      "ru": "Drowzee"
+      "ru": "Дроузи"
     },
     "types": [
       "psychic"
@@ -5674,7 +5674,7 @@ const ALL_POKEMON_DATA = {
   },
   "97": {
     "name": {
-      "ru": "Hypno"
+      "ru": "Гипно"
     },
     "types": [
       "psychic"
@@ -5734,7 +5734,7 @@ const ALL_POKEMON_DATA = {
   },
   "98": {
     "name": {
-      "ru": "Krabby"
+      "ru": "Крабби"
     },
     "types": [
       "water"
@@ -5781,7 +5781,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5794,7 +5794,7 @@ const ALL_POKEMON_DATA = {
   },
   "99": {
     "name": {
-      "ru": "Kingler"
+      "ru": "Кинглер"
     },
     "types": [
       "water"
@@ -5841,7 +5841,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5854,7 +5854,7 @@ const ALL_POKEMON_DATA = {
   },
   "100": {
     "name": {
-      "ru": "Voltorb"
+      "ru": "Волторб"
     },
     "types": [
       "electric"
@@ -5874,7 +5874,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5892,7 +5892,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5901,7 +5901,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5914,7 +5914,7 @@ const ALL_POKEMON_DATA = {
   },
   "101": {
     "name": {
-      "ru": "Electrode"
+      "ru": "Электрод"
     },
     "types": [
       "electric"
@@ -5934,7 +5934,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5952,7 +5952,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5961,7 +5961,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -5974,7 +5974,7 @@ const ALL_POKEMON_DATA = {
   },
   "102": {
     "name": {
-      "ru": "Exeggcute"
+      "ru": "Экзеггут"
     },
     "types": [
       "grass",
@@ -6034,7 +6034,7 @@ const ALL_POKEMON_DATA = {
   },
   "103": {
     "name": {
-      "ru": "Exeggutor"
+      "ru": "Экзеггутор"
     },
     "types": [
       "grass",
@@ -6094,7 +6094,7 @@ const ALL_POKEMON_DATA = {
   },
   "104": {
     "name": {
-      "ru": "Cubone"
+      "ru": "Кубон"
     },
     "types": [
       "ground"
@@ -6141,7 +6141,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6154,7 +6154,7 @@ const ALL_POKEMON_DATA = {
   },
   "105": {
     "name": {
-      "ru": "Marowak"
+      "ru": "Маровак"
     },
     "types": [
       "ground"
@@ -6214,7 +6214,7 @@ const ALL_POKEMON_DATA = {
   },
   "106": {
     "name": {
-      "ru": "Hitmonlee"
+      "ru": "Хитмонли"
     },
     "types": [
       "fighting"
@@ -6234,7 +6234,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6274,7 +6274,7 @@ const ALL_POKEMON_DATA = {
   },
   "107": {
     "name": {
-      "ru": "Hitmonchan"
+      "ru": "Хитмончан"
     },
     "types": [
       "fighting"
@@ -6334,7 +6334,7 @@ const ALL_POKEMON_DATA = {
   },
   "108": {
     "name": {
-      "ru": "Lickitung"
+      "ru": "Ликитунг"
     },
     "types": [
       "normal"
@@ -6363,7 +6363,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6381,7 +6381,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6394,7 +6394,7 @@ const ALL_POKEMON_DATA = {
   },
   "109": {
     "name": {
-      "ru": "Koffing"
+      "ru": "Коффинг"
     },
     "types": [
       "poison"
@@ -6414,7 +6414,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6454,7 +6454,7 @@ const ALL_POKEMON_DATA = {
   },
   "110": {
     "name": {
-      "ru": "Weezing"
+      "ru": "Визинг"
     },
     "types": [
       "poison"
@@ -6474,7 +6474,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6514,7 +6514,7 @@ const ALL_POKEMON_DATA = {
   },
   "111": {
     "name": {
-      "ru": "Rhyhorn"
+      "ru": "Райхорн"
     },
     "types": [
       "ground",
@@ -6575,7 +6575,7 @@ const ALL_POKEMON_DATA = {
   },
   "112": {
     "name": {
-      "ru": "Rhydon"
+      "ru": "Райдон"
     },
     "types": [
       "ground",
@@ -6636,7 +6636,7 @@ const ALL_POKEMON_DATA = {
   },
   "113": {
     "name": {
-      "ru": "Chansey"
+      "ru": "Ченси"
     },
     "types": [
       "normal"
@@ -6674,7 +6674,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6696,7 +6696,7 @@ const ALL_POKEMON_DATA = {
   },
   "114": {
     "name": {
-      "ru": "Tangela"
+      "ru": "Тангела"
     },
     "types": [
       "grass"
@@ -6725,7 +6725,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6734,7 +6734,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6756,7 +6756,7 @@ const ALL_POKEMON_DATA = {
   },
   "115": {
     "name": {
-      "ru": "Kangaskhan"
+      "ru": "Кангасхан"
     },
     "types": [
       "normal"
@@ -6816,7 +6816,7 @@ const ALL_POKEMON_DATA = {
   },
   "116": {
     "name": {
-      "ru": "Horsea"
+      "ru": "Хорси"
     },
     "types": [
       "water"
@@ -6836,7 +6836,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6845,7 +6845,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6854,7 +6854,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6876,7 +6876,7 @@ const ALL_POKEMON_DATA = {
   },
   "117": {
     "name": {
-      "ru": "Seadra"
+      "ru": "Сидра"
     },
     "types": [
       "water"
@@ -6896,7 +6896,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6914,7 +6914,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6923,7 +6923,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6936,7 +6936,7 @@ const ALL_POKEMON_DATA = {
   },
   "118": {
     "name": {
-      "ru": "Goldeen"
+      "ru": "Голдин"
     },
     "types": [
       "water"
@@ -6983,7 +6983,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -6996,7 +6996,7 @@ const ALL_POKEMON_DATA = {
   },
   "119": {
     "name": {
-      "ru": "Seaking"
+      "ru": "Сикинг"
     },
     "types": [
       "water"
@@ -7043,7 +7043,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7056,7 +7056,7 @@ const ALL_POKEMON_DATA = {
   },
   "120": {
     "name": {
-      "ru": "Staryu"
+      "ru": "Старью"
     },
     "types": [
       "water"
@@ -7076,7 +7076,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7085,7 +7085,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7094,7 +7094,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7103,7 +7103,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7116,7 +7116,7 @@ const ALL_POKEMON_DATA = {
   },
   "121": {
     "name": {
-      "ru": "Starmie"
+      "ru": "Старми"
     },
     "types": [
       "water",
@@ -7137,7 +7137,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7146,7 +7146,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7155,7 +7155,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7164,7 +7164,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7177,7 +7177,7 @@ const ALL_POKEMON_DATA = {
   },
   "122": {
     "name": {
-      "ru": "Mr-mime"
+      "ru": "Мистер Майм"
     },
     "types": [
       "psychic",
@@ -7238,7 +7238,7 @@ const ALL_POKEMON_DATA = {
   },
   "123": {
     "name": {
-      "ru": "Scyther"
+      "ru": "Скайтер"
     },
     "types": [
       "bug",
@@ -7286,7 +7286,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7299,7 +7299,7 @@ const ALL_POKEMON_DATA = {
   },
   "124": {
     "name": {
-      "ru": "Jynx"
+      "ru": "Джинкс"
     },
     "types": [
       "ice",
@@ -7360,7 +7360,7 @@ const ALL_POKEMON_DATA = {
   },
   "125": {
     "name": {
-      "ru": "Electabuzz"
+      "ru": "Электробазз"
     },
     "types": [
       "electric"
@@ -7388,7 +7388,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7406,7 +7406,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7419,7 +7419,7 @@ const ALL_POKEMON_DATA = {
   },
   "126": {
     "name": {
-      "ru": "Magmar"
+      "ru": "Магмар"
     },
     "types": [
       "fire"
@@ -7447,7 +7447,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7456,7 +7456,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7465,7 +7465,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7478,7 +7478,7 @@ const ALL_POKEMON_DATA = {
   },
   "127": {
     "name": {
-      "ru": "Pinsir"
+      "ru": "Пинсир"
     },
     "types": [
       "bug"
@@ -7538,7 +7538,7 @@ const ALL_POKEMON_DATA = {
   },
   "128": {
     "name": {
-      "ru": "Tauros"
+      "ru": "Торос"
     },
     "types": [
       "normal"
@@ -7576,7 +7576,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7598,7 +7598,7 @@ const ALL_POKEMON_DATA = {
   },
   "129": {
     "name": {
-      "ru": "Magikarp"
+      "ru": "Мэджикарп"
     },
     "types": [
       "water"
@@ -7617,7 +7617,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7648,7 +7648,7 @@ const ALL_POKEMON_DATA = {
   },
   "130": {
     "name": {
-      "ru": "Gyarados"
+      "ru": "Гаярдос"
     },
     "types": [
       "water",
@@ -7677,7 +7677,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7695,7 +7695,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7708,7 +7708,7 @@ const ALL_POKEMON_DATA = {
   },
   "131": {
     "name": {
-      "ru": "Lapras"
+      "ru": "Лапрас"
     },
     "types": [
       "water",
@@ -7738,7 +7738,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7769,7 +7769,7 @@ const ALL_POKEMON_DATA = {
   },
   "132": {
     "name": {
-      "ru": "Ditto"
+      "ru": "Дитто"
     },
     "types": [
       "normal"
@@ -7801,7 +7801,7 @@ const ALL_POKEMON_DATA = {
   },
   "133": {
     "name": {
-      "ru": "Eevee"
+      "ru": "Иви"
     },
     "types": [
       "normal"
@@ -7821,7 +7821,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7839,7 +7839,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7861,7 +7861,7 @@ const ALL_POKEMON_DATA = {
   },
   "134": {
     "name": {
-      "ru": "Vaporeon"
+      "ru": "Вапореон"
     },
     "types": [
       "water"
@@ -7880,7 +7880,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7898,7 +7898,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7920,7 +7920,7 @@ const ALL_POKEMON_DATA = {
   },
   "135": {
     "name": {
-      "ru": "Jolteon"
+      "ru": "Джолтеон"
     },
     "types": [
       "electric"
@@ -7939,7 +7939,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7957,7 +7957,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -7979,7 +7979,7 @@ const ALL_POKEMON_DATA = {
   },
   "136": {
     "name": {
-      "ru": "Flareon"
+      "ru": "Флареон"
     },
     "types": [
       "fire"
@@ -7998,7 +7998,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8016,7 +8016,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8038,7 +8038,7 @@ const ALL_POKEMON_DATA = {
   },
   "137": {
     "name": {
-      "ru": "Porygon"
+      "ru": "Поригон"
     },
     "types": [
       "normal"
@@ -8058,7 +8058,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8085,7 +8085,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8098,7 +8098,7 @@ const ALL_POKEMON_DATA = {
   },
   "138": {
     "name": {
-      "ru": "Omanyte"
+      "ru": "Оманайт"
     },
     "types": [
       "rock",
@@ -8146,7 +8146,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8159,7 +8159,7 @@ const ALL_POKEMON_DATA = {
   },
   "139": {
     "name": {
-      "ru": "Omastar"
+      "ru": "Омастар"
     },
     "types": [
       "rock",
@@ -8207,7 +8207,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8220,7 +8220,7 @@ const ALL_POKEMON_DATA = {
   },
   "140": {
     "name": {
-      "ru": "Kabuto"
+      "ru": "Кабуто"
     },
     "types": [
       "rock",
@@ -8241,7 +8241,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8259,7 +8259,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8268,7 +8268,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8281,7 +8281,7 @@ const ALL_POKEMON_DATA = {
   },
   "141": {
     "name": {
-      "ru": "Kabutops"
+      "ru": "Кабутопс"
     },
     "types": [
       "rock",
@@ -8302,7 +8302,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8329,7 +8329,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8342,7 +8342,7 @@ const ALL_POKEMON_DATA = {
   },
   "142": {
     "name": {
-      "ru": "Aerodactyl"
+      "ru": "Аэродактиль"
     },
     "types": [
       "rock",
@@ -8372,7 +8372,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8390,7 +8390,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8403,7 +8403,7 @@ const ALL_POKEMON_DATA = {
   },
   "143": {
     "name": {
-      "ru": "Snorlax"
+      "ru": "Снорлакс"
     },
     "types": [
       "normal"
@@ -8432,7 +8432,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8463,7 +8463,7 @@ const ALL_POKEMON_DATA = {
   },
   "144": {
     "name": {
-      "ru": "Articuno"
+      "ru": "Артикуно"
     },
     "types": [
       "ice",
@@ -8492,7 +8492,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8510,7 +8510,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8523,7 +8523,7 @@ const ALL_POKEMON_DATA = {
   },
   "145": {
     "name": {
-      "ru": "Zapdos"
+      "ru": "Запдос"
     },
     "types": [
       "electric",
@@ -8543,7 +8543,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8570,7 +8570,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8583,7 +8583,7 @@ const ALL_POKEMON_DATA = {
   },
   "146": {
     "name": {
-      "ru": "Moltres"
+      "ru": "Молтрес"
     },
     "types": [
       "fire",
@@ -8621,7 +8621,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8630,7 +8630,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8643,7 +8643,7 @@ const ALL_POKEMON_DATA = {
   },
   "147": {
     "name": {
-      "ru": "Dratini"
+      "ru": "Дратини"
     },
     "types": [
       "dragon"
@@ -8662,7 +8662,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8680,7 +8680,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8689,7 +8689,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8702,7 +8702,7 @@ const ALL_POKEMON_DATA = {
   },
   "148": {
     "name": {
-      "ru": "Dragonair"
+      "ru": "Драгонэйр"
     },
     "types": [
       "dragon"
@@ -8721,7 +8721,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8739,7 +8739,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8748,7 +8748,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8761,7 +8761,7 @@ const ALL_POKEMON_DATA = {
   },
   "149": {
     "name": {
-      "ru": "Dragonite"
+      "ru": "Драгонит"
     },
     "types": [
       "dragon",
@@ -8808,7 +8808,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8821,7 +8821,7 @@ const ALL_POKEMON_DATA = {
   },
   "150": {
     "name": {
-      "ru": "Mewtwo"
+      "ru": "Мьюту"
     },
     "types": [
       "psychic"
@@ -8880,7 +8880,7 @@ const ALL_POKEMON_DATA = {
   },
   "151": {
     "name": {
-      "ru": "Mew"
+      "ru": "Мью"
     },
     "types": [
       "psychic"
@@ -8925,7 +8925,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8938,7 +8938,7 @@ const ALL_POKEMON_DATA = {
   },
   "152": {
     "name": {
-      "ru": "Chikorita"
+      "ru": "Чикорита"
     },
     "types": [
       "grass"
@@ -8957,7 +8957,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8975,7 +8975,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -8997,7 +8997,7 @@ const ALL_POKEMON_DATA = {
   },
   "153": {
     "name": {
-      "ru": "Bayleef"
+      "ru": "Бейлиф"
     },
     "types": [
       "grass"
@@ -9016,7 +9016,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9034,7 +9034,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9056,7 +9056,7 @@ const ALL_POKEMON_DATA = {
   },
   "154": {
     "name": {
-      "ru": "Meganium"
+      "ru": "Меганиум"
     },
     "types": [
       "grass"
@@ -9075,7 +9075,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9093,7 +9093,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9115,7 +9115,7 @@ const ALL_POKEMON_DATA = {
   },
   "155": {
     "name": {
-      "ru": "Cyndaquil"
+      "ru": "Синдаквил"
     },
     "types": [
       "fire"
@@ -9134,7 +9134,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9152,7 +9152,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9161,7 +9161,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9174,7 +9174,7 @@ const ALL_POKEMON_DATA = {
   },
   "156": {
     "name": {
-      "ru": "Quilava"
+      "ru": "Квилава"
     },
     "types": [
       "fire"
@@ -9193,7 +9193,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9211,7 +9211,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9220,7 +9220,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9233,7 +9233,7 @@ const ALL_POKEMON_DATA = {
   },
   "157": {
     "name": {
-      "ru": "Typhlosion"
+      "ru": "Тайфложн"
     },
     "types": [
       "fire"
@@ -9252,7 +9252,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9270,7 +9270,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9279,7 +9279,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9292,7 +9292,7 @@ const ALL_POKEMON_DATA = {
   },
   "158": {
     "name": {
-      "ru": "Totodile"
+      "ru": "Тотодайл"
     },
     "types": [
       "water"
@@ -9311,7 +9311,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9329,7 +9329,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9338,7 +9338,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9351,7 +9351,7 @@ const ALL_POKEMON_DATA = {
   },
   "159": {
     "name": {
-      "ru": "Croconaw"
+      "ru": "Кроконав"
     },
     "types": [
       "water"
@@ -9370,7 +9370,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9388,7 +9388,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9397,7 +9397,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9410,7 +9410,7 @@ const ALL_POKEMON_DATA = {
   },
   "160": {
     "name": {
-      "ru": "Feraligatr"
+      "ru": "Фералигатр"
     },
     "types": [
       "water"
@@ -9429,7 +9429,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9447,7 +9447,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9456,7 +9456,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9469,7 +9469,7 @@ const ALL_POKEMON_DATA = {
   },
   "161": {
     "name": {
-      "ru": "Sentret"
+      "ru": "Сентрет"
     },
     "types": [
       "normal"
@@ -9489,7 +9489,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9498,7 +9498,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9507,7 +9507,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9529,7 +9529,7 @@ const ALL_POKEMON_DATA = {
   },
   "162": {
     "name": {
-      "ru": "Furret"
+      "ru": "Фуррет"
     },
     "types": [
       "normal"
@@ -9549,7 +9549,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9558,7 +9558,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9576,7 +9576,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9589,7 +9589,7 @@ const ALL_POKEMON_DATA = {
   },
   "163": {
     "name": {
-      "ru": "Hoothoot"
+      "ru": "Хутхут"
     },
     "types": [
       "normal",
@@ -9610,7 +9610,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9628,7 +9628,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9650,7 +9650,7 @@ const ALL_POKEMON_DATA = {
   },
   "164": {
     "name": {
-      "ru": "Noctowl"
+      "ru": "Ноктаул"
     },
     "types": [
       "normal",
@@ -9671,7 +9671,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9689,7 +9689,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9711,7 +9711,7 @@ const ALL_POKEMON_DATA = {
   },
   "165": {
     "name": {
-      "ru": "Ledyba"
+      "ru": "Ледиба"
     },
     "types": [
       "bug",
@@ -9741,7 +9741,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9772,7 +9772,7 @@ const ALL_POKEMON_DATA = {
   },
   "166": {
     "name": {
-      "ru": "Ledian"
+      "ru": "Ледиан"
     },
     "types": [
       "bug",
@@ -9802,7 +9802,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -9833,7 +9833,7 @@ const ALL_POKEMON_DATA = {
   },
   "167": {
     "name": {
-      "ru": "Spinarak"
+      "ru": "Спинарак"
     },
     "types": [
       "bug",
@@ -9894,7 +9894,7 @@ const ALL_POKEMON_DATA = {
   },
   "168": {
     "name": {
-      "ru": "Ariados"
+      "ru": "Ариадос"
     },
     "types": [
       "bug",
@@ -9955,7 +9955,7 @@ const ALL_POKEMON_DATA = {
   },
   "169": {
     "name": {
-      "ru": "Crobat"
+      "ru": "Кробат"
     },
     "types": [
       "poison",
@@ -9993,7 +9993,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10015,7 +10015,7 @@ const ALL_POKEMON_DATA = {
   },
   "170": {
     "name": {
-      "ru": "Chinchou"
+      "ru": "Чинчоу"
     },
     "types": [
       "water",
@@ -10054,7 +10054,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10063,7 +10063,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10076,7 +10076,7 @@ const ALL_POKEMON_DATA = {
   },
   "171": {
     "name": {
-      "ru": "Lanturn"
+      "ru": "Лантурн"
     },
     "types": [
       "water",
@@ -10115,7 +10115,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10124,7 +10124,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10137,7 +10137,7 @@ const ALL_POKEMON_DATA = {
   },
   "172": {
     "name": {
-      "ru": "Pichu"
+      "ru": "Пичу"
     },
     "types": [
       "electric"
@@ -10156,7 +10156,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10165,7 +10165,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10174,7 +10174,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10196,7 +10196,7 @@ const ALL_POKEMON_DATA = {
   },
   "173": {
     "name": {
-      "ru": "Cleffa"
+      "ru": "Клеффа"
     },
     "types": [
       "fairy"
@@ -10225,7 +10225,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10256,7 +10256,7 @@ const ALL_POKEMON_DATA = {
   },
   "174": {
     "name": {
-      "ru": "Igglybuff"
+      "ru": "Игглибафф"
     },
     "types": [
       "normal",
@@ -10317,7 +10317,7 @@ const ALL_POKEMON_DATA = {
   },
   "175": {
     "name": {
-      "ru": "Togepi"
+      "ru": "Тогепи"
     },
     "types": [
       "fairy"
@@ -10346,7 +10346,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10364,7 +10364,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10377,7 +10377,7 @@ const ALL_POKEMON_DATA = {
   },
   "176": {
     "name": {
-      "ru": "Togetic"
+      "ru": "Тогетик"
     },
     "types": [
       "fairy",
@@ -10407,7 +10407,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10425,7 +10425,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10438,7 +10438,7 @@ const ALL_POKEMON_DATA = {
   },
   "177": {
     "name": {
-      "ru": "Natu"
+      "ru": "Нату"
     },
     "types": [
       "psychic",
@@ -10459,7 +10459,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10477,7 +10477,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10499,7 +10499,7 @@ const ALL_POKEMON_DATA = {
   },
   "178": {
     "name": {
-      "ru": "Xatu"
+      "ru": "Ксату"
     },
     "types": [
       "psychic",
@@ -10520,7 +10520,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10538,7 +10538,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10560,7 +10560,7 @@ const ALL_POKEMON_DATA = {
   },
   "179": {
     "name": {
-      "ru": "Mareep"
+      "ru": "Мэрип"
     },
     "types": [
       "electric"
@@ -10579,7 +10579,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10597,7 +10597,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10606,7 +10606,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10619,7 +10619,7 @@ const ALL_POKEMON_DATA = {
   },
   "180": {
     "name": {
-      "ru": "Flaaffy"
+      "ru": "Флаффи"
     },
     "types": [
       "electric"
@@ -10638,7 +10638,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10656,7 +10656,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10665,7 +10665,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10678,7 +10678,7 @@ const ALL_POKEMON_DATA = {
   },
   "181": {
     "name": {
-      "ru": "Ampharos"
+      "ru": "Амфарос"
     },
     "types": [
       "electric"
@@ -10715,7 +10715,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10737,7 +10737,7 @@ const ALL_POKEMON_DATA = {
   },
   "182": {
     "name": {
-      "ru": "Bellossom"
+      "ru": "Беллоссом"
     },
     "types": [
       "grass"
@@ -10796,7 +10796,7 @@ const ALL_POKEMON_DATA = {
   },
   "183": {
     "name": {
-      "ru": "Marill"
+      "ru": "Мэрилл"
     },
     "types": [
       "water",
@@ -10817,7 +10817,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10826,7 +10826,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10844,7 +10844,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10857,7 +10857,7 @@ const ALL_POKEMON_DATA = {
   },
   "184": {
     "name": {
-      "ru": "Azumarill"
+      "ru": "Азумэрилл"
     },
     "types": [
       "water",
@@ -10878,7 +10878,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10887,7 +10887,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10905,7 +10905,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10918,7 +10918,7 @@ const ALL_POKEMON_DATA = {
   },
   "185": {
     "name": {
-      "ru": "Sudowoodo"
+      "ru": "Судовудо"
     },
     "types": [
       "rock"
@@ -10938,7 +10938,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10947,7 +10947,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -10978,7 +10978,7 @@ const ALL_POKEMON_DATA = {
   },
   "186": {
     "name": {
-      "ru": "Politoed"
+      "ru": "Политод"
     },
     "types": [
       "water"
@@ -11038,7 +11038,7 @@ const ALL_POKEMON_DATA = {
   },
   "187": {
     "name": {
-      "ru": "Hoppip"
+      "ru": "Хоппип"
     },
     "types": [
       "grass",
@@ -11059,7 +11059,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11068,7 +11068,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11099,7 +11099,7 @@ const ALL_POKEMON_DATA = {
   },
   "188": {
     "name": {
-      "ru": "Skiploom"
+      "ru": "Скиплум"
     },
     "types": [
       "grass",
@@ -11120,7 +11120,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11129,7 +11129,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11160,7 +11160,7 @@ const ALL_POKEMON_DATA = {
   },
   "189": {
     "name": {
-      "ru": "Jumpluff"
+      "ru": "Джамплафф"
     },
     "types": [
       "grass",
@@ -11181,7 +11181,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11190,7 +11190,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11221,7 +11221,7 @@ const ALL_POKEMON_DATA = {
   },
   "190": {
     "name": {
-      "ru": "Aipom"
+      "ru": "Эйпом"
     },
     "types": [
       "normal"
@@ -11241,7 +11241,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11268,7 +11268,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11281,7 +11281,7 @@ const ALL_POKEMON_DATA = {
   },
   "191": {
     "name": {
-      "ru": "Sunkern"
+      "ru": "Санкерн"
     },
     "types": [
       "grass"
@@ -11301,7 +11301,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11341,7 +11341,7 @@ const ALL_POKEMON_DATA = {
   },
   "192": {
     "name": {
-      "ru": "Sunflora"
+      "ru": "Санфлора"
     },
     "types": [
       "grass"
@@ -11370,7 +11370,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11401,7 +11401,7 @@ const ALL_POKEMON_DATA = {
   },
   "193": {
     "name": {
-      "ru": "Yanma"
+      "ru": "Янма"
     },
     "types": [
       "bug",
@@ -11440,7 +11440,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11462,7 +11462,7 @@ const ALL_POKEMON_DATA = {
   },
   "194": {
     "name": {
-      "ru": "Wooper"
+      "ru": "Вупер"
     },
     "types": [
       "water",
@@ -11483,7 +11483,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11492,7 +11492,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11510,7 +11510,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11523,7 +11523,7 @@ const ALL_POKEMON_DATA = {
   },
   "195": {
     "name": {
-      "ru": "Quagsire"
+      "ru": "Квэгсайр"
     },
     "types": [
       "water",
@@ -11544,7 +11544,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11553,7 +11553,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11571,7 +11571,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11584,7 +11584,7 @@ const ALL_POKEMON_DATA = {
   },
   "196": {
     "name": {
-      "ru": "Espeon"
+      "ru": "Эспеон"
     },
     "types": [
       "psychic"
@@ -11612,7 +11612,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11643,7 +11643,7 @@ const ALL_POKEMON_DATA = {
   },
   "197": {
     "name": {
-      "ru": "Umbreon"
+      "ru": "Амбреон"
     },
     "types": [
       "dark"
@@ -11671,7 +11671,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11702,7 +11702,7 @@ const ALL_POKEMON_DATA = {
   },
   "198": {
     "name": {
-      "ru": "Murkrow"
+      "ru": "Маркроу"
     },
     "types": [
       "dark",
@@ -11763,7 +11763,7 @@ const ALL_POKEMON_DATA = {
   },
   "199": {
     "name": {
-      "ru": "Slowking"
+      "ru": "Слоукинг"
     },
     "types": [
       "water",
@@ -11793,7 +11793,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11802,7 +11802,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11824,7 +11824,7 @@ const ALL_POKEMON_DATA = {
   },
   "200": {
     "name": {
-      "ru": "Misdreavus"
+      "ru": "Мисдривус"
     },
     "types": [
       "ghost"
@@ -11842,7 +11842,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -11882,7 +11882,7 @@ const ALL_POKEMON_DATA = {
   },
   "201": {
     "name": {
-      "ru": "Unown"
+      "ru": "Аноун"
     },
     "types": [
       "psychic"
@@ -11913,7 +11913,7 @@ const ALL_POKEMON_DATA = {
   },
   "202": {
     "name": {
-      "ru": "Wobbuffet"
+      "ru": "Воббафет"
     },
     "types": [
       "psychic"
@@ -11972,7 +11972,7 @@ const ALL_POKEMON_DATA = {
   },
   "203": {
     "name": {
-      "ru": "Girafarig"
+      "ru": "Жирафариг"
     },
     "types": [
       "normal",
@@ -12002,7 +12002,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12011,7 +12011,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12033,7 +12033,7 @@ const ALL_POKEMON_DATA = {
   },
   "204": {
     "name": {
-      "ru": "Pineco"
+      "ru": "Пайнеко"
     },
     "types": [
       "bug"
@@ -12052,7 +12052,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12092,7 +12092,7 @@ const ALL_POKEMON_DATA = {
   },
   "205": {
     "name": {
-      "ru": "Forretress"
+      "ru": "Форретресс"
     },
     "types": [
       "bug",
@@ -12112,7 +12112,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12152,7 +12152,7 @@ const ALL_POKEMON_DATA = {
   },
   "206": {
     "name": {
-      "ru": "Dunsparce"
+      "ru": "Данспорс"
     },
     "types": [
       "normal"
@@ -12199,7 +12199,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12212,7 +12212,7 @@ const ALL_POKEMON_DATA = {
   },
   "207": {
     "name": {
-      "ru": "Gligar"
+      "ru": "Глайгер"
     },
     "types": [
       "ground",
@@ -12273,7 +12273,7 @@ const ALL_POKEMON_DATA = {
   },
   "208": {
     "name": {
-      "ru": "Steelix"
+      "ru": "Стиликс"
     },
     "types": [
       "steel",
@@ -12303,7 +12303,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12312,7 +12312,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12334,7 +12334,7 @@ const ALL_POKEMON_DATA = {
   },
   "209": {
     "name": {
-      "ru": "Snubbull"
+      "ru": "Снаббл"
     },
     "types": [
       "fairy"
@@ -12363,7 +12363,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12381,7 +12381,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12394,7 +12394,7 @@ const ALL_POKEMON_DATA = {
   },
   "210": {
     "name": {
-      "ru": "Granbull"
+      "ru": "Гранбулл"
     },
     "types": [
       "fairy"
@@ -12423,7 +12423,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12441,7 +12441,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12454,7 +12454,7 @@ const ALL_POKEMON_DATA = {
   },
   "211": {
     "name": {
-      "ru": "Qwilfish"
+      "ru": "Квилфиш"
     },
     "types": [
       "water",
@@ -12475,7 +12475,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12515,7 +12515,7 @@ const ALL_POKEMON_DATA = {
   },
   "212": {
     "name": {
-      "ru": "Scizor"
+      "ru": "Сизор"
     },
     "types": [
       "bug",
@@ -12563,7 +12563,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12576,7 +12576,7 @@ const ALL_POKEMON_DATA = {
   },
   "213": {
     "name": {
-      "ru": "Shuckle"
+      "ru": "Шакл"
     },
     "types": [
       "bug",
@@ -12637,7 +12637,7 @@ const ALL_POKEMON_DATA = {
   },
   "214": {
     "name": {
-      "ru": "Heracross"
+      "ru": "Геракросс"
     },
     "types": [
       "bug",
@@ -12685,7 +12685,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12698,7 +12698,7 @@ const ALL_POKEMON_DATA = {
   },
   "215": {
     "name": {
-      "ru": "Sneasel"
+      "ru": "Снизел"
     },
     "types": [
       "dark",
@@ -12719,7 +12719,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12737,7 +12737,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12759,7 +12759,7 @@ const ALL_POKEMON_DATA = {
   },
   "216": {
     "name": {
-      "ru": "Teddiursa"
+      "ru": "Теддиурса"
     },
     "types": [
       "normal"
@@ -12779,7 +12779,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12788,7 +12788,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12819,7 +12819,7 @@ const ALL_POKEMON_DATA = {
   },
   "217": {
     "name": {
-      "ru": "Ursaring"
+      "ru": "Урсаринг"
     },
     "types": [
       "normal"
@@ -12839,7 +12839,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12848,7 +12848,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12879,7 +12879,7 @@ const ALL_POKEMON_DATA = {
   },
   "218": {
     "name": {
-      "ru": "Slugma"
+      "ru": "Слагма"
     },
     "types": [
       "fire"
@@ -12908,7 +12908,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12917,7 +12917,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12939,7 +12939,7 @@ const ALL_POKEMON_DATA = {
   },
   "219": {
     "name": {
-      "ru": "Magcargo"
+      "ru": "Магкарго"
     },
     "types": [
       "fire",
@@ -12969,7 +12969,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -12978,7 +12978,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13000,7 +13000,7 @@ const ALL_POKEMON_DATA = {
   },
   "220": {
     "name": {
-      "ru": "Swinub"
+      "ru": "Свайнаб"
     },
     "types": [
       "ice",
@@ -13021,7 +13021,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13061,7 +13061,7 @@ const ALL_POKEMON_DATA = {
   },
   "221": {
     "name": {
-      "ru": "Piloswine"
+      "ru": "Пилосвайн"
     },
     "types": [
       "ice",
@@ -13100,7 +13100,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13122,7 +13122,7 @@ const ALL_POKEMON_DATA = {
   },
   "222": {
     "name": {
-      "ru": "Corsola"
+      "ru": "Корсола"
     },
     "types": [
       "water",
@@ -13143,7 +13143,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13152,7 +13152,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13183,7 +13183,7 @@ const ALL_POKEMON_DATA = {
   },
   "223": {
     "name": {
-      "ru": "Remoraid"
+      "ru": "Реморейд"
     },
     "types": [
       "water"
@@ -13203,7 +13203,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13212,7 +13212,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13221,7 +13221,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13243,7 +13243,7 @@ const ALL_POKEMON_DATA = {
   },
   "224": {
     "name": {
-      "ru": "Octillery"
+      "ru": "Октиллери"
     },
     "types": [
       "water"
@@ -13272,7 +13272,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13281,7 +13281,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13290,7 +13290,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13303,7 +13303,7 @@ const ALL_POKEMON_DATA = {
   },
   "225": {
     "name": {
-      "ru": "Delibird"
+      "ru": "Дэлибёд"
     },
     "types": [
       "ice",
@@ -13346,7 +13346,7 @@ const ALL_POKEMON_DATA = {
   },
   "226": {
     "name": {
-      "ru": "Mantine"
+      "ru": "Мантин"
     },
     "types": [
       "water",
@@ -13385,7 +13385,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13407,7 +13407,7 @@ const ALL_POKEMON_DATA = {
   },
   "227": {
     "name": {
-      "ru": "Skarmory"
+      "ru": "Скармори"
     },
     "types": [
       "steel",
@@ -13455,7 +13455,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13468,7 +13468,7 @@ const ALL_POKEMON_DATA = {
   },
   "228": {
     "name": {
-      "ru": "Houndour"
+      "ru": "Хаундаур"
     },
     "types": [
       "dark",
@@ -13489,7 +13489,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13498,7 +13498,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13516,7 +13516,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13529,7 +13529,7 @@ const ALL_POKEMON_DATA = {
   },
   "229": {
     "name": {
-      "ru": "Houndoom"
+      "ru": "Хаундум"
     },
     "types": [
       "dark",
@@ -13550,7 +13550,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13559,7 +13559,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13577,7 +13577,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13590,7 +13590,7 @@ const ALL_POKEMON_DATA = {
   },
   "230": {
     "name": {
-      "ru": "Kingdra"
+      "ru": "Кингдра"
     },
     "types": [
       "water",
@@ -13611,7 +13611,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13620,7 +13620,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13629,7 +13629,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13651,7 +13651,7 @@ const ALL_POKEMON_DATA = {
   },
   "231": {
     "name": {
-      "ru": "Phanpy"
+      "ru": "Фанфи"
     },
     "types": [
       "ground"
@@ -13670,7 +13670,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13679,7 +13679,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13710,7 +13710,7 @@ const ALL_POKEMON_DATA = {
   },
   "232": {
     "name": {
-      "ru": "Donphan"
+      "ru": "Донфан"
     },
     "types": [
       "ground"
@@ -13729,7 +13729,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13756,7 +13756,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13769,7 +13769,7 @@ const ALL_POKEMON_DATA = {
   },
   "233": {
     "name": {
-      "ru": "Porygon2"
+      "ru": "Поригон 2"
     },
     "types": [
       "normal"
@@ -13789,7 +13789,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13807,7 +13807,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13816,7 +13816,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13829,7 +13829,7 @@ const ALL_POKEMON_DATA = {
   },
   "234": {
     "name": {
-      "ru": "Stantler"
+      "ru": "Стэнтлер"
     },
     "types": [
       "normal"
@@ -13876,7 +13876,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13889,7 +13889,7 @@ const ALL_POKEMON_DATA = {
   },
   "235": {
     "name": {
-      "ru": "Smeargle"
+      "ru": "Смиргл"
     },
     "types": [
       "normal"
@@ -13922,7 +13922,7 @@ const ALL_POKEMON_DATA = {
   },
   "236": {
     "name": {
-      "ru": "Tyrogue"
+      "ru": "Тирогу"
     },
     "types": [
       "fighting"
@@ -13942,7 +13942,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -13982,7 +13982,7 @@ const ALL_POKEMON_DATA = {
   },
   "237": {
     "name": {
-      "ru": "Hitmontop"
+      "ru": "Хитмонтоп"
     },
     "types": [
       "fighting"
@@ -14011,7 +14011,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14029,7 +14029,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14042,7 +14042,7 @@ const ALL_POKEMON_DATA = {
   },
   "238": {
     "name": {
-      "ru": "Smoochum"
+      "ru": "Смучам"
     },
     "types": [
       "ice",
@@ -14103,7 +14103,7 @@ const ALL_POKEMON_DATA = {
   },
   "239": {
     "name": {
-      "ru": "Elekid"
+      "ru": "Элекид"
     },
     "types": [
       "electric"
@@ -14131,7 +14131,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14149,7 +14149,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14162,7 +14162,7 @@ const ALL_POKEMON_DATA = {
   },
   "240": {
     "name": {
-      "ru": "Magby"
+      "ru": "Магби"
     },
     "types": [
       "fire"
@@ -14190,7 +14190,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14199,7 +14199,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14208,7 +14208,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14221,7 +14221,7 @@ const ALL_POKEMON_DATA = {
   },
   "241": {
     "name": {
-      "ru": "Miltank"
+      "ru": "Милтанк"
     },
     "types": [
       "normal"
@@ -14259,7 +14259,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14281,7 +14281,7 @@ const ALL_POKEMON_DATA = {
   },
   "242": {
     "name": {
-      "ru": "Blissey"
+      "ru": "Блисси"
     },
     "types": [
       "normal"
@@ -14319,7 +14319,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14341,7 +14341,7 @@ const ALL_POKEMON_DATA = {
   },
   "243": {
     "name": {
-      "ru": "Raikou"
+      "ru": "Райкоу"
     },
     "types": [
       "electric"
@@ -14360,7 +14360,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14369,7 +14369,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14387,7 +14387,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14400,7 +14400,7 @@ const ALL_POKEMON_DATA = {
   },
   "244": {
     "name": {
-      "ru": "Entei"
+      "ru": "Энтей"
     },
     "types": [
       "fire"
@@ -14428,7 +14428,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14437,7 +14437,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14459,7 +14459,7 @@ const ALL_POKEMON_DATA = {
   },
   "245": {
     "name": {
-      "ru": "Suicune"
+      "ru": "Суйкун"
     },
     "types": [
       "water"
@@ -14487,7 +14487,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14496,7 +14496,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14518,7 +14518,7 @@ const ALL_POKEMON_DATA = {
   },
   "246": {
     "name": {
-      "ru": "Larvitar"
+      "ru": "Ларвитар"
     },
     "types": [
       "rock",
@@ -14538,7 +14538,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14556,7 +14556,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14565,7 +14565,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14578,7 +14578,7 @@ const ALL_POKEMON_DATA = {
   },
   "247": {
     "name": {
-      "ru": "Pupitar"
+      "ru": "Пупитар"
     },
     "types": [
       "rock",
@@ -14597,7 +14597,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14615,7 +14615,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14624,7 +14624,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14637,7 +14637,7 @@ const ALL_POKEMON_DATA = {
   },
   "248": {
     "name": {
-      "ru": "Tyranitar"
+      "ru": "Тиранитар"
     },
     "types": [
       "rock",
@@ -14657,7 +14657,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14675,7 +14675,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14684,7 +14684,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14697,7 +14697,7 @@ const ALL_POKEMON_DATA = {
   },
   "249": {
     "name": {
-      "ru": "Lugia"
+      "ru": "Люджия"
     },
     "types": [
       "psychic",
@@ -14744,7 +14744,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14757,7 +14757,7 @@ const ALL_POKEMON_DATA = {
   },
   "250": {
     "name": {
-      "ru": "Ho-oh"
+      "ru": "Хо-Ох"
     },
     "types": [
       "fire",
@@ -14804,7 +14804,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fire-blast",
+        "name": "Огненный взрыв",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14817,7 +14817,7 @@ const ALL_POKEMON_DATA = {
   },
   "251": {
     "name": {
-      "ru": "Celebi"
+      "ru": "Целеби"
     },
     "types": [
       "psychic",
@@ -14876,7 +14876,7 @@ const ALL_POKEMON_DATA = {
   },
   "252": {
     "name": {
-      "ru": "Treecko"
+      "ru": "Трико"
     },
     "types": [
       "grass"
@@ -14904,7 +14904,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14913,7 +14913,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14935,7 +14935,7 @@ const ALL_POKEMON_DATA = {
   },
   "253": {
     "name": {
-      "ru": "Grovyle"
+      "ru": "Гроувайл"
     },
     "types": [
       "grass"
@@ -14963,7 +14963,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14972,7 +14972,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -14994,7 +14994,7 @@ const ALL_POKEMON_DATA = {
   },
   "254": {
     "name": {
-      "ru": "Sceptile"
+      "ru": "Скептайл"
     },
     "types": [
       "grass"
@@ -15022,7 +15022,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15031,7 +15031,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15053,7 +15053,7 @@ const ALL_POKEMON_DATA = {
   },
   "255": {
     "name": {
-      "ru": "Torchic"
+      "ru": "Торчик"
     },
     "types": [
       "fire"
@@ -15072,7 +15072,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15090,7 +15090,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15099,7 +15099,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15112,7 +15112,7 @@ const ALL_POKEMON_DATA = {
   },
   "256": {
     "name": {
-      "ru": "Combusken"
+      "ru": "Комбускен"
     },
     "types": [
       "fire",
@@ -15132,7 +15132,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15141,7 +15141,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15159,7 +15159,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15172,7 +15172,7 @@ const ALL_POKEMON_DATA = {
   },
   "257": {
     "name": {
-      "ru": "Blaziken"
+      "ru": "Блейзикен"
     },
     "types": [
       "fire",
@@ -15201,7 +15201,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15210,7 +15210,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15232,7 +15232,7 @@ const ALL_POKEMON_DATA = {
   },
   "258": {
     "name": {
-      "ru": "Mudkip"
+      "ru": "Мадкип"
     },
     "types": [
       "water"
@@ -15251,7 +15251,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15269,7 +15269,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15291,7 +15291,7 @@ const ALL_POKEMON_DATA = {
   },
   "259": {
     "name": {
-      "ru": "Marshtomp"
+      "ru": "Марштомп"
     },
     "types": [
       "water",
@@ -15311,7 +15311,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15329,7 +15329,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15351,7 +15351,7 @@ const ALL_POKEMON_DATA = {
   },
   "260": {
     "name": {
-      "ru": "Swampert"
+      "ru": "Свамперт"
     },
     "types": [
       "water",
@@ -15371,7 +15371,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15389,7 +15389,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15411,7 +15411,7 @@ const ALL_POKEMON_DATA = {
   },
   "261": {
     "name": {
-      "ru": "Poochyena"
+      "ru": "Пучиена"
     },
     "types": [
       "dark"
@@ -15449,7 +15449,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15471,7 +15471,7 @@ const ALL_POKEMON_DATA = {
   },
   "262": {
     "name": {
-      "ru": "Mightyena"
+      "ru": "Майтиена"
     },
     "types": [
       "dark"
@@ -15509,7 +15509,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15531,7 +15531,7 @@ const ALL_POKEMON_DATA = {
   },
   "263": {
     "name": {
-      "ru": "Zigzagoon"
+      "ru": "Зигзагун"
     },
     "types": [
       "normal"
@@ -15569,7 +15569,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15591,7 +15591,7 @@ const ALL_POKEMON_DATA = {
   },
   "264": {
     "name": {
-      "ru": "Linoone"
+      "ru": "Лайнун"
     },
     "types": [
       "normal"
@@ -15629,7 +15629,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15651,7 +15651,7 @@ const ALL_POKEMON_DATA = {
   },
   "265": {
     "name": {
-      "ru": "Wurmple"
+      "ru": "Вёрмпл"
     },
     "types": [
       "bug"
@@ -15670,7 +15670,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15710,7 +15710,7 @@ const ALL_POKEMON_DATA = {
   },
   "266": {
     "name": {
-      "ru": "Silcoon"
+      "ru": "Силкун"
     },
     "types": [
       "bug"
@@ -15728,7 +15728,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15768,7 +15768,7 @@ const ALL_POKEMON_DATA = {
   },
   "267": {
     "name": {
-      "ru": "Beautifly"
+      "ru": "Бьютифлай"
     },
     "types": [
       "bug",
@@ -15806,7 +15806,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15828,7 +15828,7 @@ const ALL_POKEMON_DATA = {
   },
   "268": {
     "name": {
-      "ru": "Cascoon"
+      "ru": "Каскун"
     },
     "types": [
       "bug"
@@ -15846,7 +15846,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15886,7 +15886,7 @@ const ALL_POKEMON_DATA = {
   },
   "269": {
     "name": {
-      "ru": "Dustox"
+      "ru": "Дастокс"
     },
     "types": [
       "bug",
@@ -15924,7 +15924,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15946,7 +15946,7 @@ const ALL_POKEMON_DATA = {
   },
   "270": {
     "name": {
-      "ru": "Lotad"
+      "ru": "Лотад"
     },
     "types": [
       "water",
@@ -15967,7 +15967,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -15985,7 +15985,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16007,7 +16007,7 @@ const ALL_POKEMON_DATA = {
   },
   "271": {
     "name": {
-      "ru": "Lombre"
+      "ru": "Ломбре"
     },
     "types": [
       "water",
@@ -16028,7 +16028,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16046,7 +16046,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16055,7 +16055,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16068,7 +16068,7 @@ const ALL_POKEMON_DATA = {
   },
   "272": {
     "name": {
-      "ru": "Ludicolo"
+      "ru": "Лудиколо"
     },
     "types": [
       "water",
@@ -16089,7 +16089,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16107,7 +16107,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16116,7 +16116,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16129,7 +16129,7 @@ const ALL_POKEMON_DATA = {
   },
   "273": {
     "name": {
-      "ru": "Seedot"
+      "ru": "Сидот"
     },
     "types": [
       "grass"
@@ -16158,7 +16158,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16189,7 +16189,7 @@ const ALL_POKEMON_DATA = {
   },
   "274": {
     "name": {
-      "ru": "Nuzleaf"
+      "ru": "Назлиф"
     },
     "types": [
       "grass",
@@ -16228,7 +16228,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16250,7 +16250,7 @@ const ALL_POKEMON_DATA = {
   },
   "275": {
     "name": {
-      "ru": "Shiftry"
+      "ru": "Шифтри"
     },
     "types": [
       "grass",
@@ -16289,7 +16289,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16311,7 +16311,7 @@ const ALL_POKEMON_DATA = {
   },
   "276": {
     "name": {
-      "ru": "Taillow"
+      "ru": "Тейлоу"
     },
     "types": [
       "normal",
@@ -16340,7 +16340,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16371,7 +16371,7 @@ const ALL_POKEMON_DATA = {
   },
   "277": {
     "name": {
-      "ru": "Swellow"
+      "ru": "Свеллоу"
     },
     "types": [
       "normal",
@@ -16400,7 +16400,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16431,7 +16431,7 @@ const ALL_POKEMON_DATA = {
   },
   "278": {
     "name": {
-      "ru": "Wingull"
+      "ru": "Вингалл"
     },
     "types": [
       "water",
@@ -16461,7 +16461,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16492,7 +16492,7 @@ const ALL_POKEMON_DATA = {
   },
   "279": {
     "name": {
-      "ru": "Pelipper"
+      "ru": "Пелиппер"
     },
     "types": [
       "water",
@@ -16522,7 +16522,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16553,7 +16553,7 @@ const ALL_POKEMON_DATA = {
   },
   "280": {
     "name": {
-      "ru": "Ralts"
+      "ru": "Ральтс"
     },
     "types": [
       "psychic",
@@ -16574,7 +16574,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16601,7 +16601,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16614,7 +16614,7 @@ const ALL_POKEMON_DATA = {
   },
   "281": {
     "name": {
-      "ru": "Kirlia"
+      "ru": "Кирлия"
     },
     "types": [
       "psychic",
@@ -16635,7 +16635,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16662,7 +16662,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16675,7 +16675,7 @@ const ALL_POKEMON_DATA = {
   },
   "282": {
     "name": {
-      "ru": "Gardevoir"
+      "ru": "Гардевуар"
     },
     "types": [
       "psychic",
@@ -16696,7 +16696,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16723,7 +16723,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16736,7 +16736,7 @@ const ALL_POKEMON_DATA = {
   },
   "283": {
     "name": {
-      "ru": "Surskit"
+      "ru": "Сёрскит"
     },
     "types": [
       "bug",
@@ -16765,7 +16765,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16796,7 +16796,7 @@ const ALL_POKEMON_DATA = {
   },
   "284": {
     "name": {
-      "ru": "Masquerain"
+      "ru": "Маскверейн"
     },
     "types": [
       "bug",
@@ -16856,7 +16856,7 @@ const ALL_POKEMON_DATA = {
   },
   "285": {
     "name": {
-      "ru": "Shroomish"
+      "ru": "Шрумиш"
     },
     "types": [
       "grass"
@@ -16885,7 +16885,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16916,7 +16916,7 @@ const ALL_POKEMON_DATA = {
   },
   "286": {
     "name": {
-      "ru": "Breloom"
+      "ru": "Брелум"
     },
     "types": [
       "grass",
@@ -16946,7 +16946,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -16977,7 +16977,7 @@ const ALL_POKEMON_DATA = {
   },
   "287": {
     "name": {
-      "ru": "Slakoth"
+      "ru": "Слэйкот"
     },
     "types": [
       "normal"
@@ -16995,7 +16995,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17035,7 +17035,7 @@ const ALL_POKEMON_DATA = {
   },
   "288": {
     "name": {
-      "ru": "Vigoroth"
+      "ru": "Вигорот"
     },
     "types": [
       "normal"
@@ -17053,7 +17053,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17093,7 +17093,7 @@ const ALL_POKEMON_DATA = {
   },
   "289": {
     "name": {
-      "ru": "Slaking"
+      "ru": "Слэйкинг"
     },
     "types": [
       "normal"
@@ -17111,7 +17111,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17151,7 +17151,7 @@ const ALL_POKEMON_DATA = {
   },
   "290": {
     "name": {
-      "ru": "Nincada"
+      "ru": "Нинкада"
     },
     "types": [
       "bug",
@@ -17171,7 +17171,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17198,7 +17198,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17211,7 +17211,7 @@ const ALL_POKEMON_DATA = {
   },
   "291": {
     "name": {
-      "ru": "Ninjask"
+      "ru": "Нинджаск"
     },
     "types": [
       "bug",
@@ -17231,7 +17231,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17271,7 +17271,7 @@ const ALL_POKEMON_DATA = {
   },
   "292": {
     "name": {
-      "ru": "Shedinja"
+      "ru": "Шединджа"
     },
     "types": [
       "bug",
@@ -17290,7 +17290,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17317,7 +17317,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17330,7 +17330,7 @@ const ALL_POKEMON_DATA = {
   },
   "293": {
     "name": {
-      "ru": "Whismur"
+      "ru": "Висмур"
     },
     "types": [
       "normal"
@@ -17389,7 +17389,7 @@ const ALL_POKEMON_DATA = {
   },
   "294": {
     "name": {
-      "ru": "Loudred"
+      "ru": "Лаудред"
     },
     "types": [
       "normal"
@@ -17426,7 +17426,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17448,7 +17448,7 @@ const ALL_POKEMON_DATA = {
   },
   "295": {
     "name": {
-      "ru": "Exploud"
+      "ru": "Эксплауд"
     },
     "types": [
       "normal"
@@ -17485,7 +17485,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17507,7 +17507,7 @@ const ALL_POKEMON_DATA = {
   },
   "296": {
     "name": {
-      "ru": "Makuhita"
+      "ru": "Макухита"
     },
     "types": [
       "fighting"
@@ -17545,7 +17545,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17567,7 +17567,7 @@ const ALL_POKEMON_DATA = {
   },
   "297": {
     "name": {
-      "ru": "Hariyama"
+      "ru": "Харияма"
     },
     "types": [
       "fighting"
@@ -17605,7 +17605,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17627,7 +17627,7 @@ const ALL_POKEMON_DATA = {
   },
   "298": {
     "name": {
-      "ru": "Azurill"
+      "ru": "Азурилл"
     },
     "types": [
       "normal",
@@ -17648,7 +17648,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17657,7 +17657,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17666,7 +17666,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17688,7 +17688,7 @@ const ALL_POKEMON_DATA = {
   },
   "299": {
     "name": {
-      "ru": "Nosepass"
+      "ru": "Ноуспасс"
     },
     "types": [
       "rock"
@@ -17708,7 +17708,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17748,7 +17748,7 @@ const ALL_POKEMON_DATA = {
   },
   "300": {
     "name": {
-      "ru": "Skitty"
+      "ru": "Скитти"
     },
     "types": [
       "normal"
@@ -17777,7 +17777,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17795,7 +17795,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17808,7 +17808,7 @@ const ALL_POKEMON_DATA = {
   },
   "301": {
     "name": {
-      "ru": "Delcatty"
+      "ru": "Делкатти"
     },
     "types": [
       "normal"
@@ -17837,7 +17837,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17855,7 +17855,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17868,7 +17868,7 @@ const ALL_POKEMON_DATA = {
   },
   "302": {
     "name": {
-      "ru": "Sableye"
+      "ru": "Саблай"
     },
     "types": [
       "dark",
@@ -17889,7 +17889,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17898,7 +17898,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17929,7 +17929,7 @@ const ALL_POKEMON_DATA = {
   },
   "303": {
     "name": {
-      "ru": "Mawile"
+      "ru": "Мэвайл"
     },
     "types": [
       "steel",
@@ -17959,7 +17959,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17968,7 +17968,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -17990,7 +17990,7 @@ const ALL_POKEMON_DATA = {
   },
   "304": {
     "name": {
-      "ru": "Aron"
+      "ru": "Арон"
     },
     "types": [
       "steel",
@@ -18020,7 +18020,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18051,7 +18051,7 @@ const ALL_POKEMON_DATA = {
   },
   "305": {
     "name": {
-      "ru": "Lairon"
+      "ru": "Лейрон"
     },
     "types": [
       "steel",
@@ -18081,7 +18081,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18112,7 +18112,7 @@ const ALL_POKEMON_DATA = {
   },
   "306": {
     "name": {
-      "ru": "Aggron"
+      "ru": "Аггрон"
     },
     "types": [
       "steel",
@@ -18142,7 +18142,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18173,7 +18173,7 @@ const ALL_POKEMON_DATA = {
   },
   "307": {
     "name": {
-      "ru": "Meditite"
+      "ru": "Медитайт"
     },
     "types": [
       "fighting",
@@ -18233,7 +18233,7 @@ const ALL_POKEMON_DATA = {
   },
   "308": {
     "name": {
-      "ru": "Medicham"
+      "ru": "Медичам"
     },
     "types": [
       "fighting",
@@ -18293,7 +18293,7 @@ const ALL_POKEMON_DATA = {
   },
   "309": {
     "name": {
-      "ru": "Electrike"
+      "ru": "Электрайк"
     },
     "types": [
       "electric"
@@ -18313,7 +18313,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18322,7 +18322,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18331,7 +18331,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18353,7 +18353,7 @@ const ALL_POKEMON_DATA = {
   },
   "310": {
     "name": {
-      "ru": "Manectric"
+      "ru": "Манектрик"
     },
     "types": [
       "electric"
@@ -18373,7 +18373,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18382,7 +18382,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18391,7 +18391,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18413,7 +18413,7 @@ const ALL_POKEMON_DATA = {
   },
   "311": {
     "name": {
-      "ru": "Plusle"
+      "ru": "Плюсл"
     },
     "types": [
       "electric"
@@ -18432,7 +18432,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18450,7 +18450,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder",
+        "name": "Громовой удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18472,7 +18472,7 @@ const ALL_POKEMON_DATA = {
   },
   "312": {
     "name": {
-      "ru": "Minun"
+      "ru": "Минун"
     },
     "types": [
       "electric"
@@ -18491,7 +18491,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18509,7 +18509,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder",
+        "name": "Громовой удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18531,7 +18531,7 @@ const ALL_POKEMON_DATA = {
   },
   "313": {
     "name": {
-      "ru": "Volbeat"
+      "ru": "Волбит"
     },
     "types": [
       "bug"
@@ -18551,7 +18551,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18569,7 +18569,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18591,7 +18591,7 @@ const ALL_POKEMON_DATA = {
   },
   "314": {
     "name": {
-      "ru": "Illumise"
+      "ru": "Иллюмизи"
     },
     "types": [
       "bug"
@@ -18611,7 +18611,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18620,7 +18620,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18651,7 +18651,7 @@ const ALL_POKEMON_DATA = {
   },
   "315": {
     "name": {
-      "ru": "Roselia"
+      "ru": "Розалия"
     },
     "types": [
       "grass",
@@ -18712,7 +18712,7 @@ const ALL_POKEMON_DATA = {
   },
   "316": {
     "name": {
-      "ru": "Gulpin"
+      "ru": "Галпин"
     },
     "types": [
       "poison"
@@ -18772,7 +18772,7 @@ const ALL_POKEMON_DATA = {
   },
   "317": {
     "name": {
-      "ru": "Swalot"
+      "ru": "Свалот"
     },
     "types": [
       "poison"
@@ -18832,7 +18832,7 @@ const ALL_POKEMON_DATA = {
   },
   "318": {
     "name": {
-      "ru": "Carvanha"
+      "ru": "Карванна"
     },
     "types": [
       "water",
@@ -18861,7 +18861,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18870,7 +18870,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18892,7 +18892,7 @@ const ALL_POKEMON_DATA = {
   },
   "319": {
     "name": {
-      "ru": "Sharpedo"
+      "ru": "Шарпидо"
     },
     "types": [
       "water",
@@ -18921,7 +18921,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18930,7 +18930,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18952,7 +18952,7 @@ const ALL_POKEMON_DATA = {
   },
   "320": {
     "name": {
-      "ru": "Wailmer"
+      "ru": "Вэйлмер"
     },
     "types": [
       "water"
@@ -18981,7 +18981,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -18999,7 +18999,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19012,7 +19012,7 @@ const ALL_POKEMON_DATA = {
   },
   "321": {
     "name": {
-      "ru": "Wailord"
+      "ru": "Вэйлорд"
     },
     "types": [
       "water"
@@ -19041,7 +19041,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19059,7 +19059,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19072,7 +19072,7 @@ const ALL_POKEMON_DATA = {
   },
   "322": {
     "name": {
-      "ru": "Numel"
+      "ru": "Намел"
     },
     "types": [
       "fire",
@@ -19093,7 +19093,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19120,7 +19120,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19133,7 +19133,7 @@ const ALL_POKEMON_DATA = {
   },
   "323": {
     "name": {
-      "ru": "Camerupt"
+      "ru": "Камерапт"
     },
     "types": [
       "fire",
@@ -19154,7 +19154,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19181,7 +19181,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19194,7 +19194,7 @@ const ALL_POKEMON_DATA = {
   },
   "324": {
     "name": {
-      "ru": "Torkoal"
+      "ru": "Торкл"
     },
     "types": [
       "fire"
@@ -19223,7 +19223,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19232,7 +19232,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19254,7 +19254,7 @@ const ALL_POKEMON_DATA = {
   },
   "325": {
     "name": {
-      "ru": "Spoink"
+      "ru": "Споинк"
     },
     "types": [
       "psychic"
@@ -19274,7 +19274,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19301,7 +19301,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19314,7 +19314,7 @@ const ALL_POKEMON_DATA = {
   },
   "326": {
     "name": {
-      "ru": "Grumpig"
+      "ru": "Грампиг"
     },
     "types": [
       "psychic"
@@ -19334,7 +19334,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19361,7 +19361,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19374,7 +19374,7 @@ const ALL_POKEMON_DATA = {
   },
   "327": {
     "name": {
-      "ru": "Spinda"
+      "ru": "Спинда"
     },
     "types": [
       "normal"
@@ -19394,7 +19394,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19434,7 +19434,7 @@ const ALL_POKEMON_DATA = {
   },
   "328": {
     "name": {
-      "ru": "Trapinch"
+      "ru": "Трапинч"
     },
     "types": [
       "ground"
@@ -19463,7 +19463,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19472,7 +19472,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19481,7 +19481,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19494,7 +19494,7 @@ const ALL_POKEMON_DATA = {
   },
   "329": {
     "name": {
-      "ru": "Vibrava"
+      "ru": "Вибрава"
     },
     "types": [
       "ground",
@@ -19522,7 +19522,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19553,7 +19553,7 @@ const ALL_POKEMON_DATA = {
   },
   "330": {
     "name": {
-      "ru": "Flygon"
+      "ru": "Флайгон"
     },
     "types": [
       "ground",
@@ -19581,7 +19581,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19612,7 +19612,7 @@ const ALL_POKEMON_DATA = {
   },
   "331": {
     "name": {
-      "ru": "Cacnea"
+      "ru": "Какния"
     },
     "types": [
       "grass"
@@ -19658,7 +19658,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19671,7 +19671,7 @@ const ALL_POKEMON_DATA = {
   },
   "332": {
     "name": {
-      "ru": "Cacturne"
+      "ru": "Кактурн"
     },
     "types": [
       "grass",
@@ -19718,7 +19718,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19731,7 +19731,7 @@ const ALL_POKEMON_DATA = {
   },
   "333": {
     "name": {
-      "ru": "Swablu"
+      "ru": "Сваблу"
     },
     "types": [
       "normal",
@@ -19769,7 +19769,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19791,7 +19791,7 @@ const ALL_POKEMON_DATA = {
   },
   "334": {
     "name": {
-      "ru": "Altaria"
+      "ru": "Алтария"
     },
     "types": [
       "dragon",
@@ -19829,7 +19829,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19851,7 +19851,7 @@ const ALL_POKEMON_DATA = {
   },
   "335": {
     "name": {
-      "ru": "Zangoose"
+      "ru": "Зангус"
     },
     "types": [
       "normal"
@@ -19870,7 +19870,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19888,7 +19888,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19897,7 +19897,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19910,7 +19910,7 @@ const ALL_POKEMON_DATA = {
   },
   "336": {
     "name": {
-      "ru": "Seviper"
+      "ru": "Сивайпер"
     },
     "types": [
       "poison"
@@ -19947,7 +19947,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -19969,7 +19969,7 @@ const ALL_POKEMON_DATA = {
   },
   "337": {
     "name": {
-      "ru": "Lunatone"
+      "ru": "Лунатон"
     },
     "types": [
       "rock",
@@ -19988,7 +19988,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20015,7 +20015,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20028,7 +20028,7 @@ const ALL_POKEMON_DATA = {
   },
   "338": {
     "name": {
-      "ru": "Solrock"
+      "ru": "Солрок"
     },
     "types": [
       "rock",
@@ -20047,7 +20047,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20056,7 +20056,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20087,7 +20087,7 @@ const ALL_POKEMON_DATA = {
   },
   "339": {
     "name": {
-      "ru": "Barboach"
+      "ru": "Барбоа"
     },
     "types": [
       "water",
@@ -20108,7 +20108,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20117,7 +20117,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20148,7 +20148,7 @@ const ALL_POKEMON_DATA = {
   },
   "340": {
     "name": {
-      "ru": "Whiscash"
+      "ru": "Вискэш"
     },
     "types": [
       "water",
@@ -20178,7 +20178,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20187,7 +20187,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20209,7 +20209,7 @@ const ALL_POKEMON_DATA = {
   },
   "341": {
     "name": {
-      "ru": "Corphish"
+      "ru": "Корфиш"
     },
     "types": [
       "water"
@@ -20256,7 +20256,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20269,7 +20269,7 @@ const ALL_POKEMON_DATA = {
   },
   "342": {
     "name": {
-      "ru": "Crawdaunt"
+      "ru": "Кродант"
     },
     "types": [
       "water",
@@ -20317,7 +20317,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20330,7 +20330,7 @@ const ALL_POKEMON_DATA = {
   },
   "343": {
     "name": {
-      "ru": "Baltoy"
+      "ru": "Балтой"
     },
     "types": [
       "ground",
@@ -20389,7 +20389,7 @@ const ALL_POKEMON_DATA = {
   },
   "344": {
     "name": {
-      "ru": "Claydol"
+      "ru": "Клэйдол"
     },
     "types": [
       "ground",
@@ -20417,7 +20417,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20448,7 +20448,7 @@ const ALL_POKEMON_DATA = {
   },
   "345": {
     "name": {
-      "ru": "Lileep"
+      "ru": "Лилип"
     },
     "types": [
       "rock",
@@ -20508,7 +20508,7 @@ const ALL_POKEMON_DATA = {
   },
   "346": {
     "name": {
-      "ru": "Cradily"
+      "ru": "Крэдили"
     },
     "types": [
       "rock",
@@ -20568,7 +20568,7 @@ const ALL_POKEMON_DATA = {
   },
   "347": {
     "name": {
-      "ru": "Anorith"
+      "ru": "Анорит"
     },
     "types": [
       "rock",
@@ -20588,7 +20588,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20597,7 +20597,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20628,7 +20628,7 @@ const ALL_POKEMON_DATA = {
   },
   "348": {
     "name": {
-      "ru": "Armaldo"
+      "ru": "Армальдо"
     },
     "types": [
       "rock",
@@ -20648,7 +20648,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20657,7 +20657,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20688,7 +20688,7 @@ const ALL_POKEMON_DATA = {
   },
   "349": {
     "name": {
-      "ru": "Feebas"
+      "ru": "Фибас"
     },
     "types": [
       "water"
@@ -20708,7 +20708,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20739,7 +20739,7 @@ const ALL_POKEMON_DATA = {
   },
   "350": {
     "name": {
-      "ru": "Milotic"
+      "ru": "Майлотик"
     },
     "types": [
       "water"
@@ -20759,7 +20759,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20777,7 +20777,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20786,7 +20786,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20799,7 +20799,7 @@ const ALL_POKEMON_DATA = {
   },
   "351": {
     "name": {
-      "ru": "Castform"
+      "ru": "Кастформ"
     },
     "types": [
       "normal"
@@ -20826,7 +20826,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20835,7 +20835,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20844,7 +20844,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20857,7 +20857,7 @@ const ALL_POKEMON_DATA = {
   },
   "352": {
     "name": {
-      "ru": "Kecleon"
+      "ru": "Кеклеон"
     },
     "types": [
       "normal"
@@ -20876,7 +20876,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20894,7 +20894,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -20916,7 +20916,7 @@ const ALL_POKEMON_DATA = {
   },
   "353": {
     "name": {
-      "ru": "Shuppet"
+      "ru": "Шаппет"
     },
     "types": [
       "ghost"
@@ -20976,7 +20976,7 @@ const ALL_POKEMON_DATA = {
   },
   "354": {
     "name": {
-      "ru": "Banette"
+      "ru": "Бэнетт"
     },
     "types": [
       "ghost"
@@ -21036,7 +21036,7 @@ const ALL_POKEMON_DATA = {
   },
   "355": {
     "name": {
-      "ru": "Duskull"
+      "ru": "Даскулл"
     },
     "types": [
       "ghost"
@@ -21055,7 +21055,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21082,7 +21082,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21095,7 +21095,7 @@ const ALL_POKEMON_DATA = {
   },
   "356": {
     "name": {
-      "ru": "Dusclops"
+      "ru": "Дасклопс"
     },
     "types": [
       "ghost"
@@ -21154,7 +21154,7 @@ const ALL_POKEMON_DATA = {
   },
   "357": {
     "name": {
-      "ru": "Tropius"
+      "ru": "Тропиус"
     },
     "types": [
       "grass",
@@ -21215,7 +21215,7 @@ const ALL_POKEMON_DATA = {
   },
   "358": {
     "name": {
-      "ru": "Chimecho"
+      "ru": "Чаймеко"
     },
     "types": [
       "psychic"
@@ -21233,7 +21233,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21273,7 +21273,7 @@ const ALL_POKEMON_DATA = {
   },
   "359": {
     "name": {
-      "ru": "Absol"
+      "ru": "Эбсол"
     },
     "types": [
       "dark"
@@ -21293,7 +21293,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21320,7 +21320,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21333,7 +21333,7 @@ const ALL_POKEMON_DATA = {
   },
   "360": {
     "name": {
-      "ru": "Wynaut"
+      "ru": "Винаут"
     },
     "types": [
       "psychic"
@@ -21392,7 +21392,7 @@ const ALL_POKEMON_DATA = {
   },
   "361": {
     "name": {
-      "ru": "Snorunt"
+      "ru": "Снорант"
     },
     "types": [
       "ice"
@@ -21421,7 +21421,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21430,7 +21430,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21439,7 +21439,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21452,7 +21452,7 @@ const ALL_POKEMON_DATA = {
   },
   "362": {
     "name": {
-      "ru": "Glalie"
+      "ru": "Глэйли"
     },
     "types": [
       "ice"
@@ -21481,7 +21481,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21490,7 +21490,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21499,7 +21499,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21512,7 +21512,7 @@ const ALL_POKEMON_DATA = {
   },
   "363": {
     "name": {
-      "ru": "Spheal"
+      "ru": "Сфил"
     },
     "types": [
       "ice",
@@ -21542,7 +21542,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21551,7 +21551,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21560,7 +21560,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21573,7 +21573,7 @@ const ALL_POKEMON_DATA = {
   },
   "364": {
     "name": {
-      "ru": "Sealeo"
+      "ru": "Силео"
     },
     "types": [
       "ice",
@@ -21603,7 +21603,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21612,7 +21612,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21621,7 +21621,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21634,7 +21634,7 @@ const ALL_POKEMON_DATA = {
   },
   "365": {
     "name": {
-      "ru": "Walrein"
+      "ru": "Уолрейн"
     },
     "types": [
       "ice",
@@ -21664,7 +21664,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21673,7 +21673,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21682,7 +21682,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21695,7 +21695,7 @@ const ALL_POKEMON_DATA = {
   },
   "366": {
     "name": {
-      "ru": "Clamperl"
+      "ru": "Кламперл"
     },
     "types": [
       "water"
@@ -21714,7 +21714,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21754,7 +21754,7 @@ const ALL_POKEMON_DATA = {
   },
   "367": {
     "name": {
-      "ru": "Huntail"
+      "ru": "Хантэйл"
     },
     "types": [
       "water"
@@ -21773,7 +21773,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21782,7 +21782,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21791,7 +21791,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21813,7 +21813,7 @@ const ALL_POKEMON_DATA = {
   },
   "368": {
     "name": {
-      "ru": "Gorebyss"
+      "ru": "Горебисс"
     },
     "types": [
       "water"
@@ -21832,7 +21832,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21841,7 +21841,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21859,7 +21859,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21872,7 +21872,7 @@ const ALL_POKEMON_DATA = {
   },
   "369": {
     "name": {
-      "ru": "Relicanth"
+      "ru": "Реликант"
     },
     "types": [
       "water",
@@ -21893,7 +21893,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21920,7 +21920,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21933,7 +21933,7 @@ const ALL_POKEMON_DATA = {
   },
   "370": {
     "name": {
-      "ru": "Luvdisc"
+      "ru": "Лювдиск"
     },
     "types": [
       "water"
@@ -21952,7 +21952,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21970,7 +21970,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21979,7 +21979,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -21992,7 +21992,7 @@ const ALL_POKEMON_DATA = {
   },
   "371": {
     "name": {
-      "ru": "Bagon"
+      "ru": "Багон"
     },
     "types": [
       "dragon"
@@ -22029,7 +22029,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22038,7 +22038,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22051,7 +22051,7 @@ const ALL_POKEMON_DATA = {
   },
   "372": {
     "name": {
-      "ru": "Shelgon"
+      "ru": "Шелгон"
     },
     "types": [
       "dragon"
@@ -22088,7 +22088,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22097,7 +22097,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22110,7 +22110,7 @@ const ALL_POKEMON_DATA = {
   },
   "373": {
     "name": {
-      "ru": "Salamence"
+      "ru": "Саламенс"
     },
     "types": [
       "dragon",
@@ -22130,7 +22130,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22157,7 +22157,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22170,7 +22170,7 @@ const ALL_POKEMON_DATA = {
   },
   "374": {
     "name": {
-      "ru": "Beldum"
+      "ru": "Белдум"
     },
     "types": [
       "steel",
@@ -22190,7 +22190,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22212,7 +22212,7 @@ const ALL_POKEMON_DATA = {
   },
   "375": {
     "name": {
-      "ru": "Metang"
+      "ru": "Метанг"
     },
     "types": [
       "steel",
@@ -22232,7 +22232,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22250,7 +22250,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22272,7 +22272,7 @@ const ALL_POKEMON_DATA = {
   },
   "376": {
     "name": {
-      "ru": "Metagross"
+      "ru": "Метагросс"
     },
     "types": [
       "steel",
@@ -22292,7 +22292,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22310,7 +22310,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22332,7 +22332,7 @@ const ALL_POKEMON_DATA = {
   },
   "377": {
     "name": {
-      "ru": "Regirock"
+      "ru": "Реджирок"
     },
     "types": [
       "rock"
@@ -22360,7 +22360,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22391,7 +22391,7 @@ const ALL_POKEMON_DATA = {
   },
   "378": {
     "name": {
-      "ru": "Regice"
+      "ru": "Реджайс"
     },
     "types": [
       "ice"
@@ -22419,7 +22419,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22437,7 +22437,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22450,7 +22450,7 @@ const ALL_POKEMON_DATA = {
   },
   "379": {
     "name": {
-      "ru": "Registeel"
+      "ru": "Реджистил"
     },
     "types": [
       "steel"
@@ -22478,7 +22478,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22509,7 +22509,7 @@ const ALL_POKEMON_DATA = {
   },
   "380": {
     "name": {
-      "ru": "Latias"
+      "ru": "Латиас"
     },
     "types": [
       "dragon",
@@ -22537,7 +22537,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22568,7 +22568,7 @@ const ALL_POKEMON_DATA = {
   },
   "381": {
     "name": {
-      "ru": "Latios"
+      "ru": "Латиос"
     },
     "types": [
       "dragon",
@@ -22596,7 +22596,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22627,7 +22627,7 @@ const ALL_POKEMON_DATA = {
   },
   "382": {
     "name": {
-      "ru": "Kyogre"
+      "ru": "Кайогр"
     },
     "types": [
       "water"
@@ -22663,7 +22663,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22672,7 +22672,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22685,7 +22685,7 @@ const ALL_POKEMON_DATA = {
   },
   "383": {
     "name": {
-      "ru": "Groudon"
+      "ru": "Граудон"
     },
     "types": [
       "ground"
@@ -22703,7 +22703,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22712,7 +22712,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22730,7 +22730,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fire-blast",
+        "name": "Огненный взрыв",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22743,7 +22743,7 @@ const ALL_POKEMON_DATA = {
   },
   "384": {
     "name": {
-      "ru": "Rayquaza"
+      "ru": "Рэйкваза"
     },
     "types": [
       "dragon",
@@ -22762,7 +22762,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22771,7 +22771,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22802,7 +22802,7 @@ const ALL_POKEMON_DATA = {
   },
   "385": {
     "name": {
-      "ru": "Jirachi"
+      "ru": "Джирачи"
     },
     "types": [
       "steel",
@@ -22839,7 +22839,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22861,7 +22861,7 @@ const ALL_POKEMON_DATA = {
   },
   "386": {
     "name": {
-      "ru": "Deoxys-normal"
+      "ru": "Деоксис"
     },
     "types": [
       "psychic"
@@ -22888,7 +22888,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22897,7 +22897,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22906,7 +22906,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22919,7 +22919,7 @@ const ALL_POKEMON_DATA = {
   },
   "387": {
     "name": {
-      "ru": "Turtwig"
+      "ru": "Туртвиг"
     },
     "types": [
       "grass"
@@ -22938,7 +22938,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22956,7 +22956,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -22978,7 +22978,7 @@ const ALL_POKEMON_DATA = {
   },
   "388": {
     "name": {
-      "ru": "Grotle"
+      "ru": "Гротл"
     },
     "types": [
       "grass"
@@ -22997,7 +22997,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23015,7 +23015,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23037,7 +23037,7 @@ const ALL_POKEMON_DATA = {
   },
   "389": {
     "name": {
-      "ru": "Torterra"
+      "ru": "Тортерра"
     },
     "types": [
       "grass",
@@ -23057,7 +23057,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23075,7 +23075,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23097,7 +23097,7 @@ const ALL_POKEMON_DATA = {
   },
   "390": {
     "name": {
-      "ru": "Chimchar"
+      "ru": "Чимчар"
     },
     "types": [
       "fire"
@@ -23116,7 +23116,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23125,7 +23125,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23143,7 +23143,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23156,7 +23156,7 @@ const ALL_POKEMON_DATA = {
   },
   "391": {
     "name": {
-      "ru": "Monferno"
+      "ru": "Монферно"
     },
     "types": [
       "fire",
@@ -23176,7 +23176,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23185,7 +23185,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23203,7 +23203,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23216,7 +23216,7 @@ const ALL_POKEMON_DATA = {
   },
   "392": {
     "name": {
-      "ru": "Infernape"
+      "ru": "Инфернейп"
     },
     "types": [
       "fire",
@@ -23236,7 +23236,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23245,7 +23245,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23263,7 +23263,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23276,7 +23276,7 @@ const ALL_POKEMON_DATA = {
   },
   "393": {
     "name": {
-      "ru": "Piplup"
+      "ru": "Пиплуп"
     },
     "types": [
       "water"
@@ -23313,7 +23313,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23335,7 +23335,7 @@ const ALL_POKEMON_DATA = {
   },
   "394": {
     "name": {
-      "ru": "Prinplup"
+      "ru": "Принплуп"
     },
     "types": [
       "water"
@@ -23372,7 +23372,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23394,7 +23394,7 @@ const ALL_POKEMON_DATA = {
   },
   "395": {
     "name": {
-      "ru": "Empoleon"
+      "ru": "Эмполеон"
     },
     "types": [
       "water",
@@ -23441,7 +23441,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23454,7 +23454,7 @@ const ALL_POKEMON_DATA = {
   },
   "396": {
     "name": {
-      "ru": "Starly"
+      "ru": "Старли"
     },
     "types": [
       "normal",
@@ -23501,7 +23501,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23514,7 +23514,7 @@ const ALL_POKEMON_DATA = {
   },
   "397": {
     "name": {
-      "ru": "Staravia"
+      "ru": "Старавия"
     },
     "types": [
       "normal",
@@ -23561,7 +23561,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23574,7 +23574,7 @@ const ALL_POKEMON_DATA = {
   },
   "398": {
     "name": {
-      "ru": "Staraptor"
+      "ru": "Стараптор"
     },
     "types": [
       "normal",
@@ -23621,7 +23621,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23634,7 +23634,7 @@ const ALL_POKEMON_DATA = {
   },
   "399": {
     "name": {
-      "ru": "Bidoof"
+      "ru": "Бидуф"
     },
     "types": [
       "normal"
@@ -23672,7 +23672,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23694,7 +23694,7 @@ const ALL_POKEMON_DATA = {
   },
   "400": {
     "name": {
-      "ru": "Bibarel"
+      "ru": "Бибарел"
     },
     "types": [
       "normal",
@@ -23733,7 +23733,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23755,7 +23755,7 @@ const ALL_POKEMON_DATA = {
   },
   "401": {
     "name": {
-      "ru": "Kricketot"
+      "ru": "Крикетот"
     },
     "types": [
       "bug"
@@ -23783,7 +23783,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23792,7 +23792,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23814,7 +23814,7 @@ const ALL_POKEMON_DATA = {
   },
   "402": {
     "name": {
-      "ru": "Kricketune"
+      "ru": "Крикетун"
     },
     "types": [
       "bug"
@@ -23851,7 +23851,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23860,7 +23860,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23873,7 +23873,7 @@ const ALL_POKEMON_DATA = {
   },
   "403": {
     "name": {
-      "ru": "Shinx"
+      "ru": "Шинкс"
     },
     "types": [
       "electric"
@@ -23893,7 +23893,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23902,7 +23902,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23911,7 +23911,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23933,7 +23933,7 @@ const ALL_POKEMON_DATA = {
   },
   "404": {
     "name": {
-      "ru": "Luxio"
+      "ru": "Люксио"
     },
     "types": [
       "electric"
@@ -23953,7 +23953,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23962,7 +23962,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23971,7 +23971,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -23993,7 +23993,7 @@ const ALL_POKEMON_DATA = {
   },
   "405": {
     "name": {
-      "ru": "Luxray"
+      "ru": "Люксрей"
     },
     "types": [
       "electric"
@@ -24013,7 +24013,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24022,7 +24022,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24031,7 +24031,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24053,7 +24053,7 @@ const ALL_POKEMON_DATA = {
   },
   "406": {
     "name": {
-      "ru": "Budew"
+      "ru": "Бадью"
     },
     "types": [
       "grass",
@@ -24114,7 +24114,7 @@ const ALL_POKEMON_DATA = {
   },
   "407": {
     "name": {
-      "ru": "Roserade"
+      "ru": "Роузрейд"
     },
     "types": [
       "grass",
@@ -24175,7 +24175,7 @@ const ALL_POKEMON_DATA = {
   },
   "408": {
     "name": {
-      "ru": "Cranidos"
+      "ru": "Крэйнидос"
     },
     "types": [
       "rock"
@@ -24203,7 +24203,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24221,7 +24221,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24234,7 +24234,7 @@ const ALL_POKEMON_DATA = {
   },
   "409": {
     "name": {
-      "ru": "Rampardos"
+      "ru": "Рампардос"
     },
     "types": [
       "rock"
@@ -24262,7 +24262,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24280,7 +24280,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24293,7 +24293,7 @@ const ALL_POKEMON_DATA = {
   },
   "410": {
     "name": {
-      "ru": "Shieldon"
+      "ru": "Шилдон"
     },
     "types": [
       "rock",
@@ -24313,7 +24313,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24340,7 +24340,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-slide",
+        "name": "Камнепад",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24353,7 +24353,7 @@ const ALL_POKEMON_DATA = {
   },
   "411": {
     "name": {
-      "ru": "Bastiodon"
+      "ru": "Бастиодон"
     },
     "types": [
       "rock",
@@ -24373,7 +24373,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24400,7 +24400,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-slide",
+        "name": "Камнепад",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24413,7 +24413,7 @@ const ALL_POKEMON_DATA = {
   },
   "412": {
     "name": {
-      "ru": "Burmy"
+      "ru": "Бурми"
     },
     "types": [
       "bug"
@@ -24432,7 +24432,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24472,7 +24472,7 @@ const ALL_POKEMON_DATA = {
   },
   "413": {
     "name": {
-      "ru": "Wormadam-plant"
+      "ru": "Вормадам"
     },
     "types": [
       "bug",
@@ -24501,7 +24501,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24532,7 +24532,7 @@ const ALL_POKEMON_DATA = {
   },
   "414": {
     "name": {
-      "ru": "Mothim"
+      "ru": "Мотим"
     },
     "types": [
       "bug",
@@ -24561,7 +24561,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24592,7 +24592,7 @@ const ALL_POKEMON_DATA = {
   },
   "415": {
     "name": {
-      "ru": "Combee"
+      "ru": "Комби"
     },
     "types": [
       "bug",
@@ -24630,7 +24630,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bug-buzz",
+        "name": "Жужжание",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24652,7 +24652,7 @@ const ALL_POKEMON_DATA = {
   },
   "416": {
     "name": {
-      "ru": "Vespiquen"
+      "ru": "Веспиквин"
     },
     "types": [
       "bug",
@@ -24712,7 +24712,7 @@ const ALL_POKEMON_DATA = {
   },
   "417": {
     "name": {
-      "ru": "Pachirisu"
+      "ru": "Пачирису"
     },
     "types": [
       "electric"
@@ -24732,7 +24732,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24741,7 +24741,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24750,7 +24750,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24772,7 +24772,7 @@ const ALL_POKEMON_DATA = {
   },
   "418": {
     "name": {
-      "ru": "Buizel"
+      "ru": "Буизел"
     },
     "types": [
       "water"
@@ -24800,7 +24800,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24809,7 +24809,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24818,7 +24818,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24831,7 +24831,7 @@ const ALL_POKEMON_DATA = {
   },
   "419": {
     "name": {
-      "ru": "Floatzel"
+      "ru": "Флотцел"
     },
     "types": [
       "water"
@@ -24859,7 +24859,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24868,7 +24868,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24877,7 +24877,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24890,7 +24890,7 @@ const ALL_POKEMON_DATA = {
   },
   "420": {
     "name": {
-      "ru": "Cherubi"
+      "ru": "Черуби"
     },
     "types": [
       "grass"
@@ -24908,7 +24908,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -24948,7 +24948,7 @@ const ALL_POKEMON_DATA = {
   },
   "421": {
     "name": {
-      "ru": "Cherrim"
+      "ru": "Черрим"
     },
     "types": [
       "grass"
@@ -24966,7 +24966,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25006,7 +25006,7 @@ const ALL_POKEMON_DATA = {
   },
   "422": {
     "name": {
-      "ru": "Shellos"
+      "ru": "Шеллос"
     },
     "types": [
       "water"
@@ -25026,7 +25026,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25044,7 +25044,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25053,7 +25053,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25066,7 +25066,7 @@ const ALL_POKEMON_DATA = {
   },
   "423": {
     "name": {
-      "ru": "Gastrodon"
+      "ru": "Гастродон"
     },
     "types": [
       "water",
@@ -25087,7 +25087,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25105,7 +25105,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25114,7 +25114,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25127,7 +25127,7 @@ const ALL_POKEMON_DATA = {
   },
   "424": {
     "name": {
-      "ru": "Ambipom"
+      "ru": "Эмбипом"
     },
     "types": [
       "normal"
@@ -25147,7 +25147,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25174,7 +25174,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25187,7 +25187,7 @@ const ALL_POKEMON_DATA = {
   },
   "425": {
     "name": {
-      "ru": "Drifloon"
+      "ru": "Дрифлун"
     },
     "types": [
       "ghost",
@@ -25248,7 +25248,7 @@ const ALL_POKEMON_DATA = {
   },
   "426": {
     "name": {
-      "ru": "Drifblim"
+      "ru": "Дрифблим"
     },
     "types": [
       "ghost",
@@ -25309,7 +25309,7 @@ const ALL_POKEMON_DATA = {
   },
   "427": {
     "name": {
-      "ru": "Buneary"
+      "ru": "Банири"
     },
     "types": [
       "normal"
@@ -25338,7 +25338,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25369,7 +25369,7 @@ const ALL_POKEMON_DATA = {
   },
   "428": {
     "name": {
-      "ru": "Lopunny"
+      "ru": "Лопанни"
     },
     "types": [
       "normal"
@@ -25398,7 +25398,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25429,7 +25429,7 @@ const ALL_POKEMON_DATA = {
   },
   "429": {
     "name": {
-      "ru": "Mismagius"
+      "ru": "Мисмагиус"
     },
     "types": [
       "ghost"
@@ -25447,7 +25447,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25487,7 +25487,7 @@ const ALL_POKEMON_DATA = {
   },
   "430": {
     "name": {
-      "ru": "Honchkrow"
+      "ru": "Хончкроу"
     },
     "types": [
       "dark",
@@ -25548,7 +25548,7 @@ const ALL_POKEMON_DATA = {
   },
   "431": {
     "name": {
-      "ru": "Glameow"
+      "ru": "Глеймяу"
     },
     "types": [
       "normal"
@@ -25568,7 +25568,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25577,7 +25577,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25595,7 +25595,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25608,7 +25608,7 @@ const ALL_POKEMON_DATA = {
   },
   "432": {
     "name": {
-      "ru": "Purugly"
+      "ru": "Пурагли"
     },
     "types": [
       "normal"
@@ -25628,7 +25628,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25637,7 +25637,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25668,7 +25668,7 @@ const ALL_POKEMON_DATA = {
   },
   "433": {
     "name": {
-      "ru": "Chingling"
+      "ru": "Чинглинг"
     },
     "types": [
       "psychic"
@@ -25686,7 +25686,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25713,7 +25713,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25726,7 +25726,7 @@ const ALL_POKEMON_DATA = {
   },
   "434": {
     "name": {
-      "ru": "Stunky"
+      "ru": "Станки"
     },
     "types": [
       "poison",
@@ -25747,7 +25747,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25756,7 +25756,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25774,7 +25774,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25787,7 +25787,7 @@ const ALL_POKEMON_DATA = {
   },
   "435": {
     "name": {
-      "ru": "Skuntank"
+      "ru": "Скунтанк"
     },
     "types": [
       "poison",
@@ -25808,7 +25808,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25817,7 +25817,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25835,7 +25835,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25848,7 +25848,7 @@ const ALL_POKEMON_DATA = {
   },
   "436": {
     "name": {
-      "ru": "Bronzor"
+      "ru": "Бронзор"
     },
     "types": [
       "steel",
@@ -25869,7 +25869,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25909,7 +25909,7 @@ const ALL_POKEMON_DATA = {
   },
   "437": {
     "name": {
-      "ru": "Bronzong"
+      "ru": "Бронзонг"
     },
     "types": [
       "steel",
@@ -25930,7 +25930,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25970,7 +25970,7 @@ const ALL_POKEMON_DATA = {
   },
   "438": {
     "name": {
-      "ru": "Bonsly"
+      "ru": "Бонслай"
     },
     "types": [
       "rock"
@@ -25990,7 +25990,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -25999,7 +25999,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26030,7 +26030,7 @@ const ALL_POKEMON_DATA = {
   },
   "439": {
     "name": {
-      "ru": "Mime-jr"
+      "ru": "Майм Младший"
     },
     "types": [
       "psychic",
@@ -26091,7 +26091,7 @@ const ALL_POKEMON_DATA = {
   },
   "440": {
     "name": {
-      "ru": "Happiny"
+      "ru": "Хэппини"
     },
     "types": [
       "normal"
@@ -26120,7 +26120,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26151,7 +26151,7 @@ const ALL_POKEMON_DATA = {
   },
   "441": {
     "name": {
-      "ru": "Chatot"
+      "ru": "Чатот"
     },
     "types": [
       "normal",
@@ -26190,7 +26190,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26212,7 +26212,7 @@ const ALL_POKEMON_DATA = {
   },
   "442": {
     "name": {
-      "ru": "Spiritomb"
+      "ru": "Спиритомб"
     },
     "types": [
       "ghost",
@@ -26272,7 +26272,7 @@ const ALL_POKEMON_DATA = {
   },
   "443": {
     "name": {
-      "ru": "Gible"
+      "ru": "Гибл"
     },
     "types": [
       "dragon",
@@ -26301,7 +26301,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26332,7 +26332,7 @@ const ALL_POKEMON_DATA = {
   },
   "444": {
     "name": {
-      "ru": "Gabite"
+      "ru": "Габайт"
     },
     "types": [
       "dragon",
@@ -26361,7 +26361,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26392,7 +26392,7 @@ const ALL_POKEMON_DATA = {
   },
   "445": {
     "name": {
-      "ru": "Garchomp"
+      "ru": "Гарчомп"
     },
     "types": [
       "dragon",
@@ -26421,7 +26421,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26452,7 +26452,7 @@ const ALL_POKEMON_DATA = {
   },
   "446": {
     "name": {
-      "ru": "Munchlax"
+      "ru": "Манчлакс"
     },
     "types": [
       "normal"
@@ -26472,7 +26472,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26499,7 +26499,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26512,7 +26512,7 @@ const ALL_POKEMON_DATA = {
   },
   "447": {
     "name": {
-      "ru": "Riolu"
+      "ru": "Риолу"
     },
     "types": [
       "fighting"
@@ -26541,7 +26541,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26559,7 +26559,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26572,7 +26572,7 @@ const ALL_POKEMON_DATA = {
   },
   "448": {
     "name": {
-      "ru": "Lucario"
+      "ru": "Лукарио"
     },
     "types": [
       "fighting",
@@ -26602,7 +26602,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26620,7 +26620,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26633,7 +26633,7 @@ const ALL_POKEMON_DATA = {
   },
   "449": {
     "name": {
-      "ru": "Hippopotas"
+      "ru": "Гиппопотас"
     },
     "types": [
       "ground"
@@ -26661,7 +26661,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26692,7 +26692,7 @@ const ALL_POKEMON_DATA = {
   },
   "450": {
     "name": {
-      "ru": "Hippowdon"
+      "ru": "Гипподон"
     },
     "types": [
       "ground"
@@ -26720,7 +26720,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26751,7 +26751,7 @@ const ALL_POKEMON_DATA = {
   },
   "451": {
     "name": {
-      "ru": "Skorupi"
+      "ru": "Скорупи"
     },
     "types": [
       "poison",
@@ -26799,7 +26799,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26812,7 +26812,7 @@ const ALL_POKEMON_DATA = {
   },
   "452": {
     "name": {
-      "ru": "Drapion"
+      "ru": "Драпион"
     },
     "types": [
       "poison",
@@ -26860,7 +26860,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -26873,7 +26873,7 @@ const ALL_POKEMON_DATA = {
   },
   "453": {
     "name": {
-      "ru": "Croagunk"
+      "ru": "Кроганк"
     },
     "types": [
       "poison",
@@ -26934,7 +26934,7 @@ const ALL_POKEMON_DATA = {
   },
   "454": {
     "name": {
-      "ru": "Toxicroak"
+      "ru": "Токсикроук"
     },
     "types": [
       "poison",
@@ -26995,7 +26995,7 @@ const ALL_POKEMON_DATA = {
   },
   "455": {
     "name": {
-      "ru": "Carnivine"
+      "ru": "Карнивайн"
     },
     "types": [
       "grass"
@@ -27022,7 +27022,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27031,7 +27031,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27053,7 +27053,7 @@ const ALL_POKEMON_DATA = {
   },
   "456": {
     "name": {
-      "ru": "Finneon"
+      "ru": "Финнеон"
     },
     "types": [
       "water"
@@ -27091,7 +27091,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27100,7 +27100,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27113,7 +27113,7 @@ const ALL_POKEMON_DATA = {
   },
   "457": {
     "name": {
-      "ru": "Lumineon"
+      "ru": "Люминеон"
     },
     "types": [
       "water"
@@ -27151,7 +27151,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27160,7 +27160,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27173,7 +27173,7 @@ const ALL_POKEMON_DATA = {
   },
   "458": {
     "name": {
-      "ru": "Mantyke"
+      "ru": "Мантик"
     },
     "types": [
       "water",
@@ -27212,7 +27212,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27234,7 +27234,7 @@ const ALL_POKEMON_DATA = {
   },
   "459": {
     "name": {
-      "ru": "Snover"
+      "ru": "Сновер"
     },
     "types": [
       "grass",
@@ -27254,7 +27254,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27281,7 +27281,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27294,7 +27294,7 @@ const ALL_POKEMON_DATA = {
   },
   "460": {
     "name": {
-      "ru": "Abomasnow"
+      "ru": "Абомасноу"
     },
     "types": [
       "grass",
@@ -27323,7 +27323,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27354,7 +27354,7 @@ const ALL_POKEMON_DATA = {
   },
   "461": {
     "name": {
-      "ru": "Weavile"
+      "ru": "Вивайл"
     },
     "types": [
       "dark",
@@ -27374,7 +27374,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27392,7 +27392,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27414,7 +27414,7 @@ const ALL_POKEMON_DATA = {
   },
   "462": {
     "name": {
-      "ru": "Magnezone"
+      "ru": "Магнезон"
     },
     "types": [
       "electric",
@@ -27435,7 +27435,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27462,7 +27462,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27475,7 +27475,7 @@ const ALL_POKEMON_DATA = {
   },
   "463": {
     "name": {
-      "ru": "Lickilicky"
+      "ru": "Ликилики"
     },
     "types": [
       "normal"
@@ -27495,7 +27495,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27513,7 +27513,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27535,7 +27535,7 @@ const ALL_POKEMON_DATA = {
   },
   "464": {
     "name": {
-      "ru": "Rhyperior"
+      "ru": "Райпериор"
     },
     "types": [
       "ground",
@@ -27596,7 +27596,7 @@ const ALL_POKEMON_DATA = {
   },
   "465": {
     "name": {
-      "ru": "Tangrowth"
+      "ru": "Тангроут"
     },
     "types": [
       "grass"
@@ -27625,7 +27625,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27634,7 +27634,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27656,7 +27656,7 @@ const ALL_POKEMON_DATA = {
   },
   "466": {
     "name": {
-      "ru": "Electivire"
+      "ru": "Элективайр"
     },
     "types": [
       "electric"
@@ -27693,7 +27693,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27715,7 +27715,7 @@ const ALL_POKEMON_DATA = {
   },
   "467": {
     "name": {
-      "ru": "Magmortar"
+      "ru": "Магмортар"
     },
     "types": [
       "fire"
@@ -27752,7 +27752,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27761,7 +27761,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27774,7 +27774,7 @@ const ALL_POKEMON_DATA = {
   },
   "468": {
     "name": {
-      "ru": "Togekiss"
+      "ru": "Тогекисс"
     },
     "types": [
       "fairy",
@@ -27804,7 +27804,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27822,7 +27822,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27835,7 +27835,7 @@ const ALL_POKEMON_DATA = {
   },
   "469": {
     "name": {
-      "ru": "Yanmega"
+      "ru": "Янмега"
     },
     "types": [
       "bug",
@@ -27874,7 +27874,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27896,7 +27896,7 @@ const ALL_POKEMON_DATA = {
   },
   "470": {
     "name": {
-      "ru": "Leafeon"
+      "ru": "Лифеон"
     },
     "types": [
       "grass"
@@ -27933,7 +27933,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -27955,7 +27955,7 @@ const ALL_POKEMON_DATA = {
   },
   "471": {
     "name": {
-      "ru": "Glaceon"
+      "ru": "Гласеон"
     },
     "types": [
       "ice"
@@ -27983,7 +27983,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28014,7 +28014,7 @@ const ALL_POKEMON_DATA = {
   },
   "472": {
     "name": {
-      "ru": "Gliscor"
+      "ru": "Глайскор"
     },
     "types": [
       "ground",
@@ -28075,7 +28075,7 @@ const ALL_POKEMON_DATA = {
   },
   "473": {
     "name": {
-      "ru": "Mamoswine"
+      "ru": "Мамосвайн"
     },
     "types": [
       "ice",
@@ -28105,7 +28105,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28136,7 +28136,7 @@ const ALL_POKEMON_DATA = {
   },
   "474": {
     "name": {
-      "ru": "Porygon-z"
+      "ru": "Поригон-Z"
     },
     "types": [
       "normal"
@@ -28156,7 +28156,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28183,7 +28183,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28196,7 +28196,7 @@ const ALL_POKEMON_DATA = {
   },
   "475": {
     "name": {
-      "ru": "Gallade"
+      "ru": "Галлейд"
     },
     "types": [
       "psychic",
@@ -28226,7 +28226,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28235,7 +28235,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28257,7 +28257,7 @@ const ALL_POKEMON_DATA = {
   },
   "476": {
     "name": {
-      "ru": "Probopass"
+      "ru": "Пробопасс"
     },
     "types": [
       "rock",
@@ -28278,7 +28278,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28318,7 +28318,7 @@ const ALL_POKEMON_DATA = {
   },
   "477": {
     "name": {
-      "ru": "Dusknoir"
+      "ru": "Даскнуар"
     },
     "types": [
       "ghost"
@@ -28377,7 +28377,7 @@ const ALL_POKEMON_DATA = {
   },
   "478": {
     "name": {
-      "ru": "Froslass"
+      "ru": "Фросласс"
     },
     "types": [
       "ice",
@@ -28406,7 +28406,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28415,7 +28415,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28437,7 +28437,7 @@ const ALL_POKEMON_DATA = {
   },
   "479": {
     "name": {
-      "ru": "Rotom"
+      "ru": "Ротом"
     },
     "types": [
       "electric",
@@ -28456,7 +28456,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28465,7 +28465,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28483,7 +28483,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder",
+        "name": "Громовой удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28496,7 +28496,7 @@ const ALL_POKEMON_DATA = {
   },
   "480": {
     "name": {
-      "ru": "Uxie"
+      "ru": "Юкси"
     },
     "types": [
       "psychic"
@@ -28532,7 +28532,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28554,7 +28554,7 @@ const ALL_POKEMON_DATA = {
   },
   "481": {
     "name": {
-      "ru": "Mesprit"
+      "ru": "Месприт"
     },
     "types": [
       "psychic"
@@ -28590,7 +28590,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28612,7 +28612,7 @@ const ALL_POKEMON_DATA = {
   },
   "482": {
     "name": {
-      "ru": "Azelf"
+      "ru": "Азельф"
     },
     "types": [
       "psychic"
@@ -28648,7 +28648,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28670,7 +28670,7 @@ const ALL_POKEMON_DATA = {
   },
   "483": {
     "name": {
-      "ru": "Dialga"
+      "ru": "Диалга"
     },
     "types": [
       "steel",
@@ -28717,7 +28717,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "iron-tail",
+        "name": "Железный хвост",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28730,7 +28730,7 @@ const ALL_POKEMON_DATA = {
   },
   "484": {
     "name": {
-      "ru": "Palkia"
+      "ru": "Палкия"
     },
     "types": [
       "water",
@@ -28750,7 +28750,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28790,7 +28790,7 @@ const ALL_POKEMON_DATA = {
   },
   "485": {
     "name": {
-      "ru": "Heatran"
+      "ru": "Хитран"
     },
     "types": [
       "fire",
@@ -28810,7 +28810,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28819,7 +28819,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -28850,7 +28850,7 @@ const ALL_POKEMON_DATA = {
   },
   "486": {
     "name": {
-      "ru": "Regigigas"
+      "ru": "Реджигигас"
     },
     "types": [
       "normal"
@@ -28908,7 +28908,7 @@ const ALL_POKEMON_DATA = {
   },
   "487": {
     "name": {
-      "ru": "Giratina-altered"
+      "ru": "Гиратина"
     },
     "types": [
       "ghost",
@@ -28968,7 +28968,7 @@ const ALL_POKEMON_DATA = {
   },
   "488": {
     "name": {
-      "ru": "Cresselia"
+      "ru": "Крисселия"
     },
     "types": [
       "psychic"
@@ -28986,7 +28986,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29026,7 +29026,7 @@ const ALL_POKEMON_DATA = {
   },
   "489": {
     "name": {
-      "ru": "Phione"
+      "ru": "Фион"
     },
     "types": [
       "water"
@@ -29053,7 +29053,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29062,7 +29062,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29084,7 +29084,7 @@ const ALL_POKEMON_DATA = {
   },
   "490": {
     "name": {
-      "ru": "Manaphy"
+      "ru": "Манапи"
     },
     "types": [
       "water"
@@ -29111,7 +29111,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29120,7 +29120,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29142,7 +29142,7 @@ const ALL_POKEMON_DATA = {
   },
   "491": {
     "name": {
-      "ru": "Darkrai"
+      "ru": "Даркрай"
     },
     "types": [
       "dark"
@@ -29169,7 +29169,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29187,7 +29187,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29200,7 +29200,7 @@ const ALL_POKEMON_DATA = {
   },
   "492": {
     "name": {
-      "ru": "Shaymin-land"
+      "ru": "Шеймин"
     },
     "types": [
       "grass"
@@ -29245,7 +29245,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29258,7 +29258,7 @@ const ALL_POKEMON_DATA = {
   },
   "493": {
     "name": {
-      "ru": "Arceus"
+      "ru": "Аркеус"
     },
     "types": [
       "normal"
@@ -29276,7 +29276,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29303,7 +29303,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29316,7 +29316,7 @@ const ALL_POKEMON_DATA = {
   },
   "494": {
     "name": {
-      "ru": "Victini"
+      "ru": "Виктини"
     },
     "types": [
       "psychic",
@@ -29362,7 +29362,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29375,7 +29375,7 @@ const ALL_POKEMON_DATA = {
   },
   "495": {
     "name": {
-      "ru": "Snivy"
+      "ru": "Снайви"
     },
     "types": [
       "grass"
@@ -29394,7 +29394,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29403,7 +29403,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29412,7 +29412,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29434,7 +29434,7 @@ const ALL_POKEMON_DATA = {
   },
   "496": {
     "name": {
-      "ru": "Servine"
+      "ru": "Сервайн"
     },
     "types": [
       "grass"
@@ -29453,7 +29453,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29462,7 +29462,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29471,7 +29471,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29493,7 +29493,7 @@ const ALL_POKEMON_DATA = {
   },
   "497": {
     "name": {
-      "ru": "Serperior"
+      "ru": "Серпериор"
     },
     "types": [
       "grass"
@@ -29512,7 +29512,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29521,7 +29521,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29530,7 +29530,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29552,7 +29552,7 @@ const ALL_POKEMON_DATA = {
   },
   "498": {
     "name": {
-      "ru": "Tepig"
+      "ru": "Тепиг"
     },
     "types": [
       "fire"
@@ -29571,7 +29571,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29589,7 +29589,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29611,7 +29611,7 @@ const ALL_POKEMON_DATA = {
   },
   "499": {
     "name": {
-      "ru": "Pignite"
+      "ru": "Пигнайт"
     },
     "types": [
       "fire",
@@ -29631,7 +29631,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29649,7 +29649,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29671,7 +29671,7 @@ const ALL_POKEMON_DATA = {
   },
   "500": {
     "name": {
-      "ru": "Emboar"
+      "ru": "Эмбор"
     },
     "types": [
       "fire",
@@ -29691,7 +29691,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29709,7 +29709,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29731,7 +29731,7 @@ const ALL_POKEMON_DATA = {
   },
   "501": {
     "name": {
-      "ru": "Oshawott"
+      "ru": "Ошавотт"
     },
     "types": [
       "water"
@@ -29759,7 +29759,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29768,7 +29768,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29777,7 +29777,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29790,7 +29790,7 @@ const ALL_POKEMON_DATA = {
   },
   "502": {
     "name": {
-      "ru": "Dewott"
+      "ru": "Девотт"
     },
     "types": [
       "water"
@@ -29818,7 +29818,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29827,7 +29827,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29836,7 +29836,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29849,7 +29849,7 @@ const ALL_POKEMON_DATA = {
   },
   "503": {
     "name": {
-      "ru": "Samurott"
+      "ru": "Самуротт"
     },
     "types": [
       "water"
@@ -29877,7 +29877,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29886,7 +29886,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29895,7 +29895,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29908,7 +29908,7 @@ const ALL_POKEMON_DATA = {
   },
   "504": {
     "name": {
-      "ru": "Patrat"
+      "ru": "Патрат"
     },
     "types": [
       "normal"
@@ -29928,7 +29928,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29946,7 +29946,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29955,7 +29955,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -29968,7 +29968,7 @@ const ALL_POKEMON_DATA = {
   },
   "505": {
     "name": {
-      "ru": "Watchog"
+      "ru": "Уочхог"
     },
     "types": [
       "normal"
@@ -29988,7 +29988,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30006,7 +30006,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30015,7 +30015,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30028,7 +30028,7 @@ const ALL_POKEMON_DATA = {
   },
   "506": {
     "name": {
-      "ru": "Lillipup"
+      "ru": "Лиллипап"
     },
     "types": [
       "normal"
@@ -30048,7 +30048,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30066,7 +30066,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30075,7 +30075,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30088,7 +30088,7 @@ const ALL_POKEMON_DATA = {
   },
   "507": {
     "name": {
-      "ru": "Herdier"
+      "ru": "Хердиер"
     },
     "types": [
       "normal"
@@ -30108,7 +30108,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30126,7 +30126,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30135,7 +30135,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30148,7 +30148,7 @@ const ALL_POKEMON_DATA = {
   },
   "508": {
     "name": {
-      "ru": "Stoutland"
+      "ru": "Стаутлэнд"
     },
     "types": [
       "normal"
@@ -30168,7 +30168,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30186,7 +30186,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30195,7 +30195,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30208,7 +30208,7 @@ const ALL_POKEMON_DATA = {
   },
   "509": {
     "name": {
-      "ru": "Purrloin"
+      "ru": "Пуррлойн"
     },
     "types": [
       "dark"
@@ -30228,7 +30228,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30246,7 +30246,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30268,7 +30268,7 @@ const ALL_POKEMON_DATA = {
   },
   "510": {
     "name": {
-      "ru": "Liepard"
+      "ru": "Лайпард"
     },
     "types": [
       "dark"
@@ -30288,7 +30288,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30306,7 +30306,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30328,7 +30328,7 @@ const ALL_POKEMON_DATA = {
   },
   "511": {
     "name": {
-      "ru": "Pansage"
+      "ru": "Пансейдж"
     },
     "types": [
       "grass"
@@ -30347,7 +30347,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30356,7 +30356,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30365,7 +30365,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30374,7 +30374,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30387,7 +30387,7 @@ const ALL_POKEMON_DATA = {
   },
   "512": {
     "name": {
-      "ru": "Simisage"
+      "ru": "Симисейдж"
     },
     "types": [
       "grass"
@@ -30406,7 +30406,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30446,7 +30446,7 @@ const ALL_POKEMON_DATA = {
   },
   "513": {
     "name": {
-      "ru": "Pansear"
+      "ru": "Пансир"
     },
     "types": [
       "fire"
@@ -30465,7 +30465,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30474,7 +30474,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30483,7 +30483,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30505,7 +30505,7 @@ const ALL_POKEMON_DATA = {
   },
   "514": {
     "name": {
-      "ru": "Simisear"
+      "ru": "Симисир"
     },
     "types": [
       "fire"
@@ -30524,7 +30524,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30564,7 +30564,7 @@ const ALL_POKEMON_DATA = {
   },
   "515": {
     "name": {
-      "ru": "Panpour"
+      "ru": "Панпур"
     },
     "types": [
       "water"
@@ -30583,7 +30583,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30592,7 +30592,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30601,7 +30601,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30610,7 +30610,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30623,7 +30623,7 @@ const ALL_POKEMON_DATA = {
   },
   "516": {
     "name": {
-      "ru": "Simipour"
+      "ru": "Симипур"
     },
     "types": [
       "water"
@@ -30642,7 +30642,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30682,7 +30682,7 @@ const ALL_POKEMON_DATA = {
   },
   "517": {
     "name": {
-      "ru": "Munna"
+      "ru": "Мунна"
     },
     "types": [
       "psychic"
@@ -30711,7 +30711,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30742,7 +30742,7 @@ const ALL_POKEMON_DATA = {
   },
   "518": {
     "name": {
-      "ru": "Musharna"
+      "ru": "Мушарна"
     },
     "types": [
       "psychic"
@@ -30771,7 +30771,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30802,7 +30802,7 @@ const ALL_POKEMON_DATA = {
   },
   "519": {
     "name": {
-      "ru": "Pidove"
+      "ru": "Пидав"
     },
     "types": [
       "normal",
@@ -30841,7 +30841,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30850,7 +30850,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30863,7 +30863,7 @@ const ALL_POKEMON_DATA = {
   },
   "520": {
     "name": {
-      "ru": "Tranquill"
+      "ru": "Транквилл"
     },
     "types": [
       "normal",
@@ -30902,7 +30902,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30911,7 +30911,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30924,7 +30924,7 @@ const ALL_POKEMON_DATA = {
   },
   "521": {
     "name": {
-      "ru": "Unfezant"
+      "ru": "Анфезант"
     },
     "types": [
       "normal",
@@ -30963,7 +30963,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30972,7 +30972,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -30985,7 +30985,7 @@ const ALL_POKEMON_DATA = {
   },
   "522": {
     "name": {
-      "ru": "Blitzle"
+      "ru": "Блитцл"
     },
     "types": [
       "electric"
@@ -31023,7 +31023,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31045,7 +31045,7 @@ const ALL_POKEMON_DATA = {
   },
   "523": {
     "name": {
-      "ru": "Zebstrika"
+      "ru": "Зебстрайка"
     },
     "types": [
       "electric"
@@ -31083,7 +31083,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31105,7 +31105,7 @@ const ALL_POKEMON_DATA = {
   },
   "524": {
     "name": {
-      "ru": "Roggenrola"
+      "ru": "Роггенрола"
     },
     "types": [
       "rock"
@@ -31143,7 +31143,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31165,7 +31165,7 @@ const ALL_POKEMON_DATA = {
   },
   "525": {
     "name": {
-      "ru": "Boldore"
+      "ru": "Болдор"
     },
     "types": [
       "rock"
@@ -31203,7 +31203,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31225,7 +31225,7 @@ const ALL_POKEMON_DATA = {
   },
   "526": {
     "name": {
-      "ru": "Gigalith"
+      "ru": "Гигалит"
     },
     "types": [
       "rock"
@@ -31263,7 +31263,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31285,7 +31285,7 @@ const ALL_POKEMON_DATA = {
   },
   "527": {
     "name": {
-      "ru": "Woobat"
+      "ru": "Вубэт"
     },
     "types": [
       "psychic",
@@ -31324,7 +31324,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31346,7 +31346,7 @@ const ALL_POKEMON_DATA = {
   },
   "528": {
     "name": {
-      "ru": "Swoobat"
+      "ru": "Свубэт"
     },
     "types": [
       "psychic",
@@ -31385,7 +31385,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31407,7 +31407,7 @@ const ALL_POKEMON_DATA = {
   },
   "529": {
     "name": {
-      "ru": "Drilbur"
+      "ru": "Дрилбур"
     },
     "types": [
       "ground"
@@ -31427,7 +31427,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31445,7 +31445,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31467,7 +31467,7 @@ const ALL_POKEMON_DATA = {
   },
   "530": {
     "name": {
-      "ru": "Excadrill"
+      "ru": "Экскадрилл"
     },
     "types": [
       "ground",
@@ -31488,7 +31488,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31515,7 +31515,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31528,7 +31528,7 @@ const ALL_POKEMON_DATA = {
   },
   "531": {
     "name": {
-      "ru": "Audino"
+      "ru": "Аудино"
     },
     "types": [
       "normal"
@@ -31588,7 +31588,7 @@ const ALL_POKEMON_DATA = {
   },
   "532": {
     "name": {
-      "ru": "Timburr"
+      "ru": "Тимбурр"
     },
     "types": [
       "fighting"
@@ -31617,7 +31617,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31626,7 +31626,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31648,7 +31648,7 @@ const ALL_POKEMON_DATA = {
   },
   "533": {
     "name": {
-      "ru": "Gurdurr"
+      "ru": "Гурдурр"
     },
     "types": [
       "fighting"
@@ -31677,7 +31677,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31686,7 +31686,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31708,7 +31708,7 @@ const ALL_POKEMON_DATA = {
   },
   "534": {
     "name": {
-      "ru": "Conkeldurr"
+      "ru": "Конкельдурр"
     },
     "types": [
       "fighting"
@@ -31737,7 +31737,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31746,7 +31746,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31768,7 +31768,7 @@ const ALL_POKEMON_DATA = {
   },
   "535": {
     "name": {
-      "ru": "Tympole"
+      "ru": "Тимпол"
     },
     "types": [
       "water"
@@ -31788,7 +31788,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31815,7 +31815,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31828,7 +31828,7 @@ const ALL_POKEMON_DATA = {
   },
   "536": {
     "name": {
-      "ru": "Palpitoad"
+      "ru": "Палпитоад"
     },
     "types": [
       "water",
@@ -31849,7 +31849,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31876,7 +31876,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31889,7 +31889,7 @@ const ALL_POKEMON_DATA = {
   },
   "537": {
     "name": {
-      "ru": "Seismitoad"
+      "ru": "Сейсмитоад"
     },
     "types": [
       "water",
@@ -31910,7 +31910,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31937,7 +31937,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -31950,7 +31950,7 @@ const ALL_POKEMON_DATA = {
   },
   "538": {
     "name": {
-      "ru": "Throh"
+      "ru": "Тро"
     },
     "types": [
       "fighting"
@@ -31988,7 +31988,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32010,7 +32010,7 @@ const ALL_POKEMON_DATA = {
   },
   "539": {
     "name": {
-      "ru": "Sawk"
+      "ru": "Соук"
     },
     "types": [
       "fighting"
@@ -32039,7 +32039,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32048,7 +32048,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32070,7 +32070,7 @@ const ALL_POKEMON_DATA = {
   },
   "540": {
     "name": {
-      "ru": "Sewaddle"
+      "ru": "Севадл"
     },
     "types": [
       "bug",
@@ -32091,7 +32091,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32100,7 +32100,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32131,7 +32131,7 @@ const ALL_POKEMON_DATA = {
   },
   "541": {
     "name": {
-      "ru": "Swadloon"
+      "ru": "Свадлун"
     },
     "types": [
       "bug",
@@ -32152,7 +32152,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32161,7 +32161,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32192,7 +32192,7 @@ const ALL_POKEMON_DATA = {
   },
   "542": {
     "name": {
-      "ru": "Leavanny"
+      "ru": "Левани"
     },
     "types": [
       "bug",
@@ -32222,7 +32222,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32231,7 +32231,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32253,7 +32253,7 @@ const ALL_POKEMON_DATA = {
   },
   "543": {
     "name": {
-      "ru": "Venipede"
+      "ru": "Венипид"
     },
     "types": [
       "bug",
@@ -32314,7 +32314,7 @@ const ALL_POKEMON_DATA = {
   },
   "544": {
     "name": {
-      "ru": "Whirlipede"
+      "ru": "Вирлипид"
     },
     "types": [
       "bug",
@@ -32375,7 +32375,7 @@ const ALL_POKEMON_DATA = {
   },
   "545": {
     "name": {
-      "ru": "Scolipede"
+      "ru": "Сколипид"
     },
     "types": [
       "bug",
@@ -32436,7 +32436,7 @@ const ALL_POKEMON_DATA = {
   },
   "546": {
     "name": {
-      "ru": "Cottonee"
+      "ru": "Коттони"
     },
     "types": [
       "grass",
@@ -32497,7 +32497,7 @@ const ALL_POKEMON_DATA = {
   },
   "547": {
     "name": {
-      "ru": "Whimsicott"
+      "ru": "Вимсискотт"
     },
     "types": [
       "grass",
@@ -32558,7 +32558,7 @@ const ALL_POKEMON_DATA = {
   },
   "548": {
     "name": {
-      "ru": "Petilil"
+      "ru": "Петилил"
     },
     "types": [
       "grass"
@@ -32618,7 +32618,7 @@ const ALL_POKEMON_DATA = {
   },
   "549": {
     "name": {
-      "ru": "Lilligant"
+      "ru": "Лиллигант"
     },
     "types": [
       "grass"
@@ -32678,7 +32678,7 @@ const ALL_POKEMON_DATA = {
   },
   "550": {
     "name": {
-      "ru": "Basculin-red-striped"
+      "ru": "Баскулин"
     },
     "types": [
       "water"
@@ -32707,7 +32707,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32738,7 +32738,7 @@ const ALL_POKEMON_DATA = {
   },
   "551": {
     "name": {
-      "ru": "Sandile"
+      "ru": "Сэндайл"
     },
     "types": [
       "ground",
@@ -32777,7 +32777,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32786,7 +32786,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32799,7 +32799,7 @@ const ALL_POKEMON_DATA = {
   },
   "552": {
     "name": {
-      "ru": "Krokorok"
+      "ru": "Крокорок"
     },
     "types": [
       "ground",
@@ -32838,7 +32838,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32847,7 +32847,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32860,7 +32860,7 @@ const ALL_POKEMON_DATA = {
   },
   "553": {
     "name": {
-      "ru": "Krookodile"
+      "ru": "Крукодайл"
     },
     "types": [
       "ground",
@@ -32899,7 +32899,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32908,7 +32908,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32921,7 +32921,7 @@ const ALL_POKEMON_DATA = {
   },
   "554": {
     "name": {
-      "ru": "Darumaka"
+      "ru": "Дарумакка"
     },
     "types": [
       "fire"
@@ -32958,7 +32958,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -32980,7 +32980,7 @@ const ALL_POKEMON_DATA = {
   },
   "555": {
     "name": {
-      "ru": "Darmanitan-standard"
+      "ru": "Дарманитан"
     },
     "types": [
       "fire"
@@ -33017,7 +33017,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33039,7 +33039,7 @@ const ALL_POKEMON_DATA = {
   },
   "556": {
     "name": {
-      "ru": "Maractus"
+      "ru": "Марактус"
     },
     "types": [
       "grass"
@@ -33099,7 +33099,7 @@ const ALL_POKEMON_DATA = {
   },
   "557": {
     "name": {
-      "ru": "Dwebble"
+      "ru": "Двэббл"
     },
     "types": [
       "bug",
@@ -33138,7 +33138,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-slide",
+        "name": "Камнепад",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33160,7 +33160,7 @@ const ALL_POKEMON_DATA = {
   },
   "558": {
     "name": {
-      "ru": "Crustle"
+      "ru": "Крастл"
     },
     "types": [
       "bug",
@@ -33199,7 +33199,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-slide",
+        "name": "Камнепад",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33221,7 +33221,7 @@ const ALL_POKEMON_DATA = {
   },
   "559": {
     "name": {
-      "ru": "Scraggy"
+      "ru": "Скрэгги"
     },
     "types": [
       "dark",
@@ -33260,7 +33260,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33282,7 +33282,7 @@ const ALL_POKEMON_DATA = {
   },
   "560": {
     "name": {
-      "ru": "Scrafty"
+      "ru": "Скрафти"
     },
     "types": [
       "dark",
@@ -33321,7 +33321,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33343,7 +33343,7 @@ const ALL_POKEMON_DATA = {
   },
   "561": {
     "name": {
-      "ru": "Sigilyph"
+      "ru": "Сиджилиф"
     },
     "types": [
       "psychic",
@@ -33404,7 +33404,7 @@ const ALL_POKEMON_DATA = {
   },
   "562": {
     "name": {
-      "ru": "Yamask"
+      "ru": "Ямаск"
     },
     "types": [
       "ghost"
@@ -33462,7 +33462,7 @@ const ALL_POKEMON_DATA = {
   },
   "563": {
     "name": {
-      "ru": "Cofagrigus"
+      "ru": "Кофагригус"
     },
     "types": [
       "ghost"
@@ -33520,7 +33520,7 @@ const ALL_POKEMON_DATA = {
   },
   "564": {
     "name": {
-      "ru": "Tirtouga"
+      "ru": "Тиртуга"
     },
     "types": [
       "water",
@@ -33541,7 +33541,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33550,7 +33550,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33559,7 +33559,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33581,7 +33581,7 @@ const ALL_POKEMON_DATA = {
   },
   "565": {
     "name": {
-      "ru": "Carracosta"
+      "ru": "Карракоста"
     },
     "types": [
       "water",
@@ -33602,7 +33602,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33611,7 +33611,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33620,7 +33620,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33642,7 +33642,7 @@ const ALL_POKEMON_DATA = {
   },
   "566": {
     "name": {
-      "ru": "Archen"
+      "ru": "Аркен"
     },
     "types": [
       "rock",
@@ -33679,7 +33679,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33701,7 +33701,7 @@ const ALL_POKEMON_DATA = {
   },
   "567": {
     "name": {
-      "ru": "Archeops"
+      "ru": "Аркеопс"
     },
     "types": [
       "rock",
@@ -33738,7 +33738,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33760,7 +33760,7 @@ const ALL_POKEMON_DATA = {
   },
   "568": {
     "name": {
-      "ru": "Trubbish"
+      "ru": "Траббиш"
     },
     "types": [
       "poison"
@@ -33820,7 +33820,7 @@ const ALL_POKEMON_DATA = {
   },
   "569": {
     "name": {
-      "ru": "Garbodor"
+      "ru": "Гарбодор"
     },
     "types": [
       "poison"
@@ -33880,7 +33880,7 @@ const ALL_POKEMON_DATA = {
   },
   "570": {
     "name": {
-      "ru": "Zorua"
+      "ru": "Зоруа"
     },
     "types": [
       "dark"
@@ -33898,7 +33898,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33907,7 +33907,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33938,7 +33938,7 @@ const ALL_POKEMON_DATA = {
   },
   "571": {
     "name": {
-      "ru": "Zoroark"
+      "ru": "Зороарк"
     },
     "types": [
       "dark"
@@ -33956,7 +33956,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33965,7 +33965,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -33996,7 +33996,7 @@ const ALL_POKEMON_DATA = {
   },
   "572": {
     "name": {
-      "ru": "Minccino"
+      "ru": "Минчино"
     },
     "types": [
       "normal"
@@ -34034,7 +34034,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34043,7 +34043,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34056,7 +34056,7 @@ const ALL_POKEMON_DATA = {
   },
   "573": {
     "name": {
-      "ru": "Cinccino"
+      "ru": "Чинчино"
     },
     "types": [
       "normal"
@@ -34085,7 +34085,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34116,7 +34116,7 @@ const ALL_POKEMON_DATA = {
   },
   "574": {
     "name": {
-      "ru": "Gothita"
+      "ru": "Гофита"
     },
     "types": [
       "psychic"
@@ -34176,7 +34176,7 @@ const ALL_POKEMON_DATA = {
   },
   "575": {
     "name": {
-      "ru": "Gothorita"
+      "ru": "Гофорита"
     },
     "types": [
       "psychic"
@@ -34236,7 +34236,7 @@ const ALL_POKEMON_DATA = {
   },
   "576": {
     "name": {
-      "ru": "Gothitelle"
+      "ru": "Гофителль"
     },
     "types": [
       "psychic"
@@ -34296,7 +34296,7 @@ const ALL_POKEMON_DATA = {
   },
   "577": {
     "name": {
-      "ru": "Solosis"
+      "ru": "Солозис"
     },
     "types": [
       "psychic"
@@ -34334,7 +34334,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34356,7 +34356,7 @@ const ALL_POKEMON_DATA = {
   },
   "578": {
     "name": {
-      "ru": "Duosion"
+      "ru": "Дуозион"
     },
     "types": [
       "psychic"
@@ -34394,7 +34394,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34416,7 +34416,7 @@ const ALL_POKEMON_DATA = {
   },
   "579": {
     "name": {
-      "ru": "Reuniclus"
+      "ru": "Реониклус"
     },
     "types": [
       "psychic"
@@ -34454,7 +34454,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34476,7 +34476,7 @@ const ALL_POKEMON_DATA = {
   },
   "580": {
     "name": {
-      "ru": "Ducklett"
+      "ru": "Даклетт"
     },
     "types": [
       "water",
@@ -34506,7 +34506,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34537,7 +34537,7 @@ const ALL_POKEMON_DATA = {
   },
   "581": {
     "name": {
-      "ru": "Swanna"
+      "ru": "Сванна"
     },
     "types": [
       "water",
@@ -34567,7 +34567,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34598,7 +34598,7 @@ const ALL_POKEMON_DATA = {
   },
   "582": {
     "name": {
-      "ru": "Vanillite"
+      "ru": "Ваниллайт"
     },
     "types": [
       "ice"
@@ -34627,7 +34627,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34658,7 +34658,7 @@ const ALL_POKEMON_DATA = {
   },
   "583": {
     "name": {
-      "ru": "Vanillish"
+      "ru": "Ваниллиш"
     },
     "types": [
       "ice"
@@ -34687,7 +34687,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34718,7 +34718,7 @@ const ALL_POKEMON_DATA = {
   },
   "584": {
     "name": {
-      "ru": "Vanilluxe"
+      "ru": "Ваниллакс"
     },
     "types": [
       "ice"
@@ -34747,7 +34747,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34778,7 +34778,7 @@ const ALL_POKEMON_DATA = {
   },
   "585": {
     "name": {
-      "ru": "Deerling"
+      "ru": "Дирлинг"
     },
     "types": [
       "normal",
@@ -34799,7 +34799,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34826,7 +34826,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34839,7 +34839,7 @@ const ALL_POKEMON_DATA = {
   },
   "586": {
     "name": {
-      "ru": "Sawsbuck"
+      "ru": "Соусбак"
     },
     "types": [
       "normal",
@@ -34860,7 +34860,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34887,7 +34887,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34900,7 +34900,7 @@ const ALL_POKEMON_DATA = {
   },
   "587": {
     "name": {
-      "ru": "Emolga"
+      "ru": "Эмолга"
     },
     "types": [
       "electric",
@@ -34920,7 +34920,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34929,7 +34929,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34947,7 +34947,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -34960,7 +34960,7 @@ const ALL_POKEMON_DATA = {
   },
   "588": {
     "name": {
-      "ru": "Karrablast"
+      "ru": "Каррабласт"
     },
     "types": [
       "bug"
@@ -35020,7 +35020,7 @@ const ALL_POKEMON_DATA = {
   },
   "589": {
     "name": {
-      "ru": "Escavalier"
+      "ru": "Эскавалир"
     },
     "types": [
       "bug",
@@ -35081,7 +35081,7 @@ const ALL_POKEMON_DATA = {
   },
   "590": {
     "name": {
-      "ru": "Foongus"
+      "ru": "Фунгус"
     },
     "types": [
       "grass",
@@ -35128,7 +35128,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35141,7 +35141,7 @@ const ALL_POKEMON_DATA = {
   },
   "591": {
     "name": {
-      "ru": "Amoonguss"
+      "ru": "Амунгус"
     },
     "types": [
       "grass",
@@ -35188,7 +35188,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35201,7 +35201,7 @@ const ALL_POKEMON_DATA = {
   },
   "592": {
     "name": {
-      "ru": "Frillish-male"
+      "ru": "Фрилиш"
     },
     "types": [
       "water",
@@ -35231,7 +35231,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35240,7 +35240,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35262,7 +35262,7 @@ const ALL_POKEMON_DATA = {
   },
   "593": {
     "name": {
-      "ru": "Jellicent-male"
+      "ru": "Джеллисент"
     },
     "types": [
       "water",
@@ -35292,7 +35292,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35301,7 +35301,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35323,7 +35323,7 @@ const ALL_POKEMON_DATA = {
   },
   "594": {
     "name": {
-      "ru": "Alomomola"
+      "ru": "Аломомола"
     },
     "types": [
       "water"
@@ -35361,7 +35361,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35383,7 +35383,7 @@ const ALL_POKEMON_DATA = {
   },
   "595": {
     "name": {
-      "ru": "Joltik"
+      "ru": "Джолтик"
     },
     "types": [
       "bug",
@@ -35444,7 +35444,7 @@ const ALL_POKEMON_DATA = {
   },
   "596": {
     "name": {
-      "ru": "Galvantula"
+      "ru": "Галвантула"
     },
     "types": [
       "bug",
@@ -35505,7 +35505,7 @@ const ALL_POKEMON_DATA = {
   },
   "597": {
     "name": {
-      "ru": "Ferroseed"
+      "ru": "Ферросид"
     },
     "types": [
       "grass",
@@ -35524,7 +35524,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35564,7 +35564,7 @@ const ALL_POKEMON_DATA = {
   },
   "598": {
     "name": {
-      "ru": "Ferrothorn"
+      "ru": "Ферроторн"
     },
     "types": [
       "grass",
@@ -35584,7 +35584,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35624,7 +35624,7 @@ const ALL_POKEMON_DATA = {
   },
   "599": {
     "name": {
-      "ru": "Klink"
+      "ru": "Клинк"
     },
     "types": [
       "steel"
@@ -35662,7 +35662,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35671,7 +35671,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35684,7 +35684,7 @@ const ALL_POKEMON_DATA = {
   },
   "600": {
     "name": {
-      "ru": "Klang"
+      "ru": "Клэнг"
     },
     "types": [
       "steel"
@@ -35722,7 +35722,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35731,7 +35731,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35744,7 +35744,7 @@ const ALL_POKEMON_DATA = {
   },
   "601": {
     "name": {
-      "ru": "Klinklang"
+      "ru": "Клинклэнг"
     },
     "types": [
       "steel"
@@ -35782,7 +35782,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35791,7 +35791,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35804,7 +35804,7 @@ const ALL_POKEMON_DATA = {
   },
   "602": {
     "name": {
-      "ru": "Tynamo"
+      "ru": "Тайнамо"
     },
     "types": [
       "electric"
@@ -35822,7 +35822,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -35862,7 +35862,7 @@ const ALL_POKEMON_DATA = {
   },
   "603": {
     "name": {
-      "ru": "Eelektrik"
+      "ru": "Илектрик"
     },
     "types": [
       "electric"
@@ -35920,7 +35920,7 @@ const ALL_POKEMON_DATA = {
   },
   "604": {
     "name": {
-      "ru": "Eelektross"
+      "ru": "Илектросс"
     },
     "types": [
       "electric"
@@ -35978,7 +35978,7 @@ const ALL_POKEMON_DATA = {
   },
   "605": {
     "name": {
-      "ru": "Elgyem"
+      "ru": "Илджием"
     },
     "types": [
       "psychic"
@@ -36007,7 +36007,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36038,7 +36038,7 @@ const ALL_POKEMON_DATA = {
   },
   "606": {
     "name": {
-      "ru": "Beheeyem"
+      "ru": "Бихием"
     },
     "types": [
       "psychic"
@@ -36067,7 +36067,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36098,7 +36098,7 @@ const ALL_POKEMON_DATA = {
   },
   "607": {
     "name": {
-      "ru": "Litwick"
+      "ru": "Литвик"
     },
     "types": [
       "ghost",
@@ -36119,7 +36119,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36159,7 +36159,7 @@ const ALL_POKEMON_DATA = {
   },
   "608": {
     "name": {
-      "ru": "Lampent"
+      "ru": "Лампент"
     },
     "types": [
       "ghost",
@@ -36180,7 +36180,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36220,7 +36220,7 @@ const ALL_POKEMON_DATA = {
   },
   "609": {
     "name": {
-      "ru": "Chandelure"
+      "ru": "Шанделюр"
     },
     "types": [
       "ghost",
@@ -36241,7 +36241,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36281,7 +36281,7 @@ const ALL_POKEMON_DATA = {
   },
   "610": {
     "name": {
-      "ru": "Axew"
+      "ru": "Эксью"
     },
     "types": [
       "dragon"
@@ -36301,7 +36301,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36328,7 +36328,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36341,7 +36341,7 @@ const ALL_POKEMON_DATA = {
   },
   "611": {
     "name": {
-      "ru": "Fraxure"
+      "ru": "Фраксур"
     },
     "types": [
       "dragon"
@@ -36361,7 +36361,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36388,7 +36388,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36401,7 +36401,7 @@ const ALL_POKEMON_DATA = {
   },
   "612": {
     "name": {
-      "ru": "Haxorus"
+      "ru": "Гаксорус"
     },
     "types": [
       "dragon"
@@ -36421,7 +36421,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36448,7 +36448,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36461,7 +36461,7 @@ const ALL_POKEMON_DATA = {
   },
   "613": {
     "name": {
-      "ru": "Cubchoo"
+      "ru": "Кабчу"
     },
     "types": [
       "ice"
@@ -36490,7 +36490,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36521,7 +36521,7 @@ const ALL_POKEMON_DATA = {
   },
   "614": {
     "name": {
-      "ru": "Beartic"
+      "ru": "Бертик"
     },
     "types": [
       "ice"
@@ -36550,7 +36550,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36581,7 +36581,7 @@ const ALL_POKEMON_DATA = {
   },
   "615": {
     "name": {
-      "ru": "Cryogonal"
+      "ru": "Криогонал"
     },
     "types": [
       "ice"
@@ -36617,7 +36617,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36639,7 +36639,7 @@ const ALL_POKEMON_DATA = {
   },
   "616": {
     "name": {
-      "ru": "Shelmet"
+      "ru": "Шелмет"
     },
     "types": [
       "bug"
@@ -36699,7 +36699,7 @@ const ALL_POKEMON_DATA = {
   },
   "617": {
     "name": {
-      "ru": "Accelgor"
+      "ru": "Аксельгор"
     },
     "types": [
       "bug"
@@ -36759,7 +36759,7 @@ const ALL_POKEMON_DATA = {
   },
   "618": {
     "name": {
-      "ru": "Stunfisk"
+      "ru": "Станфиск"
     },
     "types": [
       "ground",
@@ -36780,7 +36780,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36789,7 +36789,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36798,7 +36798,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36807,7 +36807,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36820,7 +36820,7 @@ const ALL_POKEMON_DATA = {
   },
   "619": {
     "name": {
-      "ru": "Mienfoo"
+      "ru": "Меньфу"
     },
     "types": [
       "fighting"
@@ -36880,7 +36880,7 @@ const ALL_POKEMON_DATA = {
   },
   "620": {
     "name": {
-      "ru": "Mienshao"
+      "ru": "Меньшао"
     },
     "types": [
       "fighting"
@@ -36940,7 +36940,7 @@ const ALL_POKEMON_DATA = {
   },
   "621": {
     "name": {
-      "ru": "Druddigon"
+      "ru": "Драддигон"
     },
     "types": [
       "dragon"
@@ -36960,7 +36960,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36969,7 +36969,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -36978,7 +36978,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37000,7 +37000,7 @@ const ALL_POKEMON_DATA = {
   },
   "622": {
     "name": {
-      "ru": "Golett"
+      "ru": "Голетт"
     },
     "types": [
       "ground",
@@ -37039,7 +37039,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37061,7 +37061,7 @@ const ALL_POKEMON_DATA = {
   },
   "623": {
     "name": {
-      "ru": "Golurk"
+      "ru": "Голурк"
     },
     "types": [
       "ground",
@@ -37100,7 +37100,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37122,7 +37122,7 @@ const ALL_POKEMON_DATA = {
   },
   "624": {
     "name": {
-      "ru": "Pawniard"
+      "ru": "Паониард"
     },
     "types": [
       "dark",
@@ -37143,7 +37143,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37170,7 +37170,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37183,7 +37183,7 @@ const ALL_POKEMON_DATA = {
   },
   "625": {
     "name": {
-      "ru": "Bisharp"
+      "ru": "Бишарп"
     },
     "types": [
       "dark",
@@ -37204,7 +37204,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37231,7 +37231,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37244,7 +37244,7 @@ const ALL_POKEMON_DATA = {
   },
   "626": {
     "name": {
-      "ru": "Bouffalant"
+      "ru": "Буффалант"
     },
     "types": [
       "normal"
@@ -37291,7 +37291,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37304,7 +37304,7 @@ const ALL_POKEMON_DATA = {
   },
   "627": {
     "name": {
-      "ru": "Rufflet"
+      "ru": "Раффлет"
     },
     "types": [
       "normal",
@@ -37365,7 +37365,7 @@ const ALL_POKEMON_DATA = {
   },
   "628": {
     "name": {
-      "ru": "Braviary"
+      "ru": "Брэйвиари"
     },
     "types": [
       "normal",
@@ -37426,7 +37426,7 @@ const ALL_POKEMON_DATA = {
   },
   "629": {
     "name": {
-      "ru": "Vullaby"
+      "ru": "Валлаби"
     },
     "types": [
       "dark",
@@ -37474,7 +37474,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37487,7 +37487,7 @@ const ALL_POKEMON_DATA = {
   },
   "630": {
     "name": {
-      "ru": "Mandibuzz"
+      "ru": "Мандибазз"
     },
     "types": [
       "dark",
@@ -37535,7 +37535,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37548,7 +37548,7 @@ const ALL_POKEMON_DATA = {
   },
   "631": {
     "name": {
-      "ru": "Heatmor"
+      "ru": "Хитмор"
     },
     "types": [
       "fire"
@@ -37577,7 +37577,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37586,7 +37586,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37608,7 +37608,7 @@ const ALL_POKEMON_DATA = {
   },
   "632": {
     "name": {
-      "ru": "Durant"
+      "ru": "Дюрант"
     },
     "types": [
       "bug",
@@ -37656,7 +37656,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37669,7 +37669,7 @@ const ALL_POKEMON_DATA = {
   },
   "633": {
     "name": {
-      "ru": "Deino"
+      "ru": "Дайно"
     },
     "types": [
       "dark",
@@ -37688,7 +37688,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37706,7 +37706,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37728,7 +37728,7 @@ const ALL_POKEMON_DATA = {
   },
   "634": {
     "name": {
-      "ru": "Zweilous"
+      "ru": "Звайлос"
     },
     "types": [
       "dark",
@@ -37747,7 +37747,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37765,7 +37765,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37787,7 +37787,7 @@ const ALL_POKEMON_DATA = {
   },
   "635": {
     "name": {
-      "ru": "Hydreigon"
+      "ru": "Гидрайгон"
     },
     "types": [
       "dark",
@@ -37806,7 +37806,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37824,7 +37824,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37846,7 +37846,7 @@ const ALL_POKEMON_DATA = {
   },
   "636": {
     "name": {
-      "ru": "Larvesta"
+      "ru": "Ларвеста"
     },
     "types": [
       "bug",
@@ -37893,7 +37893,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -37906,7 +37906,7 @@ const ALL_POKEMON_DATA = {
   },
   "637": {
     "name": {
-      "ru": "Volcarona"
+      "ru": "Волкарона"
     },
     "types": [
       "bug",
@@ -37966,7 +37966,7 @@ const ALL_POKEMON_DATA = {
   },
   "638": {
     "name": {
-      "ru": "Cobalion"
+      "ru": "Кобалион"
     },
     "types": [
       "steel",
@@ -37994,7 +37994,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38012,7 +38012,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38025,7 +38025,7 @@ const ALL_POKEMON_DATA = {
   },
   "639": {
     "name": {
-      "ru": "Terrakion"
+      "ru": "Терракион"
     },
     "types": [
       "rock",
@@ -38053,7 +38053,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38071,7 +38071,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38084,7 +38084,7 @@ const ALL_POKEMON_DATA = {
   },
   "640": {
     "name": {
-      "ru": "Virizion"
+      "ru": "Виризион"
     },
     "types": [
       "grass",
@@ -38112,7 +38112,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38130,7 +38130,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38143,7 +38143,7 @@ const ALL_POKEMON_DATA = {
   },
   "641": {
     "name": {
-      "ru": "Tornadus-incarnate"
+      "ru": "Торнадус"
     },
     "types": [
       "flying"
@@ -38171,7 +38171,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38189,7 +38189,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38202,7 +38202,7 @@ const ALL_POKEMON_DATA = {
   },
   "642": {
     "name": {
-      "ru": "Thundurus-incarnate"
+      "ru": "Тандурус"
     },
     "types": [
       "electric",
@@ -38222,7 +38222,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38240,7 +38240,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38249,7 +38249,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38262,7 +38262,7 @@ const ALL_POKEMON_DATA = {
   },
   "643": {
     "name": {
-      "ru": "Reshiram"
+      "ru": "Реширам"
     },
     "types": [
       "dragon",
@@ -38281,7 +38281,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38299,7 +38299,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fire-blast",
+        "name": "Огненный взрыв",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38321,7 +38321,7 @@ const ALL_POKEMON_DATA = {
   },
   "644": {
     "name": {
-      "ru": "Zekrom"
+      "ru": "Зекром"
     },
     "types": [
       "dragon",
@@ -38349,7 +38349,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38358,7 +38358,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder",
+        "name": "Громовой удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38380,7 +38380,7 @@ const ALL_POKEMON_DATA = {
   },
   "645": {
     "name": {
-      "ru": "Landorus-incarnate"
+      "ru": "Лэндорус"
     },
     "types": [
       "ground",
@@ -38409,7 +38409,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38418,7 +38418,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38427,7 +38427,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38440,7 +38440,7 @@ const ALL_POKEMON_DATA = {
   },
   "646": {
     "name": {
-      "ru": "Kyurem"
+      "ru": "Кюрем"
     },
     "types": [
       "dragon",
@@ -38459,7 +38459,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38499,7 +38499,7 @@ const ALL_POKEMON_DATA = {
   },
   "647": {
     "name": {
-      "ru": "Keldeo-ordinary"
+      "ru": "Келдео"
     },
     "types": [
       "water",
@@ -38527,7 +38527,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38545,7 +38545,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38558,7 +38558,7 @@ const ALL_POKEMON_DATA = {
   },
   "648": {
     "name": {
-      "ru": "Meloetta-aria"
+      "ru": "Мелоэтта"
     },
     "types": [
       "normal",
@@ -38604,7 +38604,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38617,7 +38617,7 @@ const ALL_POKEMON_DATA = {
   },
   "649": {
     "name": {
-      "ru": "Genesect"
+      "ru": "Генесект"
     },
     "types": [
       "bug",
@@ -38636,7 +38636,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38645,7 +38645,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38676,7 +38676,7 @@ const ALL_POKEMON_DATA = {
   },
   "650": {
     "name": {
-      "ru": "Chespin"
+      "ru": "Чеспин"
     },
     "types": [
       "grass"
@@ -38695,7 +38695,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38704,7 +38704,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38735,7 +38735,7 @@ const ALL_POKEMON_DATA = {
   },
   "651": {
     "name": {
-      "ru": "Quilladin"
+      "ru": "Квилладин"
     },
     "types": [
       "grass"
@@ -38754,7 +38754,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38763,7 +38763,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38794,7 +38794,7 @@ const ALL_POKEMON_DATA = {
   },
   "652": {
     "name": {
-      "ru": "Chesnaught"
+      "ru": "Чеснот"
     },
     "types": [
       "grass",
@@ -38814,7 +38814,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38823,7 +38823,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38854,7 +38854,7 @@ const ALL_POKEMON_DATA = {
   },
   "653": {
     "name": {
-      "ru": "Fennekin"
+      "ru": "Феннекин"
     },
     "types": [
       "fire"
@@ -38873,7 +38873,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38882,7 +38882,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38891,7 +38891,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38900,7 +38900,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38913,7 +38913,7 @@ const ALL_POKEMON_DATA = {
   },
   "654": {
     "name": {
-      "ru": "Braixen"
+      "ru": "Брайксен"
     },
     "types": [
       "fire"
@@ -38932,7 +38932,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38941,7 +38941,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38950,7 +38950,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38959,7 +38959,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -38972,7 +38972,7 @@ const ALL_POKEMON_DATA = {
   },
   "655": {
     "name": {
-      "ru": "Delphox"
+      "ru": "Дельфокс"
     },
     "types": [
       "fire",
@@ -38992,7 +38992,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39001,7 +39001,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39010,7 +39010,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39019,7 +39019,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39032,7 +39032,7 @@ const ALL_POKEMON_DATA = {
   },
   "656": {
     "name": {
-      "ru": "Froakie"
+      "ru": "Фроки"
     },
     "types": [
       "water"
@@ -39060,7 +39060,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39069,7 +39069,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39078,7 +39078,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39091,7 +39091,7 @@ const ALL_POKEMON_DATA = {
   },
   "657": {
     "name": {
-      "ru": "Frogadier"
+      "ru": "Фрогадир"
     },
     "types": [
       "water"
@@ -39119,7 +39119,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39128,7 +39128,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39137,7 +39137,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39150,7 +39150,7 @@ const ALL_POKEMON_DATA = {
   },
   "658": {
     "name": {
-      "ru": "Greninja"
+      "ru": "Грениндзя"
     },
     "types": [
       "water",
@@ -39179,7 +39179,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39188,7 +39188,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39197,7 +39197,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39210,7 +39210,7 @@ const ALL_POKEMON_DATA = {
   },
   "659": {
     "name": {
-      "ru": "Bunnelby"
+      "ru": "Баннелби"
     },
     "types": [
       "normal"
@@ -39248,7 +39248,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39257,7 +39257,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39270,7 +39270,7 @@ const ALL_POKEMON_DATA = {
   },
   "660": {
     "name": {
-      "ru": "Diggersby"
+      "ru": "Диггерзби"
     },
     "types": [
       "normal",
@@ -39309,7 +39309,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39318,7 +39318,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39331,7 +39331,7 @@ const ALL_POKEMON_DATA = {
   },
   "661": {
     "name": {
-      "ru": "Fletchling"
+      "ru": "Флечлинг"
     },
     "types": [
       "normal",
@@ -39360,7 +39360,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39369,7 +39369,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39378,7 +39378,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39391,7 +39391,7 @@ const ALL_POKEMON_DATA = {
   },
   "662": {
     "name": {
-      "ru": "Fletchinder"
+      "ru": "Флечиндер"
     },
     "types": [
       "fire",
@@ -39420,7 +39420,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39429,7 +39429,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39438,7 +39438,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39451,7 +39451,7 @@ const ALL_POKEMON_DATA = {
   },
   "663": {
     "name": {
-      "ru": "Talonflame"
+      "ru": "Тэйлонфлейм"
     },
     "types": [
       "fire",
@@ -39480,7 +39480,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39489,7 +39489,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39498,7 +39498,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39511,7 +39511,7 @@ const ALL_POKEMON_DATA = {
   },
   "664": {
     "name": {
-      "ru": "Scatterbug"
+      "ru": "Скаттербаг"
     },
     "types": [
       "bug"
@@ -39531,7 +39531,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39571,7 +39571,7 @@ const ALL_POKEMON_DATA = {
   },
   "665": {
     "name": {
-      "ru": "Spewpa"
+      "ru": "Спьюпа"
     },
     "types": [
       "bug"
@@ -39612,7 +39612,7 @@ const ALL_POKEMON_DATA = {
   },
   "666": {
     "name": {
-      "ru": "Vivillon"
+      "ru": "Вивиллон"
     },
     "types": [
       "bug",
@@ -39673,7 +39673,7 @@ const ALL_POKEMON_DATA = {
   },
   "667": {
     "name": {
-      "ru": "Litleo"
+      "ru": "Литлео"
     },
     "types": [
       "fire",
@@ -39703,7 +39703,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39721,7 +39721,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39734,7 +39734,7 @@ const ALL_POKEMON_DATA = {
   },
   "668": {
     "name": {
-      "ru": "Pyroar-male"
+      "ru": "Пайроар"
     },
     "types": [
       "fire",
@@ -39764,7 +39764,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39782,7 +39782,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39795,7 +39795,7 @@ const ALL_POKEMON_DATA = {
   },
   "669": {
     "name": {
-      "ru": "Flabebe"
+      "ru": "Флабэбэ"
     },
     "types": [
       "fairy"
@@ -39814,7 +39814,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39823,7 +39823,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39832,7 +39832,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39841,7 +39841,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39854,7 +39854,7 @@ const ALL_POKEMON_DATA = {
   },
   "670": {
     "name": {
-      "ru": "Floette"
+      "ru": "Флоэтт"
     },
     "types": [
       "fairy"
@@ -39873,7 +39873,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39882,7 +39882,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39891,7 +39891,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39900,7 +39900,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39913,7 +39913,7 @@ const ALL_POKEMON_DATA = {
   },
   "671": {
     "name": {
-      "ru": "Florges"
+      "ru": "Флоргес"
     },
     "types": [
       "fairy"
@@ -39932,7 +39932,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -39972,7 +39972,7 @@ const ALL_POKEMON_DATA = {
   },
   "672": {
     "name": {
-      "ru": "Skiddo"
+      "ru": "Скиддо"
     },
     "types": [
       "grass"
@@ -39991,7 +39991,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40000,7 +40000,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40031,7 +40031,7 @@ const ALL_POKEMON_DATA = {
   },
   "673": {
     "name": {
-      "ru": "Gogoat"
+      "ru": "Гогоат"
     },
     "types": [
       "grass"
@@ -40050,7 +40050,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40059,7 +40059,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40090,7 +40090,7 @@ const ALL_POKEMON_DATA = {
   },
   "674": {
     "name": {
-      "ru": "Pancham"
+      "ru": "Панчам"
     },
     "types": [
       "fighting"
@@ -40128,7 +40128,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40150,7 +40150,7 @@ const ALL_POKEMON_DATA = {
   },
   "675": {
     "name": {
-      "ru": "Pangoro"
+      "ru": "Пангоро"
     },
     "types": [
       "fighting",
@@ -40189,7 +40189,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40211,7 +40211,7 @@ const ALL_POKEMON_DATA = {
   },
   "676": {
     "name": {
-      "ru": "Furfrou"
+      "ru": "Фурфру"
     },
     "types": [
       "normal"
@@ -40247,7 +40247,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40269,7 +40269,7 @@ const ALL_POKEMON_DATA = {
   },
   "677": {
     "name": {
-      "ru": "Espurr"
+      "ru": "Эспур"
     },
     "types": [
       "psychic"
@@ -40289,7 +40289,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40298,7 +40298,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40329,7 +40329,7 @@ const ALL_POKEMON_DATA = {
   },
   "678": {
     "name": {
-      "ru": "Meowstic-male"
+      "ru": "Мяустик"
     },
     "types": [
       "psychic"
@@ -40349,7 +40349,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40358,7 +40358,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40389,7 +40389,7 @@ const ALL_POKEMON_DATA = {
   },
   "679": {
     "name": {
-      "ru": "Honedge"
+      "ru": "Хонэдж"
     },
     "types": [
       "steel",
@@ -40417,7 +40417,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40448,7 +40448,7 @@ const ALL_POKEMON_DATA = {
   },
   "680": {
     "name": {
-      "ru": "Doublade"
+      "ru": "Даблейд"
     },
     "types": [
       "steel",
@@ -40476,7 +40476,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40507,7 +40507,7 @@ const ALL_POKEMON_DATA = {
   },
   "681": {
     "name": {
-      "ru": "Aegislash-shield"
+      "ru": "Аегислэш"
     },
     "types": [
       "steel",
@@ -40535,7 +40535,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40566,7 +40566,7 @@ const ALL_POKEMON_DATA = {
   },
   "682": {
     "name": {
-      "ru": "Spritzee"
+      "ru": "Спритзи"
     },
     "types": [
       "fairy"
@@ -40585,7 +40585,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40625,7 +40625,7 @@ const ALL_POKEMON_DATA = {
   },
   "683": {
     "name": {
-      "ru": "Aromatisse"
+      "ru": "Ароматизз"
     },
     "types": [
       "fairy"
@@ -40644,7 +40644,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40684,7 +40684,7 @@ const ALL_POKEMON_DATA = {
   },
   "684": {
     "name": {
-      "ru": "Swirlix"
+      "ru": "Свирликс"
     },
     "types": [
       "fairy"
@@ -40703,7 +40703,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40743,7 +40743,7 @@ const ALL_POKEMON_DATA = {
   },
   "685": {
     "name": {
-      "ru": "Slurpuff"
+      "ru": "Сларпафф"
     },
     "types": [
       "fairy"
@@ -40762,7 +40762,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40802,7 +40802,7 @@ const ALL_POKEMON_DATA = {
   },
   "686": {
     "name": {
-      "ru": "Inkay"
+      "ru": "Инкей"
     },
     "types": [
       "dark",
@@ -40823,7 +40823,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40863,7 +40863,7 @@ const ALL_POKEMON_DATA = {
   },
   "687": {
     "name": {
-      "ru": "Malamar"
+      "ru": "Маламар"
     },
     "types": [
       "dark",
@@ -40884,7 +40884,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40924,7 +40924,7 @@ const ALL_POKEMON_DATA = {
   },
   "688": {
     "name": {
-      "ru": "Binacle"
+      "ru": "Бинакл"
     },
     "types": [
       "rock",
@@ -40945,7 +40945,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40963,7 +40963,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -40985,7 +40985,7 @@ const ALL_POKEMON_DATA = {
   },
   "689": {
     "name": {
-      "ru": "Barbaracle"
+      "ru": "Барбаракл"
     },
     "types": [
       "rock",
@@ -41006,7 +41006,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41024,7 +41024,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41046,7 +41046,7 @@ const ALL_POKEMON_DATA = {
   },
   "690": {
     "name": {
-      "ru": "Skrelp"
+      "ru": "Скрельп"
     },
     "types": [
       "poison",
@@ -41067,7 +41067,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41076,7 +41076,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41094,7 +41094,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41107,7 +41107,7 @@ const ALL_POKEMON_DATA = {
   },
   "691": {
     "name": {
-      "ru": "Dragalge"
+      "ru": "Драгалг"
     },
     "types": [
       "poison",
@@ -41128,7 +41128,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41137,7 +41137,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41155,7 +41155,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41168,7 +41168,7 @@ const ALL_POKEMON_DATA = {
   },
   "692": {
     "name": {
-      "ru": "Clauncher"
+      "ru": "Клончер"
     },
     "types": [
       "water"
@@ -41204,7 +41204,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41226,7 +41226,7 @@ const ALL_POKEMON_DATA = {
   },
   "693": {
     "name": {
-      "ru": "Clawitzer"
+      "ru": "Кловицер"
     },
     "types": [
       "water"
@@ -41262,7 +41262,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41284,7 +41284,7 @@ const ALL_POKEMON_DATA = {
   },
   "694": {
     "name": {
-      "ru": "Helioptile"
+      "ru": "Гелиоптайл"
     },
     "types": [
       "electric",
@@ -41323,7 +41323,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41332,7 +41332,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41345,7 +41345,7 @@ const ALL_POKEMON_DATA = {
   },
   "695": {
     "name": {
-      "ru": "Heliolisk"
+      "ru": "Гелиолиск"
     },
     "types": [
       "electric",
@@ -41384,7 +41384,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41393,7 +41393,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41406,7 +41406,7 @@ const ALL_POKEMON_DATA = {
   },
   "696": {
     "name": {
-      "ru": "Tyrunt"
+      "ru": "Тайрант"
     },
     "types": [
       "rock",
@@ -41444,7 +41444,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41466,7 +41466,7 @@ const ALL_POKEMON_DATA = {
   },
   "697": {
     "name": {
-      "ru": "Tyrantrum"
+      "ru": "Тайрентрум"
     },
     "types": [
       "rock",
@@ -41504,7 +41504,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41526,7 +41526,7 @@ const ALL_POKEMON_DATA = {
   },
   "698": {
     "name": {
-      "ru": "Amaura"
+      "ru": "Амаура"
     },
     "types": [
       "rock",
@@ -41555,7 +41555,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41573,7 +41573,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41586,7 +41586,7 @@ const ALL_POKEMON_DATA = {
   },
   "699": {
     "name": {
-      "ru": "Aurorus"
+      "ru": "Аврорус"
     },
     "types": [
       "rock",
@@ -41615,7 +41615,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41633,7 +41633,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41646,7 +41646,7 @@ const ALL_POKEMON_DATA = {
   },
   "700": {
     "name": {
-      "ru": "Sylveon"
+      "ru": "Сильвеон"
     },
     "types": [
       "fairy"
@@ -41674,7 +41674,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41705,7 +41705,7 @@ const ALL_POKEMON_DATA = {
   },
   "701": {
     "name": {
-      "ru": "Hawlucha"
+      "ru": "Холуча"
     },
     "types": [
       "fighting",
@@ -41753,7 +41753,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41766,7 +41766,7 @@ const ALL_POKEMON_DATA = {
   },
   "702": {
     "name": {
-      "ru": "Dedenne"
+      "ru": "Деденне"
     },
     "types": [
       "electric",
@@ -41787,7 +41787,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41796,7 +41796,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41805,7 +41805,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41827,7 +41827,7 @@ const ALL_POKEMON_DATA = {
   },
   "703": {
     "name": {
-      "ru": "Carbink"
+      "ru": "Карбинк"
     },
     "types": [
       "rock",
@@ -41847,7 +41847,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41887,7 +41887,7 @@ const ALL_POKEMON_DATA = {
   },
   "704": {
     "name": {
-      "ru": "Goomy"
+      "ru": "Гуми"
     },
     "types": [
       "dragon"
@@ -41907,7 +41907,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41925,7 +41925,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41934,7 +41934,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41947,7 +41947,7 @@ const ALL_POKEMON_DATA = {
   },
   "705": {
     "name": {
-      "ru": "Sliggoo"
+      "ru": "Слигу"
     },
     "types": [
       "dragon"
@@ -41967,7 +41967,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -41985,7 +41985,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42007,7 +42007,7 @@ const ALL_POKEMON_DATA = {
   },
   "706": {
     "name": {
-      "ru": "Goodra"
+      "ru": "Гудра"
     },
     "types": [
       "dragon"
@@ -42027,7 +42027,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42045,7 +42045,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42067,7 +42067,7 @@ const ALL_POKEMON_DATA = {
   },
   "707": {
     "name": {
-      "ru": "Klefki"
+      "ru": "Клефки"
     },
     "types": [
       "steel",
@@ -42087,7 +42087,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42127,7 +42127,7 @@ const ALL_POKEMON_DATA = {
   },
   "708": {
     "name": {
-      "ru": "Phantump"
+      "ru": "Фантамп"
     },
     "types": [
       "ghost",
@@ -42148,7 +42148,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42188,7 +42188,7 @@ const ALL_POKEMON_DATA = {
   },
   "709": {
     "name": {
-      "ru": "Trevenant"
+      "ru": "Тривернант"
     },
     "types": [
       "ghost",
@@ -42209,7 +42209,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42249,7 +42249,7 @@ const ALL_POKEMON_DATA = {
   },
   "710": {
     "name": {
-      "ru": "Pumpkaboo-average"
+      "ru": "Пампакмбу"
     },
     "types": [
       "ghost",
@@ -42279,7 +42279,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42310,7 +42310,7 @@ const ALL_POKEMON_DATA = {
   },
   "711": {
     "name": {
-      "ru": "Gourgeist-average"
+      "ru": "Гургейст"
     },
     "types": [
       "ghost",
@@ -42340,7 +42340,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42371,7 +42371,7 @@ const ALL_POKEMON_DATA = {
   },
   "712": {
     "name": {
-      "ru": "Bergmite"
+      "ru": "Бергмайт"
     },
     "types": [
       "ice"
@@ -42391,7 +42391,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42418,7 +42418,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42431,7 +42431,7 @@ const ALL_POKEMON_DATA = {
   },
   "713": {
     "name": {
-      "ru": "Avalugg"
+      "ru": "Авалагг"
     },
     "types": [
       "ice"
@@ -42451,7 +42451,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42491,7 +42491,7 @@ const ALL_POKEMON_DATA = {
   },
   "714": {
     "name": {
-      "ru": "Noibat"
+      "ru": "Нойбат"
     },
     "types": [
       "flying",
@@ -42552,7 +42552,7 @@ const ALL_POKEMON_DATA = {
   },
   "715": {
     "name": {
-      "ru": "Noivern"
+      "ru": "Нойверн"
     },
     "types": [
       "flying",
@@ -42613,7 +42613,7 @@ const ALL_POKEMON_DATA = {
   },
   "716": {
     "name": {
-      "ru": "Xerneas"
+      "ru": "Ксернеас"
     },
     "types": [
       "fairy"
@@ -42631,7 +42631,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42671,7 +42671,7 @@ const ALL_POKEMON_DATA = {
   },
   "717": {
     "name": {
-      "ru": "Yveltal"
+      "ru": "Ивельтал"
     },
     "types": [
       "dark",
@@ -42717,7 +42717,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42730,7 +42730,7 @@ const ALL_POKEMON_DATA = {
   },
   "718": {
     "name": {
-      "ru": "Zygarde-50"
+      "ru": "Зайгард"
     },
     "types": [
       "dragon",
@@ -42758,7 +42758,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42767,7 +42767,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42776,7 +42776,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42789,7 +42789,7 @@ const ALL_POKEMON_DATA = {
   },
   "719": {
     "name": {
-      "ru": "Diancie"
+      "ru": "Дианси"
     },
     "types": [
       "rock",
@@ -42808,7 +42808,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42848,7 +42848,7 @@ const ALL_POKEMON_DATA = {
   },
   "720": {
     "name": {
-      "ru": "Hoopa"
+      "ru": "Хупа"
     },
     "types": [
       "psychic",
@@ -42885,7 +42885,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42907,7 +42907,7 @@ const ALL_POKEMON_DATA = {
   },
   "721": {
     "name": {
-      "ru": "Volcanion"
+      "ru": "Вулканион"
     },
     "types": [
       "fire",
@@ -42953,7 +42953,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -42966,7 +42966,7 @@ const ALL_POKEMON_DATA = {
   },
   "722": {
     "name": {
-      "ru": "Rowlet"
+      "ru": "Роулет"
     },
     "types": [
       "grass",
@@ -43004,7 +43004,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43013,7 +43013,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43026,7 +43026,7 @@ const ALL_POKEMON_DATA = {
   },
   "723": {
     "name": {
-      "ru": "Dartrix"
+      "ru": "Дартрикс"
     },
     "types": [
       "grass",
@@ -43064,7 +43064,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43073,7 +43073,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43086,7 +43086,7 @@ const ALL_POKEMON_DATA = {
   },
   "724": {
     "name": {
-      "ru": "Decidueye"
+      "ru": "Десиджуай"
     },
     "types": [
       "grass",
@@ -43115,7 +43115,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43124,7 +43124,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43146,7 +43146,7 @@ const ALL_POKEMON_DATA = {
   },
   "725": {
     "name": {
-      "ru": "Litten"
+      "ru": "Литтен"
     },
     "types": [
       "fire"
@@ -43165,7 +43165,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43174,7 +43174,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43192,7 +43192,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43205,7 +43205,7 @@ const ALL_POKEMON_DATA = {
   },
   "726": {
     "name": {
-      "ru": "Torracat"
+      "ru": "Торракат"
     },
     "types": [
       "fire"
@@ -43224,7 +43224,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43233,7 +43233,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43251,7 +43251,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43264,7 +43264,7 @@ const ALL_POKEMON_DATA = {
   },
   "727": {
     "name": {
-      "ru": "Incineroar"
+      "ru": "Инсинероар"
     },
     "types": [
       "fire",
@@ -43284,7 +43284,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43293,7 +43293,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43311,7 +43311,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43324,7 +43324,7 @@ const ALL_POKEMON_DATA = {
   },
   "728": {
     "name": {
-      "ru": "Popplio"
+      "ru": "Попплио"
     },
     "types": [
       "water"
@@ -43361,7 +43361,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43383,7 +43383,7 @@ const ALL_POKEMON_DATA = {
   },
   "729": {
     "name": {
-      "ru": "Brionne"
+      "ru": "Бриан"
     },
     "types": [
       "water"
@@ -43420,7 +43420,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43442,7 +43442,7 @@ const ALL_POKEMON_DATA = {
   },
   "730": {
     "name": {
-      "ru": "Primarina"
+      "ru": "Примарина"
     },
     "types": [
       "water",
@@ -43480,7 +43480,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43502,7 +43502,7 @@ const ALL_POKEMON_DATA = {
   },
   "731": {
     "name": {
-      "ru": "Pikipek"
+      "ru": "Пикипек"
     },
     "types": [
       "normal",
@@ -43532,7 +43532,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43563,7 +43563,7 @@ const ALL_POKEMON_DATA = {
   },
   "732": {
     "name": {
-      "ru": "Trumbeak"
+      "ru": "Трамбик"
     },
     "types": [
       "normal",
@@ -43593,7 +43593,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43624,7 +43624,7 @@ const ALL_POKEMON_DATA = {
   },
   "733": {
     "name": {
-      "ru": "Toucannon"
+      "ru": "Тукэнон"
     },
     "types": [
       "normal",
@@ -43654,7 +43654,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43685,7 +43685,7 @@ const ALL_POKEMON_DATA = {
   },
   "734": {
     "name": {
-      "ru": "Yungoos"
+      "ru": "Янгус"
     },
     "types": [
       "normal"
@@ -43714,7 +43714,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43745,7 +43745,7 @@ const ALL_POKEMON_DATA = {
   },
   "735": {
     "name": {
-      "ru": "Gumshoos"
+      "ru": "Гамшус"
     },
     "types": [
       "normal"
@@ -43774,7 +43774,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43805,7 +43805,7 @@ const ALL_POKEMON_DATA = {
   },
   "736": {
     "name": {
-      "ru": "Grubbin"
+      "ru": "Граббин"
     },
     "types": [
       "bug"
@@ -43832,7 +43832,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43850,7 +43850,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43863,7 +43863,7 @@ const ALL_POKEMON_DATA = {
   },
   "737": {
     "name": {
-      "ru": "Charjabug"
+      "ru": "Чарьябаг"
     },
     "types": [
       "bug",
@@ -43891,7 +43891,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43909,7 +43909,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43922,7 +43922,7 @@ const ALL_POKEMON_DATA = {
   },
   "738": {
     "name": {
-      "ru": "Vikavolt"
+      "ru": "Викаволт"
     },
     "types": [
       "bug",
@@ -43959,7 +43959,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43968,7 +43968,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -43981,7 +43981,7 @@ const ALL_POKEMON_DATA = {
   },
   "739": {
     "name": {
-      "ru": "Crabrawler"
+      "ru": "Крабролер"
     },
     "types": [
       "fighting"
@@ -44001,7 +44001,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44010,7 +44010,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44028,7 +44028,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bubble",
+        "name": "Пузырь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44041,7 +44041,7 @@ const ALL_POKEMON_DATA = {
   },
   "740": {
     "name": {
-      "ru": "Crabominable"
+      "ru": "Крабаминабл"
     },
     "types": [
       "fighting",
@@ -44071,7 +44071,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44080,7 +44080,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44102,7 +44102,7 @@ const ALL_POKEMON_DATA = {
   },
   "741": {
     "name": {
-      "ru": "Oricorio-baile"
+      "ru": "Орикорио"
     },
     "types": [
       "fire",
@@ -44139,7 +44139,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44161,7 +44161,7 @@ const ALL_POKEMON_DATA = {
   },
   "742": {
     "name": {
-      "ru": "Cutiefly"
+      "ru": "Кьютифлай"
     },
     "types": [
       "bug",
@@ -44222,7 +44222,7 @@ const ALL_POKEMON_DATA = {
   },
   "743": {
     "name": {
-      "ru": "Ribombee"
+      "ru": "Рибомби"
     },
     "types": [
       "bug",
@@ -44283,7 +44283,7 @@ const ALL_POKEMON_DATA = {
   },
   "744": {
     "name": {
-      "ru": "Rockruff"
+      "ru": "Рокрафф"
     },
     "types": [
       "rock"
@@ -44312,7 +44312,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44321,7 +44321,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44330,7 +44330,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44343,7 +44343,7 @@ const ALL_POKEMON_DATA = {
   },
   "745": {
     "name": {
-      "ru": "Lycanroc-midday"
+      "ru": "Лайканрок"
     },
     "types": [
       "rock"
@@ -44372,7 +44372,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44381,7 +44381,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44390,7 +44390,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44403,7 +44403,7 @@ const ALL_POKEMON_DATA = {
   },
   "746": {
     "name": {
-      "ru": "Wishiwashi-solo"
+      "ru": "Вишиваши"
     },
     "types": [
       "water"
@@ -44439,7 +44439,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44448,7 +44448,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44461,7 +44461,7 @@ const ALL_POKEMON_DATA = {
   },
   "747": {
     "name": {
-      "ru": "Mareanie"
+      "ru": "Марини"
     },
     "types": [
       "poison",
@@ -44500,7 +44500,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44522,7 +44522,7 @@ const ALL_POKEMON_DATA = {
   },
   "748": {
     "name": {
-      "ru": "Toxapex"
+      "ru": "Токсапекс"
     },
     "types": [
       "poison",
@@ -44561,7 +44561,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44583,7 +44583,7 @@ const ALL_POKEMON_DATA = {
   },
   "749": {
     "name": {
-      "ru": "Mudbray"
+      "ru": "Мадбрей"
     },
     "types": [
       "ground"
@@ -44612,7 +44612,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44643,7 +44643,7 @@ const ALL_POKEMON_DATA = {
   },
   "750": {
     "name": {
-      "ru": "Mudsdale"
+      "ru": "Мадсдэйл"
     },
     "types": [
       "ground"
@@ -44672,7 +44672,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44703,7 +44703,7 @@ const ALL_POKEMON_DATA = {
   },
   "751": {
     "name": {
-      "ru": "Dewpider"
+      "ru": "Дьюпайдер"
     },
     "types": [
       "water",
@@ -44732,7 +44732,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44741,7 +44741,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44763,7 +44763,7 @@ const ALL_POKEMON_DATA = {
   },
   "752": {
     "name": {
-      "ru": "Araquanid"
+      "ru": "Аракванид"
     },
     "types": [
       "water",
@@ -44792,7 +44792,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44801,7 +44801,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44823,7 +44823,7 @@ const ALL_POKEMON_DATA = {
   },
   "753": {
     "name": {
-      "ru": "Fomantis"
+      "ru": "Фомантис"
     },
     "types": [
       "grass"
@@ -44851,7 +44851,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44860,7 +44860,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44882,7 +44882,7 @@ const ALL_POKEMON_DATA = {
   },
   "754": {
     "name": {
-      "ru": "Lurantis"
+      "ru": "Лурантис"
     },
     "types": [
       "grass"
@@ -44910,7 +44910,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44919,7 +44919,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -44941,7 +44941,7 @@ const ALL_POKEMON_DATA = {
   },
   "755": {
     "name": {
-      "ru": "Morelull"
+      "ru": "Морилалл"
     },
     "types": [
       "grass",
@@ -45002,7 +45002,7 @@ const ALL_POKEMON_DATA = {
   },
   "756": {
     "name": {
-      "ru": "Shiinotic"
+      "ru": "Шинатик"
     },
     "types": [
       "grass",
@@ -45063,7 +45063,7 @@ const ALL_POKEMON_DATA = {
   },
   "757": {
     "name": {
-      "ru": "Salandit"
+      "ru": "Саландит"
     },
     "types": [
       "poison",
@@ -45092,7 +45092,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45101,7 +45101,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45110,7 +45110,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45123,7 +45123,7 @@ const ALL_POKEMON_DATA = {
   },
   "758": {
     "name": {
-      "ru": "Salazzle"
+      "ru": "Салаззл"
     },
     "types": [
       "poison",
@@ -45161,7 +45161,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45183,7 +45183,7 @@ const ALL_POKEMON_DATA = {
   },
   "759": {
     "name": {
-      "ru": "Stufful"
+      "ru": "Стаффул"
     },
     "types": [
       "normal",
@@ -45204,7 +45204,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45244,7 +45244,7 @@ const ALL_POKEMON_DATA = {
   },
   "760": {
     "name": {
-      "ru": "Bewear"
+      "ru": "Бeвеар"
     },
     "types": [
       "normal",
@@ -45274,7 +45274,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45305,7 +45305,7 @@ const ALL_POKEMON_DATA = {
   },
   "761": {
     "name": {
-      "ru": "Bounsweet"
+      "ru": "Баунсвит"
     },
     "types": [
       "grass"
@@ -45325,7 +45325,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45365,7 +45365,7 @@ const ALL_POKEMON_DATA = {
   },
   "762": {
     "name": {
-      "ru": "Steenee"
+      "ru": "Стини"
     },
     "types": [
       "grass"
@@ -45403,7 +45403,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45425,7 +45425,7 @@ const ALL_POKEMON_DATA = {
   },
   "763": {
     "name": {
-      "ru": "Tsareena"
+      "ru": "Царина"
     },
     "types": [
       "grass"
@@ -45463,7 +45463,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45485,7 +45485,7 @@ const ALL_POKEMON_DATA = {
   },
   "764": {
     "name": {
-      "ru": "Comfey"
+      "ru": "Комфей"
     },
     "types": [
       "fairy"
@@ -45514,7 +45514,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45545,7 +45545,7 @@ const ALL_POKEMON_DATA = {
   },
   "765": {
     "name": {
-      "ru": "Oranguru"
+      "ru": "Орангуру"
     },
     "types": [
       "normal",
@@ -45575,7 +45575,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45606,7 +45606,7 @@ const ALL_POKEMON_DATA = {
   },
   "766": {
     "name": {
-      "ru": "Passimian"
+      "ru": "Пассимиан"
     },
     "types": [
       "fighting"
@@ -45625,7 +45625,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -45665,7 +45665,7 @@ const ALL_POKEMON_DATA = {
   },
   "767": {
     "name": {
-      "ru": "Wimpod"
+      "ru": "Вимпод"
     },
     "types": [
       "bug",
@@ -45715,7 +45715,7 @@ const ALL_POKEMON_DATA = {
   },
   "768": {
     "name": {
-      "ru": "Golisopod"
+      "ru": "Голисопод"
     },
     "types": [
       "bug",
@@ -45774,7 +45774,7 @@ const ALL_POKEMON_DATA = {
   },
   "769": {
     "name": {
-      "ru": "Sandygast"
+      "ru": "Сэндигаст"
     },
     "types": [
       "ghost",
@@ -45834,7 +45834,7 @@ const ALL_POKEMON_DATA = {
   },
   "770": {
     "name": {
-      "ru": "Palossand"
+      "ru": "Палоссэнд"
     },
     "types": [
       "ghost",
@@ -45894,7 +45894,7 @@ const ALL_POKEMON_DATA = {
   },
   "771": {
     "name": {
-      "ru": "Pyukumuku"
+      "ru": "Пьюкумуку"
     },
     "types": [
       "water"
@@ -45953,7 +45953,7 @@ const ALL_POKEMON_DATA = {
   },
   "772": {
     "name": {
-      "ru": "Type-null"
+      "ru": "Тип: Ноль"
     },
     "types": [
       "normal"
@@ -45980,7 +45980,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46011,7 +46011,7 @@ const ALL_POKEMON_DATA = {
   },
   "773": {
     "name": {
-      "ru": "Silvally"
+      "ru": "Силвалли"
     },
     "types": [
       "normal"
@@ -46038,7 +46038,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46069,7 +46069,7 @@ const ALL_POKEMON_DATA = {
   },
   "774": {
     "name": {
-      "ru": "Minior-red-meteor"
+      "ru": "Миниор"
     },
     "types": [
       "rock",
@@ -46088,7 +46088,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46128,7 +46128,7 @@ const ALL_POKEMON_DATA = {
   },
   "775": {
     "name": {
-      "ru": "Komala"
+      "ru": "Комала"
     },
     "types": [
       "normal"
@@ -46146,7 +46146,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46186,7 +46186,7 @@ const ALL_POKEMON_DATA = {
   },
   "776": {
     "name": {
-      "ru": "Turtonator"
+      "ru": "Тартонэйтор"
     },
     "types": [
       "fire",
@@ -46205,7 +46205,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46223,7 +46223,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46232,7 +46232,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46245,7 +46245,7 @@ const ALL_POKEMON_DATA = {
   },
   "777": {
     "name": {
-      "ru": "Togedemaru"
+      "ru": "Тогедемару"
     },
     "types": [
       "electric",
@@ -46266,7 +46266,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46284,7 +46284,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46306,7 +46306,7 @@ const ALL_POKEMON_DATA = {
   },
   "778": {
     "name": {
-      "ru": "Mimikyu-disguised"
+      "ru": "Мимикью"
     },
     "types": [
       "ghost",
@@ -46325,7 +46325,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46365,7 +46365,7 @@ const ALL_POKEMON_DATA = {
   },
   "779": {
     "name": {
-      "ru": "Bruxish"
+      "ru": "Браксиш"
     },
     "types": [
       "water",
@@ -46386,7 +46386,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46404,7 +46404,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46426,7 +46426,7 @@ const ALL_POKEMON_DATA = {
   },
   "780": {
     "name": {
-      "ru": "Drampa"
+      "ru": "Дрампа"
     },
     "types": [
       "normal",
@@ -46447,7 +46447,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46487,7 +46487,7 @@ const ALL_POKEMON_DATA = {
   },
   "781": {
     "name": {
-      "ru": "Dhelmise"
+      "ru": "Делмайз"
     },
     "types": [
       "ghost",
@@ -46506,7 +46506,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46546,7 +46546,7 @@ const ALL_POKEMON_DATA = {
   },
   "782": {
     "name": {
-      "ru": "Jangmo-o"
+      "ru": "Джангмо-о"
     },
     "types": [
       "dragon"
@@ -46575,7 +46575,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46584,7 +46584,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46606,7 +46606,7 @@ const ALL_POKEMON_DATA = {
   },
   "783": {
     "name": {
-      "ru": "Hakamo-o"
+      "ru": "Хакамо-o"
     },
     "types": [
       "dragon",
@@ -46636,7 +46636,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46645,7 +46645,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46667,7 +46667,7 @@ const ALL_POKEMON_DATA = {
   },
   "784": {
     "name": {
-      "ru": "Kommo-o"
+      "ru": "Коммо-o"
     },
     "types": [
       "dragon",
@@ -46697,7 +46697,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46706,7 +46706,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46728,7 +46728,7 @@ const ALL_POKEMON_DATA = {
   },
   "785": {
     "name": {
-      "ru": "Tapu-koko"
+      "ru": "Тапу Коко"
     },
     "types": [
       "electric",
@@ -46748,7 +46748,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46766,7 +46766,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46788,7 +46788,7 @@ const ALL_POKEMON_DATA = {
   },
   "786": {
     "name": {
-      "ru": "Tapu-lele"
+      "ru": "Тапу Леле"
     },
     "types": [
       "psychic",
@@ -46848,7 +46848,7 @@ const ALL_POKEMON_DATA = {
   },
   "787": {
     "name": {
-      "ru": "Tapu-bulu"
+      "ru": "Тапу Булу"
     },
     "types": [
       "grass",
@@ -46908,7 +46908,7 @@ const ALL_POKEMON_DATA = {
   },
   "788": {
     "name": {
-      "ru": "Tapu-fini"
+      "ru": "Тапу Фини"
     },
     "types": [
       "water",
@@ -46937,7 +46937,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46946,7 +46946,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46955,7 +46955,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -46968,7 +46968,7 @@ const ALL_POKEMON_DATA = {
   },
   "789": {
     "name": {
-      "ru": "Cosmog"
+      "ru": "Космог"
     },
     "types": [
       "psychic"
@@ -47008,7 +47008,7 @@ const ALL_POKEMON_DATA = {
   },
   "790": {
     "name": {
-      "ru": "Cosmoem"
+      "ru": "Космоэм"
     },
     "types": [
       "psychic"
@@ -47048,7 +47048,7 @@ const ALL_POKEMON_DATA = {
   },
   "791": {
     "name": {
-      "ru": "Solgaleo"
+      "ru": "Солгалео"
     },
     "types": [
       "psychic",
@@ -47067,7 +47067,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "solar-beam",
+        "name": "Солнечный луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47107,7 +47107,7 @@ const ALL_POKEMON_DATA = {
   },
   "792": {
     "name": {
-      "ru": "Lunala"
+      "ru": "Лунала"
     },
     "types": [
       "psychic",
@@ -47126,7 +47126,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47144,7 +47144,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47166,7 +47166,7 @@ const ALL_POKEMON_DATA = {
   },
   "793": {
     "name": {
-      "ru": "Nihilego"
+      "ru": "Нихилэго"
     },
     "types": [
       "rock",
@@ -47225,7 +47225,7 @@ const ALL_POKEMON_DATA = {
   },
   "794": {
     "name": {
-      "ru": "Buzzwole"
+      "ru": "Баззвоул"
     },
     "types": [
       "bug",
@@ -47284,7 +47284,7 @@ const ALL_POKEMON_DATA = {
   },
   "795": {
     "name": {
-      "ru": "Pheromosa"
+      "ru": "Феромоза"
     },
     "types": [
       "bug",
@@ -47312,7 +47312,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47330,7 +47330,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47343,7 +47343,7 @@ const ALL_POKEMON_DATA = {
   },
   "796": {
     "name": {
-      "ru": "Xurkitree"
+      "ru": "Ксёркитри"
     },
     "types": [
       "electric"
@@ -47379,7 +47379,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47388,7 +47388,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47401,7 +47401,7 @@ const ALL_POKEMON_DATA = {
   },
   "797": {
     "name": {
-      "ru": "Celesteela"
+      "ru": "Селестила"
     },
     "types": [
       "steel",
@@ -47420,7 +47420,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47460,7 +47460,7 @@ const ALL_POKEMON_DATA = {
   },
   "798": {
     "name": {
-      "ru": "Kartana"
+      "ru": "Картана"
     },
     "types": [
       "grass",
@@ -47497,7 +47497,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "cut",
+        "name": "Разрез",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47506,7 +47506,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47519,7 +47519,7 @@ const ALL_POKEMON_DATA = {
   },
   "799": {
     "name": {
-      "ru": "Guzzlord"
+      "ru": "Газзлорд"
     },
     "types": [
       "dark",
@@ -47565,7 +47565,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47578,7 +47578,7 @@ const ALL_POKEMON_DATA = {
   },
   "800": {
     "name": {
-      "ru": "Necrozma"
+      "ru": "Некрозма"
     },
     "types": [
       "psychic"
@@ -47636,7 +47636,7 @@ const ALL_POKEMON_DATA = {
   },
   "801": {
     "name": {
-      "ru": "Magearna"
+      "ru": "Магирна"
     },
     "types": [
       "steel",
@@ -47695,7 +47695,7 @@ const ALL_POKEMON_DATA = {
   },
   "802": {
     "name": {
-      "ru": "Marshadow"
+      "ru": "Маршедоу"
     },
     "types": [
       "fighting",
@@ -47754,7 +47754,7 @@ const ALL_POKEMON_DATA = {
   },
   "803": {
     "name": {
-      "ru": "Poipole"
+      "ru": "Пойпол"
     },
     "types": [
       "poison"
@@ -47781,7 +47781,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47812,7 +47812,7 @@ const ALL_POKEMON_DATA = {
   },
   "804": {
     "name": {
-      "ru": "Naganadel"
+      "ru": "Наганадел"
     },
     "types": [
       "poison",
@@ -47840,7 +47840,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47871,7 +47871,7 @@ const ALL_POKEMON_DATA = {
   },
   "805": {
     "name": {
-      "ru": "Stakataka"
+      "ru": "Стакатака"
     },
     "types": [
       "rock",
@@ -47899,7 +47899,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47930,7 +47930,7 @@ const ALL_POKEMON_DATA = {
   },
   "806": {
     "name": {
-      "ru": "Blacephalon"
+      "ru": "Блацефалон"
     },
     "types": [
       "fire",
@@ -47949,7 +47949,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -47989,7 +47989,7 @@ const ALL_POKEMON_DATA = {
   },
   "807": {
     "name": {
-      "ru": "Zeraora"
+      "ru": "Зераора"
     },
     "types": [
       "electric"
@@ -48016,7 +48016,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48034,7 +48034,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48047,7 +48047,7 @@ const ALL_POKEMON_DATA = {
   },
   "808": {
     "name": {
-      "ru": "Meltan"
+      "ru": "Мелтан"
     },
     "types": [
       "steel"
@@ -48074,7 +48074,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48083,7 +48083,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48105,7 +48105,7 @@ const ALL_POKEMON_DATA = {
   },
   "809": {
     "name": {
-      "ru": "Melmetal"
+      "ru": "Мелметал"
     },
     "types": [
       "steel"
@@ -48150,7 +48150,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48163,7 +48163,7 @@ const ALL_POKEMON_DATA = {
   },
   "810": {
     "name": {
-      "ru": "Grookey"
+      "ru": "Груки "
     },
     "types": [
       "grass"
@@ -48182,7 +48182,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48191,7 +48191,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48200,7 +48200,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48209,7 +48209,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48222,7 +48222,7 @@ const ALL_POKEMON_DATA = {
   },
   "811": {
     "name": {
-      "ru": "Thwackey"
+      "ru": "Тваки"
     },
     "types": [
       "grass"
@@ -48241,7 +48241,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48250,7 +48250,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48259,7 +48259,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48268,7 +48268,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48281,7 +48281,7 @@ const ALL_POKEMON_DATA = {
   },
   "812": {
     "name": {
-      "ru": "Rillaboom"
+      "ru": "Риллабум"
     },
     "types": [
       "grass"
@@ -48300,7 +48300,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48309,7 +48309,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48318,7 +48318,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48327,7 +48327,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48340,7 +48340,7 @@ const ALL_POKEMON_DATA = {
   },
   "813": {
     "name": {
-      "ru": "Scorbunny"
+      "ru": "Скорбанни"
     },
     "types": [
       "fire"
@@ -48359,7 +48359,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48377,7 +48377,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48399,7 +48399,7 @@ const ALL_POKEMON_DATA = {
   },
   "814": {
     "name": {
-      "ru": "Raboot"
+      "ru": "Рабут"
     },
     "types": [
       "fire"
@@ -48418,7 +48418,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48436,7 +48436,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48458,7 +48458,7 @@ const ALL_POKEMON_DATA = {
   },
   "815": {
     "name": {
-      "ru": "Cinderace"
+      "ru": "Синдерэйс"
     },
     "types": [
       "fire"
@@ -48477,7 +48477,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48495,7 +48495,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48517,7 +48517,7 @@ const ALL_POKEMON_DATA = {
   },
   "816": {
     "name": {
-      "ru": "Sobble"
+      "ru": "Соббл"
     },
     "types": [
       "water"
@@ -48554,7 +48554,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48563,7 +48563,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48576,7 +48576,7 @@ const ALL_POKEMON_DATA = {
   },
   "817": {
     "name": {
-      "ru": "Drizzile"
+      "ru": "Дриззайл"
     },
     "types": [
       "water"
@@ -48613,7 +48613,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48622,7 +48622,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48635,7 +48635,7 @@ const ALL_POKEMON_DATA = {
   },
   "818": {
     "name": {
-      "ru": "Inteleon"
+      "ru": "Интелеон"
     },
     "types": [
       "water"
@@ -48672,7 +48672,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48681,7 +48681,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48694,7 +48694,7 @@ const ALL_POKEMON_DATA = {
   },
   "819": {
     "name": {
-      "ru": "Skwovet"
+      "ru": "Сквовет"
     },
     "types": [
       "normal"
@@ -48713,7 +48713,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48731,7 +48731,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48740,7 +48740,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48753,7 +48753,7 @@ const ALL_POKEMON_DATA = {
   },
   "820": {
     "name": {
-      "ru": "Greedent"
+      "ru": "Гридент"
     },
     "types": [
       "normal"
@@ -48772,7 +48772,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48790,7 +48790,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48799,7 +48799,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48841,7 +48841,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48901,7 +48901,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -48932,7 +48932,7 @@ const ALL_POKEMON_DATA = {
   },
   "823": {
     "name": {
-      "ru": "Corviknight"
+      "ru": "Корвинайт"
     },
     "types": [
       "flying",
@@ -48962,7 +48962,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49126,7 +49126,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49168,7 +49168,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49177,7 +49177,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49228,7 +49228,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49237,7 +49237,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49268,7 +49268,7 @@ const ALL_POKEMON_DATA = {
   },
   "829": {
     "name": {
-      "ru": "Gossifleur"
+      "ru": "Госсифлёр"
     },
     "types": [
       "grass"
@@ -49297,7 +49297,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49328,7 +49328,7 @@ const ALL_POKEMON_DATA = {
   },
   "830": {
     "name": {
-      "ru": "Eldegoss"
+      "ru": "Эльдегосс"
     },
     "types": [
       "grass"
@@ -49357,7 +49357,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "razor-leaf",
+        "name": "Острый лист",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49388,7 +49388,7 @@ const ALL_POKEMON_DATA = {
   },
   "831": {
     "name": {
-      "ru": "Wooloo"
+      "ru": "Вулу"
     },
     "types": [
       "normal"
@@ -49408,7 +49408,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49426,7 +49426,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49448,7 +49448,7 @@ const ALL_POKEMON_DATA = {
   },
   "832": {
     "name": {
-      "ru": "Dubwool"
+      "ru": "Дабвул"
     },
     "types": [
       "normal"
@@ -49468,7 +49468,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49486,7 +49486,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49537,7 +49537,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49555,7 +49555,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49568,7 +49568,7 @@ const ALL_POKEMON_DATA = {
   },
   "834": {
     "name": {
-      "ru": "Drednaw"
+      "ru": "Дрэдно"
     },
     "types": [
       "water",
@@ -49598,7 +49598,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49616,7 +49616,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49629,7 +49629,7 @@ const ALL_POKEMON_DATA = {
   },
   "835": {
     "name": {
-      "ru": "Yamper"
+      "ru": "Ямпер"
     },
     "types": [
       "electric"
@@ -49648,7 +49648,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49657,7 +49657,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49666,7 +49666,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49707,7 +49707,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49716,7 +49716,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49725,7 +49725,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49747,7 +49747,7 @@ const ALL_POKEMON_DATA = {
   },
   "837": {
     "name": {
-      "ru": "Rolycoly"
+      "ru": "Роликоли"
     },
     "types": [
       "rock"
@@ -49767,7 +49767,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49828,7 +49828,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -49889,7 +49889,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50002,7 +50002,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50114,7 +50114,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50154,7 +50154,7 @@ const ALL_POKEMON_DATA = {
   },
   "844": {
     "name": {
-      "ru": "Sandaconda"
+      "ru": "Сандаконда"
     },
     "types": [
       "ground"
@@ -50174,7 +50174,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50251,7 +50251,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50260,7 +50260,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50310,7 +50310,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50369,7 +50369,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50412,7 +50412,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50452,7 +50452,7 @@ const ALL_POKEMON_DATA = {
   },
   "849": {
     "name": {
-      "ru": "Toxtricity-amped"
+      "ru": "Toxtricity"
     },
     "types": [
       "electric",
@@ -50473,7 +50473,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50482,7 +50482,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50500,7 +50500,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50534,7 +50534,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50552,7 +50552,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50561,7 +50561,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50574,7 +50574,7 @@ const ALL_POKEMON_DATA = {
   },
   "851": {
     "name": {
-      "ru": "Centiskorch"
+      "ru": "Сентискорч"
     },
     "types": [
       "fire",
@@ -50595,7 +50595,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50613,7 +50613,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50622,7 +50622,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50663,7 +50663,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50722,7 +50722,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50812,7 +50812,7 @@ const ALL_POKEMON_DATA = {
   },
   "855": {
     "name": {
-      "ru": "Polteageist"
+      "ru": "Полтигейст"
     },
     "types": [
       "ghost"
@@ -50871,7 +50871,7 @@ const ALL_POKEMON_DATA = {
   },
   "856": {
     "name": {
-      "ru": "Hatenna"
+      "ru": "Хатенна"
     },
     "types": [
       "psychic"
@@ -50909,7 +50909,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -50969,7 +50969,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51030,7 +51030,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51073,7 +51073,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51134,7 +51134,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51195,7 +51195,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51235,7 +51235,7 @@ const ALL_POKEMON_DATA = {
   },
   "862": {
     "name": {
-      "ru": "Obstagoon"
+      "ru": "Обстагун"
     },
     "types": [
       "dark",
@@ -51274,7 +51274,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51296,7 +51296,7 @@ const ALL_POKEMON_DATA = {
   },
   "863": {
     "name": {
-      "ru": "Perrserker"
+      "ru": "Перрсеркер"
     },
     "types": [
       "steel"
@@ -51325,7 +51325,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51343,7 +51343,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51356,7 +51356,7 @@ const ALL_POKEMON_DATA = {
   },
   "864": {
     "name": {
-      "ru": "Cursola"
+      "ru": "Курсола"
     },
     "types": [
       "ghost"
@@ -51375,7 +51375,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51415,7 +51415,7 @@ const ALL_POKEMON_DATA = {
   },
   "865": {
     "name": {
-      "ru": "Sirfetchd"
+      "ru": "Сирфетчд"
     },
     "types": [
       "fighting"
@@ -51443,7 +51443,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51461,7 +51461,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51474,7 +51474,7 @@ const ALL_POKEMON_DATA = {
   },
   "866": {
     "name": {
-      "ru": "Mr-rime"
+      "ru": "Мистер Райм"
     },
     "types": [
       "ice",
@@ -51504,7 +51504,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51535,7 +51535,7 @@ const ALL_POKEMON_DATA = {
   },
   "867": {
     "name": {
-      "ru": "Runerigus"
+      "ru": "Рунеригус"
     },
     "types": [
       "ground",
@@ -51554,7 +51554,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51572,7 +51572,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51613,7 +51613,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51653,7 +51653,7 @@ const ALL_POKEMON_DATA = {
   },
   "869": {
     "name": {
-      "ru": "Alcremie"
+      "ru": "Алкреми"
     },
     "types": [
       "fairy"
@@ -51672,7 +51672,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51712,7 +51712,7 @@ const ALL_POKEMON_DATA = {
   },
   "870": {
     "name": {
-      "ru": "Falinks"
+      "ru": "Фалинкс"
     },
     "types": [
       "fighting"
@@ -51740,7 +51740,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51799,7 +51799,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -51932,7 +51932,7 @@ const ALL_POKEMON_DATA = {
   },
   "874": {
     "name": {
-      "ru": "Stonjourner"
+      "ru": "Стонджорнер"
     },
     "types": [
       "rock"
@@ -51990,7 +51990,7 @@ const ALL_POKEMON_DATA = {
   },
   "875": {
     "name": {
-      "ru": "Eiscue-ice"
+      "ru": "Айскью"
     },
     "types": [
       "ice"
@@ -52017,7 +52017,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52035,7 +52035,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "surf",
+        "name": "Волна",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52048,7 +52048,7 @@ const ALL_POKEMON_DATA = {
   },
   "876": {
     "name": {
-      "ru": "Indeedee-male"
+      "ru": "Indeedee"
     },
     "types": [
       "psychic",
@@ -52078,7 +52078,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52109,7 +52109,7 @@ const ALL_POKEMON_DATA = {
   },
   "877": {
     "name": {
-      "ru": "Morpeko-full-belly"
+      "ru": "Морпеко"
     },
     "types": [
       "electric",
@@ -52137,7 +52137,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52146,7 +52146,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52155,7 +52155,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52196,7 +52196,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52205,7 +52205,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52214,7 +52214,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "strength",
+        "name": "Сила",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52255,7 +52255,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52264,7 +52264,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52273,7 +52273,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "strength",
+        "name": "Сила",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52307,7 +52307,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52325,7 +52325,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52334,7 +52334,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52368,7 +52368,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52386,7 +52386,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52438,7 +52438,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52447,7 +52447,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52456,7 +52456,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52490,7 +52490,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52499,7 +52499,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52530,7 +52530,7 @@ const ALL_POKEMON_DATA = {
   },
   "884": {
     "name": {
-      "ru": "Duraludon"
+      "ru": "Дюралюдон"
     },
     "types": [
       "steel",
@@ -52551,7 +52551,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52560,7 +52560,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52612,7 +52612,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52621,7 +52621,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52691,7 +52691,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52752,7 +52752,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52774,7 +52774,7 @@ const ALL_POKEMON_DATA = {
   },
   "888": {
     "name": {
-      "ru": "Zacian"
+      "ru": "Зэйшиан"
     },
     "types": [
       "fairy"
@@ -52801,7 +52801,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52810,7 +52810,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52832,7 +52832,7 @@ const ALL_POKEMON_DATA = {
   },
   "889": {
     "name": {
-      "ru": "Zamazenta"
+      "ru": "Земазента"
     },
     "types": [
       "fighting"
@@ -52850,7 +52850,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52859,7 +52859,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52890,7 +52890,7 @@ const ALL_POKEMON_DATA = {
   },
   "890": {
     "name": {
-      "ru": "Eternatus"
+      "ru": "Этернатус"
     },
     "types": [
       "poison",
@@ -52909,7 +52909,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52918,7 +52918,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -52949,7 +52949,7 @@ const ALL_POKEMON_DATA = {
   },
   "891": {
     "name": {
-      "ru": "Kubfu"
+      "ru": "Кабфу"
     },
     "types": [
       "fighting"
@@ -52976,7 +52976,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53007,7 +53007,7 @@ const ALL_POKEMON_DATA = {
   },
   "892": {
     "name": {
-      "ru": "Urshifu-single-strike"
+      "ru": "Уршифу"
     },
     "types": [
       "fighting",
@@ -53035,7 +53035,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53066,7 +53066,7 @@ const ALL_POKEMON_DATA = {
   },
   "893": {
     "name": {
-      "ru": "Zarude"
+      "ru": "Заруд"
     },
     "types": [
       "dark",
@@ -53085,7 +53085,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53103,7 +53103,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53125,7 +53125,7 @@ const ALL_POKEMON_DATA = {
   },
   "894": {
     "name": {
-      "ru": "Regieleki"
+      "ru": "Реджилеки"
     },
     "types": [
       "electric"
@@ -53152,7 +53152,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53161,7 +53161,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53170,7 +53170,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunderbolt",
+        "name": "Гром",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53183,7 +53183,7 @@ const ALL_POKEMON_DATA = {
   },
   "895": {
     "name": {
-      "ru": "Regidrago"
+      "ru": "Реджидраго"
     },
     "types": [
       "dragon"
@@ -53219,7 +53219,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53228,7 +53228,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53241,7 +53241,7 @@ const ALL_POKEMON_DATA = {
   },
   "896": {
     "name": {
-      "ru": "Glastrier"
+      "ru": "Гластрир"
     },
     "types": [
       "ice"
@@ -53277,7 +53277,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53286,7 +53286,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53299,7 +53299,7 @@ const ALL_POKEMON_DATA = {
   },
   "897": {
     "name": {
-      "ru": "Spectrier"
+      "ru": "Спектрир"
     },
     "types": [
       "ghost"
@@ -53326,7 +53326,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53335,7 +53335,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53357,7 +53357,7 @@ const ALL_POKEMON_DATA = {
   },
   "898": {
     "name": {
-      "ru": "Calyrex"
+      "ru": "Калирекс"
     },
     "types": [
       "psychic",
@@ -53416,7 +53416,7 @@ const ALL_POKEMON_DATA = {
   },
   "899": {
     "name": {
-      "ru": "Wyrdeer"
+      "ru": "Вирдир"
     },
     "types": [
       "normal",
@@ -53455,7 +53455,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53477,7 +53477,7 @@ const ALL_POKEMON_DATA = {
   },
   "900": {
     "name": {
-      "ru": "Kleavor"
+      "ru": "Кливор"
     },
     "types": [
       "bug",
@@ -53507,7 +53507,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53525,7 +53525,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53538,7 +53538,7 @@ const ALL_POKEMON_DATA = {
   },
   "901": {
     "name": {
-      "ru": "Ursaluna"
+      "ru": "Урсалуна"
     },
     "types": [
       "ground",
@@ -53559,7 +53559,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53568,7 +53568,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53599,7 +53599,7 @@ const ALL_POKEMON_DATA = {
   },
   "902": {
     "name": {
-      "ru": "Basculegion-male"
+      "ru": "Баскулиджен"
     },
     "types": [
       "water",
@@ -53629,7 +53629,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53660,7 +53660,7 @@ const ALL_POKEMON_DATA = {
   },
   "903": {
     "name": {
-      "ru": "Sneasler"
+      "ru": "Снизлер"
     },
     "types": [
       "fighting",
@@ -53681,7 +53681,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53699,7 +53699,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53721,7 +53721,7 @@ const ALL_POKEMON_DATA = {
   },
   "904": {
     "name": {
-      "ru": "Overqwil"
+      "ru": "Оверквил"
     },
     "types": [
       "dark",
@@ -53742,7 +53742,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53782,7 +53782,7 @@ const ALL_POKEMON_DATA = {
   },
   "905": {
     "name": {
-      "ru": "Enamorus-incarnate"
+      "ru": "Энаморус"
     },
     "types": [
       "fairy",
@@ -53802,7 +53802,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53811,7 +53811,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53842,7 +53842,7 @@ const ALL_POKEMON_DATA = {
   },
   "906": {
     "name": {
-      "ru": "Sprigatito"
+      "ru": "Спригатито"
     },
     "types": [
       "grass"
@@ -53861,7 +53861,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53870,7 +53870,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53879,7 +53879,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53888,7 +53888,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53901,7 +53901,7 @@ const ALL_POKEMON_DATA = {
   },
   "907": {
     "name": {
-      "ru": "Floragato"
+      "ru": "Флорагато"
     },
     "types": [
       "grass"
@@ -53920,7 +53920,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53929,7 +53929,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53938,7 +53938,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53947,7 +53947,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53960,7 +53960,7 @@ const ALL_POKEMON_DATA = {
   },
   "908": {
     "name": {
-      "ru": "Meowscarada"
+      "ru": "Мяускарада"
     },
     "types": [
       "grass",
@@ -53980,7 +53980,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53989,7 +53989,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -53998,7 +53998,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54007,7 +54007,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54020,7 +54020,7 @@ const ALL_POKEMON_DATA = {
   },
   "909": {
     "name": {
-      "ru": "Fuecoco"
+      "ru": "Фуэкоко"
     },
     "types": [
       "fire"
@@ -54039,7 +54039,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54048,7 +54048,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54057,7 +54057,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54079,7 +54079,7 @@ const ALL_POKEMON_DATA = {
   },
   "910": {
     "name": {
-      "ru": "Crocalor"
+      "ru": "Крокалор"
     },
     "types": [
       "fire"
@@ -54098,7 +54098,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54107,7 +54107,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54116,7 +54116,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54138,7 +54138,7 @@ const ALL_POKEMON_DATA = {
   },
   "911": {
     "name": {
-      "ru": "Skeledirge"
+      "ru": "Скеледирж"
     },
     "types": [
       "fire",
@@ -54158,7 +54158,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54167,7 +54167,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54176,7 +54176,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54198,7 +54198,7 @@ const ALL_POKEMON_DATA = {
   },
   "912": {
     "name": {
-      "ru": "Quaxly"
+      "ru": "Куаксли"
     },
     "types": [
       "water"
@@ -54235,7 +54235,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54244,7 +54244,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54257,7 +54257,7 @@ const ALL_POKEMON_DATA = {
   },
   "913": {
     "name": {
-      "ru": "Quaxwell"
+      "ru": "Куаксвелл"
     },
     "types": [
       "water"
@@ -54294,7 +54294,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54303,7 +54303,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54316,7 +54316,7 @@ const ALL_POKEMON_DATA = {
   },
   "914": {
     "name": {
-      "ru": "Quaquaval"
+      "ru": "Куаквавал"
     },
     "types": [
       "water",
@@ -54363,7 +54363,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54376,7 +54376,7 @@ const ALL_POKEMON_DATA = {
   },
   "915": {
     "name": {
-      "ru": "Lechonk"
+      "ru": "Лечонк"
     },
     "types": [
       "normal"
@@ -54405,7 +54405,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54436,7 +54436,7 @@ const ALL_POKEMON_DATA = {
   },
   "916": {
     "name": {
-      "ru": "Oinkologne-male"
+      "ru": "Ойнколон"
     },
     "types": [
       "normal"
@@ -54465,7 +54465,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54496,7 +54496,7 @@ const ALL_POKEMON_DATA = {
   },
   "917": {
     "name": {
-      "ru": "Tarountula"
+      "ru": "Тараунтула"
     },
     "types": [
       "bug"
@@ -54524,7 +54524,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54555,7 +54555,7 @@ const ALL_POKEMON_DATA = {
   },
   "918": {
     "name": {
-      "ru": "Spidops"
+      "ru": "Спайдопс"
     },
     "types": [
       "bug"
@@ -54583,7 +54583,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54614,7 +54614,7 @@ const ALL_POKEMON_DATA = {
   },
   "919": {
     "name": {
-      "ru": "Nymble"
+      "ru": "Нимбл"
     },
     "types": [
       "bug"
@@ -54633,7 +54633,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54642,7 +54642,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54651,7 +54651,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54673,7 +54673,7 @@ const ALL_POKEMON_DATA = {
   },
   "920": {
     "name": {
-      "ru": "Lokix"
+      "ru": "Локикс"
     },
     "types": [
       "bug",
@@ -54693,7 +54693,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54702,7 +54702,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54711,7 +54711,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54733,7 +54733,7 @@ const ALL_POKEMON_DATA = {
   },
   "921": {
     "name": {
-      "ru": "Pawmi"
+      "ru": "Поми"
     },
     "types": [
       "electric"
@@ -54753,7 +54753,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54762,7 +54762,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54771,7 +54771,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54780,7 +54780,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54793,7 +54793,7 @@ const ALL_POKEMON_DATA = {
   },
   "922": {
     "name": {
-      "ru": "Pawmo"
+      "ru": "Помо"
     },
     "types": [
       "electric",
@@ -54814,7 +54814,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54823,7 +54823,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54832,7 +54832,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54841,7 +54841,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54854,7 +54854,7 @@ const ALL_POKEMON_DATA = {
   },
   "923": {
     "name": {
-      "ru": "Pawmot"
+      "ru": "Помот"
     },
     "types": [
       "electric",
@@ -54875,7 +54875,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54884,7 +54884,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54893,7 +54893,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54902,7 +54902,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -54915,7 +54915,7 @@ const ALL_POKEMON_DATA = {
   },
   "924": {
     "name": {
-      "ru": "Tandemaus"
+      "ru": "Тандемаус"
     },
     "types": [
       "normal"
@@ -54975,7 +54975,7 @@ const ALL_POKEMON_DATA = {
   },
   "925": {
     "name": {
-      "ru": "Maushold-family-of-four"
+      "ru": "Маусхолд"
     },
     "types": [
       "normal"
@@ -55035,7 +55035,7 @@ const ALL_POKEMON_DATA = {
   },
   "926": {
     "name": {
-      "ru": "Fidough"
+      "ru": "Файдо"
     },
     "types": [
       "fairy"
@@ -55054,7 +55054,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55072,7 +55072,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55081,7 +55081,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55094,7 +55094,7 @@ const ALL_POKEMON_DATA = {
   },
   "927": {
     "name": {
-      "ru": "Dachsbun"
+      "ru": "Даксбан"
     },
     "types": [
       "fairy"
@@ -55113,7 +55113,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55131,7 +55131,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55140,7 +55140,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55153,7 +55153,7 @@ const ALL_POKEMON_DATA = {
   },
   "928": {
     "name": {
-      "ru": "Smoliv"
+      "ru": "Смолив"
     },
     "types": [
       "grass",
@@ -55173,7 +55173,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55213,7 +55213,7 @@ const ALL_POKEMON_DATA = {
   },
   "929": {
     "name": {
-      "ru": "Dolliv"
+      "ru": "Доллив"
     },
     "types": [
       "grass",
@@ -55233,7 +55233,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55273,7 +55273,7 @@ const ALL_POKEMON_DATA = {
   },
   "930": {
     "name": {
-      "ru": "Arboliva"
+      "ru": "Арболива"
     },
     "types": [
       "grass",
@@ -55293,7 +55293,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55333,7 +55333,7 @@ const ALL_POKEMON_DATA = {
   },
   "931": {
     "name": {
-      "ru": "Squawkabilly-green-plumage"
+      "ru": "Сквакабилли"
     },
     "types": [
       "normal",
@@ -55354,7 +55354,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55372,7 +55372,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55394,7 +55394,7 @@ const ALL_POKEMON_DATA = {
   },
   "932": {
     "name": {
-      "ru": "Nacli"
+      "ru": "Накли"
     },
     "types": [
       "rock"
@@ -55423,7 +55423,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55441,7 +55441,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55454,7 +55454,7 @@ const ALL_POKEMON_DATA = {
   },
   "933": {
     "name": {
-      "ru": "Naclstack"
+      "ru": "Наклстак"
     },
     "types": [
       "rock"
@@ -55483,7 +55483,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55501,7 +55501,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55514,7 +55514,7 @@ const ALL_POKEMON_DATA = {
   },
   "934": {
     "name": {
-      "ru": "Garganacl"
+      "ru": "Гарганакл"
     },
     "types": [
       "rock"
@@ -55543,7 +55543,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55561,7 +55561,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55574,7 +55574,7 @@ const ALL_POKEMON_DATA = {
   },
   "935": {
     "name": {
-      "ru": "Charcadet"
+      "ru": "Чаркадет"
     },
     "types": [
       "fire"
@@ -55593,7 +55593,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55602,7 +55602,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55633,7 +55633,7 @@ const ALL_POKEMON_DATA = {
   },
   "936": {
     "name": {
-      "ru": "Armarouge"
+      "ru": "Армаруж"
     },
     "types": [
       "fire",
@@ -55653,7 +55653,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55662,7 +55662,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55671,7 +55671,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55693,7 +55693,7 @@ const ALL_POKEMON_DATA = {
   },
   "937": {
     "name": {
-      "ru": "Ceruledge"
+      "ru": "Серуледж"
     },
     "types": [
       "fire",
@@ -55722,7 +55722,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55731,7 +55731,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55753,7 +55753,7 @@ const ALL_POKEMON_DATA = {
   },
   "938": {
     "name": {
-      "ru": "Tadbulb"
+      "ru": "Тадбалб"
     },
     "types": [
       "electric"
@@ -55773,7 +55773,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55782,7 +55782,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55791,7 +55791,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55813,7 +55813,7 @@ const ALL_POKEMON_DATA = {
   },
   "939": {
     "name": {
-      "ru": "Bellibolt"
+      "ru": "Беллиболт"
     },
     "types": [
       "electric"
@@ -55833,7 +55833,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55842,7 +55842,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55851,7 +55851,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55873,7 +55873,7 @@ const ALL_POKEMON_DATA = {
   },
   "940": {
     "name": {
-      "ru": "Wattrel"
+      "ru": "Ваттрел"
     },
     "types": [
       "electric",
@@ -55894,7 +55894,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55912,7 +55912,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55934,7 +55934,7 @@ const ALL_POKEMON_DATA = {
   },
   "941": {
     "name": {
-      "ru": "Kilowattrel"
+      "ru": "Киловаттрел"
     },
     "types": [
       "electric",
@@ -55955,7 +55955,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55973,7 +55973,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -55995,7 +55995,7 @@ const ALL_POKEMON_DATA = {
   },
   "942": {
     "name": {
-      "ru": "Maschiff"
+      "ru": "Масчифф"
     },
     "types": [
       "dark"
@@ -56024,7 +56024,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56042,7 +56042,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56055,7 +56055,7 @@ const ALL_POKEMON_DATA = {
   },
   "943": {
     "name": {
-      "ru": "Mabosstiff"
+      "ru": "Мабосстифф"
     },
     "types": [
       "dark"
@@ -56084,7 +56084,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56102,7 +56102,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56115,7 +56115,7 @@ const ALL_POKEMON_DATA = {
   },
   "944": {
     "name": {
-      "ru": "Shroodle"
+      "ru": "Шрудл"
     },
     "types": [
       "poison",
@@ -56136,7 +56136,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56145,7 +56145,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56154,7 +56154,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56176,7 +56176,7 @@ const ALL_POKEMON_DATA = {
   },
   "945": {
     "name": {
-      "ru": "Grafaiai"
+      "ru": "Графайай"
     },
     "types": [
       "poison",
@@ -56197,7 +56197,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56206,7 +56206,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56237,7 +56237,7 @@ const ALL_POKEMON_DATA = {
   },
   "946": {
     "name": {
-      "ru": "Bramblin"
+      "ru": "Брамблин"
     },
     "types": [
       "grass",
@@ -56297,7 +56297,7 @@ const ALL_POKEMON_DATA = {
   },
   "947": {
     "name": {
-      "ru": "Brambleghast"
+      "ru": "Брамблгаст"
     },
     "types": [
       "grass",
@@ -56357,7 +56357,7 @@ const ALL_POKEMON_DATA = {
   },
   "948": {
     "name": {
-      "ru": "Toedscool"
+      "ru": "Тодскул"
     },
     "types": [
       "ground",
@@ -56376,7 +56376,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56416,7 +56416,7 @@ const ALL_POKEMON_DATA = {
   },
   "949": {
     "name": {
-      "ru": "Toedscruel"
+      "ru": "Тодскрул"
     },
     "types": [
       "ground",
@@ -56435,7 +56435,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56475,7 +56475,7 @@ const ALL_POKEMON_DATA = {
   },
   "950": {
     "name": {
-      "ru": "Klawf"
+      "ru": "Клоф"
     },
     "types": [
       "rock"
@@ -56535,7 +56535,7 @@ const ALL_POKEMON_DATA = {
   },
   "951": {
     "name": {
-      "ru": "Capsakid"
+      "ru": "Капсакид"
     },
     "types": [
       "grass"
@@ -56564,7 +56564,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56573,7 +56573,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56595,7 +56595,7 @@ const ALL_POKEMON_DATA = {
   },
   "952": {
     "name": {
-      "ru": "Scovillain"
+      "ru": "Сковиллен"
     },
     "types": [
       "grass",
@@ -56625,7 +56625,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56634,7 +56634,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56643,7 +56643,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56656,7 +56656,7 @@ const ALL_POKEMON_DATA = {
   },
   "953": {
     "name": {
-      "ru": "Rellor"
+      "ru": "Реллор"
     },
     "types": [
       "bug"
@@ -56684,7 +56684,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56702,7 +56702,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "dig",
+        "name": "Копать",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56715,7 +56715,7 @@ const ALL_POKEMON_DATA = {
   },
   "954": {
     "name": {
-      "ru": "Rabsca"
+      "ru": "Рабска"
     },
     "types": [
       "bug",
@@ -56744,7 +56744,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56775,7 +56775,7 @@ const ALL_POKEMON_DATA = {
   },
   "955": {
     "name": {
-      "ru": "Flittle"
+      "ru": "Флиттл"
     },
     "types": [
       "psychic"
@@ -56795,7 +56795,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56835,7 +56835,7 @@ const ALL_POKEMON_DATA = {
   },
   "956": {
     "name": {
-      "ru": "Espathra"
+      "ru": "Эспатра"
     },
     "types": [
       "psychic"
@@ -56855,7 +56855,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56895,7 +56895,7 @@ const ALL_POKEMON_DATA = {
   },
   "957": {
     "name": {
-      "ru": "Tinkatink"
+      "ru": "Тинкатинк"
     },
     "types": [
       "fairy",
@@ -56916,7 +56916,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56943,7 +56943,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-smash",
+        "name": "Крушитель",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -56956,7 +56956,7 @@ const ALL_POKEMON_DATA = {
   },
   "958": {
     "name": {
-      "ru": "Tinkatuff"
+      "ru": "Тинкатафф"
     },
     "types": [
       "fairy",
@@ -56977,7 +56977,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57004,7 +57004,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-smash",
+        "name": "Крушитель",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57017,7 +57017,7 @@ const ALL_POKEMON_DATA = {
   },
   "959": {
     "name": {
-      "ru": "Tinkaton"
+      "ru": "Тинкатон"
     },
     "types": [
       "fairy",
@@ -57038,7 +57038,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57065,7 +57065,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "rock-smash",
+        "name": "Крушитель",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57078,7 +57078,7 @@ const ALL_POKEMON_DATA = {
   },
   "960": {
     "name": {
-      "ru": "Wiglett"
+      "ru": "Виглетт"
     },
     "types": [
       "water"
@@ -57098,7 +57098,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57138,7 +57138,7 @@ const ALL_POKEMON_DATA = {
   },
   "961": {
     "name": {
-      "ru": "Wugtrio"
+      "ru": "Вагтрио"
     },
     "types": [
       "water"
@@ -57158,7 +57158,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57198,7 +57198,7 @@ const ALL_POKEMON_DATA = {
   },
   "962": {
     "name": {
-      "ru": "Bombirdier"
+      "ru": "Бомбердир"
     },
     "types": [
       "flying",
@@ -57237,7 +57237,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57259,7 +57259,7 @@ const ALL_POKEMON_DATA = {
   },
   "963": {
     "name": {
-      "ru": "Finizen"
+      "ru": "Финизен"
     },
     "types": [
       "water"
@@ -57295,7 +57295,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57304,7 +57304,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57317,7 +57317,7 @@ const ALL_POKEMON_DATA = {
   },
   "964": {
     "name": {
-      "ru": "Palafin-zero"
+      "ru": "Палафин"
     },
     "types": [
       "water"
@@ -57353,7 +57353,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57362,7 +57362,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57375,7 +57375,7 @@ const ALL_POKEMON_DATA = {
   },
   "965": {
     "name": {
-      "ru": "Varoom"
+      "ru": "Варум"
     },
     "types": [
       "steel",
@@ -57435,7 +57435,7 @@ const ALL_POKEMON_DATA = {
   },
   "966": {
     "name": {
-      "ru": "Revavroom"
+      "ru": "Реваврум"
     },
     "types": [
       "steel",
@@ -57495,7 +57495,7 @@ const ALL_POKEMON_DATA = {
   },
   "967": {
     "name": {
-      "ru": "Cyclizar"
+      "ru": "Сайклизар"
     },
     "types": [
       "dragon",
@@ -57515,7 +57515,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57533,7 +57533,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57542,7 +57542,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57555,7 +57555,7 @@ const ALL_POKEMON_DATA = {
   },
   "968": {
     "name": {
-      "ru": "Orthworm"
+      "ru": "Ортворм"
     },
     "types": [
       "steel"
@@ -57574,7 +57574,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57601,7 +57601,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57614,7 +57614,7 @@ const ALL_POKEMON_DATA = {
   },
   "969": {
     "name": {
-      "ru": "Glimmet"
+      "ru": "Глиммет"
     },
     "types": [
       "rock",
@@ -57674,7 +57674,7 @@ const ALL_POKEMON_DATA = {
   },
   "970": {
     "name": {
-      "ru": "Glimmora"
+      "ru": "Глиммора"
     },
     "types": [
       "rock",
@@ -57734,7 +57734,7 @@ const ALL_POKEMON_DATA = {
   },
   "971": {
     "name": {
-      "ru": "Greavard"
+      "ru": "Гриверд"
     },
     "types": [
       "ghost"
@@ -57762,7 +57762,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57780,7 +57780,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57793,7 +57793,7 @@ const ALL_POKEMON_DATA = {
   },
   "972": {
     "name": {
-      "ru": "Houndstone"
+      "ru": "Хаундстоун"
     },
     "types": [
       "ghost"
@@ -57821,7 +57821,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57839,7 +57839,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57852,7 +57852,7 @@ const ALL_POKEMON_DATA = {
   },
   "973": {
     "name": {
-      "ru": "Flamigo"
+      "ru": "Фламиго"
     },
     "types": [
       "flying",
@@ -57882,7 +57882,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57913,7 +57913,7 @@ const ALL_POKEMON_DATA = {
   },
   "974": {
     "name": {
-      "ru": "Cetoddle"
+      "ru": "Сетоддл"
     },
     "types": [
       "ice"
@@ -57933,7 +57933,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -57973,7 +57973,7 @@ const ALL_POKEMON_DATA = {
   },
   "975": {
     "name": {
-      "ru": "Cetitan"
+      "ru": "Сетайтан"
     },
     "types": [
       "ice"
@@ -57993,7 +57993,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58033,7 +58033,7 @@ const ALL_POKEMON_DATA = {
   },
   "976": {
     "name": {
-      "ru": "Veluza"
+      "ru": "Велуза"
     },
     "types": [
       "water",
@@ -58053,7 +58053,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58093,7 +58093,7 @@ const ALL_POKEMON_DATA = {
   },
   "977": {
     "name": {
-      "ru": "Dondozo"
+      "ru": "Дондозо"
     },
     "types": [
       "water"
@@ -58113,7 +58113,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58153,7 +58153,7 @@ const ALL_POKEMON_DATA = {
   },
   "978": {
     "name": {
-      "ru": "Tatsugiri-curly"
+      "ru": "Тацугири"
     },
     "types": [
       "dragon",
@@ -58173,7 +58173,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "water-gun",
+        "name": "Водяной пистолет",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58213,7 +58213,7 @@ const ALL_POKEMON_DATA = {
   },
   "979": {
     "name": {
-      "ru": "Annihilape"
+      "ru": "Аннаялейп"
     },
     "types": [
       "fighting",
@@ -58234,7 +58234,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58252,7 +58252,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58274,7 +58274,7 @@ const ALL_POKEMON_DATA = {
   },
   "980": {
     "name": {
-      "ru": "Clodsire"
+      "ru": "Клодсайр"
     },
     "types": [
       "poison",
@@ -58295,7 +58295,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58304,7 +58304,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tail-whip",
+        "name": "Хвост-молния",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58322,7 +58322,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58335,7 +58335,7 @@ const ALL_POKEMON_DATA = {
   },
   "981": {
     "name": {
-      "ru": "Farigiraf"
+      "ru": "Фарижираф"
     },
     "types": [
       "normal",
@@ -58365,7 +58365,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58374,7 +58374,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "growl",
+        "name": "Рык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58396,7 +58396,7 @@ const ALL_POKEMON_DATA = {
   },
   "982": {
     "name": {
-      "ru": "Dudunsparce-two-segment"
+      "ru": "Даданспарс"
     },
     "types": [
       "normal"
@@ -58456,7 +58456,7 @@ const ALL_POKEMON_DATA = {
   },
   "983": {
     "name": {
-      "ru": "Kingambit"
+      "ru": "Кингамбит"
     },
     "types": [
       "dark",
@@ -58477,7 +58477,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58504,7 +58504,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58517,7 +58517,7 @@ const ALL_POKEMON_DATA = {
   },
   "984": {
     "name": {
-      "ru": "Great-tusk"
+      "ru": "Великий Бивень"
     },
     "types": [
       "ground",
@@ -58545,7 +58545,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58576,7 +58576,7 @@ const ALL_POKEMON_DATA = {
   },
   "985": {
     "name": {
-      "ru": "Scream-tail"
+      "ru": "Кричащий Хвост"
     },
     "types": [
       "fairy",
@@ -58613,7 +58613,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58635,7 +58635,7 @@ const ALL_POKEMON_DATA = {
   },
   "986": {
     "name": {
-      "ru": "Brute-bonnet"
+      "ru": "Свирепый Гриб"
     },
     "types": [
       "grass",
@@ -58694,7 +58694,7 @@ const ALL_POKEMON_DATA = {
   },
   "987": {
     "name": {
-      "ru": "Flutter-mane"
+      "ru": "Волнистая Грива"
     },
     "types": [
       "ghost",
@@ -58753,7 +58753,7 @@ const ALL_POKEMON_DATA = {
   },
   "988": {
     "name": {
-      "ru": "Slither-wing"
+      "ru": "Ползущее Крыло"
     },
     "types": [
       "bug",
@@ -58812,7 +58812,7 @@ const ALL_POKEMON_DATA = {
   },
   "989": {
     "name": {
-      "ru": "Sandy-shocks"
+      "ru": "Магнитные Вихры"
     },
     "types": [
       "electric",
@@ -58840,7 +58840,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58871,7 +58871,7 @@ const ALL_POKEMON_DATA = {
   },
   "990": {
     "name": {
-      "ru": "Iron-treads"
+      "ru": "Железные Гусеницы"
     },
     "types": [
       "ground",
@@ -58899,7 +58899,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58930,7 +58930,7 @@ const ALL_POKEMON_DATA = {
   },
   "991": {
     "name": {
-      "ru": "Iron-bundle"
+      "ru": "Железный Мешок"
     },
     "types": [
       "ice",
@@ -58958,7 +58958,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hydro-pump",
+        "name": "Гидронасос",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58967,7 +58967,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ice-beam",
+        "name": "Ледяной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -58989,7 +58989,7 @@ const ALL_POKEMON_DATA = {
   },
   "992": {
     "name": {
-      "ru": "Iron-hands"
+      "ru": "Железные Руки"
     },
     "types": [
       "fighting",
@@ -59026,7 +59026,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59048,7 +59048,7 @@ const ALL_POKEMON_DATA = {
   },
   "993": {
     "name": {
-      "ru": "Iron-jugulis"
+      "ru": "Железные Головы"
     },
     "types": [
       "dark",
@@ -59076,7 +59076,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59107,7 +59107,7 @@ const ALL_POKEMON_DATA = {
   },
   "994": {
     "name": {
-      "ru": "Iron-moth"
+      "ru": "Железный Мотылёк"
     },
     "types": [
       "fire",
@@ -59153,7 +59153,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59166,7 +59166,7 @@ const ALL_POKEMON_DATA = {
   },
   "995": {
     "name": {
-      "ru": "Iron-thorns"
+      "ru": "Железные Шипы"
     },
     "types": [
       "rock",
@@ -59194,7 +59194,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59212,7 +59212,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59225,7 +59225,7 @@ const ALL_POKEMON_DATA = {
   },
   "996": {
     "name": {
-      "ru": "Frigibax"
+      "ru": "Фриджибакс"
     },
     "types": [
       "dragon",
@@ -59245,7 +59245,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59263,7 +59263,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59272,7 +59272,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59285,7 +59285,7 @@ const ALL_POKEMON_DATA = {
   },
   "997": {
     "name": {
-      "ru": "Arctibax"
+      "ru": "Арктибакс"
     },
     "types": [
       "dragon",
@@ -59305,7 +59305,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59323,7 +59323,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59332,7 +59332,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59345,7 +59345,7 @@ const ALL_POKEMON_DATA = {
   },
   "998": {
     "name": {
-      "ru": "Baxcalibur"
+      "ru": "Бакскалибур"
     },
     "types": [
       "dragon",
@@ -59365,7 +59365,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59383,7 +59383,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59392,7 +59392,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59405,7 +59405,7 @@ const ALL_POKEMON_DATA = {
   },
   "999": {
     "name": {
-      "ru": "Gimmighoul"
+      "ru": "Гиммигул"
     },
     "types": [
       "ghost"
@@ -59423,7 +59423,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59445,7 +59445,7 @@ const ALL_POKEMON_DATA = {
   },
   "1000": {
     "name": {
-      "ru": "Gholdengo"
+      "ru": "Голденго"
     },
     "types": [
       "steel",
@@ -59464,7 +59464,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "tackle",
+        "name": "Удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59504,7 +59504,7 @@ const ALL_POKEMON_DATA = {
   },
   "1001": {
     "name": {
-      "ru": "Wo-chien"
+      "ru": "Во-Чиен"
     },
     "types": [
       "dark",
@@ -59563,7 +59563,7 @@ const ALL_POKEMON_DATA = {
   },
   "1002": {
     "name": {
-      "ru": "Chien-pao"
+      "ru": "Чиен-Пао"
     },
     "types": [
       "dark",
@@ -59622,7 +59622,7 @@ const ALL_POKEMON_DATA = {
   },
   "1003": {
     "name": {
-      "ru": "Ting-lu"
+      "ru": "Тинг-Лу"
     },
     "types": [
       "dark",
@@ -59668,7 +59668,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "earthquake",
+        "name": "Землетрясение",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59681,7 +59681,7 @@ const ALL_POKEMON_DATA = {
   },
   "1004": {
     "name": {
-      "ru": "Chi-yu"
+      "ru": "Чи-Ю"
     },
     "types": [
       "dark",
@@ -59700,7 +59700,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "ember",
+        "name": "Огненный клык",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59718,7 +59718,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flame-wheel",
+        "name": "Огненное колесо",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59740,7 +59740,7 @@ const ALL_POKEMON_DATA = {
   },
   "1005": {
     "name": {
-      "ru": "Roaring-moon"
+      "ru": "Ревущий Месяц"
     },
     "types": [
       "dragon",
@@ -59759,7 +59759,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "fly",
+        "name": "Полёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59786,7 +59786,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59799,7 +59799,7 @@ const ALL_POKEMON_DATA = {
   },
   "1006": {
     "name": {
-      "ru": "Iron-valiant"
+      "ru": "Железный Воин"
     },
     "types": [
       "fairy",
@@ -59858,7 +59858,7 @@ const ALL_POKEMON_DATA = {
   },
   "1007": {
     "name": {
-      "ru": "Koraidon"
+      "ru": "Корайдон"
     },
     "types": [
       "fighting",
@@ -59877,7 +59877,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59917,7 +59917,7 @@ const ALL_POKEMON_DATA = {
   },
   "1008": {
     "name": {
-      "ru": "Miraidon"
+      "ru": "Мирайдон"
     },
     "types": [
       "electric",
@@ -59936,7 +59936,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59945,7 +59945,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder-shock",
+        "name": "Искра",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59954,7 +59954,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder",
+        "name": "Громовой удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -59976,7 +59976,7 @@ const ALL_POKEMON_DATA = {
   },
   "1009": {
     "name": {
-      "ru": "Walking-wake"
+      "ru": "Блуждающая Волна"
     },
     "types": [
       "water",
@@ -59995,7 +59995,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60004,7 +60004,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60022,7 +60022,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "flamethrower",
+        "name": "Огнемёт",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60035,7 +60035,7 @@ const ALL_POKEMON_DATA = {
   },
   "1010": {
     "name": {
-      "ru": "Iron-leaves"
+      "ru": "Железные Листья"
     },
     "types": [
       "grass",
@@ -60063,7 +60063,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60072,7 +60072,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60094,7 +60094,7 @@ const ALL_POKEMON_DATA = {
   },
   "1011": {
     "name": {
-      "ru": "Dipplin"
+      "ru": "Диплин"
     },
     "types": [
       "grass",
@@ -60155,7 +60155,7 @@ const ALL_POKEMON_DATA = {
   },
   "1012": {
     "name": {
-      "ru": "Poltchageist"
+      "ru": "Полчагейст"
     },
     "types": [
       "grass",
@@ -60215,7 +60215,7 @@ const ALL_POKEMON_DATA = {
   },
   "1013": {
     "name": {
-      "ru": "Sinistcha"
+      "ru": "Синистча"
     },
     "types": [
       "grass",
@@ -60275,7 +60275,7 @@ const ALL_POKEMON_DATA = {
   },
   "1014": {
     "name": {
-      "ru": "Okidogi"
+      "ru": "Окидоги"
     },
     "types": [
       "poison",
@@ -60295,7 +60295,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60335,7 +60335,7 @@ const ALL_POKEMON_DATA = {
   },
   "1015": {
     "name": {
-      "ru": "Munkidori"
+      "ru": "Мункидори"
     },
     "types": [
       "poison",
@@ -60355,7 +60355,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "scratch",
+        "name": "Царапина",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60382,7 +60382,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "psychic",
+        "name": "Психический",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60395,7 +60395,7 @@ const ALL_POKEMON_DATA = {
   },
   "1016": {
     "name": {
-      "ru": "Fezandipiti"
+      "ru": "Фезандипити"
     },
     "types": [
       "poison",
@@ -60424,7 +60424,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "double-kick",
+        "name": "Двойной удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60442,7 +60442,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "quick-attack",
+        "name": "Быстрая атака",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60455,7 +60455,7 @@ const ALL_POKEMON_DATA = {
   },
   "1017": {
     "name": {
-      "ru": "Ogerpon"
+      "ru": "Огерпон"
     },
     "types": [
       "grass"
@@ -60473,7 +60473,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "slam",
+        "name": "Шлепок",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60482,7 +60482,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "vine-whip",
+        "name": "Семенной луч",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60513,7 +60513,7 @@ const ALL_POKEMON_DATA = {
   },
   "1018": {
     "name": {
-      "ru": "Archaludon"
+      "ru": "Архалудон"
     },
     "types": [
       "steel",
@@ -60534,7 +60534,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60543,7 +60543,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60574,7 +60574,7 @@ const ALL_POKEMON_DATA = {
   },
   "1019": {
     "name": {
-      "ru": "Hydrapple"
+      "ru": "Гидраппл"
     },
     "types": [
       "grass",
@@ -60635,7 +60635,7 @@ const ALL_POKEMON_DATA = {
   },
   "1020": {
     "name": {
-      "ru": "Gouging-fire"
+      "ru": "Разжигающий Огонь"
     },
     "types": [
       "fire",
@@ -60663,7 +60663,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60672,7 +60672,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "bite",
+        "name": "Укус",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60681,7 +60681,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "fire-blast",
+        "name": "Огненный взрыв",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60694,7 +60694,7 @@ const ALL_POKEMON_DATA = {
   },
   "1021": {
     "name": {
-      "ru": "Raging-bolt"
+      "ru": "Яростная Стрела"
     },
     "types": [
       "electric",
@@ -60722,7 +60722,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "thunder",
+        "name": "Громовой удар",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60753,7 +60753,7 @@ const ALL_POKEMON_DATA = {
   },
   "1022": {
     "name": {
-      "ru": "Iron-boulder"
+      "ru": "Железный Валун"
     },
     "types": [
       "rock",
@@ -60790,7 +60790,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60812,7 +60812,7 @@ const ALL_POKEMON_DATA = {
   },
   "1023": {
     "name": {
-      "ru": "Iron-crown"
+      "ru": "Железная Корона"
     },
     "types": [
       "steel",
@@ -60831,7 +60831,7 @@ const ALL_POKEMON_DATA = {
     ],
     "moves": [
       {
-        "name": "leer",
+        "name": "Взгляд",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60840,7 +60840,7 @@ const ALL_POKEMON_DATA = {
         "learnLevel": 1
       },
       {
-        "name": "hyper-beam",
+        "name": "Гиперлучь",
         "type": "normal",
         "power": 40,
         "accuracy": 100,
@@ -60871,7 +60871,7 @@ const ALL_POKEMON_DATA = {
   },
   "1024": {
     "name": {
-      "ru": "Terapagos"
+      "ru": "Терапагос"
     },
     "types": [
       "normal"
@@ -60929,7 +60929,7 @@ const ALL_POKEMON_DATA = {
   },
   "1025": {
     "name": {
-      "ru": "Pecharunt"
+      "ru": "Печарант"
     },
     "types": [
       "poison",
