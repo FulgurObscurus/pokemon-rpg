@@ -7670,6 +7670,137 @@ for (const key in MOVES) {
  target: "enemy",
  effect: "field_trap"
  }
+,
+ "kings-shield": {
+ id: "kings-shield",
+ name: "Королевский щит",
+ description: "Полностью защищает пользователя на ход, а контактная атака врага снижает его атаку.",
+ type: "steel",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 4,
+ target: "self",
+ effect: "protect_lower_attack_on_contact"
+ },
+ "play-nice": {
+ id: "play-nice",
+ name: "Милая игра",
+ description: "Снижает атаку цели дружелюбным поведением.",
+ type: "normal",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "lower_attack"
+ },
+ "confide": {
+ id: "confide",
+ name: "Откровение",
+ description: "Подрывает уверенность цели и понижает её спецатаку.",
+ type: "normal",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "lower_spatk"
+ },
+ "diamond-storm": {
+ id: "diamond-storm",
+ name: "Алмазный шторм",
+ description: "Мощная каменная атака, которая может резко повысить защиту пользователя.",
+ type: "rock",
+ power: 100,
+ accuracy: 95,
+ category: "physical",
+ max_pp: 5,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_raise_defense_2_chance"
+ },
+ "steam-eruption": {
+ id: "steam-eruption",
+ name: "Паровое извержение",
+ description: "Очень мощная водная атака, которая может вызвать ожог.",
+ type: "water",
+ power: 110,
+ accuracy: 95,
+ category: "special",
+ max_pp: 5,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_burn_chance"
+ },
+ "hyperspace-hole": {
+ id: "hyperspace-hole",
+ name: "Гиперпространственная дыра",
+ description: "Психическая атака, пробивающая защитные приёмы.",
+ type: "psychic",
+ power: 80,
+ accuracy: 101,
+ category: "special",
+ max_pp: 5,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_break_protect"
+ },
+ "water-shuriken": {
+ id: "water-shuriken",
+ name: "Водяной сюрикен",
+ description: "Бьёт цель несколько раз подряд водяными лезвиями с приоритетом.",
+ type: "water",
+ power: 15,
+ accuracy: 100,
+ category: "special",
+ max_pp: 20,
+ priority: 1,
+ target: "enemy",
+ effect: "priority_multi_hit"
+ },
+ "mystical-fire": {
+ id: "mystical-fire",
+ name: "Мистический огонь",
+ description: "Огненная атака, которая понижает спецатаку цели.",
+ type: "fire",
+ power: 75,
+ accuracy: 100,
+ category: "special",
+ max_pp: 10,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_lower_spatk"
+ },
+ "spiky-shield": {
+ id: "spiky-shield",
+ name: "Колючий щит",
+ description: "Защищает пользователя на ход и ранит врага при контактной атаке.",
+ type: "grass",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 4,
+ target: "self",
+ effect: "protect_damage_on_contact"
+ },
+ "aromatic-mist": {
+ id: "aromatic-mist",
+ name: "Ароматный туман",
+ description: "Повышает спецзащиту союзной цели.",
+ type: "fairy",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "self",
+ effect: "raise_spdef"
+ }
 });
 function getMoveDescription(moveId) {
     if (!MOVES[moveId]) return "Описание отсутствует.";
