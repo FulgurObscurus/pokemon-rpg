@@ -154,7 +154,6 @@ function endBattle() {
     document.getElementById("btn-bag").disabled = false;
     document.getElementById("btn-switch").disabled = false;
     document.getElementById("btn-run").disabled = false;
-    document.getElementById("btn-bag").onclick = function() {
         addMessage("🧪 Использовано зелье");
         const p = getCurrentPokemon();
         if (p) {

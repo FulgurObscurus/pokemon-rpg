@@ -260,3 +260,17 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
+// Привязка кнопки "Инвентарь" к openInventory
+document.addEventListener('DOMContentLoaded', function() {
+    var btnBag = document.getElementById('btn-bag');
+    if (btnBag) {
+        btnBag.onclick = function() {
+            if (inBattle) {
+                openInventory();
+            } else {
+                addMessage('❌ Инвентарь доступен только в бою');
+            }
+        };
+    }
+});
