@@ -34,3 +34,4 @@ body { background-color: #1a0f2e; color: #fff; display: flex; justify-content: c
 #inv-close:hover { background: #9b6abe; }
 @media (max-width: 600px) { #game { padding: 10px; border-radius: 20px; } #battle-screen { font-size: 14px; max-height: 200px; padding: 12px; } #actions button { font-size: 14px; padding: 10px; } #move-list button { font-size: 12px; padding: 8px; } .hp-bar { font-size: 12px; } #info-panel { font-size: 12px; } #info-panel button { font-size: 10px; padding: 2px 6px; } .pokemon-img { width: 60px; height: 60px; } }
 @media (max-width: 400px) { #actions { grid-template-columns: 1fr 1fr; gap: 4px; } #actions button { font-size: 12px; padding: 8px; } #battle-screen { font-size: 12px; max-height: 150px; } #move-list { grid-template-columns: 1fr 1fr; } .pokemon-img { width: 50px; height: 50px; } }
+.pokemon-img { width: 48px; height: 48px; image-rendering: pixelated; vertical-align: middle; margin-right: 8px; }
