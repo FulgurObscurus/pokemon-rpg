@@ -1,5 +1,5 @@
 // =======================================================================
-// КАРТА МИРА (финальная)
+// КАРТА МИРА (финальная, без ошибок)
 // =======================================================================
 const canvas = document.createElement('canvas');
 canvas.width = Math.min(window.innerWidth - 20, 800);
@@ -127,3 +127,4 @@ document.addEventListener('DOMContentLoaded', function() {
 window._canvas = canvas;
 window._battleScreen = battleScreen;
 gameLoop();
+console.log('Карта загружена (финальная)');
