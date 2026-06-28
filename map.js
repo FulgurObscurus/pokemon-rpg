@@ -1,114 +1,132 @@
 // =======================================================================
-// КАРТА МИРА (финальная, без ошибок)
+// КАРТА И ПЕРЕМЕЩЕНИЕ
 // =======================================================================
-const canvas = document.createElement('canvas');
-canvas.width = Math.min(window.innerWidth - 20, 800);
-canvas.height = Math.min(window.innerHeight - 200, 400);
-canvas.style.width = '100%';
-canvas.style.height = 'auto';
-canvas.style.border = '4px solid #7b4a9e';
-canvas.style.borderRadius = '12px';
-canvas.style.marginBottom = '10px';
-canvas.style.display = 'block';
 
-const gameDiv = document.getElementById('game');
-const battleScreen = document.getElementById('battle-screen');
-gameDiv.insertBefore(canvas, battleScreen);
-battleScreen.style.display = 'none';
+let canvas = null;
+let ctx = null;
+let player = { x: 5, y: 5 };
+let lastDirection = 'down';
+let mapData = [];
+const TILE_SIZE = 32;
+const MAP_WIDTH = 20;
+const MAP_HEIGHT = 30;
 
-const ctx = canvas.getContext('2d');
-const player = { x: 100, y: 100, size: 24, speed: 4 };
-const keys = { w: false, a: false, s: false, d: false };
+// Инициализация карты
+function initMap() {
+    canvas = document.querySelector('canvas');
+    if (!canvas) {
+        console.error('Canvas не найден!');
+        return;
+    }
+    
+    ctx = canvas.getContext('2d');
+    canvas.width = MAP_WIDTH * TILE_SIZE;
+    canvas.height = MAP_HEIGHT * TILE_SIZE;
+    
+    // Генерируем простую карту
+    generateMap();
+    renderMap();
+    
+    // Привязка кнопок джойстика
+    document.getElementById('btn-up').addEventListener('click', function() {
+        movePlayer('up');
+        lastDirection = 'up';
+    });
+    
+    document.getElementById('btn-down').addEventListener('click', function() {
+        movePlayer('down');
+        lastDirection = 'down';
+    });
+    
+    document.getElementById('btn-left').addEventListener('click', function() {
+        movePlayer('left');
+        lastDirection = 'left';
+    });
+    
+    document.getElementById('btn-right').addEventListener('click', function() {
+        movePlayer('right');
+        lastDirection = 'right';
+    });
+    
+    console.log('[map] Карта инициализирована');
+}
 
-function drawMap() {
-    ctx.fillStyle = '#4caf50';
+function generateMap() {
+    // Простая генерация карты с деревьями
+    mapData = [];
+    for (let y = 0; y < MAP_HEIGHT; y++) {
+        mapData[y] = [];
+        for (let x = 0; x < MAP_WIDTH; x++) {
+            // Случайные деревья (10% шанс)
+            if (Math.random() < 0.1 && !(x === player.x && y === player.y)) {
+                mapData[y][x] = 'tree';
+            } else {
+                mapData[y][x] = 'grass';
+            }
+        }
+    }
+}
+
+function renderMap() {
+    if (!ctx) return;
+    
+    // Очистка
+    ctx.fillStyle = '#4CAF50';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < 30; i++) {
-        ctx.fillStyle = '#388e3c';
-        ctx.beginPath();
-        ctx.arc(30 + i * 40, 40 + Math.sin(i) * 20, 8, 0, Math.PI * 2);
-        ctx.fill();
+    
+    // Рисуем карту
+    for (let y = 0; y < MAP_HEIGHT; y++) {
+        for (let x = 0; x < MAP_WIDTH; x++) {
+            if (mapData[y][x] === 'tree') {
+                // Дерево
+                ctx.fillStyle = '#2E7D32';
+                ctx.beginPath();
+                ctx.arc(x * TILE_SIZE + TILE_SIZE/2, y * TILE_SIZE + TILE_SIZE/2, TILE_SIZE/2, 0, Math.PI * 2);
+                ctx.fill();
+                
+                ctx.fillStyle = '#5D4037';
+                ctx.fillRect(x * TILE_SIZE + TILE_SIZE/2 - 4, y * TILE_SIZE + TILE_SIZE/2, 8, TILE_SIZE/2);
+            }
+        }
     }
-    const trees = [[50,50],[200,80],[350,40],[500,70],[100,350],[300,380],[550,340]];
-    for (let [tx, ty] of trees) {
-        ctx.fillStyle = '#5D4037';
-        ctx.fillRect(tx, ty, 12, 20);
-        ctx.fillStyle = '#2E7D32';
-        ctx.beginPath();
-        ctx.arc(tx + 6, ty - 6, 16, 0, Math.PI * 2);
-        ctx.fill();
-    }
+    
+    // Рисуем игрока
     ctx.fillStyle = '#2196F3';
-    ctx.fillRect(player.x, player.y, player.size, player.size);
-    ctx.fillStyle = '#fff';
-    ctx.fillRect(player.x + 6, player.y + 6, 6, 6);
-    ctx.fillRect(player.x + 14, player.y + 6, 6, 6);
+    ctx.fillRect(player.x * TILE_SIZE + 4, player.y * TILE_SIZE + 4, TILE_SIZE - 8, TILE_SIZE - 8);
+    
+    // Глаза игрока
+    ctx.fillStyle = 'white';
+    ctx.fillRect(player.x * TILE_SIZE + 8, player.y * TILE_SIZE + 10, 6, 6);
+    ctx.fillRect(player.x * TILE_SIZE + 18, player.y * TILE_SIZE + 10, 6, 6);
 }
 
-function gameLoop() {
-    if (keys.w && player.y > 0) player.y -= player.speed;
-    if (keys.s && player.y < canvas.height - player.size) player.y += player.speed;
-    if (keys.a && player.x > 0) player.x -= player.speed;
-    if (keys.d && player.x < canvas.width - player.size) player.x += player.speed;
-    drawMap();
-    requestAnimationFrame(gameLoop);
+function movePlayer(direction) {
+    let newX = player.x;
+    let newY = player.y;
+    
+    switch(direction) {
+        case 'up': newY--; break;
+        case 'down': newY++; break;
+        case 'left': newX--; break;
+        case 'right': newX++; break;
+    }
+    
+    // Проверка границ
+    if (newX < 0 || newX >= MAP_WIDTH || newY < 0 || newY >= MAP_HEIGHT) {
+        return;
+    }
+    
+    // Проверка на деревья
+    if (mapData[newY][newX] === 'tree') {
+        return;
+    }
+    
+    player.x = newX;
+    player.y = newY;
+    renderMap();
 }
 
-window.addEventListener('resize', () => {
-    canvas.width = Math.min(window.innerWidth - 20, 800);
-    canvas.height = Math.min(window.innerHeight - 200, 400);
+// Инициализация при загрузке
+window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(initMap, 500);
 });
-
-document.addEventListener('keydown', (e) => {
-    const k = e.key.toLowerCase();
-    if (k === 'w' || k === 'arrowup') keys.w = true;
-    if (k === 's' || k === 'arrowdown') keys.s = true;
-    if (k === 'a' || k === 'arrowleft') keys.a = true;
-    if (k === 'd' || k === 'arrowright') keys.d = true;
-});
-document.addEventListener('keyup', (e) => {
-    const k = e.key.toLowerCase();
-    if (k === 'w' || k === 'arrowup') keys.w = false;
-    if (k === 's' || k === 'arrowdown') keys.s = false;
-    if (k === 'a' || k === 'arrowleft') keys.a = false;
-    if (k === 'd' || k === 'arrowright') keys.d = false;
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const btnUp = document.getElementById('btn-up');
-    const btnDown = document.getElementById('btn-down');
-    const btnLeft = document.getElementById('btn-left');
-    const btnRight = document.getElementById('btn-right');
-    const btnAction = document.getElementById('btn-action');
-
-    if (btnUp) {
-        btnUp.addEventListener('touchstart', (e) => { e.preventDefault(); keys.w = true; });
-        btnUp.addEventListener('touchend', (e) => { e.preventDefault(); keys.w = false; });
-        btnUp.addEventListener('mousedown', () => keys.w = true);
-        btnUp.addEventListener('mouseup', () => keys.w = false);
-    }
-    if (btnDown) {
-        btnDown.addEventListener('touchstart', (e) => { e.preventDefault(); keys.s = true; });
-        btnDown.addEventListener('touchend', (e) => { e.preventDefault(); keys.s = false; });
-        btnDown.addEventListener('mousedown', () => keys.s = true);
-        btnDown.addEventListener('mouseup', () => keys.s = false);
-    }
-    if (btnLeft) {
-        btnLeft.addEventListener('touchstart', (e) => { e.preventDefault(); keys.a = true; });
-        btnLeft.addEventListener('touchend', (e) => { e.preventDefault(); keys.a = false; });
-        btnLeft.addEventListener('mousedown', () => keys.a = true);
-        btnLeft.addEventListener('mouseup', () => keys.a = false);
-    }
-    if (btnRight) {
-        btnRight.addEventListener('touchstart', (e) => { e.preventDefault(); keys.d = true; });
-        btnRight.addEventListener('touchend', (e) => { e.preventDefault(); keys.d = false; });
-        btnRight.addEventListener('mousedown', () => keys.d = true);
-        btnRight.addEventListener('mouseup', () => keys.d = false);
-    }
-
-});
-
-window._canvas = canvas;
-window._battleScreen = battleScreen;
-gameLoop();
-console.log('Карта загружена (финальная)');
