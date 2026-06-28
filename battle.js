@@ -197,6 +197,7 @@ function healParty() {
     myParty.forEach(p => p.currentHp = p.maxHp);
 }
 function openInventory() {
+    document.getElementById("move-list").style.display = "none";
     // Заглушка
 }
 console.log('✅ Минимальный battle.js загружен');
@@ -206,6 +207,7 @@ function getPokemonImage(id) { return "https://raw.githubusercontent.com/PokeAPI
 // ИНВЕНТАРЬ (модальное окно)
 // =======================================================================
 function openInventory() {
+    document.getElementById("move-list").style.display = "none";
     if (!inBattle) return;
     const modal = document.getElementById('inventory-modal');
     const itemsContainer = document.getElementById('inventory-items');
