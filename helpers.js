@@ -1,6 +1,7 @@
 // =======================================================================
 // ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 // =======================================================================
+
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -29,30 +30,52 @@ function updateHpBars() {
 
     const p = getCurrentPokemon();
     if (p) {
-        document.getElementById('p-name').textContent = p.name;
-        document.getElementById('p-level').textContent = p.level;
+        const pName = document.getElementById('p-name');
+        const pLevel = document.getElementById('p-level');
+        const pHpBar = document.getElementById('p-hp-bar');
+        const pHpText = document.getElementById('p-hp-text');
+
+        if (pName) pName.textContent = p.name;
+        if (pLevel) pLevel.textContent = p.level;
 
         const hpPercent = Math.max(0, (p.currentHp / p.maxHp) * 100);
-        document.getElementById('p-hp-bar').style.width = hpPercent + '%';
-        document.getElementById('p-hp-bar').className = 'hp' + (hpPercent < 25 ? ' low' : '');
-        document.getElementById('p-hp-text').textContent = `${p.currentHp}/${p.maxHp}`;
+        if (pHpBar) {
+            pHpBar.style.width = hpPercent + '%';
+            pHpBar.className = 'hp' + (hpPercent < 25 ? ' low' : '');
+        }
+        if (pHpText) pHpText.textContent = `${p.currentHp}/${p.maxHp}`;
     }
 
     if (enemyPokemon) {
-        document.getElementById('e-name').textContent = enemyPokemon.name;
-        document.getElementById('e-level').textContent = enemyPokemon.level;
+        const eName = document.getElementById('e-name');
+        const eLevel = document.getElementById('e-level');
+        const eHpBar = document.getElementById('e-hp-bar');
+        const eHpText = document.getElementById('e-hp-text');
+
+        if (eName) eName.textContent = enemyPokemon.name;
+        if (eLevel) eLevel.textContent = enemyPokemon.level;
 
         const hpPercent = Math.max(0, (enemyPokemon.currentHp / enemyPokemon.maxHp) * 100);
-        document.getElementById('e-hp-bar').style.width = hpPercent + '%';
-        document.getElementById('e-hp-bar').className = 'hp' + (hpPercent < 25 ? ' low' : '');
-        document.getElementById('e-hp-text').textContent = `${enemyPokemon.currentHp}/${enemyPokemon.maxHp}`;
+        if (eHpBar) {
+            eHpBar.style.width = hpPercent + '%';
+            eHpBar.className = 'hp' + (hpPercent < 25 ? ' low' : '');
+        }
+        if (eHpText) eHpText.textContent = `${enemyPokemon.currentHp}/${enemyPokemon.maxHp}`;
     } else {
-        document.getElementById('e-name').textContent = '—';
-        document.getElementById('e-level').textContent = '0';
-        document.getElementById('e-hp-bar').style.width = '0%';
-        document.getElementById('e-hp-text').textContent = '0/0';
+        const eName = document.getElementById('e-name');
+        const eLevel = document.getElementById('e-level');
+        const eHpBar = document.getElementById('e-hp-bar');
+        const eHpText = document.getElementById('e-hp-text');
+
+        if (eName) eName.textContent = '—';
+        if (eLevel) eLevel.textContent = '0';
+        if (eHpBar) eHpBar.style.width = '0%';
+        if (eHpText) eHpText.textContent = '0/0';
     }
 
-    document.getElementById('party-count').textContent = myParty.length;
-    document.getElementById('money').textContent = gameState.money;
+    const partyCount = document.getElementById('party-count');
+    const moneyEl = document.getElementById('money');
+
+    if (partyCount) partyCount.textContent = myParty.length;
+    if (moneyEl) moneyEl.textContent = gameState.money;
 }

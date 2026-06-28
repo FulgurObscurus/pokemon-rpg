@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const actionsEl = document.getElementById('actions');
     const infoPanelEl = document.getElementById('info-panel');
     const controlsEl = document.getElementById('controls');
+
     const btnFight = document.getElementById('btn-fight');
     const btnAction = document.getElementById('btn-action');
     const btnBag = document.getElementById('btn-bag');
@@ -38,12 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function startWildBattle() {
         if (inBattle) {
             onFight();
-            return;
-        }
-
-        const ids = Object.keys(allPokemonData || {});
-        if (!ids.length) {
-            addMessage('❌ Данные покемонов не загружены');
             return;
         }
 

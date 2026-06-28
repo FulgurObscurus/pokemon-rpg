@@ -1,200 +1,198 @@
 // =======================================================================
-// БОЕВАЯ СИСТЕМА
+// БОЕВЫЕ ФУНКЦИИ
 // =======================================================================
 
-let inBattle = false;
-let currentEnemy = null;
-let battleMoves = [];
+function getPokemonImage(id) {
+    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+}
 
-function startBattle(enemy) {
+function generateWildPokemon() {
+    const ids = Object.keys(allPokemonData || {});
+    if (!ids.length) return null;
+
+    const id = parseInt(ids[rand(0, ids.length - 1)], 10);
+    const level = rand(2, 10);
+    const p = new Poke(id, level);
+    p.isWild = true;
+    return p;
+}
+
+function startBattle(wildPoke) {
+    enemyPokemon = wildPoke;
     inBattle = true;
-    currentEnemy = enemy;
-    
-    const player = myParty[currentPokemonIndex];
-    
-    // Показываем HP
+
+    document.getElementById('move-list').style.display = 'none';
+    document.getElementById('btn-fight').disabled = false;
+    document.getElementById('btn-bag').disabled = false;
+    document.getElementById('btn-switch').disabled = false;
+    document.getElementById('btn-run').disabled = false;
+
+    addMessage('⚔️ Дикий ' + enemyPokemon.name + ' (ур. ' + enemyPokemon.level + ') появился!');
     updateHpBars();
-    
-    // Генерируем атаки для кнопки "Бой"
-    generateBattleMoves(player);
-    
-    // Показываем сообщение о появлении
-    const enemyName = enemy.getName();
-    const enemyLevel = enemy.level;
-    addMessage(`⚔️ Дикий ${enemyName} (ур. ${enemyLevel}) появился!`);
-    
-    // Включаем кнопки
+    showActions();
+}
+
+function showActions() {
+    document.getElementById('move-list').style.display = 'none';
+    document.getElementById('actions').style.display = 'grid';
     document.getElementById('btn-fight').disabled = false;
     document.getElementById('btn-bag').disabled = false;
     document.getElementById('btn-switch').disabled = false;
     document.getElementById('btn-run').disabled = false;
 }
 
-function generateBattleMoves(pokemon) {
-    battleMoves = pokemon.moves.slice(0, 4);
-    
-    // Создаём обработчик для кнопки "Бой"
-    const btnFight = document.getElementById('btn-fight');
-    btnFight.onclick = function() {
-        showMoveSelection();
-    };
-}
+function onFight() {
+    if (!inBattle) return;
 
-function showMoveSelection() {
-    const actionsDiv = document.getElementById('actions');
-    const originalButtons = actionsDiv.innerHTML;
-    
-    // Показываем атаки вместо кнопок действий
-    let movesHTML = '';
-    battleMoves.forEach((move, index) => {
-        movesHTML += `<button onclick="useMove(${index})">${move.name}</button>`;
+    moveSelectionMode = true;
+    document.getElementById('actions').style.display = 'none';
+
+    const moveList = document.getElementById('move-list');
+    moveList.style.display = 'grid';
+    moveList.innerHTML = '';
+
+    const p = getCurrentPokemon();
+    if (!p) return;
+
+    p.moves.forEach((move) => {
+        const btn = document.createElement('button');
+        btn.textContent = move.name + ' (PP: ' + move.pp + '/' + move.max_pp + ')';
+        if (move.pp <= 0) btn.disabled = true;
+
+        btn.addEventListener('click', function() {
+            const dmg = 10;
+            enemyPokemon.currentHp = Math.max(0, enemyPokemon.currentHp - dmg);
+            addMessage('💥 ' + p.name + ' нанёс ' + dmg + ' урона!');
+            updateHpBars();
+
+            if (enemyPokemon.currentHp <= 0) {
+                addMessage('🎉 ' + enemyPokemon.name + ' повержен!');
+                endBattle();
+                return;
+            }
+
+            const enemyDmg = 5;
+            p.currentHp = Math.max(0, p.currentHp - enemyDmg);
+            addMessage('💢 ' + enemyPokemon.name + ' нанёс ' + enemyDmg + ' урона!');
+            updateHpBars();
+
+            if (p.currentHp <= 0) {
+                addMessage('💔 ' + p.name + ' потерял сознание!');
+                endBattle();
+                return;
+            }
+
+            moveList.style.display = 'none';
+            showActions();
+            moveSelectionMode = false;
+        });
+
+        moveList.appendChild(btn);
     });
-    movesHTML += `<button onclick="cancelMoveSelection()">← Назад</button>`;
-    
-    actionsDiv.innerHTML = movesHTML;
-}
 
-function cancelMoveSelection() {
-    // Возвращаем оригинальные кнопки
-    document.getElementById('btn-fight').textContent = '⚔️ Бой';
-    document.getElementById('btn-fight').disabled = false;
-    document.getElementById('btn-bag').disabled = false;
-    document.getElementById('btn-switch').disabled = false;
-    document.getElementById('btn-run').disabled = false;
-    
-    // Восстанавливаем обработчики
-    const btnFight = document.getElementById('btn-fight');
-    btnFight.onclick = function() {
-        showMoveSelection();
-    };
-}
-
-function useMove(moveIndex) {
-    const player = myParty[currentPokemonIndex];
-    const move = battleMoves[moveIndex];
-    
-    // Ход игрока
-    const damage = calculateDamage(player, currentEnemy, move);
-    currentEnemy.hp -= damage;
-    addMessage(`${player.getName()} использует ${move.name}! Нанесено ${damage} урона.`);
-    
-    if (currentEnemy.hp <= 0) {
-        currentEnemy.hp = 0;
-        updateHpBars();
-        winBattle();
-        return;
-    }
-    
-    updateHpBars();
-    
-    // Ход противника
-    setTimeout(() => {
-        enemyTurn();
-    }, 1000);
-}
-
-function enemyTurn() {
-    if (!inBattle || !currentEnemy) return;
-    
-    const enemyMove = currentEnemy.moves[Math.floor(Math.random() * currentEnemy.moves.length)];
-    const player = myParty[currentPokemonIndex];
-    
-    const damage = calculateDamage(currentEnemy, player, enemyMove);
-    player.hp -= damage;
-    addMessage(`Дикий ${currentEnemy.getName()} использует ${enemyMove.name}! Нанесено ${damage} урона.`);
-    
-    if (player.hp <= 0) {
-        player.hp = 0;
-        updateHpBars();
-        loseBattle();
-        return;
-    }
-    
-    updateHpBars();
-}
-
-function calculateDamage(attacker, defender, move) {
-    const level = attacker.level;
-    const attack = attacker.stats.attack;
-    const defense = defender.stats.defense;
-    const power = move.power || 40;
-    
-    // Упрощённая формула урона
-    let damage = Math.floor(((2 * level / 5 + 2) * power * attack / defense) / 50) + 2;
-    
-    // Типовая эффективность
-    const effectiveness = getTypeEffectiveness(move.type, defender.type);
-    damage *= effectiveness;
-    
-    // Случайный множитель (0.85 - 1.0)
-    damage *= (Math.floor(Math.random() * 16) + 85) / 100;
-    
-    return Math.floor(damage);
-}
-
-function winBattle() {
-    addMessage(`🎉 Победа! Дикий ${currentEnemy.getName()} повержен!`);
-    
-    // Награда
-    const expGain = Math.floor(currentEnemy.level * 2.5);
-    const moneyGain = Math.floor(Math.random() * 20) + 10;
-    
-    myParty[currentPokemonIndex].exp += expGain;
-    gameState.money += moneyGain;
-    
-    addMessage(`+${expGain} опыта, +${moneyGain} монет!`);
-    
-    // Проверяем эволюцию
-    checkEvolution(myParty[currentPokemonIndex]);
-    
-    // Возвращаем на карту
-    setTimeout(() => {
-        endBattle();
-    }, 2000);
-}
-
-function loseBattle() {
-    addMessage(`💀 ${myParty[currentPokemonIndex].getName()} потерял сознание!`);
-    addMessage('Вы потеряли немного денег...');
-    
-    gameState.money = Math.floor(gameState.money / 2);
-    
-    setTimeout(() => {
-        endBattle();
-    }, 2000);
+    const cancel = document.createElement('button');
+    cancel.textContent = '↩️ Назад';
+    cancel.addEventListener('click', function() {
+        moveSelectionMode = false;
+        moveList.style.display = 'none';
+        showActions();
+    });
+    moveList.appendChild(cancel);
 }
 
 function endBattle() {
+    enemyPokemon = null;
     inBattle = false;
-    currentEnemy = null;
-    battleMoves = [];
-    
-    // Показываем карту
-    canvas.style.display = 'block';
-    document.getElementById('controls').style.display = 'grid';
+
+    document.getElementById('move-list').style.display = 'none';
     document.getElementById('battle-screen').style.display = 'none';
     document.getElementById('hp-bars').style.display = 'none';
     document.getElementById('actions').style.display = 'none';
-    
-    // Возвращаем кнопки
-    const btnFight = document.getElementById('btn-fight');
-    btnFight.textContent = '🌲 Исследовать';
-    btnFight.disabled = false;
-    document.getElementById('btn-bag').disabled = true;
-    document.getElementById('btn-switch').disabled = true;
-    document.getElementById('btn-run').disabled = true;
-    
-    // Обновляем интерфейс
-    updateInfoPanel();
-    
-    // Сохраняем
-    saveGame();
+    document.getElementById('btn-fight').textContent = '🌲 Исследовать';
+
+    if (window._canvas) window._canvas.style.display = 'block';
+    if (document.getElementById('controls')) document.getElementById('controls').style.display = 'grid';
+
+    updateHpBars();
 }
 
-function checkEvolution(pokemon) {
-    // Простая проверка эволюции
-    if (pokemon.evolution && pokemon.level >= pokemon.evolution.level) {
-        addMessage(` ${pokemon.getName()} эволюционирует в ${pokemon.evolution.name}!`);
-        // Здесь можно добавить логику эволюции
+function openInventory() {
+    if (!inBattle) {
+        addMessage('❌ Инвентарь доступен только в бою');
+        return;
     }
+
+    const modal = document.getElementById('inventory-modal');
+    const itemsContainer = document.getElementById('inventory-items');
+    if (!modal || !itemsContainer) {
+        addMessage('❌ Интерфейс инвентаря не найден');
+        return;
+    }
+
+    const items = gameState.items || {};
+    const potions = items.potion || 0;
+    const pokeballs = items.pokeball || 0;
+
+    let html = '';
+    html += '<div class="item-row">Зелье (' + potions + ' шт.)';
+    if (potions > 0) html += ' <button onclick="usePotion()">Использовать</button>';
+    else html += ' <span style="color:#888;">нет</span>';
+    html += '</div>';
+
+    html += '<div class="item-row">Покебол (' + pokeballs + ' шт.)';
+    if (pokeballs > 0 && enemyPokemon) html += ' <button onclick="usePokeball()">Использовать</button>';
+    else html += ' <span style="color:#888;">' + (enemyPokemon ? 'нет' : ' (нет врага)') + '</span>';
+    html += '</div>';
+
+    itemsContainer.innerHTML = html;
+    modal.style.display = 'flex';
 }
+
+window.usePotion = function() {
+    const p = getCurrentPokemon();
+    if (!p) return;
+    if (gameState.items.potion <= 0) return;
+
+    const heal = 20;
+    p.currentHp = Math.min(p.currentHp + heal, p.maxHp);
+    gameState.items.potion--;
+    addMessage('🧪 Вы использовали Зелье');
+    updateHpBars();
+    saveGame();
+    document.getElementById('inventory-modal').style.display = 'none';
+};
+
+window.usePokeball = function() {
+    if (!enemyPokemon) return;
+    if (gameState.items.pokeball <= 0) return;
+
+    gameState.items.pokeball--;
+
+    if (Math.random() < 0.5) {
+        addMessage('🎉 Вы поймали ' + enemyPokemon.name + '!');
+        myParty.push(enemyPokemon);
+    } else {
+        addMessage('😞 Покебол не сработал!');
+    }
+
+    saveGame();
+    document.getElementById('inventory-modal').style.display = 'none';
+    endBattle();
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementById('inv-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+            document.getElementById('inventory-modal').style.display = 'none';
+        });
+    }
+
+    const btnRun = document.getElementById('btn-run');
+    if (btnRun) {
+        btnRun.onclick = function() {
+            addMessage('🏃 Вы сбежали!');
+            endBattle();
+        };
+    }
+});
