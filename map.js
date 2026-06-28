@@ -106,22 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
         btnRight.addEventListener('mouseup', () => keys.d = false);
     }
 
-    if (btnAction) {
-        btnAction.addEventListener('click', function() {
-            if (inBattle) return;
-            const wild = generateWildPokemon();
-            if (wild) {
-                canvas.style.display = 'none';
-                document.getElementById('controls').style.display = 'none';
-                battleScreen.style.display = 'block';
-                document.getElementById('hp-bars').style.display = 'flex';
-                document.getElementById('actions').style.display = 'grid';
-                document.getElementById('info-panel').style.display = 'flex';
-                startBattle(wild);
-                document.getElementById('btn-fight').textContent = '⚔️ Бой';
-            }
-        });
-    }
 });
 
 window._canvas = canvas;

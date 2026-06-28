@@ -201,9 +201,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Глобальный обработчик кликов для диагностики
-document.addEventListener('click', function(e) {
-    if (e.target.id === 'btn-action') {
-        alert('Клик по btn-action перехвачен!');
+
+// Рабочий обработчик кнопки "Исследовать"
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('btn-action');
+    if (btn) {
+        btn.addEventListener('click', function() {
+            if (inBattle) return;
+            var wild = generateWildPokemon();
+            if (wild) {
+                var canvas = document.querySelector('canvas');
+                if (canvas) canvas.style.display = 'none';
+                document.getElementById('controls').style.display = 'none';
+                document.getElementById('battle-screen').style.display = 'block';
+                document.getElementById('hp-bars').style.display = 'flex';
+                document.getElementById('actions').style.display = 'grid';
+                document.getElementById('info-panel').style.display = 'flex';
+                startBattle(wild);
+                document.getElementById('btn-fight').textContent = '⚔️ Бой';
+            }
+        });
     }
 });
