@@ -2869,383 +2869,6 @@ Object.assign(MOVES, {
 });
 
 Object.assign(MOVES, {
-    "roar": {
-        id: "roar",
-        name: "Рёв",
-        description: "Прогоняет цель или завершает бой с диким покемоном.",
-        type: "normal",
-        power: 0,
-        accuracy: 101,
-        category: "status",
-        max_pp: 20,
-        priority: -6,
-        target: "enemy",
-        effect: "force_switch"
-    },
-    "rock-throw": {
-        id: "rock-throw",
-        name: "Бросок камня",
-        description: "Простая каменная атака.",
-        type: "rock",
-        power: 50,
-        accuracy: 90,
-        category: "physical",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "damage"
-    },
-    "rolling-kick": {
-        id: "rolling-kick",
-        name: "Кувыркающийся удар",
-        description: "Может заставить противника дрогнуть.",
-        type: "fighting",
-        power: 60,
-        accuracy: 85,
-        category: "physical",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_flinch_chance"
-    },
-    "rollout": {
-        id: "rollout",
-        name: "Накат",
-        description: "Атакует несколько ходов подряд, усиливаясь каждый раз.",
-        type: "rock",
-        power: 30,
-        accuracy: 90,
-        category: "physical",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "successive_stronger"
-    },
-    "safeguard": {
-        id: "safeguard",
-        name: "Защитный покров",
-        description: "Защищает команду от статусных состояний на несколько ходов.",
-        type: "normal",
-        power: 0,
-        accuracy: 101,
-        category: "status",
-        max_pp: 25,
-        priority: 0,
-        target: "team",
-        effect: "safeguard"
-    },
-    "sand-attack": {
-        id: "sand-attack",
-        name: "Песчаная атака",
-        description: "Понижает точность противника.",
-        type: "ground",
-        power: 0,
-        accuracy: 100,
-        category: "status",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "lower_accuracy"
-    },
-    "scald": {
-        id: "scald",
-        name: "Ошпаривание",
-        description: "Водная атака, которая может вызвать ожог.",
-        type: "water",
-        power: 80,
-        accuracy: 100,
-        category: "special",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_burn_chance"
-    },
-    "scary-face": {
-        id: "scary-face",
-        name: "Страшная морда",
-        description: "Сильно понижает скорость противника.",
-        type: "normal",
-        power: 0,
-        accuracy: 100,
-        category: "status",
-        max_pp: 10,
-        priority: 0,
-        target: "enemy",
-        effect: "lower_speed_2"
-    },
-    "screech": {
-        id: "screech",
-        name: "Визг",
-        description: "Сильно понижает защиту противника.",
-        type: "normal",
-        power: 0,
-        accuracy: 85,
-        category: "status",
-        max_pp: 40,
-        priority: 0,
-        target: "enemy",
-        effect: "lower_defense_2"
-    },
-    "seed-bomb": {
-        id: "seed-bomb",
-        name: "Семенная бомба",
-        description: "Сильная физическая травяная атака.",
-        type: "grass",
-        power: 80,
-        accuracy: 100,
-        category: "physical",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "damage"
-    },
-    "seismic-toss": {
-        id: "seismic-toss",
-        name: "Сейсмический бросок",
-        description: "Наносит фиксированный урон, равный уровню пользователя.",
-        type: "fighting",
-        power: 0,
-        accuracy: 100,
-        category: "physical",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "fixed_level"
-    },
-    "self-destruct": {
-        id: "self-destruct",
-        name: "Самоуничтожение",
-        description: "Очень мощная атака, после которой пользователь падает.",
-        type: "normal",
-        power: 200,
-        accuracy: 100,
-        category: "physical",
-        max_pp: 5,
-        priority: 0,
-        target: "enemy",
-        effect: "self_destruct"
-    },
-    "sing": {
-        id: "sing",
-        name: "Пение",
-        description: "Усыпляет противника.",
-        type: "normal",
-        power: 0,
-        accuracy: 55,
-        category: "status",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "sleep"
-    },
-    "sketch": {
-        id: "sketch",
-        name: "Эскиз",
-        description: "Навсегда копирует последний приём цели.",
-        type: "normal",
-        power: 0,
-        accuracy: 101,
-        category: "status",
-        max_pp: 1,
-        priority: 0,
-        target: "enemy",
-        effect: "sketch"
-    },
-    "slash": {
-        id: "slash",
-        name: "Рассечение",
-        description: "Физическая атака с повышенным шансом критического удара.",
-        type: "normal",
-        power: 70,
-        accuracy: 100,
-        category: "physical",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "high_crit_damage"
-    },
-    "sleep-powder": {
-        id: "sleep-powder",
-        name: "Сонная пыльца",
-        description: "Усыпляет противника.",
-        type: "grass",
-        power: 0,
-        accuracy: 75,
-        category: "status",
-        max_pp: 15,
-        priority: 0,
-        target: "enemy",
-        effect: "sleep"
-    },
-    "sludge": {
-        id: "sludge",
-        name: "Грязь",
-        description: "Может отравить противника.",
-        type: "poison",
-        power: 65,
-        accuracy: 100,
-        category: "special",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_poison_chance"
-    },
-    "smog": {
-        id: "smog",
-        name: "Смог",
-        description: "Может отравить противника.",
-        type: "poison",
-        power: 30,
-        accuracy: 70,
-        category: "special",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_poison_chance"
-    },
-    "smokescreen": {
-        id: "smokescreen",
-        name: "Дымовая завеса",
-        description: "Понижает точность противника.",
-        type: "normal",
-        power: 0,
-        accuracy: 100,
-        category: "status",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "lower_accuracy"
-    },
-    "sonic-boom": {
-        id: "sonic-boom",
-        name: "Соникбум",
-        description: "Всегда наносит фиксированный урон.",
-        type: "normal",
-        power: 0,
-        accuracy: 90,
-        category: "special",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "fixed_20"
-    },
-    "spark": {
-        id: "spark",
-        name: "Искрение",
-        description: "Может вызвать паралич.",
-        type: "electric",
-        power: 65,
-        accuracy: 100,
-        category: "physical",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_paralyze_chance"
-    },
-    "spikes": {
-        id: "spikes",
-        name: "Шипы",
-        description: "Рассыпает шипы на стороне противника.",
-        type: "ground",
-        power: 0,
-        accuracy: 101,
-        category: "status",
-        max_pp: 20,
-        priority: 0,
-        target: "field",
-        effect: "spikes"
-    },
-    "spite": {
-        id: "spite",
-        name: "Злопамятность",
-        description: "Уменьшает PP последнего использованного приёма цели.",
-        type: "ghost",
-        power: 0,
-        accuracy: 100,
-        category: "status",
-        max_pp: 10,
-        priority: 0,
-        target: "enemy",
-        effect: "lower_pp"
-    },
-    "splash": {
-        id: "splash",
-        name: "Барахтанье",
-        description: "Обычно не оказывает никакого эффекта.",
-        type: "normal",
-        power: 0,
-        accuracy: 101,
-        category: "status",
-        max_pp: 40,
-        priority: 0,
-        target: "self",
-        effect: "no_effect"
-    },
-    "stomp": {
-        id: "stomp",
-        name: "Топот",
-        description: "Может заставить противника дрогнуть.",
-        type: "normal",
-        power: 65,
-        accuracy: 100,
-        category: "physical",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_flinch_chance"
-    },
-    "string-shot": {
-        id: "string-shot",
-        name: "Нитяной выстрел",
-        description: "Понижает скорость противника.",
-        type: "bug",
-        power: 0,
-        accuracy: 95,
-        category: "status",
-        max_pp: 40,
-        priority: 0,
-        target: "enemy",
-        effect: "lower_speed"
-    },
-    "struggle-bug": {
-        id: "struggle-bug",
-        name: "Жукоборьба",
-        description: "Может понизить спецатаку противника.",
-        type: "bug",
-        power: 50,
-        accuracy: 100,
-        category: "special",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_lower_spatk_chance"
-    },
-    "stun-spore": {
-        id: "stun-spore",
-        name: "Парализующая пыльца",
-        description: "Парализует противника.",
-        type: "grass",
-        power: 0,
-        accuracy: 75,
-        category: "status",
-        max_pp: 30,
-        priority: 0,
-        target: "enemy",
-        effect: "paralyze"
-    },
-    "submission": {
-        id: "submission",
-        name: "Подчинение",
-        description: "Сильная физическая атака с отдачей.",
-        type: "fighting",
-        power: 80,
-        accuracy: 80,
-        category: "physical",
-        max_pp: 20,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_recoil"
-    },
     "substitute": {
         id: "substitute",
         name: "Подмена",
@@ -3741,19 +3364,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage"
  },
- "stomp": {
- id: "stomp",
- name: "Топот",
- description: "Тяжело наступает на цель. Может заставить её дрогнуть.",
- type: "normal",
- power: 65,
- accuracy: 100,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "damage_flinch_chance"
- },
  "double-kick": {
  id: "double-kick",
  name: "Двойной пинок",
@@ -3792,32 +3402,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "damage_crash"
- },
- "rolling-kick": {
- id: "rolling-kick",
- name: "Крутящийся пинок",
- description: "Удар вращением, который может заставить цель дрогнуть.",
- type: "fighting",
- power: 60,
- accuracy: 85,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "damage_flinch_chance"
- },
- "sand-attack": {
- id: "sand-attack",
- name: "Песчаная атака",
- description: "Бросает песок в глаза противнику и снижает его точность.",
- type: "ground",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "lower_accuracy"
  },
  "headbutt": {
  id: "headbutt",
@@ -3949,45 +3533,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "multi_hit"
  },
- "roar": {
- id: "roar",
- name: "Рёв",
- description: "Прогоняет цель с поля боя или завершает бой с диким покемоном.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 20,
- priority: -6,
- target: "enemy",
- effect: "force_switch"
- },
- "sing": {
- id: "sing",
- name: "Песнь",
- description: "Усыпляет цель чарующей мелодией.",
- type: "normal",
- power: 0,
- accuracy: 55,
- category: "status",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "sleep"
- },
- "sonic-boom": {
- id: "sonic-boom",
- name: "Звуковой удар",
- description: "Наносит фиксированный урон звуковой волной.",
- type: "normal",
- power: 0,
- accuracy: 90,
- category: "special",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "fixed_20"
- },
  "disable": {
  id: "disable",
  name: "Блокировка",
@@ -4105,19 +3650,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage"
  },
- "submission": {
- id: "submission",
- name: "Бросок",
- description: "Мощная борцовская атака, наносящая пользователю урон отдачей.",
- type: "fighting",
- power: 80,
- accuracy: 80,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "damage_recoil"
- },
  "low-kick": {
  id: "low-kick",
  name: "Подсечка",
@@ -4143,19 +3675,6 @@ Object.assign(MOVES, {
  priority: -5,
  target: "enemy",
  effect: "counter_physical"
- },
- "seismic-toss": {
- id: "seismic-toss",
- name: "Сейсмический бросок",
- description: "Наносит урон, равный уровню пользователя.",
- type: "fighting",
- power: 0,
- accuracy: 100,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "level_damage"
  },
  "absorb": {
  id: "absorb",
@@ -4222,32 +3741,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "poison"
  },
- "stun-spore": {
- id: "stun-spore",
- name: "Парализующая пыльца",
- description: "Распыляет споры, которые парализуют цель.",
- type: "grass",
- power: 0,
- accuracy: 75,
- category: "status",
- max_pp: 30,
- priority: 0,
- target: "enemy",
- effect: "paralyze"
- },
- "sleep-powder": {
- id: "sleep-powder",
- name: "Сонная пыльца",
- description: "Усыпляет цель облаком сонных спор.",
- type: "grass",
- power: 0,
- accuracy: 75,
- category: "status",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "sleep"
- },
  "petal-dance": {
  id: "petal-dance",
  name: "Танец лепестков",
@@ -4261,19 +3754,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "locked_confuse"
  },
- "string-shot": {
- id: "string-shot",
- name: "Нитяной выстрел",
- description: "Опутывает цель нитями и снижает её скорость.",
- type: "bug",
- power: 0,
- accuracy: 95,
- category: "status",
- max_pp: 40,
- priority: 0,
- target: "enemy",
- effect: "lower_speed"
- },
  "dragon-rage": {
  id: "dragon-rage",
  name: "Драконий гнев",
@@ -4286,19 +3766,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "fixed_40"
- },
- "rock-throw": {
- id: "rock-throw",
- name: "Бросок камня",
- description: "Швыряет камень в цель, нанося обычный урон.",
- type: "rock",
- power: 50,
- accuracy: 90,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "damage"
  },
  "fissure": {
  id: "fissure",
@@ -4404,19 +3871,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "copy_move"
  },
- "screech": {
- id: "screech",
- name: "Пронзительный визг",
- description: "Резко снижает защиту цели.",
- type: "normal",
- power: 0,
- accuracy: 85,
- category: "status",
- max_pp: 40,
- priority: 0,
- target: "enemy",
- effect: "lower_defense_2"
- },
  "double-team": {
  id: "double-team",
  name: "Двойник",
@@ -4468,19 +3922,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "self",
  effect: "raise_evasion"
- },
- "smokescreen": {
- id: "smokescreen",
- name: "Дымовая завеса",
- description: "Окутывает цель дымом и снижает её точность.",
- type: "normal",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "lower_accuracy"
  },
  "confuse-ray": {
  id: "confuse-ray",
@@ -4625,19 +4066,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "mirror_move"
  },
- "self-destruct": {
- id: "self-destruct",
- name: "Самоуничтожение",
- description: "Наносит огромный урон, но пользователь теряет сознание.",
- type: "normal",
- power: 200,
- accuracy: 100,
- category: "physical",
- max_pp: 5,
- priority: 0,
- target: "enemy",
- effect: "self_destruct"
- },
  "egg-bomb": {
  id: "egg-bomb",
  name: "Яичный взрыв",
@@ -4663,32 +4091,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "damage_paralyze_chance"
- },
- "smog": {
- id: "smog",
- name: "Смог",
- description: "Окутывает цель ядовитым газом. Может отравить.",
- type: "poison",
- power: 30,
- accuracy: 70,
- category: "special",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "damage_poison_chance"
- },
- "sludge": {
- id: "sludge",
- name: "Грязевой яд",
- description: "Бросает в цель комок ядовитой грязи. Может отравить.",
- type: "poison",
- power: 65,
- accuracy: 100,
- category: "special",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "damage_poison_chance"
  },
  "bone-club": {
  id: "bone-club",
@@ -4950,19 +4352,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "variable_damage"
  },
- "splash": {
- id: "splash",
- name: "Плеск",
- description: "Ничего не делает, кроме забавного подпрыгивания.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 40,
- priority: 0,
- target: "self",
- effect: "no_effect"
- },
  "acid-armor": {
  id: "acid-armor",
  name: "Кислотная броня",
@@ -5093,19 +4482,6 @@ Object.assign(MOVES, {
  target: "self",
  effect: "change_type"
  },
- "slash": {
- id: "slash",
- name: "Разящий удар",
- description: "Режущая атака с повышенным шансом критического попадания.",
- type: "normal",
- power: 70,
- accuracy: 100,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "high_crit_damage"
- },
  "struggle": {
  id: "struggle",
  name: "Борьба",
@@ -5120,20 +4496,6 @@ Object.assign(MOVES, {
  effect: "damage_recoil"
  },
 ,
-
- "sketch": {
- id: "sketch",
- name: "Набросок",
- description: "Навсегда копирует последний использованный целью приём.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 1,
- priority: 0,
- target: "enemy",
- effect: "permanent_copy_move"
- },
  "triple-kick": {
  id: "triple-kick",
  name: "Тройной пинок",
@@ -5277,19 +4639,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "low_hp_damage"
  },
- "spite": {
- id: "spite",
- name: "Злоба",
- description: "Уменьшает PP последнего использованного целью приёма.",
- type: "ghost",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "reduce_pp"
- },
  "powder-snow": {
  id: "powder-snow",
  name: "Снежная пыль",
@@ -5328,19 +4677,6 @@ Object.assign(MOVES, {
  priority: 1,
  target: "enemy",
  effect: "damage"
- },
- "scary-face": {
- id: "scary-face",
- name: "Страшная морда",
- description: "Пугает цель и резко снижает её скорость.",
- type: "normal",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "lower_speed_2"
  },
  "feint-attack": {
  id: "feint-attack",
@@ -5406,19 +4742,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "damage_lower_accuracy_chance"
- },
- "spikes": {
- id: "spikes",
- name: "Шипы",
- description: "Разбрасывает шипы на стороне противника, нанося урон входящим покемонам.",
- type: "ground",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "entry_hazard_spikes"
  },
  "zap-cannon": {
  id: "zap-cannon",
@@ -5589,19 +4912,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "lower_attack_2"
  },
- "rollout": {
- id: "rollout",
- name: "Каток",
- description: "Катается по врагу несколько ходов подряд, постепенно усиливая атаку.",
- type: "rock",
- power: 30,
- accuracy: 90,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "rampage_power"
- },
  "false-swipe": {
  id: "false-swipe",
  name: "Ложный взмах",
@@ -5627,19 +4937,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "self",
  effect: "heal"
- },
- "spark": {
- id: "spark",
- name: "Искра",
- description: "Электрический рывок, который может парализовать цель.",
- type: "electric",
- power: 65,
- accuracy: 100,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "damage_paralyze_chance"
  },
  "fury-cutter": {
  id: "fury-cutter",
@@ -5757,19 +5054,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "reverse_friendship_damage"
- },
- "safeguard": {
- id: "safeguard",
- name: "Защита команды",
- description: "Защищает союзную сторону от основных состояний на несколько ходов.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 25,
- priority: 0,
- target: "self",
- effect: "safeguard"
  },
  "pain-split": {
  id: "pain-split",
@@ -8024,19 +7308,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage"
  },
- "seed-bomb": {
- id: "seed-bomb",
- name: "Семенная бомба",
- description: "Обрушивает на цель твёрдые семена, нанося урон.",
- type: "grass",
- power: 80,
- accuracy: 100,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "damage"
- },
  "air-slash": {
  id: "air-slash",
  name: "Воздушный разрез",
@@ -9338,19 +8609,6 @@ Object.assign(MOVES, {
  priority: 2,
  target: "self",
  effect: "ally_switch"
- },
- "scald": {
- id: "scald",
- name: "Кипяток",
- description: "Обжигает цель горячей водой. Может вызвать ожог.",
- type: "water",
- power: 80,
- accuracy: 100,
- category: "special",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "damage_burn_chance"
  },
  "shell-smash": {
  id: "shell-smash",
