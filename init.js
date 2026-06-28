@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         startBattle(wild);
         document.getElementById('btn-fight').textContent = '⚔️ Бой';
     };
-    document.getElementById('btn-bag').onclick = useBag;
+    document.getElementById('btn-bag').onclick = openInventory;
     document.getElementById('btn-switch').onclick = switchPokemon;
     document.getElementById('btn-run').onclick = () => {
         if (inBattle) {
