@@ -1,84 +1,8 @@
 // =======================================================================
 // ИНИЦИАЛИЗАЦИЯ
 // =======================================================================
-
-// Глобальная функция для генерации дикого покемона
-window.generateWildPokemon = function() {
-    if (!allPokemon || allPokemon.length === 0) {
-        console.error('allPokemon пуст');
-        addMessage('❌ Данные покемонов не загружены!');
-        return null;
-    }
-    
-    var maxId = Math.min(allPokemon.length, 151);
-    var randomIndex = Math.floor(Math.random() * maxId);
-    var pokemonData = allPokemon[randomIndex];
-    
-    if (!pokemonData || !pokemonData.id) {
-        console.error('Некорректные данные:', pokemonData);
-        return null;
-    }
-    
-    var level = Math.floor(Math.random() * 4) + 2;
-    var wild = new Poke(pokemonData.id, level);
-    
-    console.log('Дикий покемон:', wild.getName(), 'уровень', level);
-    return wild;
-};
-
-// Глобальная функция для кнопки "Исследовать"
-window.startExplore = function() {
-    console.log('[startExplore] Вызвана');
-    
-    if (typeof inBattle !== 'undefined' && inBattle) {
-        addMessage('Уже в бою!');
-        return false;
-    }
-    
-    // Шанс встречи 30%
-    var onGrass = Math.random() < 0.3;
-    
-    if (!onGrass) {
-        addMessage('Здесь нет диких покемонов...');
-        return false;
-    }
-    
-    var wild = window.generateWildPokemon();
-    if (!wild) {
-        addMessage('❌ Не удалось создать покемона!');
-        return false;
-    }
-    
-    var canvasEl = document.querySelector('canvas');
-    if (canvasEl) canvasEl.style.display = 'none';
-    
-    var controlsEl = document.getElementById('controls');
-    if (controlsEl) controlsEl.style.display = 'none';
-    
-    var battleScreenEl = document.getElementById('battle-screen');
-    if (battleScreenEl) {
-        battleScreenEl.style.display = 'block';
-        battleScreenEl.innerHTML = '';
-    }
-    
-    var hpBarsEl = document.getElementById('hp-bars');
-    if (hpBarsEl) hpBarsEl.style.display = 'flex';
-    
-    var actionsEl = document.getElementById('actions');
-    if (actionsEl) actionsEl.style.display = 'grid';
-    
-    if (typeof startBattle === 'function') {
-        startBattle(wild);
-    } else {
-        addMessage('❌ startBattle не найден!');
-    }
-    
-    return false;
-};
-
-// Инициализация
-window.addEventListener('DOMContentLoaded', async function() {
-    await loadAllPokemon();
+document.addEventListener('DOMContentLoaded', function() {
+    loadAllPokemon();
 
     if (!myParty || myParty.length === 0) {
         const starter = new Poke(25, 5);
@@ -89,74 +13,126 @@ window.addEventListener('DOMContentLoaded', async function() {
         saveGame();
     }
 
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('battle-screen').style.display = 'none';
-    document.getElementById('hp-bars').style.display = 'none';
-    document.getElementById('actions').style.display = 'none';
-    document.getElementById('info-panel').style.display = 'flex';
-    document.getElementById('controls').style.display = 'grid';
+    const loadingEl = document.getElementById('loading');
+    const battleScreenEl = document.getElementById('battle-screen');
+    const hpBarsEl = document.getElementById('hp-bars');
+    const actionsEl = document.getElementById('actions');
+    const infoPanelEl = document.getElementById('info-panel');
+    const controlsEl = document.getElementById('controls');
+    const btnFight = document.getElementById('btn-fight');
+    const btnAction = document.getElementById('btn-action');
+    const btnBag = document.getElementById('btn-bag');
+    const btnSwitch = document.getElementById('btn-switch');
+    const btnRun = document.getElementById('btn-run');
+
+    if (loadingEl) loadingEl.style.display = 'none';
+    if (battleScreenEl) battleScreenEl.style.display = 'none';
+    if (hpBarsEl) hpBarsEl.style.display = 'none';
+    if (actionsEl) actionsEl.style.display = 'none';
+    if (infoPanelEl) infoPanelEl.style.display = 'flex';
+    if (controlsEl) controlsEl.style.display = 'grid';
 
     updateHpBars();
     updateInfoPanel();
 
-    // Кнопки
-    document.getElementById('btn-save').addEventListener('click', function() {
-        saveGame();
-        addMessage('💾 Игра сохранена!');
-    });
+    function startWildBattle() {
+        if (inBattle) {
+            onFight();
+            return;
+        }
 
-    document.getElementById('btn-export').addEventListener('click', function() {
-        const data = localStorage.getItem('pokemonRPG_save');
-        if (!data) { addMessage('❌ Нет сохранения'); return; }
-        const blob = new Blob([data], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'pokemon_save.json';
-        a.click();
-        URL.revokeObjectURL(url);
-        addMessage('📤 Экспортировано!');
-    });
+        const ids = Object.keys(allPokemonData || {});
+        if (!ids.length) {
+            addMessage('❌ Данные покемонов не загружены');
+            return;
+        }
 
-    document.getElementById('btn-import').addEventListener('click', function() {
-        const input = document.createElement('input');
-        input.type = 'file';
-        input.accept = 'application/json';
-        input.onchange = function(e) {
-            const file = e.target.files[0];
-            if (!file) return;
-            const reader = new FileReader();
-            reader.onload = function(ev) {
-                try {
-                    const data = ev.target.result;
-                    JSON.parse(data);
-                    localStorage.setItem('pokemonRPG_save', data);
-                    addMessage('📥 Импортировано! Перезагрузите.');
-                } catch(err) {
-                    addMessage('❌ Ошибка импорта');
-                }
-            };
-            reader.readAsText(file);
-        };
-        input.click();
-    });
+        const wild = generateWildPokemon();
+        if (!wild) {
+            addMessage('❌ Не удалось создать дикого покемона');
+            return;
+        }
 
-    var btnBag = document.getElementById('btn-bag');
-    if (btnBag && typeof openInventory === 'function') {
-        btnBag.onclick = openInventory;
+        if (window._canvas) window._canvas.style.display = 'none';
+        if (controlsEl) controlsEl.style.display = 'none';
+        if (battleScreenEl) battleScreenEl.style.display = 'block';
+        if (hpBarsEl) hpBarsEl.style.display = 'flex';
+        if (actionsEl) actionsEl.style.display = 'grid';
+        if (infoPanelEl) infoPanelEl.style.display = 'flex';
+
+        if (btnFight) btnFight.textContent = '⚔️ Бой';
+        startBattle(wild);
     }
 
-    // Привязываем кнопку "Исследовать"
-    var btnAction = document.getElementById('btn-action');
+    if (btnFight) {
+        btnFight.disabled = false;
+        btnFight.onclick = startWildBattle;
+    }
+
     if (btnAction) {
-        btnAction.onclick = window.startExplore;
-        console.log('[init] Кнопка Исследовать привязана');
+        btnAction.onclick = startWildBattle;
+    }
+
+    if (btnBag) {
+        btnBag.onclick = openInventory;
+        btnBag.disabled = true;
+    }
+
+    if (btnSwitch) btnSwitch.disabled = true;
+    if (btnRun) btnRun.disabled = true;
+
+    const btnSave = document.getElementById('btn-save');
+    if (btnSave) {
+        btnSave.addEventListener('click', function() {
+            saveGame();
+            addMessage('💾 Игра сохранена!');
+        });
+    }
+
+    const btnExport = document.getElementById('btn-export');
+    if (btnExport) {
+        btnExport.addEventListener('click', function() {
+            const data = localStorage.getItem('pokemonRPG_save');
+            if (!data) {
+                addMessage('❌ Нет сохранения для экспорта');
+                return;
+            }
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'pokemon_save.json';
+            a.click();
+            URL.revokeObjectURL(url);
+            addMessage('📤 Сохранение экспортировано!');
+        });
+    }
+
+    const btnImport = document.getElementById('btn-import');
+    if (btnImport) {
+        btnImport.addEventListener('click', function() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'application/json';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = function(ev) {
+                    try {
+                        const data = ev.target.result;
+                        JSON.parse(data);
+                        localStorage.setItem('pokemonRPG_save', data);
+                        addMessage('📥 Сохранение импортировано! Перезагрузите страницу.');
+                    } catch (err) {
+                        addMessage('❌ Ошибка импорта: неверный файл');
+                    }
+                };
+                reader.readAsText(file);
+            };
+            input.click();
+        });
     }
 
     startAutoSave();
-
-    document.getElementById('btn-fight').disabled = false;
-    document.getElementById('btn-bag').disabled = true;
-    document.getElementById('btn-switch').disabled = true;
-    document.getElementById('btn-run').disabled = true;
 });
