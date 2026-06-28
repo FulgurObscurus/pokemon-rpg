@@ -190,3 +190,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Проверка: существует ли кнопка btn-action?
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('btn-action');
+    if (btn) {
+        alert('✅ Кнопка btn-action найдена в DOM!');
+    } else {
+        alert('❌ Кнопка btn-action НЕ найдена!');
+    }
+});
