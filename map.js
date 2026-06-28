@@ -107,18 +107,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (btnAction) {
-        btnAction.addEventListener('click', function() {
+        btnAction.addEventListener("click", function() {
             if (inBattle) return;
             const wild = generateWildPokemon();
             if (wild) {
-                canvas.style.display = 'none';
-                document.getElementById('controls').style.display = 'none';
-                battleScreen.style.display = 'block';
-                document.getElementById('hp-bars').style.display = 'flex';
-                document.getElementById('actions').style.display = 'grid';
-                document.getElementById('info-panel').style.display = 'flex';
+                canvas.style.display = "none";
+                document.getElementById("controls").style.display = "none";
+                battleScreen.style.display = "block";
+                document.getElementById("hp-bars").style.display = "flex";
+                document.getElementById("actions").style.display = "grid";
+                document.getElementById("info-panel").style.display = "flex";
                 startBattle(wild);
-                document.getElementById('btn-fight').textContent = '⚔️ Бой';
+                document.getElementById("btn-fight").textContent = "⚔️ Бой";
             }
         });
     }
