@@ -165,3 +165,4 @@ canvas { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:0; di
 #inv-close:hover {
     background: #9b6abe;
 }
+.pokemon-img { width: 48px; height: 48px; image-rendering: pixelated; vertical-align: middle; margin-right: 8px; }
