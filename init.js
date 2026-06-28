@@ -4,28 +4,33 @@
 
 // Глобальная функция для генерации дикого покемона
 function generateWildPokemon() {
-    if (!allPokemon || allPokemon.length === 0) {
-        console.error('allPokemon пуст или не определён');
+    if (typeof allPokemon === 'undefined') {
+        console.error('allPokemon не определён');
         return null;
     }
     
-    // Выбираем случайного покемона из первых 151 (Gen 1)
-    var maxId = Math.min(allPokemon.length, 151);
-    var randomId = Math.floor(Math.random() * maxId) + 1;
-    var pokemonData = allPokemon[randomId - 1];
+    if (!allPokemon || allPokemon.length === 0) {
+        console.error('allPokemon пуст');
+        return null;
+    }
     
-    if (!pokemonData) {
-        console.error('Покемон с ID ' + randomId + ' не найден');
+    // Выбираем случайного покемона (только первые 151 - Gen 1)
+    var maxId = Math.min(allPokemon.length, 151);
+    var randomIndex = Math.floor(Math.random() * maxId);
+    var pokemonData = allPokemon[randomIndex];
+    
+    if (!pokemonData || !pokemonData.id) {
+        console.error('Некорректные данные покемона:', pokemonData);
         return null;
     }
     
     // Случайный уровень 2-5
     var level = Math.floor(Math.random() * 4) + 2;
     
-    // Создаём экземпляр
-    var wild = new Poke(randomId, level);
+    // Создаём экземпляр через класс Poke
+    var wild = new Poke(pokemonData.id, level);
     
-    console.log('Сгенерирован дикий покемон:', wild.getName(), 'уровень', level);
+    console.log('Сгенерирован дикий покемон:', wild.getName(), '(ID:', pokemonData.id, '), уровень', level);
     
     return wild;
 }
@@ -33,6 +38,7 @@ function generateWildPokemon() {
 // Глобальная функция для кнопки "Исследовать"
 function startExplore() {
     console.log('[DEBUG] startExplore вызвана');
+    console.log('allPokemon:', typeof allPokemon !== 'undefined' ? allPokemon.length : 'undefined');
     
     if (typeof inBattle !== 'undefined' && inBattle) {
         addMessage('Уже в бою!');
@@ -115,7 +121,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     localStorage.setItem('pokemonRPG_save', data);
                     addMessage('📥 Сохранение импортировано! Перезагрузите страницу.');
                 } catch(err) {
-                    addMessage(' Ошибка импорта: неверный файл');
+                    addMessage('❌ Ошибка импорта: неверный файл');
                 }
             };
             reader.readAsText(file);
