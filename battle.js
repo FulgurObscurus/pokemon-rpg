@@ -107,6 +107,12 @@ function performMove(index) {
 
 function endBattle() {
     enemyPokemon = null;
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    if (window._canvas) window._canvas.style.display = "block";
+    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     inBattle = false;
     document.getElementById('move-list').style.display = 'none';
     document.getElementById('actions').style.display = 'grid';
@@ -155,6 +161,12 @@ function endBattle() {
         if (Math.random() < 0.5) {
             addMessage('🏃 Вы сбежали!');
             enemyPokemon = null;
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    if (window._canvas) window._canvas.style.display = "block";
+    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             inBattle = false;
             showActions();
             document.getElementById('btn-fight').textContent = '🌲 Исследовать';
@@ -226,12 +238,24 @@ window.usePokeball = function() {
         addMessage('🎉 Вы поймали ' + enemyPokemon.name + '!');
         myParty.push(enemyPokemon);
         enemyPokemon = null;
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    if (window._canvas) window._canvas.style.display = "block";
+    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         inBattle = false;
         document.getElementById('inventory-modal').style.display = 'none';
         endBattle();
     } else {
         addMessage('😞 Покебол не сработал! ' + enemyPokemon.name + ' сбежал!');
         enemyPokemon = null;
+    document.getElementById("battle-screen").style.display = "none";
+    document.getElementById("hp-bars").style.display = "none";
+    document.getElementById("actions").style.display = "none";
+    document.getElementById("info-panel").style.display = "none";
+    if (window._canvas) window._canvas.style.display = "block";
+    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         inBattle = false;
         document.getElementById('inventory-modal').style.display = 'none';
         endBattle();
