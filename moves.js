@@ -2827,19 +2827,6 @@ Object.assign(MOVES, {
 });
 
 Object.assign(MOVES, {
-    "zap-cannon": {
-        id: "zap-cannon",
-        name: "Электропушка",
-        description: "Мощная электрическая атака, которая гарантированно парализует при попадании.",
-        type: "electric",
-        power: 120,
-        accuracy: 50,
-        category: "special",
-        max_pp: 5,
-        priority: 0,
-        target: "enemy",
-        effect: "damage_paralyze"
-    },
 });
 
 Object.assign(MOVES, {
@@ -3143,32 +3130,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "high_crit_damage"
  },
- "explosion": {
- id: "explosion",
- name: "Взрыв",
- description: "Наносит чудовищный урон, но пользователь теряет сознание.",
- type: "normal",
- power: 250,
- accuracy: 100,
- category: "physical",
- max_pp: 5,
- priority: 0,
- target: "enemy",
- effect: "self_destruct"
- },
- "fury-swipes": {
- id: "fury-swipes",
- name: "Яростные когти",
- description: "Когтями бьёт цель от двух до пяти раз подряд.",
- type: "normal",
- power: 18,
- accuracy: 80,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "multi_hit"
- },
  "bonemerang": {
  id: "bonemerang",
  name: "Костяной бумеранг",
@@ -3181,32 +3142,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "multi_hit_2"
- },
- "rest": {
- id: "rest",
- name: "Отдых",
- description: "Полностью восстанавливает HP и засыпает на несколько ходов.",
- type: "psychic",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 5,
- priority: 0,
- target: "self",
- effect: "rest"
- },
- "rock-slide": {
- id: "rock-slide",
- name: "Камнепад",
- description: "Обрушивает камни на цель. Может заставить её дрогнуть.",
- type: "rock",
- power: 75,
- accuracy: 90,
- category: "physical",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "damage_flinch_chance"
  },
  "hyper-fang": {
  id: "hyper-fang",
@@ -3326,32 +3261,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "sleep_only_flinch_chance"
  },
- "curse": {
- id: "curse",
- name: "Проклятие",
- description: "У обычных покемонов повышает атаку и защиту, но снижает скорость. У призрачных накладывает проклятие ценой HP.",
- type: "ghost",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "curse"
- },
- "flail": {
- id: "flail",
- name: "Отчаянный удар",
- description: "Чем меньше HP у пользователя, тем сильнее атака.",
- type: "normal",
- power: 0,
- accuracy: 100,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "low_hp_damage"
- },
  "conversion-2": {
  id: "conversion-2",
  name: "Конверсия 2",
@@ -3378,58 +3287,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "high_crit_damage"
  },
- "cotton-spore": {
- id: "cotton-spore",
- name: "Хлопковая пыльца",
- description: "Окутывает цель хлопковыми спорами и резко снижает её скорость.",
- type: "grass",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 40,
- priority: 0,
- target: "enemy",
- effect: "lower_speed_2"
- },
- "reversal": {
- id: "reversal",
- name: "Разворотный удар",
- description: "Чем меньше HP у пользователя, тем сильнее этот приём.",
- type: "fighting",
- power: 0,
- accuracy: 100,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "low_hp_damage"
- },
- "powder-snow": {
- id: "powder-snow",
- name: "Снежная пыль",
- description: "Обрушивает на цель холодный снег. Может заморозить.",
- type: "ice",
- power: 40,
- accuracy: 100,
- category: "special",
- max_pp: 25,
- priority: 0,
- target: "enemy",
- effect: "damage_freeze_chance"
- },
- "protect": {
- id: "protect",
- name: "Защита",
- description: "Полностью защищает пользователя от большинства атак на один ход.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 10,
- priority: 4,
- target: "self",
- effect: "protect"
- },
  "mach-punch": {
  id: "mach-punch",
  name: "Мах-удар",
@@ -3443,19 +3300,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage"
  },
- "feint-attack": {
- id: "feint-attack",
- name: "Коварная атака",
- description: "Подкрадывается к цели и никогда не промахивается.",
- type: "dark",
- power: 60,
- accuracy: 101,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "never_miss_damage"
- },
  "belly-drum": {
  id: "belly-drum",
  name: "Барабанный живот",
@@ -3468,19 +3312,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "self",
  effect: "belly_drum"
- },
- "sludge-bomb": {
- id: "sludge-bomb",
- name: "Ядовитая бомба",
- description: "Бросает в цель сгусток ядовитой грязи. Может отравить.",
- type: "poison",
- power: 90,
- accuracy: 100,
- category: "special",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "damage_poison_chance"
  },
  "mud-slap": {
  id: "mud-slap",
@@ -3507,32 +3338,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "damage_lower_accuracy_chance"
- },
- "zap-cannon": {
- id: "zap-cannon",
- name: "Зап-пушка",
- description: "Очень мощная электрическая атака, которая всегда парализует при попадании.",
- type: "electric",
- power: 120,
- accuracy: 50,
- category: "special",
- max_pp: 5,
- priority: 0,
- target: "enemy",
- effect: "damage_paralyze"
- },
- "foresight": {
- id: "foresight",
- name: "Предвидение",
- description: "Позволяет игнорировать уклонение цели и попадать по призрачным покемонам обычными и боевыми приёмами.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 40,
- priority: 0,
- target: "enemy",
- effect: "foresight"
  },
  "destiny-bond": {
  id: "destiny-bond",
