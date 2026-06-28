@@ -1,5 +1,33 @@
 function getPokemonImage(id) { return "https://img.pokemondb.net/sprites/sword-shield/icon/" + id + ".png"; }
 // =======================================================================
+function updateHpBars() {
+    if (!myParty.length) return;
+    const p = getCurrentPokemon();
+    if (p) {
+        const pNameEl = document.getElementById("p-name");
+        pNameEl.innerHTML = `<img class="pokemon-img" src="${getPokemonImage(p.speciesId)}" alt="${p.name}"> ${p.name}`;
+        document.getElementById("p-level").textContent = p.level;
+        const hpPercent = Math.max(0, (p.currentHp / p.maxHp) * 100);
+        document.getElementById("p-hp-bar").style.width = hpPercent + "%";
+        document.getElementById("p-hp-bar").className = "hp" + (hpPercent < 25 ? " low" : "");
+        document.getElementById("p-hp-text").textContent = p.currentHp + "/" + p.maxHp;
+    }
+    if (enemyPokemon) {
+        const eNameEl = document.getElementById("e-name");
+        eNameEl.innerHTML = `<img class="pokemon-img" src="${getPokemonImage(enemyPokemon.speciesId)}" alt="${enemyPokemon.name}"> ${enemyPokemon.name}`;
+        document.getElementById("e-level").textContent = enemyPokemon.level;
+        const hpPercent = Math.max(0, (enemyPokemon.currentHp / enemyPokemon.maxHp) * 100);
+        document.getElementById("e-hp-bar").style.width = hpPercent + "%";
+        document.getElementById("e-hp-bar").className = "hp" + (hpPercent < 25 ? " low" : "");
+        document.getElementById("e-hp-text").textContent = enemyPokemon.currentHp + "/" + enemyPokemon.maxHp;
+    } else {
+        document.getElementById("e-name").innerHTML = "—";
+        document.getElementById("e-hp-bar").style.width = "0%";
+        document.getElementById("e-hp-text").textContent = "0/0";
+    }
+    document.getElementById("party-count").textContent = myParty.length;
+    document.getElementById("money").textContent = money;
+}
 // МИНИМАЛЬНАЯ ВЕРСИЯ БОЯ (ДЛЯ ТЕСТА)
 // =======================================================================
 function generateWildPokemon() {
@@ -11,7 +39,6 @@ function generateWildPokemon() {
     p.isWild = true;
     return p;
 }
-
 function startBattle(wildPoke) {
     enemyPokemon = wildPoke;
     inBattle = true;
@@ -24,7 +51,6 @@ function startBattle(wildPoke) {
     updateHpBars();
     showActions();
 }
-
 function showActions() {
     document.getElementById('move-list').style.display = 'none';
     document.getElementById('actions').style.display = 'grid';
@@ -33,7 +59,6 @@ function showActions() {
     document.getElementById('btn-switch').disabled = false;
     document.getElementById('btn-run').disabled = false;
 }
-
 function onFight() {
     if (!inBattle) return;
     moveSelectionMode = true;
@@ -97,15 +122,12 @@ function onFight() {
     });
     moveList.appendChild(cancel);
 }
-
 function enemyTurn() {
     // Заглушка
 }
-
 function performMove(index) {
     // Не используется
 }
-
 function endBattle() {
     enemyPokemon = null;
     inBattle = false;
@@ -164,14 +186,11 @@ function endBattle() {
         }
     };
 }
-
 function healParty() {
     myParty.forEach(p => p.currentHp = p.maxHp);
 }
-
 function useBag() {
     // Заглушка
 }
-
 console.log('✅ Минимальный battle.js загружен');
 function getPokemonImage(id) { return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png"; }
