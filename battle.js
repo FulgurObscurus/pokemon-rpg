@@ -106,509 +106,63 @@ function performMove(index) {
 }
 
 function endBattle() {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     enemyPokemon = null;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     inBattle = false;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("move-list").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("actions").style.display = "grid";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-fight").disabled = true;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-bag").disabled = true;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-switch").disabled = true;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-run").disabled = true;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+    document.getElementById('move-list').style.display = 'none';
+    document.getElementById('actions').style.display = 'grid';
+    document.getElementById('btn-fight').disabled = true;
+    document.getElementById('btn-bag').disabled = true;
+    document.getElementById('btn-switch').disabled = true;
+    document.getElementById('btn-run').disabled = true;
     const p = getCurrentPokemon();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     if (p) {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         p.currentHp = Math.min(p.currentHp + Math.floor(p.maxHp * 0.3), p.maxHp);
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-        addMessage("🌿 Ваш покемон восстановил часть HP.");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+        addMessage('🌿 Ваш покемон восстановил часть HP.');
     }
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     updateHpBars();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-fight").textContent = "🌲 Исследовать";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-fight").disabled = false;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-fight").onclick = function() {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+    document.getElementById('btn-fight').textContent = '🌲 Исследовать';
+    document.getElementById('btn-fight').disabled = false;
+    document.getElementById('btn-fight').onclick = function() {
         if (inBattle) return;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         const wild = generateWildPokemon();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         startBattle(wild);
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-        document.getElementById("btn-fight").textContent = "⚔️ Бой";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+        document.getElementById('btn-fight').textContent = '⚔️ Бой';
     };
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-bag").disabled = false;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-switch").disabled = false;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-run").disabled = false;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-bag").onclick = openInventory;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-        addMessage("🧪 Использовано зелье");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+    document.getElementById('btn-bag').disabled = false;
+    document.getElementById('btn-switch').disabled = false;
+    document.getElementById('btn-run').disabled = false;
+    document.getElementById('btn-bag').onclick = function() {
+        addMessage('🧪 Использовано зелье');
         const p = getCurrentPokemon();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         if (p) {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             p.currentHp = Math.min(p.currentHp + 20, p.maxHp);
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             updateHpBars();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         }
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     };
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-switch").onclick = function() {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-        addMessage("🔄 Смена покемона");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+    document.getElementById('btn-switch').onclick = function() {
+        addMessage('🔄 Смена покемона');
         for (let i = 0; i < myParty.length; i++) {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             if (i !== currentPokemonIndex && myParty[i].currentHp > 0) {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
                 currentPokemonIndex = i;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-                addMessage("🔄 Вы вывели " + getCurrentPokemon().name + "!");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+                addMessage('🔄 Вы вывели ' + getCurrentPokemon().name + '!');
                 updateHpBars();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
                 return;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             }
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
         }
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-        addMessage("❌ Нет доступных покемонов!");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+        addMessage('❌ Нет доступных покемонов!');
     };
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("btn-run").onclick = function() {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+    document.getElementById('btn-run').onclick = function() {
         if (Math.random() < 0.5) {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            addMessage("🏃 Вы сбежали!");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+            addMessage('🏃 Вы сбежали!');
             enemyPokemon = null;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             inBattle = false;
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
             showActions();
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            document.getElementById("btn-fight").textContent = "🌲 Исследовать";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            // Возврат на карту после побега
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            document.getElementById("actions").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            document.getElementById("info-panel").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            if (window._canvas) window._canvas.style.display = "block";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+            document.getElementById('btn-fight').textContent = '🌲 Исследовать';
         } else {
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-            addMessage("⚠️ Не удалось сбежать!");
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
+            addMessage('⚠️ Не удалось сбежать!');
         }
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
     };
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    // Возврат на карту после боя (победа или поражение)
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("info-panel").style.display = "none";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    if (window._canvas) window._canvas.style.display = "block";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
 }
-    document.getElementById("battle-screen").style.display = "none";
-    document.getElementById("hp-bars").style.display = "none";
-    document.getElementById("actions").style.display = "none";
-    document.getElementById("info-panel").style.display = "none";
-    if (window._canvas) window._canvas.style.display = "block";
-    if (document.getElementById("controls")) document.getElementById("controls").style.display = "grid";
 
 function healParty() {
     myParty.forEach(p => p.currentHp = p.maxHp);
@@ -620,98 +174,3 @@ function useBag() {
 
 console.log('✅ Минимальный battle.js загружен');
 function getPokemonImage(id) { return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png"; }
-function getPokemonImage(id) { return "https://img.pokemondb.net/sprites/sword-shield/icon/" + id + ".png"; }
-
-// =======================================================================
-// ИНВЕНТАРЬ (модальное окно)
-// =======================================================================
-function openInventory() {
-    if (!inBattle) return;
-    const modal = document.getElementById('inventory-modal');
-    const itemsContainer = document.getElementById('inventory-items');
-    if (!modal || !itemsContainer) {
-        addMessage('❌ Ошибка: интерфейс инвентаря не найден');
-        return;
-    }
-
-    const items = gameState.items || {};
-    const potions = items.potion || 0;
-    const pokeballs = items.pokeball || 0;
-
-    let html = '';
-    html += '<div class="item-row">Зелье (' + potions + ' шт.)';
-    if (potions > 0) {
-        html += ' <button onclick="usePotion()">Использовать</button>';
-    } else {
-        html += ' <span style="color:#888;">нет</span>';
-    }
-    html += '</div>';
-
-    html += '<div class="item-row">Покебол (' + pokeballs + ' шт.)';
-    if (pokeballs > 0 && enemyPokemon) {
-        html += ' <button onclick="usePokeball()">Использовать</button>';
-    } else {
-        html += ' <span style="color:#888;">' + (enemyPokemon ? 'нет' : ' (нет врага)') + '</span>';
-    }
-    html += '</div>';
-
-    itemsContainer.innerHTML = html;
-    modal.style.display = 'flex';
-}
-
-// Использование зелья
-window.usePotion = function() {
-    const p = getCurrentPokemon();
-    if (!p) return;
-    if (gameState.items.potion <= 0) {
-        addMessage('❌ Нет зелий!');
-        return;
-    }
-    const heal = 20;
-    p.currentHp = Math.min(p.currentHp + heal, p.maxHp);
-    gameState.items.potion--;
-    addMessage('🧪 Вы использовали Зелье, восстановили ' + heal + ' HP. (Осталось ' + gameState.items.potion + ')');
-    updateHpBars();
-    saveGame();
-    document.getElementById('inventory-modal').style.display = 'none';
-};
-
-// Использование покебола
-window.usePokeball = function() {
-    if (!enemyPokemon) {
-        addMessage('❌ Нет дикого покемона для ловли!');
-        return;
-    }
-    if (gameState.items.pokeball <= 0) {
-        addMessage('❌ Нет покеболов!');
-        return;
-    }
-    const chance = Math.min(0.3 + (enemyPokemon.level / 100), 0.9);
-    if (Math.random() < chance) {
-        addMessage('🎉 Вы поймали ' + enemyPokemon.name + '!');
-        myParty.push(enemyPokemon);
-        enemyPokemon = null;
-        inBattle = false;
-        document.getElementById('inventory-modal').style.display = 'none';
-        endBattle();
-    } else {
-        addMessage('😞 Покебол не сработал! ' + enemyPokemon.name + ' сбежал!');
-        enemyPokemon = null;
-        inBattle = false;
-        document.getElementById('inventory-modal').style.display = 'none';
-        endBattle();
-    }
-    gameState.items.pokeball--;
-    saveGame();
-};
-
-// Закрытие модального окна
-document.addEventListener('DOMContentLoaded', function() {
-    const closeBtn = document.getElementById('inv-close');
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
-            document.getElementById('inventory-modal').style.display = 'none';
-        });
-    }
-});
-function getPokemonImage(id) { return "https://img.pokemondb.net/sprites/sword-shield/icon/" + id + ".png"; }
