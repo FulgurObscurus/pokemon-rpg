@@ -200,3 +200,10 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('❌ Кнопка btn-action НЕ найдена!');
     }
 });
+
+// Глобальный обработчик кликов для диагностики
+document.addEventListener('click', function(e) {
+    if (e.target.id === 'btn-action') {
+        alert('Клик по btn-action перехвачен!');
+    }
+});

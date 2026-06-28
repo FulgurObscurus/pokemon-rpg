@@ -173,3 +173,14 @@ canvas { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:0; di
     opacity: 1 !important;
     display: inline-block !important;
 }
+#game, #controls, #btn-action {
+    pointer-events: auto !important;
+    z-index: 9999 !important;
+    position: relative !important;
+}
+canvas {
+    pointer-events: none !important;
+}
+#battle-screen {
+    pointer-events: none !important;
+}
