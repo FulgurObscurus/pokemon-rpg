@@ -2909,58 +2909,6 @@ Object.assign(MOVES, {
  target: "self",
  effect: "raise_defense_2"
  },
- "haze": {
- id: "haze",
- name: "Дымка",
- description: "Сбрасывает все изменения характеристик на поле боя.",
- type: "ice",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 30,
- priority: 0,
- target: "enemy",
- effect: "reset_stats"
- },
- "reflect": {
- id: "reflect",
- name: "Отражение",
- description: "Ставит барьер, уменьшающий урон от физических атак.",
- type: "psychic",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "self",
- effect: "reflect"
- },
- "focus-energy": {
- id: "focus-energy",
- name: "Концентрация энергии",
- description: "Повышает шанс нанести критический удар.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 30,
- priority: 0,
- target: "self",
- effect: "focus_energy"
- },
- "bide": {
- id: "bide",
- name: "Выжидание",
- description: "Накапливает полученный урон, а затем возвращает его противнику.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "physical",
- max_pp: 10,
- priority: 1,
- target: "enemy",
- effect: "bide"
- },
  "metronome": {
  id: "metronome",
  name: "Метроном",
@@ -3000,19 +2948,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage"
  },
- "lick": {
- id: "lick",
- name: "Лизание",
- description: "Лижет цель. Может вызвать паралич.",
- type: "ghost",
- power: 30,
- accuracy: 100,
- category: "physical",
- max_pp: 30,
- priority: 0,
- target: "enemy",
- effect: "damage_paralyze_chance"
- },
  "bone-club": {
  id: "bone-club",
  name: "Костяная дубина",
@@ -3038,19 +2973,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "damage_flinch_chance"
- },
- "clamp": {
- id: "clamp",
- name: "Зажим",
- description: "Захватывает цель и удерживает её, нанося урон несколько ходов.",
- type: "water",
- power: 35,
- accuracy: 85,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "damage_trap"
  },
  "skull-bash": {
  id: "skull-bash",
@@ -3091,19 +3013,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage_lower_speed_chance"
  },
- "amnesia": {
- id: "amnesia",
- name: "Амнезия",
- description: "Резко повышает спецзащиту пользователя.",
- type: "psychic",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "self",
- effect: "raise_spdef_2"
- },
  "kinesis": {
  id: "kinesis",
  name: "Кинезис",
@@ -3129,45 +3038,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "self",
  effect: "heal"
- },
- "high-jump-kick": {
- id: "high-jump-kick",
- name: "Высокий прыжковый пинок",
- description: "Очень сильный прыжковый удар. При промахе пользователь получает урон.",
- type: "fighting",
- power: 130,
- accuracy: 90,
- category: "physical",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "damage_crash"
- },
- "glare": {
- id: "glare",
- name: "Свирепый взгляд",
- description: "Парализует цель пугающим взглядом.",
- type: "normal",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 30,
- priority: 0,
- target: "enemy",
- effect: "paralyze"
- },
- "dream-eater": {
- id: "dream-eater",
- name: "Пожиратель снов",
- description: "Поглощает HP спящей цели и лечит пользователя.",
- type: "psychic",
- power: 100,
- accuracy: 100,
- category: "special",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "drain_sleep_only"
  },
  "poison-gas": {
  id: "poison-gas",
@@ -3259,32 +3129,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "lower_accuracy"
- },
- "psywave": {
- id: "psywave",
- name: "Психоволна",
- description: "Наносит переменный психический урон.",
- type: "psychic",
- power: 0,
- accuracy: 100,
- category: "special",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "variable_damage"
- },
- "acid-armor": {
- id: "acid-armor",
- name: "Кислотная броня",
- description: "Размягчает тело и резко повышает защиту пользователя.",
- type: "poison",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "self",
- effect: "raise_defense_2"
  },
  "crabhammer": {
  id: "crabhammer",
