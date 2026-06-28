@@ -10194,6 +10194,137 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "add_ghost_type"
  }
+,
+ "noble-roar": {
+ id: "noble-roar",
+ name: "Благородный рык",
+ description: "Понижает атаку и спецатаку цели.",
+ type: "normal",
+ power: 0,
+ accuracy: 100,
+ category: "status",
+ max_pp: 30,
+ priority: 0,
+ target: "enemy",
+ effect: "lower_attack_spatk"
+ },
+ "ion-deluge": {
+ id: "ion-deluge",
+ name: "Ионный потоп",
+ description: "На этот ход все обычные атаки становятся электрическими.",
+ type: "electric",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 25,
+ priority: 1,
+ target: "self",
+ effect: "normal_to_electric"
+ },
+ "parabolic-charge": {
+ id: "parabolic-charge",
+ name: "Параболический заряд",
+ description: "Наносит урон и восстанавливает часть HP пользователя.",
+ type: "electric",
+ power: 65,
+ accuracy: 100,
+ category: "special",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "drain"
+ },
+ "forests-curse": {
+ id: "forests-curse",
+ name: "Лесное проклятие",
+ description: "Добавляет цели травяной тип.",
+ type: "grass",
+ power: 0,
+ accuracy: 100,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "add_grass_type"
+ },
+ "petal-blizzard": {
+ id: "petal-blizzard",
+ name: "Лепестковая метель",
+ description: "Мощная травяная атака без дополнительного эффекта.",
+ type: "grass",
+ power: 90,
+ accuracy: 100,
+ category: "physical",
+ max_pp: 15,
+ priority: 0,
+ target: "enemy",
+ effect: "damage"
+ },
+ "freeze-dry": {
+ id: "freeze-dry",
+ name: "Сухая заморозка",
+ description: "Может заморозить цель и особенно эффективна против водных покемонов.",
+ type: "ice",
+ power: 70,
+ accuracy: 100,
+ category: "special",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_freeze_chance"
+ },
+ "disarming-voice": {
+ id: "disarming-voice",
+ name: "Обезоруживающий голос",
+ description: "Милый голос, который никогда не промахивается.",
+ type: "fairy",
+ power: 40,
+ accuracy: 101,
+ category: "special",
+ max_pp: 15,
+ priority: 0,
+ target: "enemy",
+ effect: "never_miss_damage"
+ },
+ "parting-shot": {
+ id: "parting-shot",
+ name: "Прощальный выстрел",
+ description: "Понижает атаку и спецатаку цели, после чего пользователь сменяется.",
+ type: "dark",
+ power: 0,
+ accuracy: 100,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "lower_attack_spatk_switch"
+ },
+ "topsy-turvy": {
+ id: "topsy-turvy",
+ name: "Переворот",
+ description: "Меняет все изменения характеристик цели на противоположные.",
+ type: "dark",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "invert_stat_changes"
+ },
+ "draining-kiss": {
+ id: "draining-kiss",
+ name: "Высасывающий поцелуй",
+ description: "Наносит урон и восстанавливает HP пользователя.",
+ type: "fairy",
+ power: 50,
+ accuracy: 100,
+ category: "special",
+ max_pp: 10,
+ priority: 0,
+ target: "enemy",
+ effect: "drain"
+ }
 });
 function getMoveDescription(moveId) {
     if (!MOVES[moveId]) return "Описание отсутствует.";
