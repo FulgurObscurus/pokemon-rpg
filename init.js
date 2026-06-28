@@ -34,6 +34,14 @@ window.startExplore = function() {
         return false;
     }
     
+    // Проверяем, стоит ли игрок на траве (шанс 30%)
+    var onGrass = Math.random() < 0.3;
+    
+    if (!onGrass) {
+        addMessage('Здесь нет диких покемонов...');
+        return false;
+    }
+    
     var wild = window.generateWildPokemon();
     if (!wild) {
         addMessage('❌ Не удалось создать покемона!');
@@ -67,7 +75,7 @@ window.startExplore = function() {
     return false;
 };
 
-// Инициализация после загрузки DOM
+// Инициализация
 window.addEventListener('DOMContentLoaded', async function() {
     await loadAllPokemon();
 
@@ -80,36 +88,23 @@ window.addEventListener('DOMContentLoaded', async function() {
         saveGame();
     }
 
-    var loadingEl = document.getElementById('loading');
-    if (loadingEl) loadingEl.style.display = 'none';
-    
-    var battleScreenEl = document.getElementById('battle-screen');
-    if (battleScreenEl) battleScreenEl.style.display = 'none';
-    
-    var hpBarsEl = document.getElementById('hp-bars');
-    if (hpBarsEl) hpBarsEl.style.display = 'none';
-    
-    var actionsEl = document.getElementById('actions');
-    if (actionsEl) actionsEl.style.display = 'none';
-    
-    var infoPanelEl = document.getElementById('info-panel');
-    if (infoPanelEl) infoPanelEl.style.display = 'flex';
-    
-    var controlsEl = document.getElementById('controls');
-    if (controlsEl) controlsEl.style.display = 'grid';
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('battle-screen').style.display = 'none';
+    document.getElementById('hp-bars').style.display = 'none';
+    document.getElementById('actions').style.display = 'none';
+    document.getElementById('info-panel').style.display = 'flex';
+    document.getElementById('controls').style.display = 'grid';
 
     updateHpBars();
     updateInfoPanel();
 
     // Кнопки
-    var btnSave = document.getElementById('btn-save');
-    if (btnSave) btnSave.addEventListener('click', function() {
+    document.getElementById('btn-save').addEventListener('click', function() {
         saveGame();
         addMessage('💾 Игра сохранена!');
     });
 
-    var btnExport = document.getElementById('btn-export');
-    if (btnExport) btnExport.addEventListener('click', function() {
+    document.getElementById('btn-export').addEventListener('click', function() {
         const data = localStorage.getItem('pokemonRPG_save');
         if (!data) { addMessage('❌ Нет сохранения'); return; }
         const blob = new Blob([data], { type: 'application/json' });
@@ -122,8 +117,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         addMessage('📤 Экспортировано!');
     });
 
-    var btnImport = document.getElementById('btn-import');
-    if (btnImport) btnImport.addEventListener('click', function() {
+    document.getElementById('btn-import').addEventListener('click', function() {
         const input = document.createElement('input');
         input.type = 'file';
         input.accept = 'application/json';
@@ -151,32 +145,21 @@ window.addEventListener('DOMContentLoaded', async function() {
         btnBag.onclick = openInventory;
     }
 
-    // ============================================================
-    // ПРИНУДИТЕЛЬНАЯ ПРИВЯЗКА КНОПКИ "ИССЛЕДОВАТЬ"
-    // Используем setTimeout, чтобы перебить любые обработчики из map.js
-    // ============================================================
+    // Перепривязываем кнопку "Исследовать" через 200мс
     setTimeout(function() {
         var btnAction = document.getElementById('btn-action');
         if (btnAction) {
-            // Полностью очищаем кнопку от всех обработчиков
             var newBtn = btnAction.cloneNode(true);
             btnAction.parentNode.replaceChild(newBtn, btnAction);
-            
-            // Добавляем наш обработчик
             newBtn.onclick = window.startExplore;
-            
-            console.log('[init] Кнопка btn-action перепривязана');
-            console.log('[init] allPokemon:', allPokemon ? allPokemon.length : 0, 'покемонов');
+            console.log('[init] Кнопка перепривязана на startExplore');
         }
-    }, 100);
+    }, 200);
 
     startAutoSave();
 
-    var btnFight = document.getElementById('btn-fight');
-    if (btnFight) btnFight.disabled = false;
-    if (btnBag) btnBag.disabled = true;
-    var btnSwitch = document.getElementById('btn-switch');
-    if (btnSwitch) btnSwitch.disabled = true;
-    var btnRun = document.getElementById('btn-run');
-    if (btnRun) btnRun.disabled = true;
+    document.getElementById('btn-fight').disabled = false;
+    document.getElementById('btn-bag').disabled = true;
+    document.getElementById('btn-switch').disabled = true;
+    document.getElementById('btn-run').disabled = true;
 });
