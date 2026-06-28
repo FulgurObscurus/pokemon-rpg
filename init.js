@@ -71,38 +71,54 @@ document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('btn-bag').onclick = openInventory;
 
     // ============================================================
-    // Кнопка "Исследовать" — начало боя с диким покемоном
+    // Кнопка "Исследовать" — ДИАГНОСТИКА
     // ============================================================
-    document.getElementById('btn-action').addEventListener('click', function() {
-        try {
-            if (typeof inBattle !== 'undefined' && inBattle) return;
-
-            if (typeof generateWildPokemon !== 'function') {
-                addMessage('❌ generateWildPokemon не найден!');
-                return;
-            }
-
-            var wild = generateWildPokemon();
-            if (!wild) {
-                addMessage('❌ Не удалось создать дикого покемона');
-                return;
-            }
-
-            // Скрываем карту и джойстик
-            var canvasEl = document.querySelector('canvas');
-            if (canvasEl) canvasEl.style.display = 'none';
-            document.getElementById('controls').style.display = 'none';
-
-            // Показываем боевой экран
-            document.getElementById('battle-screen').style.display = 'block';
-            document.getElementById('battle-screen').innerHTML = '';
-            document.getElementById('hp-bars').style.display = 'flex';
-            document.getElementById('actions').style.display = 'grid';
-
-            startBattle(wild);
-        } catch (err) {
-            addMessage('❌ Ошибка: ' + err.message);
+    var btnAction = document.getElementById('btn-action');
+    
+    // Удаляем все существующие обработчики клонированием кнопки
+    var newBtn = btnAction.cloneNode(true);
+    btnAction.parentNode.replaceChild(newBtn, btnAction);
+    
+    newBtn.addEventListener('click', function() {
+        // Показываем диагностическую информацию
+        var debugInfo = [];
+        debugInfo.push('Кнопка нажата!');
+        debugInfo.push('inBattle: ' + (typeof inBattle !== 'undefined' ? inBattle : 'undefined'));
+        debugInfo.push('generateWildPokemon: ' + (typeof generateWildPokemon !== 'undefined' ? 'функция' : 'не найдена'));
+        debugInfo.push('allPokemon: ' + (typeof allPokemon !== 'undefined' ? allPokemon.length + ' покемонов' : 'не определён'));
+        
+        var debugMsg = debugInfo.join('\n');
+        document.getElementById('battle-screen').style.display = 'block';
+        document.getElementById('battle-screen').innerHTML = debugMsg.replace(/\n/g, '<br>');
+        
+        if (typeof inBattle !== 'undefined' && inBattle) {
+            addMessage('Уже в бою!');
+            return;
         }
+        
+        if (typeof generateWildPokemon !== 'function') {
+            addMessage('❌ generateWildPokemon не найден!');
+            return;
+        }
+        
+        var wild = generateWildPokemon();
+        if (!wild) {
+            addMessage('❌ generateWildPokemon вернул null! allPokemon пуст?');
+            return;
+        }
+        
+        // Скрываем карту и джойстик
+        var canvasEl = document.querySelector('canvas');
+        if (canvasEl) canvasEl.style.display = 'none';
+        document.getElementById('controls').style.display = 'none';
+        
+        // Показываем боевой экран
+        document.getElementById('battle-screen').style.display = 'block';
+        document.getElementById('battle-screen').innerHTML = '';
+        document.getElementById('hp-bars').style.display = 'flex';
+        document.getElementById('actions').style.display = 'grid';
+        
+        startBattle(wild);
     });
 
     startAutoSave();
