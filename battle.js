@@ -96,8 +96,12 @@ function startBattle(wildPoke) {
 }
 
 function showActions() {
-    document.getElementById('move-list').style.display = 'none';
-    document.getElementById('actions').style.display = 'grid';
+    const moveList = document.getElementById('move-list');
+    const actions = document.getElementById('actions');
+
+    if (moveList) moveList.style.display = 'none';
+    if (actions) actions.style.display = 'grid';
+
     document.getElementById('btn-fight').disabled = false;
     document.getElementById('btn-bag').disabled = false;
     document.getElementById('btn-switch').disabled = false;
@@ -169,10 +173,6 @@ function endBattle() {
     moveSelectionMode = false;
 
     const moveList = document.getElementById('move-list');
-    const battleScreen = document.getElementById('battle-screen');
-    const hpBars = document.getElementById('hp-bars');
-    const actions = document.getElementById('actions');
-    const controls = document.getElementById('controls');
     const btnFight = document.getElementById('btn-fight');
     const btnBag = document.getElementById('btn-bag');
     const btnSwitch = document.getElementById('btn-switch');
@@ -182,9 +182,6 @@ function endBattle() {
         moveList.style.display = 'none';
         moveList.innerHTML = '';
     }
-    if (battleScreen) battleScreen.style.display = 'none';
-    if (hpBars) hpBars.style.display = 'none';
-    if (actions) actions.style.display = 'none';
 
     if (btnFight) {
         btnFight.textContent = '🌲 Исследовать';
@@ -194,8 +191,13 @@ function endBattle() {
     if (btnSwitch) btnSwitch.disabled = true;
     if (btnRun) btnRun.disabled = true;
 
-    if (window._canvas) window._canvas.style.display = 'block';
-    if (controls) controls.style.display = 'grid';
+    if (window.showMapScreen) {
+        window.showMapScreen();
+    } else {
+        if (window._canvas) window._canvas.style.display = 'block';
+        const controls = document.getElementById('controls');
+        if (controls) controls.style.display = 'grid';
+    }
 
     updateHpBars();
 }

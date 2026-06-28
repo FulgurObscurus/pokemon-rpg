@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const battleScreenEl = document.getElementById('battle-screen');
     const hpBarsEl = document.getElementById('hp-bars');
     const actionsEl = document.getElementById('actions');
+    const moveListEl = document.getElementById('move-list');
     const infoPanelEl = document.getElementById('info-panel');
     const controlsEl = document.getElementById('controls');
 
@@ -26,12 +27,33 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnSwitch = document.getElementById('btn-switch');
     const btnRun = document.getElementById('btn-run');
 
+    function showMapScreen() {
+        if (window._canvas) window._canvas.style.display = 'block';
+        if (controlsEl) controlsEl.style.display = 'grid';
+        if (infoPanelEl) infoPanelEl.style.display = 'flex';
+
+        if (battleScreenEl) battleScreenEl.style.display = 'none';
+        if (hpBarsEl) hpBarsEl.style.display = 'none';
+        if (actionsEl) actionsEl.style.display = 'none';
+        if (moveListEl) moveListEl.style.display = 'none';
+    }
+
+    function showBattleScreen() {
+        if (window._canvas) window._canvas.style.display = 'none';
+        if (controlsEl) controlsEl.style.display = 'none';
+        if (infoPanelEl) infoPanelEl.style.display = 'flex';
+
+        if (battleScreenEl) battleScreenEl.style.display = 'block';
+        if (hpBarsEl) hpBarsEl.style.display = 'flex';
+        if (actionsEl) actionsEl.style.display = 'grid';
+        if (moveListEl) moveListEl.style.display = 'none';
+    }
+
+    window.showMapScreen = showMapScreen;
+    window.showBattleScreen = showBattleScreen;
+
     if (loadingEl) loadingEl.style.display = 'none';
-    if (battleScreenEl) battleScreenEl.style.display = 'none';
-    if (hpBarsEl) hpBarsEl.style.display = 'none';
-    if (actionsEl) actionsEl.style.display = 'none';
-    if (infoPanelEl) infoPanelEl.style.display = 'flex';
-    if (controlsEl) controlsEl.style.display = 'grid';
+    showMapScreen();
 
     updateHpBars();
     updateInfoPanel();
@@ -48,13 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        if (window._canvas) window._canvas.style.display = 'none';
-        if (controlsEl) controlsEl.style.display = 'none';
-
-        if (battleScreenEl) battleScreenEl.style.display = 'block';
-        if (hpBarsEl) hpBarsEl.style.display = 'flex';
-        if (actionsEl) actionsEl.style.display = 'grid';
-        if (infoPanelEl) infoPanelEl.style.display = 'flex';
+        showBattleScreen();
 
         if (btnFight) btnFight.textContent = '⚔️ Бой';
         startBattle(wild);
