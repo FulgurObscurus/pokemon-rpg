@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('controls').style.display = 'grid';
 
     updateHpBars();
-    updateInfoPanel();                                                       
+    updateInfoPanel();
+
     // Кнопка сохранения
     document.getElementById('btn-save').addEventListener('click', function() {
         saveGame();
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     const data = ev.target.result;
                     JSON.parse(data);
                     localStorage.setItem('pokemonRPG_save', data);
-                    addMessage(' Сохранение импортировано! Перезагрузите страницу.');
+                    addMessage('📥 Сохранение импортировано! Перезагрузите страницу.');
                 } catch(err) {
                     addMessage('❌ Ошибка импорта: неверный файл');
                 }
@@ -68,6 +69,23 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Привязка кнопки "Инвентарь" к openInventory
     document.getElementById('btn-bag').onclick = openInventory;
+
+    // Привязка кнопки "Исследовать" к бою
+    document.getElementById('btn-action').addEventListener('click', function() {
+        if (!inBattle) {
+            var wild = generateWildPokemon();
+            if (wild) {
+                canvas.style.display = 'none';
+                document.getElementById('controls').style.display = 'none';
+                document.getElementById('battle-screen').style.display = 'block';
+                document.getElementById('hp-bars').style.display = 'flex';
+                document.getElementById('actions').style.display = 'grid';
+                document.getElementById('info-panel').style.display = 'flex';
+                startBattle(wild);
+                document.getElementById('btn-fight').textContent = '⚔️ Бой';
+            }
+        }
+    });
 
     startAutoSave();
 
