@@ -2,12 +2,10 @@
 // ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
 // =======================================================================
 
-let allPokemon = []; // Инициализируем пустым массивом сразу
+let allPokemon = [];
 let myParty = [];
 let currentPokemonIndex = 0;
 let inBattle = false;
-let canvas = null;
-let ctx = null;
 
 const gameState = {
     money: 0,
@@ -16,12 +14,11 @@ const gameState = {
     currentLocation: 'Маршрут 1'
 };
 
-// Автосохранение
 let autoSaveInterval = null;
 
 function startAutoSave() {
     if (autoSaveInterval) clearInterval(autoSaveInterval);
-    autoSaveInterval = setInterval(saveGame, 60000); // Каждую минуту
+    autoSaveInterval = setInterval(saveGame, 60000);
 }
 
 function saveGame() {
