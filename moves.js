@@ -7539,7 +7539,138 @@ for (const key in MOVES) {
   MOVE_NAME_INDEX[move.name] = key;
  }
 }
-
+,
+ "crafty-shield": {
+ id: "crafty-shield",
+ name: "Хитрый щит",
+ description: "Защищает союзную сторону от статусных приёмов на один ход.",
+ type: "fairy",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 3,
+ target: "self",
+ effect: "team_status_protect"
+ },
+ "flower-shield": {
+ id: "flower-shield",
+ name: "Цветочный щит",
+ description: "Повышает защиту травяных покемонов на поле.",
+ type: "fairy",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 0,
+ target: "self",
+ effect: "raise_grass_defense"
+ },
+ "grassy-terrain": {
+ id: "grassy-terrain",
+ name: "Травяное поле",
+ description: "Создаёт травяное поле, усиливающее травяные атаки и постепенно восстанавливающее HP.",
+ type: "grass",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 0,
+ target: "self",
+ effect: "terrain_grassy"
+ },
+ "misty-terrain": {
+ id: "misty-terrain",
+ name: "Туманное поле",
+ description: "Создаёт туманное поле, ослабляющее драконьи атаки и защищающее от состояний на земле.",
+ type: "fairy",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 0,
+ target: "self",
+ effect: "terrain_misty"
+ },
+ "electrify": {
+ id: "electrify",
+ name: "Электрификация",
+ description: "Делает следующий приём цели электрического типа.",
+ type: "electric",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 20,
+ priority: 0,
+ target: "enemy",
+ effect: "electrify"
+ },
+ "play-rough": {
+ id: "play-rough",
+ name: "Шалость",
+ description: "Мощная сказочная атака, которая может понизить атаку цели.",
+ type: "fairy",
+ power: 90,
+ accuracy: 90,
+ category: "physical",
+ max_pp: 10,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_lower_attack_chance"
+ },
+ "fairy-wind": {
+ id: "fairy-wind",
+ name: "Сказочный ветер",
+ description: "Простая атака волшебным ветром.",
+ type: "fairy",
+ power: 40,
+ accuracy: 100,
+ category: "special",
+ max_pp: 30,
+ priority: 0,
+ target: "enemy",
+ effect: "damage"
+ },
+ "moonblast": {
+ id: "moonblast",
+ name: "Лунный взрыв",
+ description: "Мощная сказочная атака, которая может понизить спецатаку цели.",
+ type: "fairy",
+ power: 95,
+ accuracy: 100,
+ category: "special",
+ max_pp: 15,
+ priority: 0,
+ target: "enemy",
+ effect: "damage_lower_spatk_chance"
+ },
+ "boomburst": {
+ id: "boomburst",
+ name: "Грохот взрыва",
+ description: "Чрезвычайно мощная звуковая атака без дополнительного эффекта.",
+ type: "normal",
+ power: 140,
+ accuracy: 100,
+ category: "special",
+ max_pp: 10,
+ priority: 0,
+ target: "enemy",
+ effect: "damage"
+ },
+ "fairy-lock": {
+ id: "fairy-lock",
+ name: "Сказочный замок",
+ description: "На следующий ход не даёт покемонам на поле сбежать или смениться.",
+ type: "fairy",
+ power: 0,
+ accuracy: 101,
+ category: "status",
+ max_pp: 10,
+ priority: 0,
+ target: "enemy",
+ effect: "field_trap"
+ }
+});
 function getMoveDescription(moveId) {
     if (!MOVES[moveId]) return "Описание отсутствует.";
     return MOVES[moveId].description || "Описание отсутствует.";
