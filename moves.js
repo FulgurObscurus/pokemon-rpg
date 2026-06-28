@@ -3339,32 +3339,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage_lower_accuracy_chance"
  },
- "destiny-bond": {
- id: "destiny-bond",
- name: "Связь судьбы",
- description: "Если пользователь потеряет сознание, противник тоже будет повержен.",
- type: "ghost",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 5,
- priority: 0,
- target: "self",
- effect: "destiny_bond"
- },
- "perish-song": {
- id: "perish-song",
- name: "Песнь гибели",
- description: "Все покемоны на поле теряют сознание через несколько ходов, если не сменятся.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 5,
- priority: 0,
- target: "enemy",
- effect: "perish_song"
- },
  "icy-wind": {
  id: "icy-wind",
  name: "Ледяной ветер",
@@ -3417,19 +3391,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "lock_on"
  },
- "outrage": {
- id: "outrage",
- name: "Неистовство",
- description: "Атакует несколько ходов подряд, а затем вызывает замешательство у пользователя.",
- type: "dragon",
- power: 120,
- accuracy: 100,
- category: "physical",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "locked_confuse"
- },
  "sandstorm": {
  id: "sandstorm",
  name: "Песчаная буря",
@@ -3443,19 +3404,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "weather_sandstorm"
  },
- "giga-drain": {
- id: "giga-drain",
- name: "Гига-поглощение",
- description: "Высасывает HP цели и восстанавливает здоровье пользователя.",
- type: "grass",
- power: 75,
- accuracy: 100,
- category: "special",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "drain"
- },
  "endure": {
  id: "endure",
  name: "Выносливость",
@@ -3468,19 +3416,6 @@ Object.assign(MOVES, {
  priority: 4,
  target: "self",
  effect: "endure"
- },
- "charm": {
- id: "charm",
- name: "Очарование",
- description: "Сильно снижает атаку цели очаровательным взглядом.",
- type: "fairy",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "lower_attack_2"
  },
  "false-swipe": {
  id: "false-swipe",
@@ -3507,32 +3442,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "self",
  effect: "heal"
- },
- "fury-cutter": {
- id: "fury-cutter",
- name: "Яростный резак",
- description: "Если использовать подряд, сила приёма растёт с каждым ходом.",
- type: "bug",
- power: 40,
- accuracy: 95,
- category: "physical",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "ramp_up_damage"
- },
- "steel-wing": {
- id: "steel-wing",
- name: "Стальное крыло",
- description: "Удар твёрдым крылом. Может повысить защиту пользователя.",
- type: "steel",
- power: 70,
- accuracy: 90,
- category: "physical",
- max_pp: 25,
- priority: 0,
- target: "enemy",
- effect: "damage_raise_defense_chance"
  },
  "mean-look": {
  id: "mean-look",
@@ -3599,19 +3508,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "friendship_damage"
  },
- "present": {
- id: "present",
- name: "Подарок",
- description: "Может либо нанести случайный урон, либо восстановить HP цели.",
- type: "normal",
- power: 0,
- accuracy: 90,
- category: "physical",
- max_pp: 15,
- priority: 0,
- target: "enemy",
- effect: "present"
- },
  "frustration": {
  id: "frustration",
  name: "Раздражение",
@@ -3624,19 +3520,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "enemy",
  effect: "reverse_friendship_damage"
- },
- "pain-split": {
- id: "pain-split",
- name: "Раздел боли",
- description: "Уравнивает HP пользователя и цели, поделив их между собой.",
- type: "normal",
- power: 0,
- accuracy: 101,
- category: "status",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "pain_split"
  },
  "sacred-fire": {
  id: "sacred-fire",
@@ -3677,32 +3560,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage_confuse"
  },
- "megahorn": {
- id: "megahorn",
- name: "Мегарог",
- description: "Очень мощная атака рогом без дополнительного эффекта.",
- type: "bug",
- power: 120,
- accuracy: 85,
- category: "physical",
- max_pp: 10,
- priority: 0,
- target: "enemy",
- effect: "damage"
- },
- "dragon-breath": {
- id: "dragon-breath",
- name: "Драконье дыхание",
- description: "Может парализовать цель драконьим выдохом.",
- type: "dragon",
- power: 60,
- accuracy: 100,
- category: "special",
- max_pp: 20,
- priority: 0,
- target: "enemy",
- effect: "damage_paralyze_chance"
- },
  "baton-pass": {
  id: "baton-pass",
  name: "Передача эстафеты",
@@ -3715,19 +3572,6 @@ Object.assign(MOVES, {
  priority: 0,
  target: "self",
  effect: "baton_pass"
- },
- "encore": {
- id: "encore",
- name: "На бис",
- description: "Заставляет цель несколько ходов подряд повторять последний использованный приём.",
- type: "normal",
- power: 0,
- accuracy: 100,
- category: "status",
- max_pp: 5,
- priority: 0,
- target: "enemy",
- effect: "encore"
  },
  "pursuit": {
  id: "pursuit",
