@@ -174,3 +174,75 @@ function useBag() {
 
 console.log('✅ Минимальный battle.js загружен');
 function getPokemonImage(id) { return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png"; }
+
+// =======================================================================
+// ИНВЕНТАРЬ (добавлен без изменения боевых функций)
+// =======================================================================
+function openInventory() {
+    if (!inBattle) {
+        addMessage('❌ Инвентарь доступен только в бою');
+        return;
+    }
+    const modal = document.getElementById('inventory-modal');
+    const itemsContainer = document.getElementById('inventory-items');
+    if (!modal || !itemsContainer) {
+        addMessage('❌ Интерфейс инвентаря не найден');
+        return;
+    }
+    const items = gameState.items || {};
+    const potions = items.potion || 0;
+    const pokeballs = items.pokeball || 0;
+    let html = '';
+    html += '<div class="item-row">Зелье (' + potions + ' шт.)';
+    if (potions > 0) html += ' <button onclick="usePotion()">Использовать</button>';
+    else html += ' <span style="color:#888;">нет</span>';
+    html += '</div>';
+    html += '<div class="item-row">Покебол (' + pokeballs + ' шт.)';
+    if (pokeballs > 0 && enemyPokemon) html += ' <button onclick="usePokeball()">Использовать</button>';
+    else html += ' <span style="color:#888;">' + (enemyPokemon ? 'нет' : ' (нет врага)') + '</span>';
+    html += '</div>';
+    itemsContainer.innerHTML = html;
+    modal.style.display = 'flex';
+}
+
+window.usePotion = function() {
+    const p = getCurrentPokemon();
+    if (!p) { addMessage('❌ Нет покемона'); return; }
+    if (gameState.items.potion <= 0) { addMessage('❌ Нет зелий!'); return; }
+    const heal = 20;
+    p.currentHp = Math.min(p.currentHp + heal, p.maxHp);
+    gameState.items.potion--;
+    addMessage('🧪 Вы использовали Зелье, восстановили ' + heal + ' HP. (Осталось ' + gameState.items.potion + ')');
+    updateHpBars();
+    saveGame();
+    document.getElementById('inventory-modal').style.display = 'none';
+};
+
+window.usePokeball = function() {
+    if (!enemyPokemon) { addMessage('❌ Нет дикого покемона!'); return; }
+    if (gameState.items.pokeball <= 0) { addMessage('❌ Нет покеболов!'); return; }
+    const chance = Math.min(0.3 + (enemyPokemon.level / 100), 0.9);
+    if (Math.random() < chance) {
+        addMessage('🎉 Вы поймали ' + enemyPokemon.name + '!');
+        myParty.push(enemyPokemon);
+        enemyPokemon = null;
+        inBattle = false;
+        document.getElementById('inventory-modal').style.display = 'none';
+        endBattle();
+    } else {
+        addMessage('😞 Покебол не сработал! ' + enemyPokemon.name + ' сбежал!');
+        enemyPokemon = null;
+        inBattle = false;
+        document.getElementById('inventory-modal').style.display = 'none';
+        endBattle();
+    }
+    gameState.items.pokeball--;
+    saveGame();
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const closeBtn = document.getElementById('inv-close');
+    if (closeBtn) closeBtn.addEventListener('click', function() {
+        document.getElementById('inventory-modal').style.display = 'none';
+    });
+});
