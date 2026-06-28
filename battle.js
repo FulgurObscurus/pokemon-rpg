@@ -108,6 +108,21 @@ function showActions() {
     document.getElementById('btn-run').disabled = false;
 }
 
+function toggleMoveDescription(container, arrowBtn, descriptionText) {
+    const existing = container.querySelector('.move-description');
+    if (existing) {
+        existing.remove();
+        arrowBtn.textContent = '▾';
+        return;
+    }
+
+    const desc = document.createElement('div');
+    desc.className = 'move-description';
+    desc.textContent = descriptionText || 'Описание отсутствует.';
+    container.appendChild(desc);
+    arrowBtn.textContent = '▴';
+}
+
 function onFight() {
     if (!inBattle) return;
 
@@ -122,14 +137,21 @@ function onFight() {
     if (!p) return;
 
     p.moves.forEach((move) => {
+        const item = document.createElement('div');
+        item.className = 'move-item';
+
+        const row = document.createElement('div');
+        row.className = 'move-row';
+
         const btn = document.createElement('button');
+        btn.className = 'move-main-button';
         btn.textContent = move.name + ' (PP: ' + move.pp + '/' + move.max_pp + ')';
         if (move.pp <= 0) btn.disabled = true;
 
         btn.addEventListener('click', function() {
             const dmg = 10;
             enemyPokemon.currentHp = Math.max(0, enemyPokemon.currentHp - dmg);
-            addMessage('💥 ' + p.name + ' нанёс ' + dmg + ' урона!');
+            addMessage('💥 ' + p.name + ' использовал ' + move.name + ' и нанёс ' + dmg + ' урона!');
             updateHpBars();
 
             if (enemyPokemon.currentHp <= 0) {
@@ -154,7 +176,19 @@ function onFight() {
             moveSelectionMode = false;
         });
 
-        moveList.appendChild(btn);
+        const infoBtn = document.createElement('button');
+        infoBtn.className = 'move-toggle-button';
+        infoBtn.textContent = '▾';
+        infoBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMoveDescription(item, infoBtn, move.description);
+        });
+
+        row.appendChild(btn);
+        row.appendChild(infoBtn);
+        item.appendChild(row);
+        moveList.appendChild(item);
     });
 
     const cancel = document.createElement('button');
