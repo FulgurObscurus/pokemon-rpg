@@ -191,14 +191,7 @@ function endBattle() {
     if (btnSwitch) btnSwitch.disabled = true;
     if (btnRun) btnRun.disabled = true;
 
-    if (window.showMapScreen) {
-        window.showMapScreen();
-    } else {
-        if (window._canvas) window._canvas.style.display = 'block';
-        const controls = document.getElementById('controls');
-        if (controls) controls.style.display = 'grid';
-    }
-
+    if (window.showMapScreen) window.showMapScreen();
     updateHpBars();
 }
 

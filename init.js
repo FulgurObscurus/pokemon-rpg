@@ -14,13 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const loadingEl = document.getElementById('loading');
-    const battleScreenEl = document.getElementById('battle-screen');
-    const hpBarsEl = document.getElementById('hp-bars');
-    const actionsEl = document.getElementById('actions');
-    const moveListEl = document.getElementById('move-list');
-    const infoPanelEl = document.getElementById('info-panel');
-    const controlsEl = document.getElementById('controls');
-
     const btnFight = document.getElementById('btn-fight');
     const btnAction = document.getElementById('btn-action');
     const btnBag = document.getElementById('btn-bag');
@@ -28,25 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnRun = document.getElementById('btn-run');
 
     function showMapScreen() {
-        if (window._canvas) window._canvas.style.display = 'block';
-        if (controlsEl) controlsEl.style.display = 'grid';
-        if (infoPanelEl) infoPanelEl.style.display = 'flex';
-
-        if (battleScreenEl) battleScreenEl.style.display = 'none';
-        if (hpBarsEl) hpBarsEl.style.display = 'none';
-        if (actionsEl) actionsEl.style.display = 'none';
-        if (moveListEl) moveListEl.style.display = 'none';
+        document.body.classList.remove('mode-battle');
+        document.body.classList.add('mode-map');
     }
 
     function showBattleScreen() {
-        if (window._canvas) window._canvas.style.display = 'none';
-        if (controlsEl) controlsEl.style.display = 'none';
-        if (infoPanelEl) infoPanelEl.style.display = 'flex';
-
-        if (battleScreenEl) battleScreenEl.style.display = 'block';
-        if (hpBarsEl) hpBarsEl.style.display = 'flex';
-        if (actionsEl) actionsEl.style.display = 'grid';
-        if (moveListEl) moveListEl.style.display = 'none';
+        document.body.classList.remove('mode-map');
+        document.body.classList.add('mode-battle');
     }
 
     window.showMapScreen = showMapScreen;
