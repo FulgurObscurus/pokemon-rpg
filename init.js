@@ -1,8 +1,8 @@
 // =======================================================================
 // ИНИЦИАЛИЗАЦИЯ
 // =======================================================================
-document.addEventListener('DOMContentLoaded', function() {
-    loadAllPokemon();
+document.addEventListener('DOMContentLoaded', async function() {
+    await loadAllPokemon();
 
     if (!myParty || myParty.length === 0) {
         const starter = new Poke(25, 5);
@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('controls').style.display = 'grid';
 
     updateHpBars();
-    updateInfoPanel();
-
+    updateInfoPanel();                                                       
     // Кнопка сохранения
     document.getElementById('btn-save').addEventListener('click', function() {
         saveGame();
@@ -57,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const data = ev.target.result;
                     JSON.parse(data);
                     localStorage.setItem('pokemonRPG_save', data);
-                    addMessage('📥 Сохранение импортировано! Перезагрузите страницу.');
+                    addMessage(' Сохранение импортировано! Перезагрузите страницу.');
                 } catch(err) {
                     addMessage('❌ Ошибка импорта: неверный файл');
                 }
@@ -77,6 +76,3 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btn-switch').disabled = true;
     document.getElementById('btn-run').disabled = true;
 });
-
-// Диагностика: проверяем наличие элементов джойстика
-document.addEventListener('DOMContentLoaded', function() {
