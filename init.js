@@ -77,3 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('btn-switch').disabled = true;
     document.getElementById('btn-run').disabled = true;
 });
+
+// Диагностика: проверяем наличие элементов джойстика
+document.addEventListener('DOMContentLoaded', function() {
+    var btnAction = document.getElementById('btn-action');
+    if (btnAction) {
+        alert('✅ Кнопка btn-action найдена!');
+    } else {
+        alert('❌ Кнопка btn-action НЕ найдена!');
+    }
+});
