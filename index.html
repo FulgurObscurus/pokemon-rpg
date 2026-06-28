@@ -64,44 +64,5 @@
 <script src="battle.js"></script>
 <script src="map.js"></script>
 <script src="init.js"></script>
-
-<!-- Диагностика после загрузки всех скриптов -->
-<script>
-window.addEventListener('load', function() {
-    var btnAction = document.getElementById('btn-action');
-    var debugInfo = [];
-    
-    debugInfo.push('=== Диагностика ===');
-    debugInfo.push('btn-action найден: ' + (btnAction ? 'да' : 'нет'));
-    debugInfo.push('window.startExplore: ' + (typeof window.startExplore));
-    debugInfo.push('window.generateWildPokemon: ' + (typeof window.generateWildPokemon));
-    debugInfo.push('allPokemon: ' + (typeof allPokemon !== 'undefined' ? allPokemon.length + ' шт' : 'не определён'));
-    debugInfo.push('');
-    debugInfo.push('Нажми "Исследовать" для теста');
-    
-    if (btnAction) {
-        btnAction.onclick = function() {
-            if (typeof window.startExplore === 'function') {
-                window.startExplore();
-            } else {
-                alert('startExplore не найден!');
-            }
-            return false;
-        };
-    }
-    
-    // Показываем диагностику в battle-screen
-    var battleScreen = document.getElementById('battle-screen');
-    if (battleScreen) {
-        battleScreen.innerHTML = debugInfo.join('<br>');
-        battleScreen.style.display = 'block';
-    }
-    
-    setTimeout(function() {
-        var bs = document.getElementById('battle-screen');
-        if (bs) bs.style.display = 'none';
-    }, 3000);
-});
-</script>
 </body>
 </html>
