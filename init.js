@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', async function() {
                 document.getElementById('actions').style.display = 'grid';
                 document.getElementById('info-panel').style.display = 'flex';
                 startBattle(wild);
-                document.getElementById('btn-fight').textContent = '⚔️ Бой';
             }
         }
     });
