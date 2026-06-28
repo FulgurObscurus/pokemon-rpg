@@ -127,5 +127,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+
+    const btnTraining = document.getElementById('btn-training');
+    if (btnTraining) {
+        btnTraining.addEventListener('click', function() {
+            openTraining();
+        });
+    }
+
+    const trainCloseBtn = document.getElementById('train-close-btn');
+    if (trainCloseBtn) {
+        trainCloseBtn.addEventListener('click', function() {
+            closeTraining();
+        });
+    }
+
+    const trainConfirmBtn = document.getElementById('train-confirm-btn');
+    if (trainConfirmBtn) {
+        trainConfirmBtn.addEventListener('click', function() {
+            confirmTraining();
+        });
+    }
+
     startAutoSave();
 });

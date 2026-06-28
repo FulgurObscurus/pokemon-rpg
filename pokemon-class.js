@@ -1,5 +1,5 @@
 // =======================================================================
-// КЛАСС ПОКЕМОНА
+// КЛАСС ПОКЕМОНА (система SP — по Pokemon Champions)
 // =======================================================================
 
 function getLearnset(speciesId) {
@@ -25,7 +25,7 @@ function buildMoveFromEntry(moveEntry) {
 class Poke {
  constructor(speciesId, level = 5) {
  const base = allPokemonData[speciesId];
- if (!base) throw new Error(`Покемон #${speciesId} не найден`);
+ if (!base) throw new Error("Покемон #" + speciesId + " не найден");
 
  this.speciesId = speciesId;
  this.name = base.name.ru;
@@ -39,28 +39,15 @@ class Poke {
  this.level = level;
  this.exp = 0;
 
- this.ivs = {
- hp: rand(0, 31),
- attack: rand(0, 31),
- defense: rand(0, 31),
- spAttack: rand(0, 31),
- spDefense: rand(0, 31),
- speed: rand(0, 31)
- };
+ // IV = 31 всегда (как в Pokemon Champions)
+ this.ivs = { hp: 31, attack: 31, defense: 31, spAttack: 31, spDefense: 31, speed: 31 };
 
- this.evs = {
- hp: 0,
- attack: 0,
- defense: 0,
- spAttack: 0,
- spDefense: 0,
- speed: 0
- };
+ // Очки характеристик (SP) — вместо EV
+ this.statPoints = { hp: 0, attack: 0, defense: 0, spAttack: 0, spDefense: 0, speed: 0 };
 
  // Берём приёмы из LEARNSETS, фильтруем по уровню
  const learnset = getLearnset(speciesId);
  const eligible = learnset.filter(m => m.learnLevel <= level);
- // Берём до 4 последних изученных приёмов (самые свежие)
  const selected = eligible.slice(-4);
  this.moves = selected.map(buildMoveFromEntry);
 
@@ -83,38 +70,38 @@ class Poke {
 
  get maxHp() {
  return Math.floor(
- (2 * this.baseStats.hp + this.ivs.hp + Math.floor(this.evs.hp / 4)) * this.level / 100
- ) + this.level + 10;
+ (2 * this.baseStats.hp + 31) * this.level / 100
+ ) + this.level + 10 + (this.statPoints?.hp || 0);
  }
 
  get statAttack() {
  return Math.floor(
- (2 * this.baseStats.attack + this.ivs.attack + Math.floor(this.evs.attack / 4)) * this.level / 100
- ) + 5;
+ (2 * this.baseStats.attack + 31) * this.level / 100
+ ) + 5 + (this.statPoints?.attack || 0);
  }
 
  get statDefense() {
  return Math.floor(
- (2 * this.baseStats.defense + this.ivs.defense + Math.floor(this.evs.defense / 4)) * this.level / 100
- ) + 5;
+ (2 * this.baseStats.defense + 31) * this.level / 100
+ ) + 5 + (this.statPoints?.defense || 0);
  }
 
  get statSpAttack() {
  return Math.floor(
- (2 * this.baseStats.spAttack + this.ivs.spAttack + Math.floor(this.evs.spAttack / 4)) * this.level / 100
- ) + 5;
+ (2 * this.baseStats.spAttack + 31) * this.level / 100
+ ) + 5 + (this.statPoints?.spAttack || 0);
  }
 
  get statSpDefense() {
  return Math.floor(
- (2 * this.baseStats.spDefense + this.ivs.spDefense + Math.floor(this.evs.spDefense / 4)) * this.level / 100
- ) + 5;
+ (2 * this.baseStats.spDefense + 31) * this.level / 100
+ ) + 5 + (this.statPoints?.spDefense || 0);
  }
 
  get statSpeed() {
  return Math.floor(
- (2 * this.baseStats.speed + this.ivs.speed + Math.floor(this.evs.speed / 4)) * this.level / 100
- ) + 5;
+ (2 * this.baseStats.speed + 31) * this.level / 100
+ ) + 5 + (this.statPoints?.speed || 0);
  }
 
  get expToNext() {
@@ -129,7 +116,7 @@ class Poke {
  this.level++;
  this.currentHp = this.maxHp;
 
- addMessage(`🎉 ${this.name} повысился до ${this.level} уровня!`);
+ addMessage("\ud83c\udf89 " + this.name + " повысился до " + this.level + " уровня!");
  this.checkEvolution();
  this.checkLearnMove();
  }
@@ -143,7 +130,7 @@ class Poke {
  if (e.method === "level-up" && this.level >= e.minLevel) {
  const newId = e.targetId;
  if (newId && allPokemonData[newId]) {
- addMessage(`✨ ${this.name} эволюционирует в ${allPokemonData[newId].name.ru}!`);
+ addMessage("\u2728 " + this.name + " эволюционирует в " + allPokemonData[newId].name.ru + "!");
 
  this.speciesId = newId;
  const base = allPokemonData[newId];
@@ -156,11 +143,8 @@ class Poke {
  ? this.abilities[Math.floor(Math.random() * this.abilities.length)]
  : "Нет";
 
- // При эволюции обновляем приёмы из нового learnset
- const newLearnset = getLearnset(newId);
- const eligible = newLearnset.filter(m => m.learnLevel <= this.level);
- const selected = eligible.slice(-4);
- this.moves = selected.map(buildMoveFromEntry);
+ // При эволюции НЕ меняем текущие приёмы автоматически
+ // Новые приёмы новой формы станут доступны в меню Тренировки
  this.currentHp = this.maxHp;
  break;
  }
@@ -169,21 +153,17 @@ class Poke {
  }
 
  checkLearnMove() {
+ // Не добавляем приёмы автоматически
+ // Вместо этого сообщаем игроку о новых доступных приёмах
  const learnset = getLearnset(this.speciesId);
  if (!learnset || learnset.length === 0) return;
 
- for (let m of learnset) {
- if (m.learnLevel === this.level) {
- const move = buildMoveFromEntry(m);
-
- if (!this.moves.some(mm => mm.id === move.id || mm.name === move.name)) {
- if (this.moves.length < 4) {
- this.moves.push(move);
- addMessage(`📘 ${this.name} изучил приём ${move.name}!`);
- } else {
- addMessage(`⚠️ ${this.name} может изучить ${move.name}, но уже 4 приёма. Замените вручную.`);
- }
- }
+ const newMoves = learnset.filter(m => m.learnLevel === this.level);
+ for (let m of newMoves) {
+ const moveData = getMoveData(m.move);
+ const name = moveData.name || m.move;
+ if (!this.moves.some(mm => mm.id === m.move || mm.name === name)) {
+ addMessage("\ud83d\udcd8 " + this.name + " может изучить " + name + "! Откройте Тренировку.");
  }
  }
  }

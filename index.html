@@ -41,6 +41,7 @@
         <span>📍 <span id="location">Маршрут 1</span></span>
         <span>📦 <span id="party-count">0</span></span>
         <span><button id="btn-save" style="background:none;border:none;color:#f1c40f;font-size:14px;cursor:pointer;">💾 Сохранить</button></span>
+        <span><button id="btn-training" style="background:none;border:none;color:#4CAF50;font-size:14px;cursor:pointer;">🏋️ Тренировка</button></span>
         <span><button id="btn-export" style="background:none;border:none;color:#f1c40f;font-size:14px;cursor:pointer;">📤 Экспорт</button></span>
         <span><button id="btn-import" style="background:none;border:none;color:#f1c40f;font-size:14px;cursor:pointer;">📥 Импорт</button></span>
     </div>
@@ -60,6 +61,19 @@
             <button id="inv-close" style="width:100%; padding:10px; background:#7b4a9e; color:#fff; border:none; border-radius:8px; cursor:pointer;">Закрыть</button>
         </div>
     </div>
+
+    <!-- Меню Тренировки (по системе Pokemon Champions) -->
+    <div id="training-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1001; overflow-y:auto; justify-content:center; align-items:flex-start;">
+        <div style="background:#2c1a3d; padding:16px; border-radius:16px; border:2px solid #7b4a9e; max-width:440px; width:95%; color:#fff; margin:10px auto; max-height:95vh; overflow-y:auto;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+                <h3 style="margin:0;color:#f1c40f;">🏋️ Тренировка</h3>
+                <button id="train-close-btn" style="background:#c0392b;border:none;color:#fff;border-radius:8px;cursor:pointer;padding:6px 14px;">✕ Закрыть</button>
+            </div>
+            <div id="train-team" style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;justify-content:center;"></div>
+            <div id="train-content"></div>
+            <button id="train-confirm-btn" style="display:none;width:100%;padding:12px;background:#27ae60;border:none;color:#fff;border-radius:10px;cursor:pointer;font-size:16px;font-weight:bold;margin-top:8px;">✅ Подтвердить изменения</button>
+        </div>
+    </div>
 </div>
 
 <script src="globals.js"></script>
@@ -73,6 +87,7 @@
 <script src="load-data.js"></script>
 <script src="battle.js"></script>
 <script src="map.js"></script>
+<script src="training.js"></script>
 <script src="init.js"></script>
 </body>
 </html>

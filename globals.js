@@ -26,7 +26,8 @@ function saveGame() {
                 exp: p.exp,
                 currentHp: p.currentHp,
                 status: p.status,
-                moves: (p.moves || []).map(m => ({ name: m.name, pp: m.pp })),
+                moves: (p.moves || []).map(m => ({ id: m.id, name: m.name, pp: m.pp })),
+                statPoints: p.statPoints || {hp:0,attack:0,defense:0,spAttack:0,spDefense:0,speed:0},
             })),
             currentPokemonIndex: currentPokemonIndex,
         };
@@ -52,10 +53,21 @@ function loadGame() {
             pokemon.currentHp = (p.currentHp !== undefined ? p.currentHp : pokemon.maxHp);
             pokemon.status = p.status || null;
 
-            if (p.moves) {
-                pokemon.moves.forEach((m, idx) => {
-                    if (p.moves[idx] && p.moves[idx].pp !== undefined) {
-                        m.pp = p.moves[idx].pp;
+            // Загружаем statPoints
+            if (p.statPoints) {
+                pokemon.statPoints = { ...p.statPoints };
+            }
+
+            // Загружаем приёмы по ID (новый формат)
+            if (p.moves && p.moves.length > 0) {
+                pokemon.moves = p.moves.map(m => {
+                    if (m.id) return buildMoveFromEntry({ move: m.id });
+                    if (m.name) return buildMoveFromEntry({ name: m.name });
+                    return null;
+                }).filter(Boolean);
+                p.moves.forEach((sm, idx) => {
+                    if (sm.pp !== undefined && pokemon.moves[idx]) {
+                        pokemon.moves[idx].pp = sm.pp;
                     }
                 });
             }
