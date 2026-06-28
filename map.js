@@ -127,4 +127,3 @@ document.addEventListener('DOMContentLoaded', function() {
 window._canvas = canvas;
 window._battleScreen = battleScreen;
 gameLoop();
-console.log('Карта загружена (финальная)');
