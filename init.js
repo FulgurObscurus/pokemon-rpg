@@ -229,3 +229,34 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
+// Единственный обработчик кнопки "Исследовать" с обработкой ошибок
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('btn-action');
+    if (btn) {
+        btn.onclick = function() {
+            alert('Кнопка нажата!');
+            if (inBattle) {
+                alert('Уже в бою');
+                return;
+            }
+            try {
+                var wild = generateWildPokemon();
+                alert('Дикий покемон: ' + (wild ? wild.name : 'null'));
+                if (wild) {
+                    var canvas = document.querySelector('canvas');
+                    if (canvas) canvas.style.display = 'none';
+                    document.getElementById('controls').style.display = 'none';
+                    document.getElementById('battle-screen').style.display = 'block';
+                    document.getElementById('hp-bars').style.display = 'flex';
+                    document.getElementById('actions').style.display = 'grid';
+                    document.getElementById('info-panel').style.display = 'flex';
+                    startBattle(wild);
+                    document.getElementById('btn-fight').textContent = '⚔️ Бой';
+                }
+            } catch(e) {
+                alert('Ошибка: ' + e.message);
+            }
+        };
+    }
+});
