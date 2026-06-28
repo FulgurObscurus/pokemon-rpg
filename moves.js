@@ -10326,6 +10326,16 @@ Object.assign(MOVES, {
  effect: "drain"
  }
 });
+
+const MOVE_NAME_INDEX = {};
+for (const key in MOVES) {
+ const move = MOVES[key];
+ if (!move || !move.name) continue;
+ if (!MOVE_NAME_INDEX[move.name]) {
+  MOVE_NAME_INDEX[move.name] = key;
+ }
+}
+
 function getMoveDescription(moveId) {
     if (!MOVES[moveId]) return "Описание отсутствует.";
     return MOVES[moveId].description || "Описание отсутствует.";
