@@ -3,7 +3,7 @@
 // =======================================================================
 
 function getPokemonImage(id) {
-    return "https://img.pokemondb.net/sprites/sword-shield/icon/" + id + ".png";
+    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
 }
 
 function generateWildPokemon() {
@@ -110,6 +110,7 @@ function updateHpBars() {
     if (p) {
         const pNameEl = document.getElementById('p-name');
         pNameEl.innerHTML = `<img class="pokemon-img" src="${getPokemonImage(p.speciesId)}" alt="${p.name}"> ${p.name}`;
+        addMessage("🔍 URL игрока: " + getPokemonImage(p.speciesId));
         document.getElementById('p-level').textContent = p.level;
         const hpPercent = Math.max(0, (p.currentHp / p.maxHp) * 100);
         document.getElementById('p-hp-bar').style.width = hpPercent + '%';
@@ -119,6 +120,7 @@ function updateHpBars() {
     if (enemyPokemon) {
         const eNameEl = document.getElementById('e-name');
         eNameEl.innerHTML = `<img class="pokemon-img" src="${getPokemonImage(enemyPokemon.speciesId)}" alt="${enemyPokemon.name}"> ${enemyPokemon.name}`;
+        addMessage("🔍 URL врага: " + getPokemonImage(enemyPokemon.speciesId));
         document.getElementById('e-level').textContent = enemyPokemon.level;
         const hpPercent = Math.max(0, (enemyPokemon.currentHp / enemyPokemon.maxHp) * 100);
         document.getElementById('e-hp-bar').style.width = hpPercent + '%';
