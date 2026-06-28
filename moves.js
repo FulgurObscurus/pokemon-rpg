@@ -3195,7 +3195,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage_recoil"
  },
-,
  "triple-kick": {
  id: "triple-kick",
  name: "Тройной пинок",
@@ -3807,7 +3806,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "party_multi_hit"
  },
-,
 
  "fake-out": {
  id: "fake-out",
@@ -5109,7 +5107,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "damage_lower_spatk_2"
  },
-,
 
  "roost": {
  id: "roost",
@@ -6307,7 +6304,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "weight_damage"
  },
-,
 
  "chatter": {
  id: "chatter",
@@ -7208,7 +7204,6 @@ Object.assign(MOVES, {
  },
 
 });
-,
  "freeze-shock": {
  id: "freeze-shock",
  name: "Ледяной шок",
@@ -7404,7 +7399,6 @@ Object.assign(MOVES, {
  target: "enemy",
  effect: "add_ghost_type"
  }
-,
  "noble-roar": {
  id: "noble-roar",
  name: "Благородный рык",
