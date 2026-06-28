@@ -166,15 +166,36 @@ function onFight() {
 function endBattle() {
     enemyPokemon = null;
     inBattle = false;
+    moveSelectionMode = false;
 
-    document.getElementById('move-list').style.display = 'none';
-    document.getElementById('battle-screen').style.display = 'none';
-    document.getElementById('hp-bars').style.display = 'none';
-    document.getElementById('actions').style.display = 'none';
-    document.getElementById('btn-fight').textContent = '🌲 Исследовать';
+    const moveList = document.getElementById('move-list');
+    const battleScreen = document.getElementById('battle-screen');
+    const hpBars = document.getElementById('hp-bars');
+    const actions = document.getElementById('actions');
+    const controls = document.getElementById('controls');
+    const btnFight = document.getElementById('btn-fight');
+    const btnBag = document.getElementById('btn-bag');
+    const btnSwitch = document.getElementById('btn-switch');
+    const btnRun = document.getElementById('btn-run');
+
+    if (moveList) {
+        moveList.style.display = 'none';
+        moveList.innerHTML = '';
+    }
+    if (battleScreen) battleScreen.style.display = 'none';
+    if (hpBars) hpBars.style.display = 'none';
+    if (actions) actions.style.display = 'none';
+
+    if (btnFight) {
+        btnFight.textContent = '🌲 Исследовать';
+        btnFight.disabled = false;
+    }
+    if (btnBag) btnBag.disabled = true;
+    if (btnSwitch) btnSwitch.disabled = true;
+    if (btnRun) btnRun.disabled = true;
 
     if (window._canvas) window._canvas.style.display = 'block';
-    if (document.getElementById('controls')) document.getElementById('controls').style.display = 'grid';
+    if (controls) controls.style.display = 'grid';
 
     updateHpBars();
 }

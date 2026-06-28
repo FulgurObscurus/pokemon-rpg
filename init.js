@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (window._canvas) window._canvas.style.display = 'none';
         if (controlsEl) controlsEl.style.display = 'none';
+
         if (battleScreenEl) battleScreenEl.style.display = 'block';
         if (hpBarsEl) hpBarsEl.style.display = 'flex';
         if (actionsEl) actionsEl.style.display = 'grid';

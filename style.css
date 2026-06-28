@@ -35,8 +35,8 @@ canvas {
 
 #battle-screen {
     font-size: 11px;
-    max-height: 15vh;
-    padding: 4px 6px;
+    max-height: 18vh;
+    padding: 6px 8px;
     margin: 2px 0;
     border: 1px solid #7b4a9e;
     border-radius: 6px;
@@ -54,12 +54,12 @@ canvas {
 }
 .hp-bar {
     background: #1a0f2e;
-    padding: 3px 6px;
-    border-radius: 4px;
+    padding: 6px 8px;
+    border-radius: 6px;
     flex: 1;
     min-width: 50px;
     color: #fff;
-    font-size: 10px;
+    font-size: 11px;
     border: 1px solid #7b4a9e;
 }
 .hp-bar .hp {
@@ -69,7 +69,7 @@ canvas {
     margin-top: 2px;
 }
 .hp-bar .hp.low { background: #f44336; }
-.pokemon-img { width: 16px; height: 16px; margin-right: 2px; vertical-align: middle; }
+.pokemon-img { width: 28px; height: 28px; margin-right: 6px; vertical-align: middle; image-rendering: pixelated; }
 
 #actions {
     display: grid;
