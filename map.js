@@ -23,6 +23,7 @@ function initMap() {
     canvas.width = MAP_WIDTH * TILE_SIZE;
     canvas.height = MAP_HEIGHT * TILE_SIZE;
     
+    // Генерируем простую карту
     generateMap();
     renderMap();
     
@@ -51,10 +52,12 @@ function initMap() {
 }
 
 function generateMap() {
+    // Простая генерация карты с деревьями
     mapData = [];
     for (let y = 0; y < MAP_HEIGHT; y++) {
         mapData[y] = [];
         for (let x = 0; x < MAP_WIDTH; x++) {
+            // Случайные деревья (10% шанс)
             if (Math.random() < 0.1 && !(x === player.x && y === player.y)) {
                 mapData[y][x] = 'tree';
             } else {
@@ -67,12 +70,15 @@ function generateMap() {
 function renderMap() {
     if (!ctx) return;
     
+    // Очистка
     ctx.fillStyle = '#4CAF50';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
+    // Рисуем карту
     for (let y = 0; y < MAP_HEIGHT; y++) {
         for (let x = 0; x < MAP_WIDTH; x++) {
             if (mapData[y][x] === 'tree') {
+                // Дерево
                 ctx.fillStyle = '#2E7D32';
                 ctx.beginPath();
                 ctx.arc(x * TILE_SIZE + TILE_SIZE/2, y * TILE_SIZE + TILE_SIZE/2, TILE_SIZE/2, 0, Math.PI * 2);
@@ -84,9 +90,11 @@ function renderMap() {
         }
     }
     
+    // Рисуем игрока
     ctx.fillStyle = '#2196F3';
     ctx.fillRect(player.x * TILE_SIZE + 4, player.y * TILE_SIZE + 4, TILE_SIZE - 8, TILE_SIZE - 8);
     
+    // Глаза игрока
     ctx.fillStyle = 'white';
     ctx.fillRect(player.x * TILE_SIZE + 8, player.y * TILE_SIZE + 10, 6, 6);
     ctx.fillRect(player.x * TILE_SIZE + 18, player.y * TILE_SIZE + 10, 6, 6);
@@ -103,10 +111,12 @@ function movePlayer(direction) {
         case 'right': newX++; break;
     }
     
+    // Проверка границ
     if (newX < 0 || newX >= MAP_WIDTH || newY < 0 || newY >= MAP_HEIGHT) {
         return;
     }
     
+    // Проверка на деревья
     if (mapData[newY][newX] === 'tree') {
         return;
     }
@@ -116,7 +126,7 @@ function movePlayer(direction) {
     renderMap();
 }
 
-// Инициализация
+// Инициализация при загрузке
 window.addEventListener('DOMContentLoaded', function() {
     setTimeout(initMap, 500);
 });

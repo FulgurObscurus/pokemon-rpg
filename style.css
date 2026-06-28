@@ -104,7 +104,7 @@ canvas {
     border-radius: 8px !important;
     background: #1a0f2e !important;
     color: #fff !important;
-    touch-action: none;
+    touch-action: manipulation;
 }
 #btn-up { grid-column: 2 !important; grid-row: 1 !important; }
 #btn-left { grid-column: 1 !important; grid-row: 2 !important; }
