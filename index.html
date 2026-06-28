@@ -22,6 +22,13 @@
     </div>
     <div id="move-list" ></div>
     <div id="info-panel" >
+    <div id="controls" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 300px; margin: 10px auto; justify-items: center;">
+        <button id="btn-up" style="grid-column: 2; padding: 12px 20px; font-size: 24px; border: 2px solid #7b4a9e; border-radius: 8px; background: #1a0f2e; color: #fff; touch-action: none;">▲</button>
+        <button id="btn-left" style="grid-column: 1; grid-row: 2; padding: 12px 20px; font-size: 24px; border: 2px solid #7b4a9e; border-radius: 8px; background: #1a0f2e; color: #fff; touch-action: none;">◄</button>
+        <button id="btn-right" style="grid-column: 3; grid-row: 2; padding: 12px 20px; font-size: 24px; border: 2px solid #7b4a9e; border-radius: 8px; background: #1a0f2e; color: #fff; touch-action: none;">►</button>
+        <button id="btn-down" style="grid-column: 2; grid-row: 3; padding: 12px 20px; font-size: 24px; border: 2px solid #7b4a9e; border-radius: 8px; background: #1a0f2e; color: #fff; touch-action: none;">▼</button>
+        <button id="btn-action" style="grid-column: 2; grid-row: 4; padding: 10px 16px; font-size: 16px; border: 2px solid #7b4a9e; border-radius: 8px; background: #f1c40f; color: #1a0f2e; font-weight: bold; touch-action: none;">⚔️ Исследовать</button>
+    </div>
         <span>💰 <span id="money">300</span></span>
         <span>📍 <span id="location">Маршрут 1</span></span>
         <span>📦 <span id="party-count">0</span></span>
