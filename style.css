@@ -107,3 +107,27 @@ canvas { height: 35vh !important; max-height: 250px !important; }
 #inventory-modal .item-row { font-size: 12px; padding: 4px 0; }
 #inv-close { padding: 6px; font-size: 12px; }
 #debug, #error-log { display: none !important; }
+/* Максимальное сжатие для мобильных устройств */
+canvas { height: 25vh !important; max-height: 150px !important; }
+#battle-screen { font-size: 10px; max-height: 15vh; padding: 3px; margin-bottom: 2px; }
+#hp-bars { gap: 2px; margin-bottom: 2px; }
+.hp-bar { font-size: 8px; padding: 2px 3px; min-width: 40px; }
+.hp-bar .hp { height: 3px; }
+.pokemon-img { width: 16px; height: 16px; margin-right: 2px; }
+#actions { gap: 2px; }
+#actions button { font-size: 9px; padding: 2px 4px; }
+#controls { max-width: 100px; margin: 1px auto; gap: 2px; }
+#controls button { padding: 2px 4px; font-size: 10px; min-width: 20px; min-height: 20px; }
+#btn-action { font-size: 8px; padding: 2px 4px; }
+#info-panel { font-size: 8px; gap: 1px; margin-top: 2px; flex-wrap: wrap; }
+#info-panel button { font-size: 6px; padding: 1px 2px; }
+#move-list { gap: 2px; margin-top: 2px; }
+#move-list button { font-size: 8px; padding: 2px; }
+#game { padding: 2px !important; }
+body { padding: 1px !important; }
+#loading { font-size: 14px; padding: 10px; }
+#inventory-modal > div { padding: 8px; }
+#inventory-modal h3 { font-size: 12px; margin-bottom: 4px; }
+#inventory-modal .item-row { font-size: 10px; padding: 2px 0; }
+#inv-close { padding: 4px; font-size: 10px; }
+#debug, #error-log { display: none !important; }
