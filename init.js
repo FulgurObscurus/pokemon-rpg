@@ -202,13 +202,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Рабочий обработчик кнопки "Исследовать"
+
+// Единственный обработчик кнопки "Исследовать"
 document.addEventListener('DOMContentLoaded', function() {
     var btn = document.getElementById('btn-action');
     if (btn) {
-        btn.addEventListener('click', function() {
-            if (inBattle) return;
+        btn.onclick = function() {
+            alert('Кнопка нажата!');
+            if (inBattle) {
+                alert('Уже в бою');
+                return;
+            }
             var wild = generateWildPokemon();
+            alert('Дикий покемон: ' + (wild ? wild.name : 'null'));
             if (wild) {
                 var canvas = document.querySelector('canvas');
                 if (canvas) canvas.style.display = 'none';
@@ -220,6 +226,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 startBattle(wild);
                 document.getElementById('btn-fight').textContent = '⚔️ Бой';
             }
-        });
+        };
     }
 });
