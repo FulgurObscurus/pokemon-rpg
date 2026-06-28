@@ -67,22 +67,41 @@ document.addEventListener('DOMContentLoaded', async function() {
         input.click();
     });
 
-    // Привязка кнопки "Инвентарь" к openInventory
+    // Привязка кнопки "Инвентарь"
     document.getElementById('btn-bag').onclick = openInventory;
 
-    // Привязка кнопки "Исследовать" к бою
+    // ============================================================
+    // Кнопка "Исследовать" — начало боя с диким покемоном
+    // ============================================================
     document.getElementById('btn-action').addEventListener('click', function() {
-        if (!inBattle) {
-            var wild = generateWildPokemon();
-            if (wild) {
-                canvas.style.display = 'none';
-                document.getElementById('controls').style.display = 'none';
-                document.getElementById('battle-screen').style.display = 'block';
-                document.getElementById('hp-bars').style.display = 'flex';
-                document.getElementById('actions').style.display = 'grid';
-                document.getElementById('info-panel').style.display = 'flex';
-                startBattle(wild);
+        try {
+            if (typeof inBattle !== 'undefined' && inBattle) return;
+
+            if (typeof generateWildPokemon !== 'function') {
+                addMessage('❌ generateWildPokemon не найден!');
+                return;
             }
+
+            var wild = generateWildPokemon();
+            if (!wild) {
+                addMessage('❌ Не удалось создать дикого покемона');
+                return;
+            }
+
+            // Скрываем карту и джойстик
+            var canvasEl = document.querySelector('canvas');
+            if (canvasEl) canvasEl.style.display = 'none';
+            document.getElementById('controls').style.display = 'none';
+
+            // Показываем боевой экран
+            document.getElementById('battle-screen').style.display = 'block';
+            document.getElementById('battle-screen').innerHTML = '';
+            document.getElementById('hp-bars').style.display = 'flex';
+            document.getElementById('actions').style.display = 'grid';
+
+            startBattle(wild);
+        } catch (err) {
+            addMessage('❌ Ошибка: ' + err.message);
         }
     });
 
