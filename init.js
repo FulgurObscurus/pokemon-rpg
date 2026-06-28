@@ -23,11 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
     updateHpBars();
     updateInfoPanel();
 
-    // Привязка кнопок
+    // Кнопка сохранения
     document.getElementById('btn-save').addEventListener('click', function() {
         saveGame();
         addMessage('💾 Игра сохранена!');
     });
+
+    // Кнопка экспорта
     document.getElementById('btn-export').addEventListener('click', function() {
         const data = localStorage.getItem('pokemonRPG_save');
         if (!data) { addMessage('❌ Нет сохранения для экспорта'); return; }
@@ -40,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
         URL.revokeObjectURL(url);
         addMessage('📤 Сохранение экспортировано!');
     });
+
+    // Кнопка импорта
     document.getElementById('btn-import').addEventListener('click', function() {
         const input = document.createElement('input');
         input.type = 'file';
@@ -63,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         input.click();
     });
 
-    // Привязка кнопки "Инвентарь"
+    // Привязка кнопки "Инвентарь" к openInventory
     document.getElementById('btn-bag').onclick = openInventory;
 
     startAutoSave();
