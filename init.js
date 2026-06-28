@@ -2,32 +2,46 @@
 // ИНИЦИАЛИЗАЦИЯ
 // =======================================================================
 
-// Глобальная функция для кнопки "Исследовать" (вызывается через onclick)
+// Глобальная функция для генерации дикого покемона
+function generateWildPokemon() {
+    if (!allPokemon || allPokemon.length === 0) {
+        console.error('allPokemon пуст или не определён');
+        return null;
+    }
+    
+    // Выбираем случайного покемона из первых 151 (Gen 1)
+    var maxId = Math.min(allPokemon.length, 151);
+    var randomId = Math.floor(Math.random() * maxId) + 1;
+    var pokemonData = allPokemon[randomId - 1];
+    
+    if (!pokemonData) {
+        console.error('Покемон с ID ' + randomId + ' не найден');
+        return null;
+    }
+    
+    // Случайный уровень 2-5
+    var level = Math.floor(Math.random() * 4) + 2;
+    
+    // Создаём экземпляр
+    var wild = new Poke(randomId, level);
+    
+    console.log('Сгенерирован дикий покемон:', wild.getName(), 'уровень', level);
+    
+    return wild;
+}
+
+// Глобальная функция для кнопки "Исследовать"
 function startExplore() {
     console.log('[DEBUG] startExplore вызвана');
-    
-    var debugInfo = [];
-    debugInfo.push('startExplore вызвана');
-    debugInfo.push('inBattle: ' + (typeof inBattle !== 'undefined' ? inBattle : 'undefined'));
-    debugInfo.push('generateWildPokemon: ' + (typeof generateWildPokemon !== 'undefined' ? 'функция' : 'не найдена'));
-    debugInfo.push('allPokemon: ' + (typeof allPokemon !== 'undefined' ? allPokemon.length + ' покемонов' : 'не определён'));
-    
-    document.getElementById('battle-screen').style.display = 'block';
-    document.getElementById('battle-screen').innerHTML = debugInfo.join('<br>');
     
     if (typeof inBattle !== 'undefined' && inBattle) {
         addMessage('Уже в бою!');
         return;
     }
     
-    if (typeof generateWildPokemon !== 'function') {
-        addMessage('❌ generateWildPokemon не найден!');
-        return;
-    }
-    
     var wild = generateWildPokemon();
     if (!wild) {
-        addMessage('❌ generateWildPokemon вернул null!');
+        addMessage('❌ Не удалось создать дикого покемона!');
         return;
     }
     
@@ -101,7 +115,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     localStorage.setItem('pokemonRPG_save', data);
                     addMessage('📥 Сохранение импортировано! Перезагрузите страницу.');
                 } catch(err) {
-                    addMessage('❌ Ошибка импорта: неверный файл');
+                    addMessage(' Ошибка импорта: неверный файл');
                 }
             };
             reader.readAsText(file);
