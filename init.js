@@ -4,14 +4,21 @@
 
 // Глобальная функция для генерации дикого покемона
 window.generateWildPokemon = function() {
+    console.log('[generateWildPokemon] allPokemon:', allPokemon);
+    console.log('[generateWildPokemon] allPokemon.length:', allPokemon ? allPokemon.length : 0);
+    
     if (!allPokemon || allPokemon.length === 0) {
         console.error('allPokemon пуст');
+        addMessage('❌ Данные покемонов не загружены!');
         return null;
     }
     
+    // Берём случайного покемона из первых 151
     var maxId = Math.min(allPokemon.length, 151);
     var randomIndex = Math.floor(Math.random() * maxId);
     var pokemonData = allPokemon[randomIndex];
+    
+    console.log('[generateWildPokemon] Выбран покемон:', pokemonData);
     
     if (!pokemonData || !pokemonData.id) {
         console.error('Некорректные данные:', pokemonData);
@@ -28,6 +35,7 @@ window.generateWildPokemon = function() {
 // Глобальная функция для кнопки "Исследовать"
 window.startExplore = function() {
     console.log('[startExplore] Вызвана');
+    console.log('[startExplore] allPokemon:', allPokemon);
     
     if (typeof inBattle !== 'undefined' && inBattle) {
         addMessage('Уже в бою!');
@@ -77,7 +85,13 @@ window.startExplore = function() {
 
 // Инициализация
 window.addEventListener('DOMContentLoaded', async function() {
+    console.log('[init] Начинаем загрузку...');
+    
     await loadAllPokemon();
+    
+    console.log('[init] loadAllPokemon завершена');
+    console.log('[init] allPokemon:', allPokemon);
+    console.log('[init] allPokemon.length:', allPokemon ? allPokemon.length : 0);
 
     if (!myParty || myParty.length === 0) {
         const starter = new Poke(25, 5);
@@ -162,4 +176,6 @@ window.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('btn-bag').disabled = true;
     document.getElementById('btn-switch').disabled = true;
     document.getElementById('btn-run').disabled = true;
+    
+    console.log('[init] Инициализация завершена');
 });
