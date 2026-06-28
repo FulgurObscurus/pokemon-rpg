@@ -1,6 +1,48 @@
 // =======================================================================
 // ИНИЦИАЛИЗАЦИЯ
 // =======================================================================
+
+// Глобальная функция для кнопки "Исследовать" (вызывается через onclick)
+function startExplore() {
+    console.log('[DEBUG] startExplore вызвана');
+    
+    var debugInfo = [];
+    debugInfo.push('startExplore вызвана');
+    debugInfo.push('inBattle: ' + (typeof inBattle !== 'undefined' ? inBattle : 'undefined'));
+    debugInfo.push('generateWildPokemon: ' + (typeof generateWildPokemon !== 'undefined' ? 'функция' : 'не найдена'));
+    debugInfo.push('allPokemon: ' + (typeof allPokemon !== 'undefined' ? allPokemon.length + ' покемонов' : 'не определён'));
+    
+    document.getElementById('battle-screen').style.display = 'block';
+    document.getElementById('battle-screen').innerHTML = debugInfo.join('<br>');
+    
+    if (typeof inBattle !== 'undefined' && inBattle) {
+        addMessage('Уже в бою!');
+        return;
+    }
+    
+    if (typeof generateWildPokemon !== 'function') {
+        addMessage('❌ generateWildPokemon не найден!');
+        return;
+    }
+    
+    var wild = generateWildPokemon();
+    if (!wild) {
+        addMessage('❌ generateWildPokemon вернул null!');
+        return;
+    }
+    
+    var canvasEl = document.querySelector('canvas');
+    if (canvasEl) canvasEl.style.display = 'none';
+    document.getElementById('controls').style.display = 'none';
+    
+    document.getElementById('battle-screen').style.display = 'block';
+    document.getElementById('battle-screen').innerHTML = '';
+    document.getElementById('hp-bars').style.display = 'flex';
+    document.getElementById('actions').style.display = 'grid';
+    
+    startBattle(wild);
+}
+
 document.addEventListener('DOMContentLoaded', async function() {
     await loadAllPokemon();
 
@@ -69,57 +111,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     // Привязка кнопки "Инвентарь"
     document.getElementById('btn-bag').onclick = openInventory;
-
-    // ============================================================
-    // Кнопка "Исследовать" — ДИАГНОСТИКА
-    // ============================================================
-    var btnAction = document.getElementById('btn-action');
-    
-    // Удаляем все существующие обработчики клонированием кнопки
-    var newBtn = btnAction.cloneNode(true);
-    btnAction.parentNode.replaceChild(newBtn, btnAction);
-    
-    newBtn.addEventListener('click', function() {
-        // Показываем диагностическую информацию
-        var debugInfo = [];
-        debugInfo.push('Кнопка нажата!');
-        debugInfo.push('inBattle: ' + (typeof inBattle !== 'undefined' ? inBattle : 'undefined'));
-        debugInfo.push('generateWildPokemon: ' + (typeof generateWildPokemon !== 'undefined' ? 'функция' : 'не найдена'));
-        debugInfo.push('allPokemon: ' + (typeof allPokemon !== 'undefined' ? allPokemon.length + ' покемонов' : 'не определён'));
-        
-        var debugMsg = debugInfo.join('\n');
-        document.getElementById('battle-screen').style.display = 'block';
-        document.getElementById('battle-screen').innerHTML = debugMsg.replace(/\n/g, '<br>');
-        
-        if (typeof inBattle !== 'undefined' && inBattle) {
-            addMessage('Уже в бою!');
-            return;
-        }
-        
-        if (typeof generateWildPokemon !== 'function') {
-            addMessage('❌ generateWildPokemon не найден!');
-            return;
-        }
-        
-        var wild = generateWildPokemon();
-        if (!wild) {
-            addMessage('❌ generateWildPokemon вернул null! allPokemon пуст?');
-            return;
-        }
-        
-        // Скрываем карту и джойстик
-        var canvasEl = document.querySelector('canvas');
-        if (canvasEl) canvasEl.style.display = 'none';
-        document.getElementById('controls').style.display = 'none';
-        
-        // Показываем боевой экран
-        document.getElementById('battle-screen').style.display = 'block';
-        document.getElementById('battle-screen').innerHTML = '';
-        document.getElementById('hp-bars').style.display = 'flex';
-        document.getElementById('actions').style.display = 'grid';
-        
-        startBattle(wild);
-    });
 
     startAutoSave();
 
