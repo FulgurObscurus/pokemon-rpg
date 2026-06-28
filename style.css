@@ -25,11 +25,12 @@ body {
 
 canvas {
     width: 100% !important;
-    flex: 1 1 auto;
-    min-height: 0;
+    height: 60vh !important;
+    min-height: 300px !important;
     border: 1px solid #7b4a9e;
     border-radius: 6px;
     margin: 0;
+    display: block !important;
 }
 
 #battle-screen {
