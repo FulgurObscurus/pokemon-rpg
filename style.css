@@ -166,3 +166,10 @@ canvas { position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:0; di
     background: #9b6abe;
 }
 .pokemon-img { width: 48px; height: 48px; image-rendering: pixelated; vertical-align: middle; margin-right: 8px; }
+#btn-action {
+    pointer-events: auto !important;
+    z-index: 9999 !important;
+    position: relative !important;
+    opacity: 1 !important;
+    display: inline-block !important;
+}
