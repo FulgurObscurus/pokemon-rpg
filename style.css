@@ -42,3 +42,31 @@ body { background-color: #1a0f2e; color: #fff; display: flex; justify-content: c
 canvas {
     pointer-events: none !important;
 }
+canvas {
+    pointer-events: none !important;
+    z-index: 1 !important;
+}
+#controls {
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+}
+#btn-action {
+    position: relative !important;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+    display: block !important;
+    visibility: visible !important;
+}
+body { padding: 5px !important; }
+#game { padding: 10px !important; max-width: 100% !important; }
+#battle-screen { font-size: 14px; max-height: 150px; padding: 10px; }
+#controls { max-width: 200px; margin: 5px auto; }
+#controls button { padding: 8px 12px; font-size: 16px; min-width: 40px; min-height: 40px; }
+#btn-action { font-size: 14px; padding: 6px 10px; }
+.pokemon-img { width: 32px; height: 32px; }
+.hp-bar { font-size: 12px; padding: 4px 8px; min-width: 100px; }
+#actions button { font-size: 14px; padding: 8px; }
+#move-list button { font-size: 12px; padding: 6px; }
+#info-panel { font-size: 12px; flex-wrap: wrap; }
+#info-panel button { font-size: 10px; padding: 2px 6px; }
