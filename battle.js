@@ -3,7 +3,7 @@
 // =======================================================================
 
 function getPokemonImage(id) {
-    return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + id + ".png";
+    return "https://play.pokemonshowdown.com/sprites/gen5/" + String(id) + ".png";
 }
 
 function updateHpBars() {

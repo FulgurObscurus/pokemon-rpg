@@ -78,10 +78,12 @@ canvas {
 }
 
 .pokemon-img {
-    width: 36px;
-    height: 36px;
-    margin-right: 8px;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
     vertical-align: middle;
+    object-fit: contain;
+    image-rendering: auto;
 }
 
 #actions {
