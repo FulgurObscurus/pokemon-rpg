@@ -223,37 +223,6 @@ function gameLoop() {
 }
 
 // === Управление клавиатурой (максимально надёжное) ===
-document.addEventListener('keydown', function(e) {
-  const key = e.key;
-  const code = e.keyCode || e.which;
-
-  // Стрелки
-  if (key === 'ArrowUp' || code === 38) { keys.w = true; e.preventDefault(); }
-  if (key === 'ArrowDown' || code === 40) { keys.s = true; e.preventDefault(); }
-  if (key === 'ArrowLeft' || code === 37) { keys.a = true; e.preventDefault(); }
-  if (key === 'ArrowRight' || code === 39) { keys.d = true; e.preventDefault(); }
-
-  // WASD
-  if (key.toLowerCase() === 'w') keys.w = true;
-  if (key.toLowerCase() === 's') keys.s = true;
-  if (key.toLowerCase() === 'a') keys.a = true;
-  if (key.toLowerCase() === 'd') keys.d = true;
-  if (key.toLowerCase() === 'e') keys.e = true;
-});
-
-document.addEventListener('keyup', function(e) {
-  const key = e.key;
-  const code = e.keyCode || e.which;
-
-  if (key === 'ArrowUp' || code === 38) keys.w = false;
-  if (key === 'ArrowDown' || code === 40) keys.s = false;
-  if (key === 'ArrowLeft' || code === 37) keys.a = false;
-  if (key === 'ArrowRight' || code === 39) keys.d = false;
-
-  if (key.toLowerCase() === 'w') keys.w = false;
-  if (key.toLowerCase() === 's') keys.s = false;
-  if (key.toLowerCase() === 'a') keys.a = false;
-  if (key.toLowerCase() === 'd') keys.d = false;
   if (key.toLowerCase() === 'e') keys.e = false;
 });
 

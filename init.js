@@ -133,3 +133,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   startAutoSave();
 });
+
+// === ГЛОБАЛЬНАЯ ПОДДЕРЖКА СТРЕЛОК (самое надёжное) ===
+document.addEventListener('keydown', function(e) {
+    const k = e.key;
+    if (k === 'ArrowUp')    { if (typeof keys !== 'undefined') keys.w = true; e.preventDefault(); }
+    if (k === 'ArrowDown')  { if (typeof keys !== 'undefined') keys.s = true; e.preventDefault(); }
+    if (k === 'ArrowLeft')  { if (typeof keys !== 'undefined') keys.a = true; e.preventDefault(); }
+    if (k === 'ArrowRight') { if (typeof keys !== 'undefined') keys.d = true; e.preventDefault(); }
+});
+
+document.addEventListener('keyup', function(e) {
+    const k = e.key;
+    if (k === 'ArrowUp')    { if (typeof keys !== 'undefined') keys.w = false; }
+    if (k === 'ArrowDown')  { if (typeof keys !== 'undefined') keys.s = false; }
+    if (k === 'ArrowLeft')  { if (typeof keys !== 'undefined') keys.a = false; }
+    if (k === 'ArrowRight') { if (typeof keys !== 'undefined') keys.d = false; }
+});
