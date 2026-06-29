@@ -9,6 +9,7 @@ let currentPokemonIndex = 0;
 let enemyPokemon = null;
 let inBattle = false;
 let gameLog = [];
+
 let moveSelectionMode = false;
 
 const SAVE_VERSION = 3;
@@ -32,12 +33,16 @@ function clampInt(v, min, max, def) {
   return n;
 }
 
+function safeJSONParse(txt) {
+  try { return JSON.parse(txt); } catch (_) { return null; }
+}
+
 function safeLocalStorageSet(key, value) {
   try {
     localStorage.setItem(key, value);
     return true;
   } catch (e) {
-    // Частая причина: переполнен localStorage из-за огромного кэша (pokemonData151)
+    // частая причина: localStorage забит pokemonData151 из старых версий
     console.warn('localStorage.setItem failed, trying to free space:', e);
     try { localStorage.removeItem('pokemonData151'); } catch (_) {}
 
@@ -49,10 +54,6 @@ function safeLocalStorageSet(key, value) {
       return false;
     }
   }
-}
-
-function safeJSONParse(txt) {
-  try { return JSON.parse(txt); } catch (_) { return null; }
 }
 
 function saveGame() {
@@ -67,44 +68,35 @@ function saveGame() {
         pokeball: Math.max(0, toInt(items.pokeball, 0)),
       },
       log: Array.isArray(gameLog) ? gameLog.slice(-50) : [],
-      party: (myParty || []).map(p => {
-        const sp = p && p.statPoints ? p.statPoints : {};
-        const moves = (p && Array.isArray(p.moves)) ? p.moves : [];
-        return {
-          speciesId: p ? p.speciesId : null,
-          level: toInt(p && p.level, 5),
-          exp: toInt(p && p.exp, 0),
-          currentHp: toInt(p && p.currentHp, 0),
-          status: p ? (p.status || null) : null,
+      party: (myParty || []).map(p => ({
+        speciesId: p.speciesId,
+        level: toInt(p.level, 5),
+        exp: toInt(p.exp, 0),
+        currentHp: toInt(p.currentHp, 0),
+        status: p.status || null,
 
-          // стабильные поля (чтобы после F5 не “переролливались”)
-          ability: p ? (p.ability || null) : null,
-          shiny: !!(p && p.shiny),
-          gender: p ? (p.gender || null) : null,
-          heldItem: (p && typeof p.heldItem !== 'undefined') ? p.heldItem : null,
-          friendship: toInt(p && p.friendship, 70),
+        // стабильные поля
+        ability: p.ability || null,
+        shiny: !!p.shiny,
+        gender: p.gender || null,
+        heldItem: (typeof p.heldItem !== 'undefined') ? p.heldItem : null,
+        friendship: toInt(p.friendship, 70),
 
-          moves: moves.map(m => ({
-            id: (m && m.id) ? m.id : null,
-            name: (m && m.name) ? m.name : null,
-            pp: (m && typeof m.pp === 'number') ? m.pp : toInt(m && m.pp, null),
-          })),
+        moves: (p.moves || []).map(m => ({
+          id: (m && m.id) ? m.id : null,
+          name: (m && m.name) ? m.name : null,
+          pp: (m && typeof m.pp === 'number') ? m.pp : toInt(m && m.pp, null),
+        })),
 
-          statPoints: {
-            hp: toInt(sp.hp, 0),
-            attack: toInt(sp.attack, 0),
-            defense: toInt(sp.defense, 0),
-            spAttack: toInt(sp.spAttack, 0),
-            spDefense: toInt(sp.spDefense, 0),
-            speed: toInt(sp.speed, 0),
-          },
-        };
-      }),
+        statPoints: p.statPoints || {hp:0,attack:0,defense:0,spAttack:0,spDefense:0,speed:0},
+      })),
       currentPokemonIndex: toInt(currentPokemonIndex, 0),
       ts: Date.now(),
     };
 
-    return safeLocalStorageSet(SAVE_KEY, JSON.stringify(state));
+    const ok = safeLocalStorageSet(SAVE_KEY, JSON.stringify(state));
+    if (ok) console.log('Игра сохранена');
+    return ok;
   } catch (e) {
     console.error('Ошибка сохранения:', e);
     return false;
@@ -114,26 +106,28 @@ function saveGame() {
 function loadGame() {
   try {
     const raw = localStorage.getItem(SAVE_KEY);
-    if (!raw) {
-      window.__LAST_LOAD_ERROR = 'NO_SAVE';
-      return false;
-    }
+    if (!raw) return false;
 
     const state = safeJSONParse(raw);
     if (!state || !state.version) {
-      localStorage.removeItem(SAVE_KEY);
-      window.__LAST_LOAD_ERROR = 'BAD_JSON';
+      // сейв битый JSON — НЕ удаляем автоматически (чтобы не терять прогресс)
+      console.error('Сейв не распарсился (битый JSON).');
       return false;
     }
 
-    // ВАЖНО: не трогаем сейв, если покедекс ещё не готов
+    // версию не считаем фатальной — просто предупреждаем
+    if (state.version < SAVE_VERSION) {
+      console.warn('Старое сохранение: версия ' + state.version + ', текущая ' + SAVE_VERSION);
+    }
+
+    // покедекс должен быть готов
     if (!allPokemonData || Object.keys(allPokemonData).length === 0) {
-      window.__LAST_LOAD_ERROR = 'POKEDEX_NOT_READY';
+      console.error('Покедекс не загружен — загрузка сейва отложена.');
       return false;
     }
 
     if (!state.party || !Array.isArray(state.party) || state.party.length === 0) {
-      window.__LAST_LOAD_ERROR = 'EMPTY_PARTY';
+      console.error('В сейве нет партии.');
       return false;
     }
 
@@ -152,77 +146,79 @@ function loadGame() {
     const newParty = [];
 
     for (let i = 0; i < state.party.length; i++) {
-      const p = state.party[i];
-      if (!p || !p.speciesId) continue;
-      if (!allPokemonData[p.speciesId]) continue;
+      try {
+        const p = state.party[i];
+        if (!p || !p.speciesId) continue;
+        if (!allPokemonData[p.speciesId]) continue;
 
-      const lvl = clampInt(p.level, 1, 100, 5);
-      const pokemon = new Poke(p.speciesId, lvl);
+        const lvl = clampInt(p.level, 1, 100, 5);
+        const pokemon = new Poke(p.speciesId, lvl);
 
-      pokemon.exp = Math.max(0, toInt(p.exp, 0));
+        pokemon.exp = Math.max(0, toInt(p.exp, 0));
 
-      if (p.statPoints && typeof p.statPoints === 'object') {
-        pokemon.statPoints = {
-          hp: Math.max(0, toInt(p.statPoints.hp, 0)),
-          attack: Math.max(0, toInt(p.statPoints.attack, 0)),
-          defense: Math.max(0, toInt(p.statPoints.defense, 0)),
-          spAttack: Math.max(0, toInt(p.statPoints.spAttack, 0)),
-          spDefense: Math.max(0, toInt(p.statPoints.spDefense, 0)),
-          speed: Math.max(0, toInt(p.statPoints.speed, 0)),
-        };
-      }
-
-      // стабильные поля
-      if (typeof p.ability === 'string' && p.ability) pokemon.ability = p.ability;
-      if (typeof p.gender === 'string' && p.gender) pokemon.gender = p.gender;
-      pokemon.shiny = !!p.shiny;
-      pokemon.heldItem = (typeof p.heldItem !== 'undefined') ? p.heldItem : null;
-      pokemon.friendship = Math.max(0, toInt(p.friendship, 70));
-
-      // HP/статус
-      const maxHp = pokemon.maxHp;
-      const chp = toInt(p.currentHp, maxHp);
-      pokemon.currentHp = Math.max(0, Math.min(chp, maxHp));
-      pokemon.status = p.status || null;
-
-      // moves + PP
-      if (p.moves && Array.isArray(p.moves) && p.moves.length > 0) {
-        const loadedMoves = [];
-        for (let j = 0; j < p.moves.length; j++) {
-          const sm = p.moves[j];
-          const key = sm && (sm.id || sm.name);
-          if (!key) continue;
-
-          try {
-            const mv = buildMoveFromEntry({ move: key, learnLevel: 1 });
-            if (!mv || !mv.id) continue;
-
-            const cap = (typeof mv.max_pp === 'number' && mv.max_pp > 0) ? mv.max_pp : mv.pp;
-            const savedPP = (sm && (typeof sm.pp === 'number' || typeof sm.pp === 'string')) ? toInt(sm.pp, mv.pp) : mv.pp;
-            mv.pp = clampInt(savedPP, 0, cap, mv.pp);
-
-            loadedMoves.push(mv);
-          } catch (_) {}
+        // statPoints -> числа
+        if (p.statPoints && typeof p.statPoints === 'object') {
+          pokemon.statPoints = { hp:0, attack:0, defense:0, spAttack:0, spDefense:0, speed:0 };
+          for (const k in pokemon.statPoints) {
+            if (Object.prototype.hasOwnProperty.call(p.statPoints, k)) {
+              pokemon.statPoints[k] = Math.max(0, toInt(p.statPoints[k], 0));
+            }
+          }
         }
-        if (loadedMoves.length > 0) pokemon.moves = loadedMoves;
-      }
 
-      newParty.push(pokemon);
+        // стабильные поля
+        if (typeof p.ability === 'string' && p.ability) pokemon.ability = p.ability;
+        if (typeof p.gender === 'string' && p.gender) pokemon.gender = p.gender;
+        pokemon.shiny = !!p.shiny;
+        pokemon.heldItem = (typeof p.heldItem !== 'undefined') ? p.heldItem : null;
+        pokemon.friendship = Math.max(0, toInt(p.friendship, 70));
+
+        // HP/статус (0 HP допустим — покемон может быть без сознания)
+        const maxHp = pokemon.maxHp;
+        const chp = toInt(p.currentHp, maxHp);
+        pokemon.currentHp = Math.max(0, Math.min(chp, maxHp));
+        pokemon.status = p.status || null;
+
+        // moves + PP
+        if (p.moves && Array.isArray(p.moves) && p.moves.length > 0) {
+          const loadedMoves = [];
+          for (let j = 0; j < p.moves.length; j++) {
+            const sm = p.moves[j];
+            if (!sm) continue;
+
+            try {
+              let mv = null;
+              if (sm.id) mv = buildMoveFromEntry({ move: sm.id, learnLevel: 1 });
+              else if (sm.name) mv = buildMoveFromEntry({ name: sm.name, learnLevel: 1 });
+
+              if (mv && mv.id) {
+                const cap = (typeof mv.max_pp === 'number' && mv.max_pp > 0) ? mv.max_pp : mv.pp;
+                const savedPP = (typeof sm.pp === 'number' || typeof sm.pp === 'string') ? toInt(sm.pp, mv.pp) : mv.pp;
+                mv.pp = clampInt(savedPP, 0, cap, mv.pp);
+                loadedMoves.push(mv);
+              }
+            } catch (_) {}
+          }
+          if (loadedMoves.length > 0) pokemon.moves = loadedMoves;
+        }
+
+        newParty.push(pokemon);
+      } catch (_) {}
     }
 
     if (newParty.length === 0) {
-      window.__LAST_LOAD_ERROR = 'NO_VALID_POKEMON';
+      console.error('Не удалось восстановить ни одного покемона из сейва.');
       return false;
     }
 
     myParty = newParty;
-    currentPokemonIndex = clampInt(state.currentPokemonIndex, 0, myParty.length - 1, 0);
 
-    window.__LAST_LOAD_ERROR = null;
+    const idx = clampInt(state.currentPokemonIndex, 0, myParty.length - 1, 0);
+    currentPokemonIndex = idx;
+
     return true;
   } catch (e) {
     console.error('Ошибка загрузки сохранения:', e);
-    window.__LAST_LOAD_ERROR = 'EXCEPTION';
     return false;
   }
 }
@@ -231,7 +227,7 @@ let saveInterval = null;
 
 function startAutoSave() {
   if (saveInterval) clearInterval(saveInterval);
-  saveInterval = setInterval(() => { saveGame(); }, 10000);
+  saveInterval = setInterval(saveGame, 10000);
 }
 
 function stopAutoSave() {

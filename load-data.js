@@ -8,7 +8,7 @@ function loadAllPokemon() {
   if (loadingEl) loadingEl.textContent = '⏳ Загрузка данных покемонов...';
   console.log('loadAllPokemon вызвана');
 
-  // Освобождаем место: в старых версиях сюда кэшировался весь покедекс (очень большой)
+  // В старых версиях сюда сохранялся весь покедекс. Он огромный и ломает квоту localStorage.
   try { localStorage.removeItem('pokemonData151'); } catch (e) {}
 
   if (typeof ALL_POKEMON_DATA === 'undefined') {
@@ -18,12 +18,13 @@ function loadAllPokemon() {
   }
 
   allPokemonData = ALL_POKEMON_DATA;
-
   const count = Object.keys(allPokemonData).length;
-  if (loadingEl) loadingEl.textContent = `✅ Загружено ${count} покемонов (без кэша localStorage)`;
+
+  if (loadingEl) loadingEl.textContent = `✅ Готово! (${count} покемонов, кэш localStorage отключён)`;
   console.log(`Загружено ${count} покемонов`);
 
-  // ВАЖНО: НЕ пишем весь pokedex в localStorage — это ломает квоту и следом сейвы.
+  // ВАЖНО: не делаем localStorage.setItem('pokemonData151', JSON.stringify(allPokemonData))
+  // чтобы не фризить страницу и не убивать сохранения по квоте.
   return true;
 }
 

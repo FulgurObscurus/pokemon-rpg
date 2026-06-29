@@ -5,24 +5,22 @@
 document.addEventListener('DOMContentLoaded', function() {
   const loadingEl = document.getElementById('loading');
 
-  // 1) Сначала покедекс
-  let pokedexOk = false;
-  try {
-    pokedexOk = (loadAllPokemon() === true) && allPokemonData && Object.keys(allPokemonData).length > 0;
-  } catch (e) {
-    console.error('Ошибка loadAllPokemon:', e);
-    pokedexOk = false;
-  }
+  // Чистим старый огромный кэш (если остался)
+  try { localStorage.removeItem('pokemonData151'); } catch (e) {}
 
-  if (!pokedexOk) {
+  // 1) Загружаем покедекс
+  let pokedexOk = false;
+  try { pokedexOk = (loadAllPokemon() === true); } catch (e) { pokedexOk = false; }
+
+  if (!pokedexOk || !allPokemonData || Object.keys(allPokemonData).length === 0) {
     if (loadingEl) {
       loadingEl.style.display = 'block';
-      loadingEl.textContent = '❌ Не удалось загрузить покедекс.\nСохранение НЕ трогаем.';
+      loadingEl.textContent = '❌ Не удалось загрузить покедекс. Сохранение НЕ трогаем.';
     }
     return;
   }
 
-  // 2) Автоочистка старых сломанных сохранений (как было)
+  // 2) Автоочистка старых сломанных сохранений (v1/v2)
   ['pokemonRPG_save', 'pokemonRPG_save_v1', 'pokemonRPG_save_v2'].forEach(function(key) {
     try {
       var _t = localStorage.getItem(key);
@@ -33,27 +31,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  const hasSave = !!localStorage.getItem('pokemonRPG_save_v3');
+
   // 3) Пробуем загрузить
   let loaded = false;
-  try {
-    loaded = loadGame();
-  } catch (e) {
-    console.error('Ошибка загрузки сохранения:', e);
-    loaded = false;
-  }
+  try { loaded = loadGame(); } catch(e) { console.error('Ошибка загрузки:', e); loaded = false; }
 
-  // 4) Если не загрузилось — создаём стартера (но сейв НЕ удаляем)
+  // 4) ВАЖНО: стартер создаём ТОЛЬКО если сейва нет вообще.
+  // Если сейв есть, но загрузка не удалась — не перезаписываем прогресс.
   if (!loaded || !myParty || myParty.length === 0) {
+    if (hasSave) {
+      if (loadingEl) {
+        loadingEl.style.display = 'block';
+        loadingEl.textContent =
+          '❌ Сейв найден, но загрузить его не удалось.\n' +
+          'Чтобы не потерять прогресс, игра НЕ будет перезаписывать сохранение стартером.\n' +
+          'Решение: очистить данные сайта/LocalStorage или исправить формат сейва.';
+      }
+      return;
+    }
+
     try {
       const starter = new Poke(25, 5);
       myParty = [starter];
       currentPokemonIndex = 0;
       gameState.money = 300;
       gameState.items = { potion: 5, pokeball: 3 };
-
-      // сохраняем стартера только если сохранение реально записывается
       saveGame();
-    } catch (e) {
+    } catch(e) {
       console.error('Не удалось создать стартера:', e);
       myParty = [];
     }
@@ -92,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     const wild = generateWildPokemon();
     if (!wild) {
-      alert('Не удалось создать дикого покемона (покедекс пуст?)');
+      addMessage('Не удалось создать дикого покемона');
       return;
     }
     showBattleScreen();
@@ -101,13 +106,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function onFightClick() {
-    // Проверяем, есть ли хоть один живой покемон
+    // Есть ли хоть один живой покемон
     var hasAlive = false;
     for (var i = 0; i < myParty.length; i++) {
       if (myParty[i].currentHp > 0) { hasAlive = true; break; }
     }
     if (!hasAlive) {
-      alert('Все ваши покемоны без сознания! Используйте зелье.');
+      addMessage('Все ваши покемоны без сознания! Используйте зелье или посетите центр покемонов.');
       return;
     }
 
@@ -117,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
       for (var i = 0; i < myParty.length; i++) {
         if (myParty[i].currentHp > 0) {
           currentPokemonIndex = i;
+          addMessage(myParty[i].name + ' выходит на бой!');
           updateHpBars();
           break;
         }
@@ -130,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
     btnFight.disabled = false;
     btnFight.onclick = onFightClick;
   }
-
   if (btnAction) btnAction.onclick = onFightClick;
 
   if (btnBag) {
@@ -150,7 +155,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btnSave.addEventListener('click', function() {
       const ok = saveGame();
       if (!ok) {
-        alert('❌ Не удалось сохранить (переполнен localStorage).');
+        addMessage('❌ Не удалось сохранить (переполнен localStorage).');
+        alert('❌ Не удалось сохранить игру (переполнен localStorage).\n\nМы отключили кэш покедекса, но старые данные могли остаться.\nОчистите данные сайта/LocalStorage и попробуйте снова.');
         return;
       }
       addMessage('Сохранено!');
