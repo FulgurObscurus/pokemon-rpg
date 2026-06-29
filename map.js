@@ -1,5 +1,5 @@
 // =======================================================================
-// КАРТА МИРА — красивые здания + стрелки работают
+// КАРТА МИРА — красивые здания + стрелки + русские названия
 // =======================================================================
 
 const canvas = document.createElement('canvas');
@@ -31,13 +31,11 @@ function resizeCanvas() {
   canvas.height = Math.max(240, Math.floor(window.innerHeight * 0.65));
 }
 
-// === Pokémon Center (красная крыша, белые стены) ===
+// === Центр покемонов (красная крыша) ===
 function drawPokemonCenter(x, y, w, h) {
-  // Стены
   ctx.fillStyle = '#f5f5f5';
   ctx.fillRect(x, y, w, h);
 
-  // Красная крыша
   ctx.fillStyle = '#c62828';
   ctx.beginPath();
   ctx.moveTo(x - 10, y);
@@ -45,30 +43,25 @@ function drawPokemonCenter(x, y, w, h) {
   ctx.lineTo(x + w + 10, y);
   ctx.fill();
 
-  // Дверь
   ctx.fillStyle = '#5d4037';
   ctx.fillRect(x + w / 2 - 14, y + h - 40, 28, 40);
 
-  // Окна
   ctx.fillStyle = '#bbdefb';
   ctx.fillRect(x + 12, y + 18, 26, 26);
   ctx.fillRect(x + w - 38, y + 18, 26, 26);
 
-  // Вывеска
   ctx.fillStyle = '#c62828';
   ctx.fillRect(x + 8, y + 55, w - 16, 28);
   ctx.fillStyle = '#fff';
-  ctx.font = 'bold 14px Arial';
-  ctx.fillText('Pokémon Center', x + 14, y + 73);
+  ctx.font = 'bold 13px Arial';
+  ctx.fillText('Центр покемонов', x + 12, y + 73);
 }
 
-// === Poké Mart (синяя крыша, жёлтые стены) ===
+// === Покемаркет (синяя крыша) ===
 function drawPokeMart(x, y, w, h) {
-  // Стены
   ctx.fillStyle = '#fff9c4';
   ctx.fillRect(x, y, w, h);
 
-  // Синяя крыша
   ctx.fillStyle = '#1565c0';
   ctx.beginPath();
   ctx.moveTo(x - 10, y);
@@ -76,21 +69,18 @@ function drawPokeMart(x, y, w, h) {
   ctx.lineTo(x + w + 10, y);
   ctx.fill();
 
-  // Дверь
   ctx.fillStyle = '#37474f';
   ctx.fillRect(x + w / 2 - 14, y + h - 40, 28, 40);
 
-  // Окна
   ctx.fillStyle = '#bbdefb';
   ctx.fillRect(x + 12, y + 18, 26, 26);
   ctx.fillRect(x + w - 38, y + 18, 26, 26);
 
-  // Вывеска
   ctx.fillStyle = '#1565c0';
   ctx.fillRect(x + 8, y + 55, w - 16, 28);
   ctx.fillStyle = '#fff';
-  ctx.font = 'bold 15px Arial';
-  ctx.fillText('Poké Mart', x + 22, y + 73);
+  ctx.font = 'bold 14px Arial';
+  ctx.fillText('Покемаркет', x + 22, y + 73);
 }
 
 // === Отрисовка ===
@@ -100,8 +90,8 @@ function draw() {
 
   if (!isIndoors) {
     if (currentLocation === 'pallet') {
-      drawPokemonCenter(45, 30, 170, 125);
-      drawPokeMart(canvas.width - 220, 40, 160, 115);
+      drawPokemonCenter(30, 30, 165, 125);
+      drawPokeMart(canvas.width - 200, 40, 155, 115);
       ctx.fillStyle = '#fff';
       ctx.font = '18px Arial';
       ctx.fillText('Pallet Town', 20, 25);
@@ -115,8 +105,8 @@ function draw() {
       ctx.fillText('Route 1', 20, 25);
 
     } else if (currentLocation === 'viridian') {
-      drawPokemonCenter(35, 25, 160, 120);
-      drawPokeMart(canvas.width - 200, 35, 150, 110);
+      drawPokemonCenter(25, 25, 165, 120);
+      drawPokeMart(canvas.width - 200, 35, 155, 110);
       ctx.fillStyle = '#fff';
       ctx.fillText('Viridian City', 20, 25);
     }
@@ -143,7 +133,6 @@ function draw() {
     ctx.fillText('Выход → подойди к нижнему краю', 20, canvas.height - 20);
   }
 
-  // Игрок
   ctx.fillStyle = '#2196F3';
   ctx.fillRect(player.x, player.y, player.size, player.size);
   ctx.fillStyle = '#fff';
@@ -151,14 +140,14 @@ function draw() {
   ctx.fillRect(player.x + 14, player.y + 6, 4, 4);
 }
 
-// === Взаимодействие (только по E) ===
+// === Взаимодействие ===
 function checkBuildingInteraction() {
   const now = Date.now();
   if (now - lastInteractionTime < 700) return;
 
   if (!isIndoors) {
     if ((currentLocation === 'pallet' || currentLocation === 'viridian') &&
-        player.x > 40 && player.x < 230 && player.y > 20 && player.y < 180) {
+        player.x > 25 && player.x < 210 && player.y > 20 && player.y < 175) {
       if (keys.e) {
         isIndoors = true;
         currentBuilding = 'center';
@@ -169,7 +158,7 @@ function checkBuildingInteraction() {
     }
 
     if ((currentLocation === 'pallet' || currentLocation === 'viridian') &&
-        player.x > canvas.width - 230 && player.x < canvas.width - 40 && player.y > 25 && player.y < 180) {
+        player.x > canvas.width - 210 && player.x < canvas.width - 35 && player.y > 25 && player.y < 175) {
       if (keys.e) {
         isIndoors = true;
         currentBuilding = 'mart';
@@ -277,4 +266,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 resizeCanvas();
 gameLoop();
-console.log('Карта обновлена: красивые здания + стрелки');
+console.log('Карта обновлена: здания без перекрытия + стрелки + русский');
