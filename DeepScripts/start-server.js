@@ -35,8 +35,7 @@ server.listen(PORT, () => {
     const url = `http://localhost:${PORT}`;
     console.log(`🌐 Сервер запущен на ${url}`);
     console.log(`📂 Корневая директория: ${publicDir}`);
-    console.log('🔄 Сервер автоматически завершится через 3 секунды после закрытия последнего соединения');
-    // Открываем браузер
+    console.log('🧠 Умное завершение: выключается только при реальном закрытии вкладки');
     exec(`termux-open-url ${url}`, (err) => {
         if (err) {
             console.log('⚠️ Не удалось открыть браузер автоматически. Откройте вручную:', url);
@@ -46,17 +45,31 @@ server.listen(PORT, () => {
     });
 });
 
-// Автоматическое завершение при отсутствии соединений
+// === УМНОЕ ЗАВЕРШЕНИЕ СЕРВЕРА ===
 let connectionCount = 0;
+let shutdownTimer = null;
+
 server.on('connection', (socket) => {
     connectionCount++;
+
+    // Если пришло новое соединение — отменяем таймер выключения (это перезагрузка)
+    if (shutdownTimer) {
+        clearTimeout(shutdownTimer);
+        shutdownTimer = null;
+        console.log('🔄 Перезагрузка страницы — таймер отменён');
+    }
+
     socket.on('close', () => {
         connectionCount--;
+
         if (connectionCount === 0) {
-            console.log('⚠️ Все соединения закрыты. Сервер завершится через 3 секунды...');
-            setTimeout(() => {
-                process.exit(0);
-            }, 3000);
+            console.log('⚠️ Все соединения закрыты. Проверяем через 5 секунд...');
+            shutdownTimer = setTimeout(() => {
+                if (connectionCount === 0) {
+                    console.log('🛑 Реальное закрытие вкладки. Сервер завершается.');
+                    process.exit(0);
+                }
+            }, 5000);
         }
     });
 });
