@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (myParty[i].currentHp > 0) { hasAlive = true; break; }
     }
     if (!hasAlive) {
-      alert('Все ваши покемоны без сознания! Используйте зелье или посетите центр покемонов.');
+      addMessage('Все ваши покемоны без сознания! Используйте зелье или посетите центр покемонов.');
       return;
     }
     var curP = getCurrentPokemon();
@@ -131,22 +131,22 @@ document.addEventListener('DOMContentLoaded', function() {
   var trainConfirmBtn = document.getElementById('train-confirm-btn');
   if (trainConfirmBtn) trainConfirmBtn.addEventListener('click', function() { confirmTraining(); });
 
-  startAutoSave();
-});
-
-// === ГЛОБАЛЬНАЯ ПОДДЕРЖКА СТРЕЛОК (самое надёжное) ===
-document.addEventListener('keydown', function(e) {
+  // === ПОДДЕРЖКА СТРЕЛОК (внутри DOMContentLoaded) ===
+  document.addEventListener('keydown', function(e) {
     const k = e.key;
     if (k === 'ArrowUp')    { if (typeof keys !== 'undefined') keys.w = true; e.preventDefault(); }
     if (k === 'ArrowDown')  { if (typeof keys !== 'undefined') keys.s = true; e.preventDefault(); }
     if (k === 'ArrowLeft')  { if (typeof keys !== 'undefined') keys.a = true; e.preventDefault(); }
     if (k === 'ArrowRight') { if (typeof keys !== 'undefined') keys.d = true; e.preventDefault(); }
-});
+  });
 
-document.addEventListener('keyup', function(e) {
+  document.addEventListener('keyup', function(e) {
     const k = e.key;
     if (k === 'ArrowUp')    { if (typeof keys !== 'undefined') keys.w = false; }
     if (k === 'ArrowDown')  { if (typeof keys !== 'undefined') keys.s = false; }
     if (k === 'ArrowLeft')  { if (typeof keys !== 'undefined') keys.a = false; }
     if (k === 'ArrowRight') { if (typeof keys !== 'undefined') keys.d = false; }
+  });
+
+  startAutoSave();
 });
