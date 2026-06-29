@@ -10,6 +10,8 @@ let inBattle = false;
 let gameLog = [];
 let moveSelectionMode = false;
 
+const SAVE_VERSION = 2;
+
 let gameState = {
     money: 300,
     items: { potion: 5, pokeball: 3 },
@@ -18,6 +20,7 @@ let gameState = {
 function saveGame() {
     try {
         const state = {
+            version: SAVE_VERSION,
             money: gameState.money,
             items: gameState.items,
             log: gameLog.slice(-50),
@@ -43,18 +46,21 @@ function loadGame() {
     try {
         var raw = localStorage.getItem('pokemonRPG_save');
         if (!raw) return false;
-        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) return false;
 
         var state = JSON.parse(raw);
-        if (!state || !state.party || state.party.length === 0) return false;
+        if (!state) { localStorage.removeItem('pokemonRPG_save'); return false; }
 
-        // Старый формат (без id у приёмов) — сбрасываем
-        var fm = state.party[0].moves ? state.party[0].moves[0] : null;
-        if (fm && !fm.id) {
-            console.warn('Старый формат сохранения, сбрасываем');
+        // Проверка версии — несовместимое сохранение удаляем
+        if (!state.version || state.version < SAVE_VERSION) {
+            console.warn('Сохранение устарело, сбрасываем');
             localStorage.removeItem('pokemonRPG_save');
             return false;
         }
+
+        if (!state.party || state.party.length === 0) return false;
+
+        // Проверяем что данные покемонов загружены
+        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) return false;
 
         gameState.money = state.money || 300;
         gameState.items = state.items || { potion: 5, pokeball: 3 };
