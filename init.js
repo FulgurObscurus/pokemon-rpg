@@ -132,12 +132,6 @@ document.addEventListener('DOMContentLoaded', function() {
     startWildBattle();
   }
 
-  if (btnFight) {
-    btnFight.disabled = false;
-    btnFight.onclick = onFightClick;
-  }
-  if (btnAction) btnAction.onclick = onFightClick;
-
   if (btnBag) {
     btnBag.onclick = openInventory;
     btnBag.disabled = true;
@@ -172,5 +166,34 @@ document.addEventListener('DOMContentLoaded', function() {
   var trainConfirmBtn = document.getElementById('train-confirm-btn');
   if (trainConfirmBtn) trainConfirmBtn.addEventListener('click', function() { confirmTraining(); });
 
+  attachExploreButtons();
+  attachExploreButtons();
   startAutoSave();
 });
+
+  // === Надёжная привязка кнопок "Исследовать" ===
+  function attachExploreButtons() {
+      const btnFight = document.getElementById('btn-fight');
+      const btnAction = document.getElementById('btn-action');
+
+      if (btnFight) {
+          btnFight.disabled = false;
+          btnFight.onclick = null;
+          btnFight.addEventListener('click', function(e) {
+              e.preventDefault();
+              console.log('%c[Explore] btn-fight clicked', 'color:#4ade80');
+              onFightClick();
+          });
+      }
+
+      if (btnAction) {
+          btnAction.onclick = null;
+          btnAction.addEventListener('click', function(e) {
+              e.preventDefault();
+              console.log('%c[Explore] btn-action clicked', 'color:#4ade80');
+              onFightClick();
+          });
+      }
+  }
+
+  attachExploreButtons();
