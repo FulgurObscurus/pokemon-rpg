@@ -1,5 +1,5 @@
 // =======================================================================
-// КАРТА МИРА — красивые здания + стрелки + русские названия
+// КАРТА МИРА — стрелки работают + здания не перекрываются
 // =======================================================================
 
 const canvas = document.createElement('canvas');
@@ -31,7 +31,7 @@ function resizeCanvas() {
   canvas.height = Math.max(240, Math.floor(window.innerHeight * 0.65));
 }
 
-// === Центр покемонов (красная крыша) ===
+// === Центр покемонов ===
 function drawPokemonCenter(x, y, w, h) {
   ctx.fillStyle = '#f5f5f5';
   ctx.fillRect(x, y, w, h);
@@ -57,7 +57,7 @@ function drawPokemonCenter(x, y, w, h) {
   ctx.fillText('Центр покемонов', x + 12, y + 73);
 }
 
-// === Покемаркет (синяя крыша) ===
+// === Покемаркет ===
 function drawPokeMart(x, y, w, h) {
   ctx.fillStyle = '#fff9c4';
   ctx.fillRect(x, y, w, h);
@@ -90,8 +90,13 @@ function draw() {
 
   if (!isIndoors) {
     if (currentLocation === 'pallet') {
-      drawPokemonCenter(30, 30, 165, 125);
-      drawPokeMart(canvas.width - 200, 40, 155, 115);
+      const centerX = 30;
+      const centerW = 165;
+      const martX = centerX + centerW + 50; // зазор между зданиями
+
+      drawPokemonCenter(centerX, 30, centerW, 125);
+      drawPokeMart(martX, 40, 155, 115);
+
       ctx.fillStyle = '#fff';
       ctx.font = '18px Arial';
       ctx.fillText('Pallet Town', 20, 25);
@@ -105,8 +110,13 @@ function draw() {
       ctx.fillText('Route 1', 20, 25);
 
     } else if (currentLocation === 'viridian') {
-      drawPokemonCenter(25, 25, 165, 120);
-      drawPokeMart(canvas.width - 200, 35, 155, 110);
+      const centerX = 25;
+      const centerW = 165;
+      const martX = centerX + centerW + 50;
+
+      drawPokemonCenter(centerX, 25, centerW, 120);
+      drawPokeMart(martX, 35, 155, 110);
+
       ctx.fillStyle = '#fff';
       ctx.fillText('Viridian City', 20, 25);
     }
@@ -237,21 +247,23 @@ function gameLoop() {
 
 // === Управление (WASD + стрелки) ===
 document.addEventListener('keydown', (e) => {
-  const k = e.key.toLowerCase();
-  if (k === 'w' || k === 'arrowup') keys.w = true;
-  if (k === 's' || k === 'arrowdown') keys.s = true;
-  if (k === 'a' || k === 'arrowleft') keys.a = true;
-  if (k === 'd' || k === 'arrowright') keys.d = true;
-  if (k === 'e') keys.e = true;
+  const key = e.key;
+
+  if (key === 'w' || key === 'W' || key === 'ArrowUp') keys.w = true;
+  if (key === 's' || key === 'S' || key === 'ArrowDown') keys.s = true;
+  if (key === 'a' || key === 'A' || key === 'ArrowLeft') keys.a = true;
+  if (key === 'd' || key === 'D' || key === 'ArrowRight') keys.d = true;
+  if (key === 'e' || key === 'E') keys.e = true;
 });
 
 document.addEventListener('keyup', (e) => {
-  const k = e.key.toLowerCase();
-  if (k === 'w' || k === 'arrowup') keys.w = false;
-  if (k === 's' || k === 'arrowdown') keys.s = false;
-  if (k === 'a' || k === 'arrowleft') keys.a = false;
-  if (k === 'd' || k === 'arrowright') keys.d = false;
-  if (k === 'e') keys.e = false;
+  const key = e.key;
+
+  if (key === 'w' || key === 'W' || key === 'ArrowUp') keys.w = false;
+  if (key === 's' || key === 'S' || key === 'ArrowDown') keys.s = false;
+  if (key === 'a' || key === 'A' || key === 'ArrowLeft') keys.a = false;
+  if (key === 'd' || key === 'D' || key === 'ArrowRight') keys.d = false;
+  if (key === 'e' || key === 'E') keys.e = false;
 });
 
 window.addEventListener('resize', () => {
@@ -266,4 +278,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 resizeCanvas();
 gameLoop();
-console.log('Карта обновлена: здания без перекрытия + стрелки + русский');
+console.log('Карта обновлена: стрелки + здания без перекрытия');
