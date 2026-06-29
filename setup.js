@@ -174,3 +174,12 @@ function startServer() {
     console.log('✅ Готово! Запускаю сервер...');
     startServer();
 })();
+    // === ЗАЩИТА ОТ СЛУЧАЙНОГО ЗАКРЫТИЯ ПРИ ПЕРЕЗАГРУЗКЕ ===
+    server.on('request', (req, res) => {
+        if (req.url === '/shutdown') {
+            console.log('🛑 Получен запрос на выключение сервера');
+            res.writeHead(200, { 'Content-Type': 'text/plain' });
+            res.end('Server shutting down...');
+            setTimeout(() => process.exit(0), 500);
+        }
+    });

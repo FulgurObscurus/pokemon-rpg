@@ -90,5 +90,19 @@
 <script src="map.js"></script>
 <script src="training.js"></script>
 <script src="init.js"></script>
+<script>
+let isReloading = false;
+window.addEventListener("beforeunload", function(e) {
+    if (!isReloading) {
+        navigator.sendBeacon("/shutdown");
+    }
+});
+window.addEventListener("keydown", function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === "r") {
+        isReloading = true;
+        setTimeout(() => { isReloading = false; }, 2000);
+    }
+});
+</script>
 </body>
 </html>
