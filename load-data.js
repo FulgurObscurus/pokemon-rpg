@@ -19,13 +19,8 @@ function loadAllPokemon() {
  document.getElementById('loading').textContent = `✅ Шаг 4: загружено ${count} покемонов!`;
  console.log(`Загружено ${count} покемонов`);
 
- try {
- localStorage.setItem('pokemonData151', JSON.stringify(allPokemonData));
- document.getElementById('loading').textContent = `✅ Шаг 5: данные сохранены в кэш (${count} покемонов)`;
- } catch(e) {
- console.warn('Не удалось сохранить в localStorage:', e);
- document.getElementById('loading').textContent = '⚠️ Шаг 5: кэш не сохранён, но данные загружены';
- }
+  // ВАЖНО: не кэшируем весь покедекс в localStorage — он слишком большой и может ломать сохранения/загрузку.
+  document.getElementById('loading').textContent = `✅ Шаг 5: готово (${count} покемонов)`;
  document.getElementById('loading').textContent = `✅ Готово! (${count} покемонов)`;
 }
 
