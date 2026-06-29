@@ -4,7 +4,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
     
-    // Автоочистка ВСЕХ старых сломанных сохранений
     ['pokemonRPG_save', 'pokemonRPG_save_v1', 'pokemonRPG_save_v2'].forEach(function(key) {
         try { 
             var _t = localStorage.getItem(key); 
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.removeItem('pokemonRPG_save_v3');
     }
 
-    // БЕЗОПАСНОЕ создание стартера
     if (!loaded || !myParty || myParty.length === 0) {
         try {
             const starter = new Poke(25, 5);
@@ -37,6 +35,20 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.removeItem('pokemonRPG_save_v3');
             myParty = [];
         }
+    }
+
+    // ПРОВЕРКА: если все покемоны с 0 HP, восстанавливаем первого
+    var hasAlive = false;
+    for (var i = 0; i < myParty.length; i++) {
+        if (myParty[i].currentHp > 0) {
+            hasAlive = true;
+            break;
+        }
+    }
+    if (!hasAlive && myParty.length > 0) {
+        myParty[0].currentHp = myParty[0].maxHp;
+        currentPokemonIndex = 0;
+        saveGame();
     }
 
     const loadingEl = document.getElementById('loading');
@@ -83,50 +95,41 @@ document.addEventListener('DOMContentLoaded', function() {
         startBattle(wild);
     }
 
+    // ИСПРАВЛЕНИЕ: проверка HP перед боем
+    function onFightClick() {
+        var curP = getCurrentPokemon();
+        if (!curP || curP.currentHp <= 0) {
+            var aliveIdx = -1;
+            for (var i = 0; i < myParty.length; i++) {
+                if (myParty[i].currentHp > 0) {
+                    aliveIdx = i;
+                    break;
+                }
+            }
+            if (aliveIdx === -1) {
+                addMessage('😢 Все ваши покемоны без сознания! Восстанавливаем...');
+                if (myParty.length > 0) {
+                    myParty[0].currentHp = myParty[0].maxHp;
+                    currentPokemonIndex = 0;
+                    updateHpBars();
+                    saveGame();
+                }
+                return;
+            }
+            currentPokemonIndex = aliveIdx;
+            addMessage('🔄 ' + myParty[aliveIdx].name + ' выходит на бой!');
+            updateHpBars();
+        }
+        startWildBattle();
+    }
+
     if (btnFight) {
         btnFight.disabled = false;
-        btnFight.onclick = function() {
-            var curP = getCurrentPokemon();
-            if (!curP || curP.currentHp <= 0) {
-                var aliveIdx = -1;
-                for (var i = 0; i < myParty.length; i++) {
-                    if (myParty[i].currentHp > 0) {
-                        aliveIdx = i;
-                        break;
-                    }
-                }
-                if (aliveIdx === -1) {
-                    addMessage('😢 Все ваши покемоны без сознания! Восстанавливаем...');
-                    if (myParty.length > 0) {
-                        myParty[0].currentHp = myParty[0].maxHp;
-                        currentPokemonIndex = 0;
-                        updateHpBars();
-                        saveGame();
-                    } else {
-                        try {
-                            const starter = new Poke(25, 5);
-                            myParty = [starter];
-                            currentPokemonIndex = 0;
-                            saveGame();
-                        } catch(e) {
-                            addMessage('❌ Критическая ошибка!');
-                            return;
-                        }
-                    }
-                    updateHpBars();
-                    return;
-                }
-                currentPokemonIndex = aliveIdx;
-                addMessage('🔄 ' + myParty[aliveIdx].name + ' выходит на бой!');
-                updateHpBars();
-            }
-            startWildBattle();
-        };
-    }
+        btnFight.onclick = onFightClick;
     }
 
     if (btnAction) {
-        btnAction.onclick = startWildBattle;
+        btnAction.onclick = onFightClick;
     }
 
     if (btnBag) {
