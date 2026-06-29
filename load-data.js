@@ -3,27 +3,30 @@
 // =======================================================================
 
 function loadAllPokemon() {
- document.getElementById('loading').textContent = '⏳ Шаг 1: функция loadAllPokemon вызвана...';
- console.log('loadAllPokemon вызвана');
+  const loadingEl = document.getElementById('loading');
 
- document.getElementById('loading').textContent = '⏳ Шаг 2: проверка ALL_POKEMON_DATA...';
- if (typeof ALL_POKEMON_DATA === 'undefined') {
- document.getElementById('loading').textContent = '❌ Ошибка: файл pokedex.js не загружен!';
- console.error('ALL_POKEMON_DATA не определён');
- return;
- }
+  if (loadingEl) loadingEl.textContent = '⏳ Загрузка данных покемонов...';
+  console.log('loadAllPokemon вызвана');
 
- document.getElementById('loading').textContent = '⏳ Шаг 3: копирование данных...';
- allPokemonData = ALL_POKEMON_DATA;
- const count = Object.keys(allPokemonData).length;
- document.getElementById('loading').textContent = `✅ Шаг 4: загружено ${count} покемонов!`;
- console.log(`Загружено ${count} покемонов`);
+  // Освобождаем место: в старых версиях здесь кэшировался весь покедекс
+  try { localStorage.removeItem('pokemonData151'); } catch(e) {}
 
-  // ВАЖНО: не кэшируем весь покедекс в localStorage — он слишком большой и может ломать сохранения/загрузку.
-  document.getElementById('loading').textContent = `✅ Шаг 5: готово (${count} покемонов)`;
- document.getElementById('loading').textContent = `✅ Готово! (${count} покемонов)`;
+  if (typeof ALL_POKEMON_DATA === 'undefined') {
+    if (loadingEl) loadingEl.textContent = '❌ Ошибка: файл pokedex.js не загружен!';
+    console.error('ALL_POKEMON_DATA не определён');
+    return false;
+  }
+
+  allPokemonData = ALL_POKEMON_DATA;
+
+  const count = Object.keys(allPokemonData).length;
+  if (loadingEl) loadingEl.textContent = `✅ Загружено ${count} покемонов (кэш localStorage отключён)`;
+  console.log(`Загружено ${count} покемонов`);
+
+  // ВАЖНО: не кэшируем allPokemonData в localStorage:
+  // JSON.stringify(покедекса) может фризить страницу и ломать сохранения из-за квоты.
+  return true;
 }
-
 // Заглушки для старых функций
 function fetchWithTimeout() { console.warn('fetchWithTimeout не используется'); }
 function getRussianName() { console.warn('getRussianName не используется'); }
