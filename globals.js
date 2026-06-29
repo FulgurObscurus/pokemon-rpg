@@ -44,6 +44,12 @@ function loadGame() {
         const raw = localStorage.getItem('pokemonRPG_save');
         if (!raw) return false;
 
+        // Проверяем, загружены ли данные покемонов
+        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) {
+            console.warn('loadGame: данные покемонов ещё не загружены, пропускаем');
+            return false;
+        }
+
         const state = JSON.parse(raw);
         gameState.money = state.money || 300;
         gameState.items = state.items || { potion: 5, pokeball: 3 };
@@ -83,6 +89,9 @@ function loadGame() {
         return true;
     } catch (e) {
         console.error('Ошибка загрузки:', e);
+        // Сбрасываем сломанное сохранение
+        localStorage.removeItem('pokemonRPG_save');
+        console.warn('Сломанное сохранение удалено');
         return false;
     }
 }

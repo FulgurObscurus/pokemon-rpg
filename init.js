@@ -4,9 +4,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
 
-    loadGame();
+    const loaded = loadGame();
 
-    if (!myParty || myParty.length === 0) {
+    if (!loaded || !myParty || myParty.length === 0) {
         const starter = new Poke(25, 5);
         myParty = [starter];
         currentPokemonIndex = 0;
@@ -73,7 +73,10 @@ document.addEventListener('DOMContentLoaded', function() {
         btnBag.disabled = true;
     }
 
-    if (btnSwitch) btnSwitch.disabled = true;
+    if (btnSwitch) {
+        btnSwitch.disabled = true;
+        btnSwitch.onclick = function() { switchPokemon(); };
+    }
     if (btnRun) btnRun.disabled = true;
 
     const btnSave = document.getElementById('btn-save');

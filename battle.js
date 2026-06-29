@@ -1,6 +1,70 @@
 // =======================================================================
 // БОЕВЫЕ ФУНКЦИИ
-// =======================================================================
+// =
+function switchPokemon() {
+    if (!inBattle) return;
+    if (!myParty || myParty.length <= 1) {
+        addMessage('❌ Нет других покемонов для смены!');
+        return;
+    }
+
+    // Показываем список покемонов для смены
+    const moveList = document.getElementById('move-list');
+    const actions = document.getElementById('actions');
+    if (actions) actions.style.display = 'none';
+    if (moveList) {
+        moveList.style.display = 'grid';
+        moveList.innerHTML = '';
+
+        const header = document.createElement('div');
+        header.style.cssText = 'grid-column:1/-1;text-align:center;color:#f1c40f;font-weight:bold;padding:8px;';
+        header.textContent = '🔄 Сменить покемона:';
+        moveList.appendChild(header);
+
+        for (let i = 0; i < myParty.length; i++) {
+            const p = myParty[i];
+            if (i === currentPokemonIndex) continue;
+            if (p.currentHp <= 0) continue;
+
+            const btn = document.createElement('button');
+            btn.style.cssText = 'display:flex;align-items:center;gap:8px;padding:10px;background:#2c1a3d;border:2px solid #7b4a9e;border-radius:8px;color:#fff;cursor:pointer;';
+
+            const sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + p.speciesId + ".png";
+            btn.innerHTML = '<img src="' + sprite + '" style="width:40px;height:40px;image-rendering:pixelated;"><span>' + p.name + ' Ур.' + p.level + ' HP:' + p.currentHp + '/' + p.maxHp + '</span>';
+
+            const idx = i;
+            btn.onclick = function() {
+                currentPokemonIndex = idx;
+                addMessage('🔄 ' + myParty[idx].name + ' выходит на бой!');
+                moveList.style.display = 'none';
+                moveList.innerHTML = '';
+                showActions();
+                updateHpBars();
+
+                // Враг атакует после смены
+                setTimeout(function() {
+                    if (inBattle && enemyPokemon) {
+                        enemyTurn();
+                    }
+                }, 500);
+            };
+
+            moveList.appendChild(btn);
+        }
+
+        // Кнопка отмены
+        const cancelBtn = document.createElement('button');
+        cancelBtn.style.cssText = 'grid-column:1/-1;padding:10px;background:#c0392b;border:none;color:#fff;border-radius:8px;cursor:pointer;font-size:14px;';
+        cancelBtn.textContent = '✕ Отмена';
+        cancelBtn.onclick = function() {
+            moveList.style.display = 'none';
+            moveList.innerHTML = '';
+            showActions();
+        };
+        moveList.appendChild(cancelBtn);
+    }
+}
+======================================================================
 
 function getPokemonImage(id) {
     return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + String(id) + ".png";
