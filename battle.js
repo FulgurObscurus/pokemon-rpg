@@ -45,7 +45,15 @@ function switchPokemon() {
                 // Враг атакует после смены
                 setTimeout(function() {
                     if (inBattle && enemyPokemon) {
-                        enemyTurn();
+                        var curP = myParty[currentPokemonIndex];
+                        var enemyDmg = 5;
+                        curP.currentHp = Math.max(0, curP.currentHp - enemyDmg);
+                        addMessage(enemyPokemon.name + ' нанёс ' + enemyDmg + ' урона!');
+                        updateHpBars();
+                        if (curP.currentHp <= 0) {
+                            addMessage(curP.name + ' потерял сознание!');
+                            endBattle();
+                        }
                     }
                 }, 500);
             };
