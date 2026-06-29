@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
     
-    // ИСПРАВЛЕНИЕ: Автоочистка ВСЕХ старых сломанных сохранений
+    // Автоочистка ВСЕХ старых сломанных сохранений
     ['pokemonRPG_save', 'pokemonRPG_save_v1', 'pokemonRPG_save_v2'].forEach(function(key) {
         try { 
             var _t = localStorage.getItem(key); 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.removeItem('pokemonRPG_save_v3');
     }
 
-    // ИСПРАВЛЕНИЕ: БЕЗОПАСНОЕ создание стартера с try/catch
+    // БЕЗОПАСНОЕ создание стартера
     if (!loaded || !myParty || myParty.length === 0) {
         try {
             const starter = new Poke(25, 5);
