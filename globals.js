@@ -47,48 +47,77 @@ function loadGame() {
         var raw = localStorage.getItem('pokemonRPG_save');
         if (!raw) return false;
 
-        var state = JSON.parse(raw);
-        if (!state) { localStorage.removeItem('pokemonRPG_save'); return false; }
-
-        // Проверка версии — несовместимое сохранение удаляем
-        if (!state.version || state.version < SAVE_VERSION) {
-            console.warn('Сохранение устарело, сбрасываем');
+        var state = null;
+        try { state = JSON.parse(raw); } catch(e) {
             localStorage.removeItem('pokemonRPG_save');
             return false;
         }
 
-        if (!state.party || state.party.length === 0) return false;
+        if (!state || !state.version || state.version < SAVE_VERSION) {
+            localStorage.removeItem('pokemonRPG_save');
+            return false;
+        }
 
-        // Проверяем что данные покемонов загружены
-        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) return false;
+        if (typeof allPokemonData === 'undefined' || !allPokemonData || Object.keys(allPokemonData).length === 0) return false;
+
+        if (!state.party || !Array.isArray(state.party) || state.party.length === 0) return false;
 
         gameState.money = state.money || 300;
         gameState.items = state.items || { potion: 5, pokeball: 3 };
 
-        myParty = state.party.map(function(p) {
-            var pokemon = new Poke(p.speciesId, p.level);
-            pokemon.exp = p.exp || 0;
-            pokemon.currentHp = (p.currentHp !== undefined ? p.currentHp : pokemon.maxHp);
-            pokemon.status = p.status || null;
-            if (p.statPoints) pokemon.statPoints = Object.assign({}, p.statPoints);
-            if (p.moves && p.moves.length > 0) {
-                pokemon.moves = p.moves.map(function(m) {
-                    if (m.id) return buildMoveFromEntry({ move: m.id });
-                    if (m.name) return buildMoveFromEntry({ name: m.name });
-                    return null;
-                }).filter(Boolean);
-                p.moves.forEach(function(sm, idx) {
-                    if (sm.pp !== undefined && pokemon.moves[idx]) pokemon.moves[idx].pp = sm.pp;
-                });
-            }
-            return pokemon;
-        });
+        var newParty = [];
+        for (var i = 0; i < state.party.length; i++) {
+            try {
+                var p = state.party[i];
+                if (!p || !p.speciesId) continue;
+                if (!allPokemonData[p.speciesId]) continue;
 
-        currentPokemonIndex = state.currentPokemonIndex || 0;
-        if (currentPokemonIndex >= myParty.length) currentPokemonIndex = 0;
+                var pokemon = new Poke(p.speciesId, p.level);
+                pokemon.exp = p.exp || 0;
+
+                if (p.statPoints) {
+                    pokemon.statPoints = {hp:0,attack:0,defense:0,spAttack:0,spDefense:0,speed:0};
+                    for (var k in p.statPoints) {
+                        if (p.statPoints.hasOwnProperty(k)) pokemon.statPoints[k] = p.statPoints[k];
+                    }
+                }
+
+                if (p.moves && Array.isArray(p.moves) && p.moves.length > 0) {
+                    var loadedMoves = [];
+                    for (var j = 0; j < p.moves.length; j++) {
+                        try {
+                            var m = p.moves[j];
+                            if (m && m.id) {
+                                var mv = buildMoveFromEntry({move: m.id});
+                                if (mv && mv.id) loadedMoves.push(mv);
+                            } else if (m && m.name) {
+                                var mv2 = buildMoveFromEntry({name: m.name});
+                                if (mv2 && mv2.id) loadedMoves.push(mv2);
+                            }
+                        } catch(me) { /* skip bad move */ }
+                    }
+                    if (loadedMoves.length > 0) pokemon.moves = loadedMoves;
+                }
+
+                var maxHp = pokemon.maxHp;
+                pokemon.currentHp = (typeof p.currentHp === 'number' && p.currentHp >= 0) ? Math.min(p.currentHp, maxHp) : maxHp;
+                pokemon.status = p.status || null;
+
+                newParty.push(pokemon);
+            } catch(pe) {
+                /* skip bad pokemon */
+            }
+        }
+
+        if (newParty.length === 0) {
+            localStorage.removeItem('pokemonRPG_save');
+            return false;
+        }
+
+        myParty = newParty;
+        currentPokemonIndex = (state.currentPokemonIndex && state.currentPokemonIndex < myParty.length) ? state.currentPokemonIndex : 0;
         return true;
     } catch (e) {
-        console.error('Ошибка загрузки:', e);
         localStorage.removeItem('pokemonRPG_save');
         return false;
     }
