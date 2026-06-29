@@ -3,26 +3,40 @@
 // =======================================================================
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
-    // Автоочистка сломанного сохранения
-    try { var _t = localStorage.getItem('pokemonRPG_save'); if(_t) JSON.parse(_t); } catch(e) { localStorage.removeItem('pokemonRPG_save'); console.warn('Сломанное сохранение удалено'); }
-
-
+    
+    // ИСПРАВЛЕНИЕ: Автоочистка всех старых сломанных сохранений
+    ['pokemonRPG_save', 'pokemonRPG_save_v1', 'pokemonRPG_save_v2'].forEach(function(key) {
+        try { 
+            var _t = localStorage.getItem(key); 
+            if(_t) JSON.parse(_t); 
+        } catch(e) { 
+            localStorage.removeItem(key); 
+            console.warn('Сломанное сохранение удалено:', key); 
+        }
+    });
 
     var loaded = false;
     try {
         loaded = loadGame();
     } catch(e) {
         console.error('Ошибка загрузки:', e);
-        localStorage.removeItem('pokemonRPG_save');
+        localStorage.removeItem('pokemonRPG_save_v3');
     }
 
+    // ИСПРАВЛЕНИЕ: Безопасное создание стартера с обработкой ошибок
     if (!loaded || !myParty || myParty.length === 0) {
-        const starter = new Poke(25, 5);
-        myParty = [starter];
-        currentPokemonIndex = 0;
-        gameState.money = 300;
-        gameState.items = { potion: 5, pokeball: 3 };
-        saveGame();
+        try {
+            const starter = new Poke(25, 5);
+            myParty = [starter];
+            currentPokemonIndex = 0;
+            gameState.money = 300;
+            gameState.items = { potion: 5, pokeball: 3 };
+            saveGame();
+        } catch(e) {
+            console.error('Не удалось создать стартера:', e);
+            localStorage.removeItem('pokemonRPG_save_v3');
+            myParty = [];
+        }
     }
 
     const loadingEl = document.getElementById('loading');

@@ -58,9 +58,17 @@ function loadGame() {
             return false;
         }
 
-        if (typeof allPokemonData === 'undefined' || !allPokemonData || Object.keys(allPokemonData).length === 0) return false;
+        // ИСПРАВЛЕНИЕ: очищаем localStorage если данные покемонов не загружены
+        if (typeof allPokemonData === 'undefined' || !allPokemonData || Object.keys(allPokemonData).length === 0) {
+            localStorage.removeItem('pokemonRPG_save_v3');
+            return false;
+        }
 
-        if (!state.party || !Array.isArray(state.party) || state.party.length === 0) return false;
+        // ИСПРАВЛЕНИЕ: очищаем localStorage если партия некорректна
+        if (!state.party || !Array.isArray(state.party) || state.party.length === 0) {
+            localStorage.removeItem('pokemonRPG_save_v3');
+            return false;
+        }
 
         gameState.money = state.money || 300;
         gameState.items = state.items || { potion: 5, pokeball: 3 };
