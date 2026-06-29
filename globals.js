@@ -108,6 +108,7 @@ function loadGame() {
                 }
 
                 var maxHp = pokemon.maxHp;
+                // ИСПРАВЛЕНИЕ: не загружаем покемонов с 0 HP
                 pokemon.currentHp = (typeof p.currentHp === 'number' && p.currentHp > 0) ? Math.min(p.currentHp, maxHp) : maxHp;
                 pokemon.status = p.status || null;
 
