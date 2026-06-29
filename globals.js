@@ -41,67 +41,52 @@ function saveGame() {
 
 function loadGame() {
     try {
-        const raw = localStorage.getItem('pokemonRPG_save');
+        var raw = localStorage.getItem('pokemonRPG_save');
         if (!raw) return false;
+        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) return false;
 
-        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) {
-            console.warn('loadGame: данные ещё не загружены');
+        var state = JSON.parse(raw);
+        if (!state || !state.party || state.party.length === 0) return false;
+
+        // Старый формат (без id у приёмов) — сбрасываем
+        var fm = state.party[0].moves ? state.party[0].moves[0] : null;
+        if (fm && !fm.id) {
+            console.warn('Старый формат сохранения, сбрасываем');
+            localStorage.removeItem('pokemonRPG_save');
             return false;
         }
 
-        // Проверяем, загружены ли данные покемонов
-        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) {
-            console.warn('loadGame: данные покемонов ещё не загружены, пропускаем');
-            return false;
-        }
-
-        const state = JSON.parse(raw);
         gameState.money = state.money || 300;
         gameState.items = state.items || { potion: 5, pokeball: 3 };
 
-        myParty = (state.party || []).map(p => {
-            const pokemon = new Poke(p.speciesId, p.level);
+        myParty = state.party.map(function(p) {
+            var pokemon = new Poke(p.speciesId, p.level);
             pokemon.exp = p.exp || 0;
             pokemon.currentHp = (p.currentHp !== undefined ? p.currentHp : pokemon.maxHp);
             pokemon.status = p.status || null;
-
-            // Загружаем statPoints
-            if (p.statPoints) {
-                pokemon.statPoints = { ...p.statPoints };
-            }
-
-            // Загружаем приёмы по ID (новый формат)
+            if (p.statPoints) pokemon.statPoints = Object.assign({}, p.statPoints);
             if (p.moves && p.moves.length > 0) {
-                pokemon.moves = p.moves.map(m => {
+                pokemon.moves = p.moves.map(function(m) {
                     if (m.id) return buildMoveFromEntry({ move: m.id });
                     if (m.name) return buildMoveFromEntry({ name: m.name });
                     return null;
                 }).filter(Boolean);
-                p.moves.forEach((sm, idx) => {
-                    if (sm.pp !== undefined && pokemon.moves[idx]) {
-                        pokemon.moves[idx].pp = sm.pp;
-                    }
+                p.moves.forEach(function(sm, idx) {
+                    if (sm.pp !== undefined && pokemon.moves[idx]) pokemon.moves[idx].pp = sm.pp;
                 });
             }
-
             return pokemon;
         });
 
         currentPokemonIndex = state.currentPokemonIndex || 0;
         if (currentPokemonIndex >= myParty.length) currentPokemonIndex = 0;
-
-        console.log('📂 Игра загружена');
         return true;
     } catch (e) {
         console.error('Ошибка загрузки:', e);
-        // Сбрасываем сломанное сохранение
         localStorage.removeItem('pokemonRPG_save');
-        console.warn('Сломанное сохранение удалено');
         return false;
     }
 }
-
-let saveInterval = null;
 
 function startAutoSave() {
     if (saveInterval) clearInterval(saveInterval);
