@@ -3,6 +3,10 @@
 // =======================================================================
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
+    // Автоочистка сломанного сохранения
+    try { var _t = localStorage.getItem('pokemonRPG_save'); if(_t) JSON.parse(_t); } catch(e) { localStorage.removeItem('pokemonRPG_save'); console.warn('Сломанное сохранение удалено'); }
+
+
 
     var loaded = false;
     try {
