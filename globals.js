@@ -10,7 +10,7 @@ let inBattle = false;
 let gameLog = [];
 let moveSelectionMode = false;
 
-const SAVE_VERSION = 2;
+const SAVE_VERSION = 3;
 
 let gameState = {
     money: 300,
