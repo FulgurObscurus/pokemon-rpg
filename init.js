@@ -4,7 +4,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
 
-    const loaded = loadGame();
+    var loaded = false;
+    try {
+        loaded = loadGame();
+    } catch(e) {
+        console.error('Ошибка загрузки:', e);
+        localStorage.removeItem('pokemonRPG_save');
+    }
 
     if (!loaded || !myParty || myParty.length === 0) {
         const starter = new Poke(25, 5);
@@ -49,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const wild = generateWildPokemon();
         if (!wild) {
-            addMessage('❌ Не удалось создать дикого покемона');
+            addMessage('Не удалось создать дикого покемона');
             return;
         }
 
         showBattleScreen();
 
-        if (btnFight) btnFight.textContent = '⚔️ Бой';
+        if (btnFight) btnFight.textContent = 'Бой';
         startBattle(wild);
     }
 
@@ -79,75 +85,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     if (btnRun) btnRun.disabled = true;
 
-    const btnSave = document.getElementById('btn-save');
+    var btnSave = document.getElementById('btn-save');
     if (btnSave) {
         btnSave.addEventListener('click', function() {
             saveGame();
-            addMessage('💾 Игра сохранена!');
+            addMessage('Сохранено!');
         });
     }
 
-    const btnExport = document.getElementById('btn-export');
-    if (btnExport) {
-        btnExport.addEventListener('click', function() {
-            const data = localStorage.getItem('pokemonRPG_save');
-            if (!data) {
-                addMessage('❌ Нет сохранения для экспорта');
-                return;
-            }
-            const blob = new Blob([data], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'pokemon_save.json';
-            a.click();
-            URL.revokeObjectURL(url);
-            addMessage('📤 Сохранение экспортировано!');
-        });
-    }
-
-    const btnImport = document.getElementById('btn-import');
-    if (btnImport) {
-        btnImport.addEventListener('click', function() {
-            const input = document.createElement('input');
-            input.type = 'file';
-            input.accept = 'application/json';
-            input.onchange = function(e) {
-                const file = e.target.files[0];
-                if (!file) return;
-                const reader = new FileReader();
-                reader.onload = function(ev) {
-                    try {
-                        const data = ev.target.result;
-                        JSON.parse(data);
-                        localStorage.setItem('pokemonRPG_save', data);
-                        addMessage('📥 Сохранение импортировано! Перезагрузите страницу.');
-                    } catch (err) {
-                        addMessage('❌ Ошибка импорта: неверный файл');
-                    }
-                };
-                reader.readAsText(file);
-            };
-            input.click();
-        });
-    }
-
-
-    const btnTraining = document.getElementById('btn-training');
+    var btnTraining = document.getElementById('btn-training');
     if (btnTraining) {
         btnTraining.addEventListener('click', function() {
             openTraining();
         });
     }
 
-    const trainCloseBtn = document.getElementById('train-close-btn');
+    var trainCloseBtn = document.getElementById('train-close-btn');
     if (trainCloseBtn) {
         trainCloseBtn.addEventListener('click', function() {
             closeTraining();
         });
     }
 
-    const trainConfirmBtn = document.getElementById('train-confirm-btn');
+    var trainConfirmBtn = document.getElementById('train-confirm-btn');
     if (trainConfirmBtn) {
         trainConfirmBtn.addEventListener('click', function() {
             confirmTraining();

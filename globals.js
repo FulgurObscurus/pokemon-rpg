@@ -44,6 +44,11 @@ function loadGame() {
         const raw = localStorage.getItem('pokemonRPG_save');
         if (!raw) return false;
 
+        if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) {
+            console.warn('loadGame: данные ещё не загружены');
+            return false;
+        }
+
         // Проверяем, загружены ли данные покемонов
         if (typeof allPokemonData === 'undefined' || Object.keys(allPokemonData).length === 0) {
             console.warn('loadGame: данные покемонов ещё не загружены, пропускаем');
