@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "pokemon": "^3.3.0"
+  }
+}
