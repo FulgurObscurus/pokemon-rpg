@@ -65,7 +65,7 @@ function switchPokemon() {
         moveList.appendChild(cancelBtn);
     }
 }
-======================================================================
+// =======================================================================
 
 function getPokemonImage(id) {
     return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + String(id) + ".png";
