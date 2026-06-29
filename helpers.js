@@ -78,7 +78,4 @@ function updateHpBars() {
 
     if (partyCount) partyCount.textContent = myParty.length;
     if (moneyEl) moneyEl.textContent = gameState.money;
-    if (!myParty || myParty.length === 0 || !myParty[currentPokemonIndex]) return;
-    const p = myParty[currentPokemonIndex];
-    if (!p) return;
 }

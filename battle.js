@@ -52,7 +52,7 @@ function switchPokemon() {
                         updateHpBars();
                         if (curP.currentHp <= 0) {
                             addMessage(curP.name + ' потерял сознание!');
-                            checkForSwitchOrEndBattle();
+                            endBattle();
                         }
                     }
                 }, 500);
@@ -79,18 +79,6 @@ function getPokemonImage(id) {
     return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + String(id) + ".png";
 }
 
-        if (eHpBar) eHpBar.style.width = '0%';
-
-        const eHpText = document.getElementById('e-hp-text');
-        if (eHpText) eHpText.textContent = '0/0';
-    }
-
-    const partyCountEl = document.getElementById('party-count');
-    if (partyCountEl) partyCountEl.textContent = myParty.length;
-
-    const moneyEl = document.getElementById('money');
-    if (moneyEl) moneyEl.textContent = gameState.money;
-}
 
 function generateWildPokemon() {
     const ids = Object.keys(allPokemonData || {});
@@ -190,7 +178,7 @@ function onFight() {
 
             if (p.currentHp <= 0) {
                 addMessage('💔 ' + p.name + ' потерял сознание!');
-                checkForSwitchOrEndBattle();
+                endBattle();
                 return;
             }
 
@@ -332,58 +320,3 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
-
-// АВТОПЕРЕКЛЮЧЕНИЕ ПОСЛЕ ГИБЕЛИ ПОКЕМОНА
-function checkForSwitchOrEndBattle() {
-    var alivePokemon = myParty.filter(function(p) { return p.currentHp > 0; });
-    
-    if (alivePokemon.length === 0) {
-        addMessage('😢 Все ваши покемоны потеряли сознание!');
-        endBattle();
-    } else {
-        addMessage('🔄 Выберите следующего покемона!');
-        forceSwitchPokemon();
-    }
-}
-
-function forceSwitchPokemon() {
-    if (!inBattle) return;
-
-    const moveList = document.getElementById('move-list');
-    const actions = document.getElementById('actions');
-    if (actions) actions.style.display = 'none';
-    if (moveList) {
-        moveList.style.display = 'grid';
-        moveList.innerHTML = '';
-
-        const header = document.createElement('div');
-        header.style.cssText = 'grid-column:1/-1;text-align:center;color:#f1c40f;font-weight:bold;padding:8px;';
-        header.textContent = '🔄 Выберите покемона для боя:';
-        moveList.appendChild(header);
-
-        for (let i = 0; i < myParty.length; i++) {
-            const p = myParty[i];
-            if (i === currentPokemonIndex) continue;
-            if (p.currentHp <= 0) continue;
-
-            const btn = document.createElement('button');
-            btn.style.cssText = 'display:flex;align-items:center;gap:8px;padding:10px;background:#2c1a3d;border:2px solid #7b4a9e;border-radius:8px;color:#fff;cursor:pointer;';
-
-            const sprite = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + p.speciesId + ".png";
-            btn.innerHTML = '<img src="' + sprite + '" style="width:40px;height:40px;">' + p.name + ' Ур.' + p.level + ' HP:' + p.currentHp + '/' + p.maxHp + '';
-
-            const idx = i;
-            btn.onclick = function() {
-                currentPokemonIndex = idx;
-                addMessage('🔄 ' + myParty[idx].name + ' выходит на бой!');
-                moveList.style.display = 'none';
-                moveList.innerHTML = '';
-                showActions();
-                updateHpBars();
-                moveSelectionMode = false;
-            };
-
-            moveList.appendChild(btn);
-        }
-    }
-}
