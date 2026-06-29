@@ -1,5 +1,5 @@
 // =======================================================================
-// КАРТА МИРА С НЕСКОЛЬКИМИ ЛОКАЦИЯМИ И ЗДАНИЯМИ (исправленная версия)
+// КАРТА МИРА С КРАСИВЫМИ ЗДАНИЯМИ И ПОДДЕРЖКОЙ СТРЕЛОК
 // =======================================================================
 
 const canvas = document.createElement('canvas');
@@ -31,27 +31,61 @@ function resizeCanvas() {
   canvas.height = Math.max(240, Math.floor(window.innerHeight * 0.65));
 }
 
+// === Красивое здание ===
+function drawNiceBuilding(x, y, w, h, roofColor, wallColor, label) {
+  // Стены
+  ctx.fillStyle = wallColor;
+  ctx.fillRect(x, y, w, h);
+
+  // Крыша
+  ctx.fillStyle = roofColor;
+  ctx.beginPath();
+  ctx.moveTo(x - 8, y);
+  ctx.lineTo(x + w / 2, y - 25);
+  ctx.lineTo(x + w + 8, y);
+  ctx.fill();
+
+  // Дверь
+  ctx.fillStyle = '#5d4037';
+  ctx.fillRect(x + w / 2 - 12, y + h - 35, 24, 35);
+
+  // Окна
+  ctx.fillStyle = '#bbdefb';
+  ctx.fillRect(x + 15, y + 20, 22, 22);
+  ctx.fillRect(x + w - 37, y + 20, 22, 22);
+  ctx.fillRect(x + 15, y + h - 60, 22, 22);
+  ctx.fillRect(x + w - 37, y + h - 60, 22, 22);
+
+  // Надпись
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 13px Arial';
+  ctx.fillText(label, x + 10, y + 15);
+}
+
+// === Отрисовка ===
 function draw() {
   ctx.fillStyle = isIndoors ? '#d2b48c' : '#4caf50';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   if (!isIndoors) {
     if (currentLocation === 'pallet') {
-      drawBuilding(60, 40, 140, 110, '#8d6e63', 'Центр покемонов', 'center');
-      drawBuilding(canvas.width - 200, 50, 130, 100, '#ff9800', 'Покемаркет', 'mart');
+      drawNiceBuilding(50, 35, 160, 120, '#5d4037', '#8d6e63', 'Центр покемонов');
+      drawNiceBuilding(canvas.width - 210, 45, 150, 110, '#e65100', '#ff9800', 'Покемаркет');
       ctx.fillStyle = '#fff';
-      ctx.font = '16px Arial';
+      ctx.font = '18px Arial';
       ctx.fillText('Pallet Town', 20, 25);
+
     } else if (currentLocation === 'route1') {
       ctx.fillStyle = '#2e7d32';
-      for (let i = 0; i < 25; i++) {
-        ctx.fillRect(15 + i * 32, 25 + (i % 4) * 35, 16, 16);
+      for (let i = 0; i < 30; i++) {
+        ctx.fillRect(10 + i * 30, 20 + (i % 5) * 38, 18, 18);
       }
       ctx.fillStyle = '#fff';
       ctx.fillText('Route 1', 20, 25);
+
     } else if (currentLocation === 'viridian') {
-      drawBuilding(50, 30, 130, 100, '#8d6e63', 'Центр покемонов', 'center');
-      drawBuilding(canvas.width - 180, 40, 120, 95, '#ff9800', 'Покемаркет', 'mart');
+      drawNiceBuilding(40, 25, 150, 115, '#5d4037', '#8d6e63', 'Центр покемонов');
+      drawNiceBuilding(canvas.width - 190, 35, 140, 105, '#e65100', '#ff9800', 'Покемаркет');
       ctx.fillStyle = '#fff';
       ctx.fillText('Viridian City', 20, 25);
     }
@@ -61,22 +95,24 @@ function draw() {
 
     if (currentBuilding === 'center') {
       ctx.fillStyle = '#ff69b4';
-      ctx.fillRect(80, 60, 60, 40);
+      ctx.fillRect(90, 70, 50, 35);
       ctx.fillStyle = '#000';
       ctx.font = '14px Arial';
-      ctx.fillText('Nurse Joy', 85, 85);
-      ctx.fillText('Нажми E рядом, чтобы лечить', 20, 140);
+      ctx.fillText('Nurse Joy', 95, 92);
+      ctx.fillText('Нажми E рядом, чтобы лечить', 20, 160);
     } else if (currentBuilding === 'mart') {
       ctx.fillStyle = '#ff9800';
-      ctx.fillRect(80, 60, 60, 40);
+      ctx.fillRect(90, 70, 50, 35);
       ctx.fillStyle = '#000';
-      ctx.fillText('Продавец', 85, 85);
-      ctx.fillText('Нажми E рядом, чтобы купить', 20, 140);
+      ctx.fillText('Продавец', 95, 92);
+      ctx.fillText('Нажми E рядом, чтобы купить', 20, 160);
     }
+
     ctx.fillStyle = '#fff';
     ctx.fillText('Выход → подойди к нижнему краю', 20, canvas.height - 20);
   }
 
+  // Игрок
   ctx.fillStyle = '#2196F3';
   ctx.fillRect(player.x, player.y, player.size, player.size);
   ctx.fillStyle = '#fff';
@@ -84,44 +120,34 @@ function draw() {
   ctx.fillRect(player.x + 14, player.y + 6, 4, 4);
 }
 
-function drawBuilding(x, y, w, h, color, label, type) {
-  ctx.fillStyle = color;
-  ctx.fillRect(x, y, w, h);
-  ctx.fillStyle = '#000';
-  ctx.font = '12px Arial';
-  ctx.fillText(label, x + 10, y + 25);
-}
-
-// === Проверка входа в здания (только по нажатию E) ===
+// === Взаимодействие ===
 function checkBuildingInteraction() {
   const now = Date.now();
-  if (now - lastInteractionTime < 800) return; // анти-спам
+  if (now - lastInteractionTime < 700) return;
 
   if (!isIndoors) {
-    // Вход в Центр
     if ((currentLocation === 'pallet' || currentLocation === 'viridian') &&
-        player.x > 60 && player.x < 200 && player.y > 30 && player.y < 160) {
+        player.x > 50 && player.x < 220 && player.y > 25 && player.y < 170) {
       if (keys.e) {
         isIndoors = true;
         currentBuilding = 'center';
-        player.x = 120;
-        player.y = 100;
+        player.x = 130;
+        player.y = 110;
         lastInteractionTime = now;
       }
     }
-    // Вход в Покемаркет
+
     if ((currentLocation === 'pallet' || currentLocation === 'viridian') &&
-        player.x > canvas.width - 210 && player.x < canvas.width - 60 && player.y > 40 && player.y < 160) {
+        player.x > canvas.width - 220 && player.x < canvas.width - 50 && player.y > 35 && player.y < 170) {
       if (keys.e) {
         isIndoors = true;
         currentBuilding = 'mart';
-        player.x = 120;
-        player.y = 100;
+        player.x = 130;
+        player.y = 110;
         lastInteractionTime = now;
       }
     }
   } else {
-    // Выход из здания
     if (player.y > canvas.height - 40) {
       isIndoors = false;
       currentBuilding = null;
@@ -130,15 +156,13 @@ function checkBuildingInteraction() {
   }
 }
 
-// === Взаимодействие с NPC (только по нажатию E) ===
 function checkNPCInteraction() {
   const now = Date.now();
-  if (now - lastInteractionTime < 800) return;
-
+  if (now - lastInteractionTime < 700) return;
   if (!isIndoors || !keys.e) return;
 
   if (currentBuilding === 'center') {
-    if (player.x > 70 && player.x < 160 && player.y > 50 && player.y < 120) {
+    if (player.x > 80 && player.x < 170 && player.y > 55 && player.y < 130) {
       healAllPokemon();
       alert('Все покемоны полностью восстановлены!');
       lastInteractionTime = now;
@@ -146,7 +170,7 @@ function checkNPCInteraction() {
   }
 
   if (currentBuilding === 'mart') {
-    if (player.x > 70 && player.x < 160 && player.y > 50 && player.y < 120) {
+    if (player.x > 80 && player.x < 170 && player.y > 55 && player.y < 130) {
       const choice = prompt('Покемаркет\n1 - Зелье (200)\n2 - Покебол (150)\n3 - Уйти');
       if (choice === '1' && gameState.money >= 200) {
         gameState.money -= 200;
@@ -165,10 +189,7 @@ function checkNPCInteraction() {
 
 function healAllPokemon() {
   if (!myParty) return;
-  myParty.forEach(p => {
-    p.currentHp = p.maxHp;
-    if (p.status) p.status = null;
-  });
+  myParty.forEach(p => { p.currentHp = p.maxHp; if (p.status) p.status = null; });
   updateHpBars();
 }
 
@@ -179,7 +200,6 @@ function gameLoop() {
   if (keys.a && player.x > 0) player.x -= player.speed;
   if (keys.d && player.x < canvas.width - player.size) player.x += player.speed;
 
-  // Переходы между локациями
   const edge = 15;
   if (!isIndoors) {
     if (currentLocation === 'pallet' && player.x < edge) { currentLocation = 'route1'; player.x = canvas.width - 30; }
@@ -195,21 +215,22 @@ function gameLoop() {
   requestAnimationFrame(gameLoop);
 }
 
-// === Управление ===
+// === Управление (WASD + стрелки) ===
 document.addEventListener('keydown', (e) => {
   const k = e.key.toLowerCase();
-  if (['w','arrowup'].includes(k)) keys.w = true;
-  if (['s','arrowdown'].includes(k)) keys.s = true;
-  if (['a','arrowleft'].includes(k)) keys.a = true;
-  if (['d','arrowright'].includes(k)) keys.d = true;
+  if (['w', 'arrowup'].includes(k)) keys.w = true;
+  if (['s', 'arrowdown'].includes(k)) keys.s = true;
+  if (['a', 'arrowleft'].includes(k)) keys.a = true;
+  if (['d', 'arrowright'].includes(k)) keys.d = true;
   if (k === 'e') keys.e = true;
 });
+
 document.addEventListener('keyup', (e) => {
   const k = e.key.toLowerCase();
-  if (['w','arrowup'].includes(k)) keys.w = false;
-  if (['s','arrowdown'].includes(k)) keys.s = false;
-  if (['a','arrowleft'].includes(k)) keys.a = false;
-  if (['d','arrowright'].includes(k)) keys.d = false;
+  if (['w', 'arrowup'].includes(k)) keys.w = false;
+  if (['s', 'arrowdown'].includes(k)) keys.s = false;
+  if (['a', 'arrowleft'].includes(k)) keys.a = false;
+  if (['d', 'arrowright'].includes(k)) keys.d = false;
   if (k === 'e') keys.e = false;
 });
 
@@ -225,4 +246,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 resizeCanvas();
 gameLoop();
-console.log('Карта исправлена (взаимодействие только по E)');
+console.log('Карта обновлена: красивые здания + стрелки работают');
