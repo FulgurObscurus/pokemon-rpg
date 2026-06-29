@@ -35,7 +35,7 @@ server.listen(PORT, () => {
     const url = `http://localhost:${PORT}`;
     console.log(`🌐 Сервер запущен на ${url}`);
     console.log(`📂 Корневая директория: ${publicDir}`);
-    console.log('🧠 Умное завершение: выключается только при реальном закрытии вкладки');
+    console.log('🧠 Умное завершение: выключается только при реальном закрытии вкладки (таймер 10 сек)');
     exec(`termux-open-url ${url}`, (err) => {
         if (err) {
             console.log('⚠️ Не удалось открыть браузер автоматически. Откройте вручную:', url);
@@ -45,31 +45,35 @@ server.listen(PORT, () => {
     });
 });
 
-// === УМНОЕ ЗАВЕРШЕНИЕ СЕРВЕРА ===
+// === УМНОЕ ЗАВЕРШЕНИЕ СЕРВЕРА (улучшенная версия) ===
 let connectionCount = 0;
 let shutdownTimer = null;
+const SHUTDOWN_DELAY = 10000; // 10 секунд — даёт время на перезагрузку страницы
 
 server.on('connection', (socket) => {
     connectionCount++;
 
-    // Если пришло новое соединение — отменяем таймер выключения (это перезагрузка)
+    // При любом новом соединении отменяем таймер (это перезагрузка)
     if (shutdownTimer) {
         clearTimeout(shutdownTimer);
         shutdownTimer = null;
-        console.log('🔄 Перезагрузка страницы — таймер отменён');
+        console.log('🔄 Новое соединение — таймер выключения отменён');
     }
 
     socket.on('close', () => {
         connectionCount--;
 
-        if (connectionCount === 0) {
-            console.log('⚠️ Все соединения закрыты. Проверяем через 5 секунд...');
+        if (connectionCount <= 0) {
+            connectionCount = 0; // защита от отрицательных значений
+            console.log(`⚠️ Все соединения закрыты. Проверяем через ${SHUTDOWN_DELAY / 1000} сек...`);
             shutdownTimer = setTimeout(() => {
-                if (connectionCount === 0) {
+                if (connectionCount <= 0) {
                     console.log('🛑 Реальное закрытие вкладки. Сервер завершается.');
                     process.exit(0);
+                } else {
+                    console.log('🔄 Соединения восстановлены — выключение отменено');
                 }
-            }, 5000);
+            }, SHUTDOWN_DELAY);
         }
     });
 });
