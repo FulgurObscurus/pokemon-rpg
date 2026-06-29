@@ -123,6 +123,8 @@ function loadGame() {
     }
 }
 
+let saveInterval = null;
+
 function startAutoSave() {
     if (saveInterval) clearInterval(saveInterval);
     saveInterval = setInterval(saveGame, 10000);
