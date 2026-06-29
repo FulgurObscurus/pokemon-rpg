@@ -21,6 +21,14 @@ function addMessage(msg) {
     }
 }
 
+// === НОВЫЙ УЛУЧШЕННЫЙ addMessage (для карты тоже) ===
+function showMessage(msg) {
+    addMessage(msg); // старый лог
+
+    // Показываем alert, чтобы сообщение точно было видно на карте
+    alert(msg);
+}
+
 function getCurrentPokemon() {
     return myParty[currentPokemonIndex] || null;
 }

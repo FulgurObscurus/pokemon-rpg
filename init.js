@@ -66,8 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
   updateInfoPanel();
 
   function startWildBattle() {
+    alert('Шаг 2: startWildBattle() вызвана');
     if (inBattle) { onFight(); return; }
     const wild = generateWildPokemon();
+    alert('Шаг 3: generateWildPokemon() выполнена, результат: ' + (wild ? wild.name : 'null'));
     if (!wild) { addMessage('Не удалось создать дикого покемона'); return; }
     showBattleScreen();
     if (btnFight) btnFight.textContent = 'Бой';
@@ -75,12 +77,13 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function onFightClick() {
+    alert('Шаг 1: onFightClick сработал');
     var hasAlive = false;
     for (var i = 0; i < myParty.length; i++) {
       if (myParty[i].currentHp > 0) { hasAlive = true; break; }
     }
     if (!hasAlive) {
-      addMessage('Все ваши покемоны без сознания! Используйте зелье или посетите центр покемонов.');
+      addMessage('Все ваши покемоны без сознания!');
       return;
     }
     var curP = getCurrentPokemon();
@@ -97,23 +100,12 @@ document.addEventListener('DOMContentLoaded', function() {
     startWildBattle();
   }
 
-  // === Надёжная привязка кнопок "Исследовать" ===
   if (btnFight) {
     btnFight.disabled = false;
-    btnFight.onclick = null;
-    btnFight.addEventListener('click', function(e) {
-      e.preventDefault();
-      console.log('%c[Explore] btn-fight clicked', 'color:#4ade80');
-      onFightClick();
-    });
+    btnFight.onclick = onFightClick;
   }
   if (btnAction) {
-    btnAction.onclick = null;
-    btnAction.addEventListener('click', function(e) {
-      e.preventDefault();
-      console.log('%c[Explore] btn-action clicked', 'color:#4ade80');
-      onFightClick();
-    });
+    btnAction.onclick = onFightClick;
   }
 
   if (btnBag) { btnBag.onclick = openInventory; btnBag.disabled = true; }
