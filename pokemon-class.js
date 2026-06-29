@@ -29,7 +29,8 @@ class Poke {
 
  this.speciesId = speciesId;
  this.name = base.name.ru;
- this.types = base.types.map(t => t.ru || t);
+ const TYPE_RU = {normal:'Обычный',fire:'Огненный',water:'Водный',grass:'Травяной',electric:'Электрический',ice:'Ледяной',fighting:'Боевой',poison:'Ядовитый',ground:'Земляной',flying:'Летающий',psychic:'Психический',bug:'Жуковый',rock:'Каменный',ghost:'Призрачный',dragon:'Драконий',dark:'Тёмный',steel:'Стальной',fairy:'Сказочный'};
+ this.types = base.types.map(function(t) { return (typeof t === 'object' ? (t.ru || t.en || t) : (TYPE_RU[t] || t)); });
  this.baseStats = base.stats;
  this.abilities = base.abilities.map(a => a.ru || a);
  this.ability = this.abilities.length
@@ -136,7 +137,8 @@ class Poke {
  const base = allPokemonData[newId];
 
  this.name = base.name.ru;
- this.types = base.types.map(t => t.ru || t);
+ const TYPE_RU = {normal:'Обычный',fire:'Огненный',water:'Водный',grass:'Травяной',electric:'Электрический',ice:'Ледяной',fighting:'Боевой',poison:'Ядовитый',ground:'Земляной',flying:'Летающий',psychic:'Психический',bug:'Жуковый',rock:'Каменный',ghost:'Призрачный',dragon:'Драконий',dark:'Тёмный',steel:'Стальной',fairy:'Сказочный'};
+ this.types = base.types.map(function(t) { return (typeof t === 'object' ? (t.ru || t.en || t) : (TYPE_RU[t] || t)); });
  this.baseStats = base.stats;
  this.abilities = base.abilities.map(a => a.ru || a);
  this.ability = this.abilities.length

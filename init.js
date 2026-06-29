@@ -4,6 +4,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadAllPokemon();
 
+    loadGame();
+
     if (!myParty || myParty.length === 0) {
         const starter = new Poke(25, 5);
         myParty = [starter];

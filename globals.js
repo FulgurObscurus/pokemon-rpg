@@ -20,6 +20,7 @@ function saveGame() {
         const state = {
             money: gameState.money,
             items: gameState.items,
+            log: gameLog.slice(-50),
             party: myParty.map(p => ({
                 speciesId: p.speciesId,
                 level: p.level,

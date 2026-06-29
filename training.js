@@ -17,7 +17,7 @@ const TYPE_COLORS = {
 
 const STAT_LABELS = {
  hp:'HP', attack:'Атака', defense:'Защита',
- spAttack:'СЗА', spDefense:'СЗЗ', speed:'Скорость'
+ spAttack:'СА', spDefense:'СЗ', speed:'Скорость'
 };
 
 const STAT_KEYS = ['hp','attack','defense','spAttack','spDefense','speed'];
