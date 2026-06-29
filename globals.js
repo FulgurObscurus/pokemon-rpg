@@ -35,7 +35,7 @@ function saveGame() {
             })),
             currentPokemonIndex: currentPokemonIndex,
         };
-        localStorage.setItem('pokemonRPG_save', JSON.stringify(state));
+        localStorage.setItem('pokemonRPG_save_v3', JSON.stringify(state));
         console.log('💾 Игра сохранена');
     } catch (e) {
         console.error('Ошибка сохранения:', e);
@@ -44,17 +44,17 @@ function saveGame() {
 
 function loadGame() {
     try {
-        var raw = localStorage.getItem('pokemonRPG_save');
+        var raw = localStorage.getItem('pokemonRPG_save_v3');
         if (!raw) return false;
 
         var state = null;
         try { state = JSON.parse(raw); } catch(e) {
-            localStorage.removeItem('pokemonRPG_save');
+            localStorage.removeItem('pokemonRPG_save_v3');
             return false;
         }
 
         if (!state || !state.version || state.version < SAVE_VERSION) {
-            localStorage.removeItem('pokemonRPG_save');
+            localStorage.removeItem('pokemonRPG_save_v3');
             return false;
         }
 
@@ -110,7 +110,7 @@ function loadGame() {
         }
 
         if (newParty.length === 0) {
-            localStorage.removeItem('pokemonRPG_save');
+            localStorage.removeItem('pokemonRPG_save_v3');
             return false;
         }
 
@@ -118,7 +118,7 @@ function loadGame() {
         currentPokemonIndex = (state.currentPokemonIndex && state.currentPokemonIndex < myParty.length) ? state.currentPokemonIndex : 0;
         return true;
     } catch (e) {
-        localStorage.removeItem('pokemonRPG_save');
+        localStorage.removeItem('pokemonRPG_save_v3');
         return false;
     }
 }
