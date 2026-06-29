@@ -1,56 +1,36 @@
-// =======================================================================
-// ИНИЦИАЛИЗАЦИЯ
-// =======================================================================
-
 document.addEventListener('DOMContentLoaded', function() {
   const loadingEl = document.getElementById('loading');
 
-  // Чистим старый огромный кэш (если остался)
   try { localStorage.removeItem('pokemonData151'); } catch (e) {}
 
-  // 1) Загружаем покедекс
   let pokedexOk = false;
   try { pokedexOk = (loadAllPokemon() === true); } catch (e) { pokedexOk = false; }
 
   if (!pokedexOk || !allPokemonData || Object.keys(allPokemonData).length === 0) {
     if (loadingEl) {
       loadingEl.style.display = 'block';
-      loadingEl.textContent = '❌ Не удалось загрузить покедекс. Сохранение НЕ трогаем.';
+      loadingEl.textContent = '❌ Не удалось загрузить покедекс.';
     }
     return;
   }
 
-  // 2) Автоочистка старых сломанных сохранений (v1/v2)
   ['pokemonRPG_save', 'pokemonRPG_save_v1', 'pokemonRPG_save_v2'].forEach(function(key) {
-    try {
-      var _t = localStorage.getItem(key);
-      if (_t) JSON.parse(_t);
-    } catch(e) {
-      localStorage.removeItem(key);
-      console.warn('Сломанное сохранение удалено:', key);
-    }
+    try { var _t = localStorage.getItem(key); if (_t) JSON.parse(_t); } catch(e) { localStorage.removeItem(key); }
   });
 
   const hasSave = !!localStorage.getItem('pokemonRPG_save_v3');
 
-  // 3) Пробуем загрузить
   let loaded = false;
-  try { loaded = loadGame(); } catch(e) { console.error('Ошибка загрузки:', e); loaded = false; }
+  try { loaded = loadGame(); } catch(e) { loaded = false; }
 
-  // 4) ВАЖНО: стартер создаём ТОЛЬКО если сейва нет вообще.
-  // Если сейв есть, но загрузка не удалась — не перезаписываем прогресс.
   if (!loaded || !myParty || myParty.length === 0) {
     if (hasSave) {
       if (loadingEl) {
         loadingEl.style.display = 'block';
-        loadingEl.textContent =
-          '❌ Сейв найден, но загрузить его не удалось.\n' +
-          'Чтобы не потерять прогресс, игра НЕ будет перезаписывать сохранение стартером.\n' +
-          'Решение: очистить данные сайта/LocalStorage или исправить формат сейва.';
+        loadingEl.textContent = '❌ Сейв найден, но загрузить не удалось.';
       }
       return;
     }
-
     try {
       const starter = new Poke(25, 5);
       myParty = [starter];
@@ -58,13 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
       gameState.money = 300;
       gameState.items = { potion: 5, pokeball: 3 };
       saveGame();
-    } catch(e) {
-      console.error('Не удалось создать стартера:', e);
-      myParty = [];
-    }
+    } catch(e) { myParty = []; }
   }
 
-  // 5) UI/обработчики
   const btnFight = document.getElementById('btn-fight');
   const btnAction = document.getElementById('btn-action');
   const btnBag = document.getElementById('btn-bag');
@@ -75,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.remove('mode-battle');
     document.body.classList.add('mode-map');
   }
-
   function showBattleScreen() {
     document.body.classList.remove('mode-map');
     document.body.classList.add('mode-battle');
@@ -91,22 +66,15 @@ document.addEventListener('DOMContentLoaded', function() {
   updateInfoPanel();
 
   function startWildBattle() {
-    if (inBattle) {
-      onFight();
-      return;
-    }
+    if (inBattle) { onFight(); return; }
     const wild = generateWildPokemon();
-    if (!wild) {
-      addMessage('Не удалось создать дикого покемона');
-      return;
-    }
+    if (!wild) { addMessage('Не удалось создать дикого покемона'); return; }
     showBattleScreen();
     if (btnFight) btnFight.textContent = 'Бой';
     startBattle(wild);
   }
 
   function onFightClick() {
-    // Есть ли хоть один живой покемон
     var hasAlive = false;
     for (var i = 0; i < myParty.length; i++) {
       if (myParty[i].currentHp > 0) { hasAlive = true; break; }
@@ -115,8 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
       addMessage('Все ваши покемоны без сознания! Используйте зелье или посетите центр покемонов.');
       return;
     }
-
-    // Проверяем текущего покемона
     var curP = getCurrentPokemon();
     if (!curP || curP.currentHp <= 0) {
       for (var i = 0; i < myParty.length; i++) {
@@ -128,20 +94,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     }
-
     startWildBattle();
   }
 
-  if (btnBag) {
-    btnBag.onclick = openInventory;
-    btnBag.disabled = true;
+  // === Надёжная привязка кнопок "Исследовать" ===
+  if (btnFight) {
+    btnFight.disabled = false;
+    btnFight.onclick = null;
+    btnFight.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('%c[Explore] btn-fight clicked', 'color:#4ade80');
+      onFightClick();
+    });
+  }
+  if (btnAction) {
+    btnAction.onclick = null;
+    btnAction.addEventListener('click', function(e) {
+      e.preventDefault();
+      console.log('%c[Explore] btn-action clicked', 'color:#4ade80');
+      onFightClick();
+    });
   }
 
-  if (btnSwitch) {
-    btnSwitch.disabled = true;
-    btnSwitch.onclick = function() { switchPokemon(); };
-  }
-
+  if (btnBag) { btnBag.onclick = openInventory; btnBag.disabled = true; }
+  if (btnSwitch) { btnSwitch.disabled = true; btnSwitch.onclick = function() { switchPokemon(); }; }
   if (btnRun) btnRun.disabled = true;
 
   var btnSave = document.getElementById('btn-save');
@@ -149,8 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
     btnSave.addEventListener('click', function() {
       const ok = saveGame();
       if (!ok) {
-        addMessage('❌ Не удалось сохранить (переполнен localStorage).');
-        alert('❌ Не удалось сохранить игру (переполнен localStorage).\n\nМы отключили кэш покедекса, но старые данные могли остаться.\nОчистите данные сайта/LocalStorage и попробуйте снова.');
+        addMessage('❌ Не удалось сохранить.');
+        alert('❌ Не удалось сохранить игру.');
         return;
       }
       addMessage('Сохранено!');
@@ -166,34 +142,5 @@ document.addEventListener('DOMContentLoaded', function() {
   var trainConfirmBtn = document.getElementById('train-confirm-btn');
   if (trainConfirmBtn) trainConfirmBtn.addEventListener('click', function() { confirmTraining(); });
 
-  attachExploreButtons();
-  attachExploreButtons();
   startAutoSave();
 });
-
-  // === Надёжная привязка кнопок "Исследовать" ===
-  function attachExploreButtons() {
-      const btnFight = document.getElementById('btn-fight');
-      const btnAction = document.getElementById('btn-action');
-
-      if (btnFight) {
-          btnFight.disabled = false;
-          btnFight.onclick = null;
-          btnFight.addEventListener('click', function(e) {
-              e.preventDefault();
-              console.log('%c[Explore] btn-fight clicked', 'color:#4ade80');
-              onFightClick();
-          });
-      }
-
-      if (btnAction) {
-          btnAction.onclick = null;
-          btnAction.addEventListener('click', function(e) {
-              e.preventDefault();
-              console.log('%c[Explore] btn-action clicked', 'color:#4ade80');
-              onFightClick();
-          });
-      }
-  }
-
-  attachExploreButtons();
