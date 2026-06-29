@@ -1,5 +1,5 @@
 // =======================================================================
-// КАРТА МИРА С КРАСИВЫМИ ЗДАНИЯМИ И ПОДДЕРЖКОЙ СТРЕЛОК
+// КАРТА МИРА — красивые здания + стрелки работают
 // =======================================================================
 
 const canvas = document.createElement('canvas');
@@ -31,35 +31,66 @@ function resizeCanvas() {
   canvas.height = Math.max(240, Math.floor(window.innerHeight * 0.65));
 }
 
-// === Красивое здание ===
-function drawNiceBuilding(x, y, w, h, roofColor, wallColor, label) {
+// === Pokémon Center (красная крыша, белые стены) ===
+function drawPokemonCenter(x, y, w, h) {
   // Стены
-  ctx.fillStyle = wallColor;
+  ctx.fillStyle = '#f5f5f5';
   ctx.fillRect(x, y, w, h);
 
-  // Крыша
-  ctx.fillStyle = roofColor;
+  // Красная крыша
+  ctx.fillStyle = '#c62828';
   ctx.beginPath();
-  ctx.moveTo(x - 8, y);
-  ctx.lineTo(x + w / 2, y - 25);
-  ctx.lineTo(x + w + 8, y);
+  ctx.moveTo(x - 10, y);
+  ctx.lineTo(x + w / 2, y - 30);
+  ctx.lineTo(x + w + 10, y);
   ctx.fill();
 
   // Дверь
   ctx.fillStyle = '#5d4037';
-  ctx.fillRect(x + w / 2 - 12, y + h - 35, 24, 35);
+  ctx.fillRect(x + w / 2 - 14, y + h - 40, 28, 40);
 
   // Окна
   ctx.fillStyle = '#bbdefb';
-  ctx.fillRect(x + 15, y + 20, 22, 22);
-  ctx.fillRect(x + w - 37, y + 20, 22, 22);
-  ctx.fillRect(x + 15, y + h - 60, 22, 22);
-  ctx.fillRect(x + w - 37, y + h - 60, 22, 22);
+  ctx.fillRect(x + 12, y + 18, 26, 26);
+  ctx.fillRect(x + w - 38, y + 18, 26, 26);
 
-  // Надпись
+  // Вывеска
+  ctx.fillStyle = '#c62828';
+  ctx.fillRect(x + 8, y + 55, w - 16, 28);
   ctx.fillStyle = '#fff';
-  ctx.font = 'bold 13px Arial';
-  ctx.fillText(label, x + 10, y + 15);
+  ctx.font = 'bold 14px Arial';
+  ctx.fillText('Pokémon Center', x + 14, y + 73);
+}
+
+// === Poké Mart (синяя крыша, жёлтые стены) ===
+function drawPokeMart(x, y, w, h) {
+  // Стены
+  ctx.fillStyle = '#fff9c4';
+  ctx.fillRect(x, y, w, h);
+
+  // Синяя крыша
+  ctx.fillStyle = '#1565c0';
+  ctx.beginPath();
+  ctx.moveTo(x - 10, y);
+  ctx.lineTo(x + w / 2, y - 30);
+  ctx.lineTo(x + w + 10, y);
+  ctx.fill();
+
+  // Дверь
+  ctx.fillStyle = '#37474f';
+  ctx.fillRect(x + w / 2 - 14, y + h - 40, 28, 40);
+
+  // Окна
+  ctx.fillStyle = '#bbdefb';
+  ctx.fillRect(x + 12, y + 18, 26, 26);
+  ctx.fillRect(x + w - 38, y + 18, 26, 26);
+
+  // Вывеска
+  ctx.fillStyle = '#1565c0';
+  ctx.fillRect(x + 8, y + 55, w - 16, 28);
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 15px Arial';
+  ctx.fillText('Poké Mart', x + 22, y + 73);
 }
 
 // === Отрисовка ===
@@ -69,8 +100,8 @@ function draw() {
 
   if (!isIndoors) {
     if (currentLocation === 'pallet') {
-      drawNiceBuilding(50, 35, 160, 120, '#5d4037', '#8d6e63', 'Центр покемонов');
-      drawNiceBuilding(canvas.width - 210, 45, 150, 110, '#e65100', '#ff9800', 'Покемаркет');
+      drawPokemonCenter(45, 30, 170, 125);
+      drawPokeMart(canvas.width - 220, 40, 160, 115);
       ctx.fillStyle = '#fff';
       ctx.font = '18px Arial';
       ctx.fillText('Pallet Town', 20, 25);
@@ -84,8 +115,8 @@ function draw() {
       ctx.fillText('Route 1', 20, 25);
 
     } else if (currentLocation === 'viridian') {
-      drawNiceBuilding(40, 25, 150, 115, '#5d4037', '#8d6e63', 'Центр покемонов');
-      drawNiceBuilding(canvas.width - 190, 35, 140, 105, '#e65100', '#ff9800', 'Покемаркет');
+      drawPokemonCenter(35, 25, 160, 120);
+      drawPokeMart(canvas.width - 200, 35, 150, 110);
       ctx.fillStyle = '#fff';
       ctx.fillText('Viridian City', 20, 25);
     }
@@ -120,14 +151,14 @@ function draw() {
   ctx.fillRect(player.x + 14, player.y + 6, 4, 4);
 }
 
-// === Взаимодействие ===
+// === Взаимодействие (только по E) ===
 function checkBuildingInteraction() {
   const now = Date.now();
   if (now - lastInteractionTime < 700) return;
 
   if (!isIndoors) {
     if ((currentLocation === 'pallet' || currentLocation === 'viridian') &&
-        player.x > 50 && player.x < 220 && player.y > 25 && player.y < 170) {
+        player.x > 40 && player.x < 230 && player.y > 20 && player.y < 180) {
       if (keys.e) {
         isIndoors = true;
         currentBuilding = 'center';
@@ -138,7 +169,7 @@ function checkBuildingInteraction() {
     }
 
     if ((currentLocation === 'pallet' || currentLocation === 'viridian') &&
-        player.x > canvas.width - 220 && player.x < canvas.width - 50 && player.y > 35 && player.y < 170) {
+        player.x > canvas.width - 230 && player.x < canvas.width - 40 && player.y > 25 && player.y < 180) {
       if (keys.e) {
         isIndoors = true;
         currentBuilding = 'mart';
@@ -218,19 +249,19 @@ function gameLoop() {
 // === Управление (WASD + стрелки) ===
 document.addEventListener('keydown', (e) => {
   const k = e.key.toLowerCase();
-  if (['w', 'arrowup'].includes(k)) keys.w = true;
-  if (['s', 'arrowdown'].includes(k)) keys.s = true;
-  if (['a', 'arrowleft'].includes(k)) keys.a = true;
-  if (['d', 'arrowright'].includes(k)) keys.d = true;
+  if (k === 'w' || k === 'arrowup') keys.w = true;
+  if (k === 's' || k === 'arrowdown') keys.s = true;
+  if (k === 'a' || k === 'arrowleft') keys.a = true;
+  if (k === 'd' || k === 'arrowright') keys.d = true;
   if (k === 'e') keys.e = true;
 });
 
 document.addEventListener('keyup', (e) => {
   const k = e.key.toLowerCase();
-  if (['w', 'arrowup'].includes(k)) keys.w = false;
-  if (['s', 'arrowdown'].includes(k)) keys.s = false;
-  if (['a', 'arrowleft'].includes(k)) keys.a = false;
-  if (['d', 'arrowright'].includes(k)) keys.d = false;
+  if (k === 'w' || k === 'arrowup') keys.w = false;
+  if (k === 's' || k === 'arrowdown') keys.s = false;
+  if (k === 'a' || k === 'arrowleft') keys.a = false;
+  if (k === 'd' || k === 'arrowright') keys.d = false;
   if (k === 'e') keys.e = false;
 });
 
@@ -246,4 +277,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 resizeCanvas();
 gameLoop();
-console.log('Карта обновлена: красивые здания + стрелки работают');
+console.log('Карта обновлена: красивые здания + стрелки');
