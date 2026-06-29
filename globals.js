@@ -108,7 +108,7 @@ function loadGame() {
                 }
 
                 var maxHp = pokemon.maxHp;
-                pokemon.currentHp = (typeof p.currentHp === 'number' && p.currentHp >= 0) ? Math.min(p.currentHp, maxHp) : maxHp;
+                pokemon.currentHp = (typeof p.currentHp === 'number' && p.currentHp > 0) ? Math.min(p.currentHp, maxHp) : maxHp;
                 pokemon.status = p.status || null;
 
                 newParty.push(pokemon);

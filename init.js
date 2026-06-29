@@ -85,7 +85,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (btnFight) {
         btnFight.disabled = false;
-        btnFight.onclick = startWildBattle;
+        btnFight.onclick = function() {
+            var curP = getCurrentPokemon();
+            if (!curP || curP.currentHp <= 0) {
+                var aliveIdx = -1;
+                for (var i = 0; i < myParty.length; i++) {
+                    if (myParty[i].currentHp > 0) {
+                        aliveIdx = i;
+                        break;
+                    }
+                }
+                if (aliveIdx === -1) {
+                    addMessage('😢 Все ваши покемоны без сознания! Восстанавливаем...');
+                    if (myParty.length > 0) {
+                        myParty[0].currentHp = myParty[0].maxHp;
+                        currentPokemonIndex = 0;
+                        updateHpBars();
+                        saveGame();
+                    } else {
+                        try {
+                            const starter = new Poke(25, 5);
+                            myParty = [starter];
+                            currentPokemonIndex = 0;
+                            saveGame();
+                        } catch(e) {
+                            addMessage('❌ Критическая ошибка!');
+                            return;
+                        }
+                    }
+                    updateHpBars();
+                    return;
+                }
+                currentPokemonIndex = aliveIdx;
+                addMessage('🔄 ' + myParty[aliveIdx].name + ' выходит на бой!');
+                updateHpBars();
+            }
+            startWildBattle();
+        };
+    }
     }
 
     if (btnAction) {
