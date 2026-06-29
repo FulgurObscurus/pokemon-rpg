@@ -79,56 +79,6 @@ function getPokemonImage(id) {
     return "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/" + String(id) + ".png";
 }
 
-function updateHpBars() {
-    if (!myParty || !myParty.length) return;
-
-    const p = getCurrentPokemon();
-    if (p) {
-        const pNameEl = document.getElementById('p-name');
-        if (pNameEl) {
-            pNameEl.innerHTML = '<img class="pokemon-img" src="' + getPokemonImage(p.speciesId) + '" alt="' + p.name + '"> ' + p.name;
-        }
-
-        const pLevelEl = document.getElementById('p-level');
-        if (pLevelEl) pLevelEl.textContent = p.level;
-
-        const pHpPercent = Math.max(0, (p.currentHp / p.maxHp) * 100);
-        const pHpBar = document.getElementById('p-hp-bar');
-        if (pHpBar) {
-            pHpBar.style.width = pHpPercent + '%';
-            pHpBar.className = 'hp' + (pHpPercent < 25 ? ' low' : '');
-        }
-
-        const pHpText = document.getElementById('p-hp-text');
-        if (pHpText) pHpText.textContent = p.currentHp + '/' + p.maxHp;
-    }
-
-    if (enemyPokemon) {
-        const eNameEl = document.getElementById('e-name');
-        if (eNameEl) {
-            eNameEl.innerHTML = '<img class="pokemon-img" src="' + getPokemonImage(enemyPokemon.speciesId) + '" alt="' + enemyPokemon.name + '"> ' + enemyPokemon.name;
-        }
-
-        const eLevelEl = document.getElementById('e-level');
-        if (eLevelEl) eLevelEl.textContent = enemyPokemon.level;
-
-        const eHpPercent = Math.max(0, (enemyPokemon.currentHp / enemyPokemon.maxHp) * 100);
-        const eHpBar = document.getElementById('e-hp-bar');
-        if (eHpBar) {
-            eHpBar.style.width = eHpPercent + '%';
-            eHpBar.className = 'hp' + (eHpPercent < 25 ? ' low' : '');
-        }
-
-        const eHpText = document.getElementById('e-hp-text');
-        if (eHpText) eHpText.textContent = enemyPokemon.currentHp + '/' + enemyPokemon.maxHp;
-    } else {
-        const eNameEl = document.getElementById('e-name');
-        if (eNameEl) eNameEl.innerHTML = '—';
-
-        const eLevelEl = document.getElementById('e-level');
-        if (eLevelEl) eLevelEl.textContent = '0';
-
-        const eHpBar = document.getElementById('e-hp-bar');
         if (eHpBar) eHpBar.style.width = '0%';
 
         const eHpText = document.getElementById('e-hp-text');
