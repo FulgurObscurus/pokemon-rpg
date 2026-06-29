@@ -9,7 +9,6 @@ let currentPokemonIndex = 0;
 let enemyPokemon = null;
 let inBattle = false;
 let gameLog = [];
-
 let moveSelectionMode = false;
 
 const SAVE_VERSION = 3;
@@ -38,9 +37,17 @@ function safeLocalStorageSet(key, value) {
     localStorage.setItem(key, value);
     return true;
   } catch (e) {
-    // Частая причина: переполнен localStorage
-    console.error('localStorage.setItem failed:', e);
-    return false;
+    // Частая причина: переполнен localStorage из-за огромного кэша (pokemonData151)
+    console.warn('localStorage.setItem failed, trying to free space:', e);
+    try { localStorage.removeItem('pokemonData151'); } catch (_) {}
+
+    try {
+      localStorage.setItem(key, value);
+      return true;
+    } catch (e2) {
+      console.error('localStorage.setItem failed again:', e2);
+      return false;
+    }
   }
 }
 
@@ -70,7 +77,7 @@ function saveGame() {
           currentHp: toInt(p && p.currentHp, 0),
           status: p ? (p.status || null) : null,
 
-          // стабильные поля (чтобы после F5 не "переролливались")
+          // стабильные поля (чтобы после F5 не “переролливались”)
           ability: p ? (p.ability || null) : null,
           shiny: !!(p && p.shiny),
           gender: p ? (p.gender || null) : null,
@@ -97,8 +104,7 @@ function saveGame() {
       ts: Date.now(),
     };
 
-    const ok = safeLocalStorageSet(SAVE_KEY, JSON.stringify(state));
-    return ok;
+    return safeLocalStorageSet(SAVE_KEY, JSON.stringify(state));
   } catch (e) {
     console.error('Ошибка сохранения:', e);
     return false;
@@ -115,14 +121,13 @@ function loadGame() {
 
     const state = safeJSONParse(raw);
     if (!state || !state.version) {
-      // реально битый JSON/структура
       localStorage.removeItem(SAVE_KEY);
       window.__LAST_LOAD_ERROR = 'BAD_JSON';
       return false;
     }
 
     // ВАЖНО: не трогаем сейв, если покедекс ещё не готов
-    if (typeof allPokemonData === 'undefined' || !allPokemonData || Object.keys(allPokemonData).length === 0) {
+    if (!allPokemonData || Object.keys(allPokemonData).length === 0) {
       window.__LAST_LOAD_ERROR = 'POKEDEX_NOT_READY';
       return false;
     }
@@ -132,9 +137,7 @@ function loadGame() {
       return false;
     }
 
-    // деньги/предметы/лог
     gameState.money = toInt(state.money, 300);
-
     if (state.items && typeof state.items === 'object') {
       gameState.items = {
         potion: Math.max(0, toInt(state.items.potion, 0)),
@@ -154,13 +157,10 @@ function loadGame() {
       if (!allPokemonData[p.speciesId]) continue;
 
       const lvl = clampInt(p.level, 1, 100, 5);
-
-      // создаём покемона (конструктор задаёт базу), потом восстанавливаем сейв-поля
       const pokemon = new Poke(p.speciesId, lvl);
 
       pokemon.exp = Math.max(0, toInt(p.exp, 0));
 
-      // statPoints — числа
       if (p.statPoints && typeof p.statPoints === 'object') {
         pokemon.statPoints = {
           hp: Math.max(0, toInt(p.statPoints.hp, 0)),
@@ -179,7 +179,7 @@ function loadGame() {
       pokemon.heldItem = (typeof p.heldItem !== 'undefined') ? p.heldItem : null;
       pokemon.friendship = Math.max(0, toInt(p.friendship, 70));
 
-      // HP/статус (сохраняем 0, если покемон был без сознания)
+      // HP/статус
       const maxHp = pokemon.maxHp;
       const chp = toInt(p.currentHp, maxHp);
       pokemon.currentHp = Math.max(0, Math.min(chp, maxHp));
@@ -202,9 +202,7 @@ function loadGame() {
             mv.pp = clampInt(savedPP, 0, cap, mv.pp);
 
             loadedMoves.push(mv);
-          } catch (_) {
-            // пропускаем битый приём
-          }
+          } catch (_) {}
         }
         if (loadedMoves.length > 0) pokemon.moves = loadedMoves;
       }
@@ -218,16 +216,13 @@ function loadGame() {
     }
 
     myParty = newParty;
-
-    const idx = clampInt(state.currentPokemonIndex, 0, myParty.length - 1, 0);
-    currentPokemonIndex = idx;
+    currentPokemonIndex = clampInt(state.currentPokemonIndex, 0, myParty.length - 1, 0);
 
     window.__LAST_LOAD_ERROR = null;
     return true;
   } catch (e) {
     console.error('Ошибка загрузки сохранения:', e);
     window.__LAST_LOAD_ERROR = 'EXCEPTION';
-    // ВАЖНО: не удаляем сейв на любой ошибке — иначе прогресс теряется
     return false;
   }
 }

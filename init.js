@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!pokedexOk) {
     if (loadingEl) {
       loadingEl.style.display = 'block';
-      loadingEl.textContent = '❌ Не удалось загрузить покедекс. Сохранение НЕ трогаем.';
+      loadingEl.textContent = '❌ Не удалось загрузить покедекс.\nСохранение НЕ трогаем.';
     }
     return;
   }
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loaded = false;
   }
 
-  // 4) Если не загрузилось — создаём стартера (но сейв не удаляем)
+  // 4) Если не загрузилось — создаём стартера (но сейв НЕ удаляем)
   if (!loaded || !myParty || myParty.length === 0) {
     try {
       const starter = new Poke(25, 5);
@@ -50,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
       currentPokemonIndex = 0;
       gameState.money = 300;
       gameState.items = { potion: 5, pokeball: 3 };
+
+      // сохраняем стартера только если сохранение реально записывается
       saveGame();
     } catch (e) {
       console.error('Не удалось создать стартера:', e);
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // 5) UI/обработчики (оставляем твою логику)
+  // 5) UI/обработчики
   const btnFight = document.getElementById('btn-fight');
   const btnAction = document.getElementById('btn-action');
   const btnBag = document.getElementById('btn-bag');
@@ -102,10 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Проверяем, есть ли хоть один живой покемон
     var hasAlive = false;
     for (var i = 0; i < myParty.length; i++) {
-      if (myParty[i].currentHp > 0) {
-        hasAlive = true;
-        break;
-      }
+      if (myParty[i].currentHp > 0) { hasAlive = true; break; }
     }
     if (!hasAlive) {
       alert('Все ваши покемоны без сознания! Используйте зелье.');
@@ -151,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
     btnSave.addEventListener('click', function() {
       const ok = saveGame();
       if (!ok) {
-        alert('❌ Сохранение не записалось (возможно, переполнен localStorage).');
+        alert('❌ Не удалось сохранить (переполнен localStorage).');
         return;
       }
       addMessage('Сохранено!');
