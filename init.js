@@ -150,3 +150,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   startAutoSave();
 });
+
+// Фикс ошибки в строке 227
