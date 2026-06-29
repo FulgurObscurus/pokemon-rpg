@@ -57,7 +57,6 @@ function onFight() {
 
             if (p.currentHp <= 0) {
                 addMessage('💔 ' + p.name + ' потерял сознание!');
-                // ИСПРАВЛЕНИЕ: Проверяем наличие живых покемонов
                 checkForSwitchOrEndBattle();
                 return;
             }
@@ -90,23 +89,18 @@ function onFight() {
     moveList.appendChild(cancel);
 }
 
-// ИСПРАВЛЕНИЕ: Новая функция для проверки возможности переключения
 function checkForSwitchOrEndBattle() {
-    // Проверяем, есть ли живые покемоны в партии
     var alivePokemon = myParty.filter(function(p) { return p.currentHp > 0; });
     
     if (alivePokemon.length === 0) {
-        // Все покемоны погибли - заканчиваем бой
         addMessage('😢 Все ваши покемоны потеряли сознание!');
         endBattle();
     } else {
-        // Есть живые покемоны - предлагаем переключиться
         addMessage('🔄 Выберите следующего покемона!');
         forceSwitchPokemon();
     }
 }
 
-// ИСПРАВЛЕНИЕ: Принудительное переключение (без возможности отмены)
 function forceSwitchPokemon() {
     if (!inBattle) return;
 
@@ -156,7 +150,6 @@ function switchPokemon() {
         return;
     }
 
-    // Показываем список покемонов для смены
     const moveList = document.getElementById('move-list');
     const actions = document.getElementById('actions');
     if (actions) actions.style.display = 'none';
@@ -189,7 +182,6 @@ function switchPokemon() {
                 showActions();
                 updateHpBars();
 
-                // Враг атакует после смены
                 setTimeout(function() {
                     if (inBattle && enemyPokemon) {
                         var curP = myParty[currentPokemonIndex];
@@ -197,7 +189,6 @@ function switchPokemon() {
                         curP.currentHp = Math.max(0, curP.currentHp - enemyDmg);
                         addMessage(enemyPokemon.name + ' нанёс ' + enemyDmg + ' урона!');
                         updateHpBars();
-                        // ИСПРАВЛЕНИЕ: Проверяем возможность переключения после атаки
                         if (curP.currentHp <= 0) {
                             addMessage(curP.name + ' потерял сознание!');
                             checkForSwitchOrEndBattle();
@@ -209,7 +200,6 @@ function switchPokemon() {
             moveList.appendChild(btn);
         }
 
-        // Кнопка отмены
         const cancelBtn = document.createElement('button');
         cancelBtn.style.cssText = 'grid-column:1/-1;padding:10px;background:#c0392b;border:none;color:#fff;border-radius:8px;cursor:pointer;font-size:14px;';
         cancelBtn.textContent = '✕ Отмена';
@@ -221,6 +211,80 @@ function switchPokemon() {
         moveList.appendChild(cancelBtn);
     }
 }
+
+// ИСПРАВЛЕНИЕ: Добавлена функция openInventory
+function openInventory() {
+    if (!inBattle) {
+        addMessage('❌ Инвентарь доступен только в бою');
+        return;
+    }
+    const modal = document.getElementById('inventory-modal');
+    const itemsContainer = document.getElementById('inventory-items');
+    if (!modal || !itemsContainer) {
+        addMessage('❌ Интерфейс инвентаря не найден');
+        return;
+    }
+    const items = gameState.items || {};
+    const potions = items.potion || 0;
+    const pokeballs = items.pokeball || 0;
+    let html = '';
+    html += '<div style="padding:8px;border-bottom:1px solid #7b4a9e;">';
+    html += '<strong>Зелье (' + potions + ' шт.)</strong>';
+    if (potions > 0) html += ' <button onclick="usePotion()">Использовать</button>';
+    else html += ' <span style="color:#999;">нет</span>';
+    html += '</div>';
+    html += '<div style="padding:8px;">';
+    html += '<strong>Покебол (' + pokeballs + ' шт.)</strong>';
+    if (pokeballs > 0 && enemyPokemon) html += ' <button onclick="usePokeball()">Использовать</button>';
+    else html += ' <span style="color:#999;">' + (enemyPokemon ? 'нет' : '(нет врага)') + '</span>';
+    html += '</div>';
+    itemsContainer.innerHTML = html;
+    modal.style.display = 'flex';
+}
+
+window.usePotion = function() {
+    const p = getCurrentPokemon();
+    if (!p) {
+        addMessage('❌ Нет покемона');
+        return;
+    }
+    if (gameState.items.potion <= 0) {
+        addMessage('❌ Нет зелий!');
+        return;
+    }
+    const heal = 20;
+    p.currentHp = Math.min(p.currentHp + heal, p.maxHp);
+    gameState.items.potion--;
+    addMessage('🧪 Вы использовали Зелье, восстановили ' + heal + ' HP. (Осталось ' + gameState.items.potion + ')');
+    updateHpBars();
+    saveGame();
+    document.getElementById('inventory-modal').style.display = 'none';
+};
+
+window.usePokeball = function() {
+    if (!enemyPokemon) {
+        addMessage('❌ Нет дикого покемона!');
+        return;
+    }
+    if (gameState.items.pokeball <= 0) {
+        addMessage('❌ Нет покеболов!');
+        return;
+    }
+    gameState.items.pokeball--;
+    const chance = Math.min(0.3 + (enemyPokemon.level / 100), 0.9);
+    if (Math.random() < chance) {
+        addMessage('🎉 Вы поймали ' + enemyPokemon.name + '!');
+        myParty.push(enemyPokemon);
+        saveGame();
+        document.getElementById('inventory-modal').style.display = 'none';
+        endBattle();
+    } else {
+        addMessage('😞 Покебол не сработал! ' + enemyPokemon.name + ' сбежал!');
+        saveGame();
+        document.getElementById('inventory-modal').style.display = 'none';
+        endBattle();
+    }
+};
 
 function showActions() {
     const moveList = document.getElementById('move-list');
@@ -262,35 +326,3 @@ function endBattle() {
     if (window.showMapScreen) window.showMapScreen();
     updateHpBars();
 }
-
-window.usePotion = function() {
-    const p = getCurrentPokemon();
-    if (!p) return;
-    if (gameState.items.potion <= 0) return;
-
-    const heal = 20;
-    p.currentHp = Math.min(p.currentHp + heal, p.maxHp);
-    gameState.items.potion--;
-    addMessage('🧪 Вы использовали Зелье');
-    updateHpBars();
-    saveGame();
-    document.getElementById('inventory-modal').style.display = 'none';
-};
-
-window.usePokeball = function() {
-    if (!enemyPokemon) return;
-    if (gameState.items.pokeball <= 0) return;
-
-    gameState.items.pokeball--;
-
-    if (Math.random() < 0.5) {
-        addMessage('🎉 Вы поймали ' + enemyPokemon.name + '!');
-        myParty.push(enemyPokemon);
-    } else {
-        addMessage('😞 Покебол не сработал!');
-    }
-
-    saveGame();
-    document.getElementById('inventory-modal').style.display = 'none';
-    endBattle();
-};
