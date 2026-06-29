@@ -150,5 +150,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
   startAutoSave();
 });
-
-// версия 11
