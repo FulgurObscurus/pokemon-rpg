@@ -14,10 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
 
-  ['pokemonRPG_save', 'pokemonRPG_save_v1', 'pokemonRPG_save_v2'].forEach(function(key) {
-    try { var _t = localStorage.getItem(key); if (_t) JSON.parse(_t); } catch(e) { localStorage.removeItem(key); }
-  });
-
   const hasSave = !!localStorage.getItem('pokemonRPG_save_v3');
 
   let loaded = false;
@@ -83,17 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
       addMessage('Все ваши покемоны без сознания! Используйте зелье или посетите центр покемонов.');
       return;
     }
-    var curP = getCurrentPokemon();
-    if (!curP || curP.currentHp <= 0) {
-      for (var i = 0; i < myParty.length; i++) {
-        if (myParty[i].currentHp > 0) {
-          currentPokemonIndex = i;
-          addMessage(myParty[i].name + ' выходит на бой!');
-          updateHpBars();
-          break;
-        }
-      }
-    }
     startWildBattle();
   }
 
@@ -110,28 +95,12 @@ document.addEventListener('DOMContentLoaded', function() {
   if (btnRun) btnRun.disabled = true;
 
   var btnSave = document.getElementById('btn-save');
-  if (btnSave) {
-    btnSave.addEventListener('click', function() {
-      const ok = saveGame();
-      if (!ok) {
-        addMessage('❌ Не удалось сохранить.');
-        alert('❌ Не удалось сохранить игру.');
-        return;
-      }
-      addMessage('Сохранено!');
-    });
-  }
+  if (btnSave) btnSave.addEventListener('click', function() { saveGame(); addMessage('Сохранено!'); });
 
   var btnTraining = document.getElementById('btn-training');
   if (btnTraining) btnTraining.addEventListener('click', function() { openTraining(); });
 
-  var trainCloseBtn = document.getElementById('train-close-btn');
-  if (trainCloseBtn) trainCloseBtn.addEventListener('click', function() { closeTraining(); });
-
-  var trainConfirmBtn = document.getElementById('train-confirm-btn');
-  if (trainConfirmBtn) trainConfirmBtn.addEventListener('click', function() { confirmTraining(); });
-
-  // === ПОДДЕРЖКА СТРЕЛОК (внутри DOMContentLoaded) ===
+  // === Стрелки ===
   document.addEventListener('keydown', function(e) {
     const k = e.key;
     if (k === 'ArrowUp')    { if (typeof keys !== 'undefined') keys.w = true; e.preventDefault(); }
